@@ -9,6 +9,7 @@ import { MovementGuide } from '@/features/workout-book/components/movement-guide
 import type { Book } from '@/features/workout-book/schema';
 import { suggestionUrl } from '@/features/workout-book/data';
 import { BodyMap } from './body-map';
+import { useBodyVariant } from './body-variant-provider';
 import { anatomy, selectRegion, type View } from '../model';
 export function Atlas({
   book,
@@ -20,6 +21,7 @@ export function Atlas({
   selected?: string | null;
 }) {
   const router = useRouter();
+  const { bodyVariant, setBodyVariant } = useBodyVariant();
   const groupButtons = useRef<HTMLDivElement>(null);
   const t = useTranslations('App'),
     locale = useLocale();
@@ -61,9 +63,25 @@ export function Atlas({
     <main className={`atlas ${region ? 'guide-open' : ''} ${!group ? 'atlas-home' : ''}`}>
       <h1 className="sr-only">{region?.name || (group ? label(group.id) : t('title'))}</h1>
       <section className="anatomy-panel" aria-label={t('atlas')}>
-        <span className="anatomy-caption eyebrow">{t('schematic')}</span>
+        <div className="anatomy-toolbar">
+          <span className="anatomy-caption eyebrow">{t('schematic')}</span>
+          <div className="view-switch body-switch" role="group" aria-label={t('bodyType')}>
+            {(['male', 'female'] as const).map((variant) => (
+              <Button
+                key={variant}
+                size="sm"
+                variant={bodyVariant === variant ? 'default' : 'ghost'}
+                aria-pressed={bodyVariant === variant}
+                onClick={() => setBodyVariant(variant)}
+              >
+                {t(variant)}
+              </Button>
+            ))}
+          </div>
+        </div>
         <div className="anatomy-circles" aria-hidden="true" />
         <BodyMap
+          bodyVariant={bodyVariant}
           group={groupId}
           regionId={activeId}
           selectedRegionId={selected}

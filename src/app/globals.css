@@ -146,11 +146,19 @@ summary:focus-visible {
   align-items: center;
   justify-content: center;
 }
-.anatomy-caption {
+.anatomy-toolbar {
   position: absolute;
-  inset-block-start: 26px;
-  inset-inline-start: 26px;
+  inset-block-start: 18px;
+  inset-inline: 24px;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.anatomy-toolbar .body-switch button {
+  padding-inline: 12px;
+  font-size: 12px;
 }
 .anatomy-circles {
   position: absolute;
@@ -164,7 +172,7 @@ summary:focus-visible {
   pointer-events: none;
 }
 .body-map {
-  height: 84%;
+  height: calc(100% - 124px);
   width: 90%;
   position: relative;
   max-height: 900px;
@@ -645,12 +653,16 @@ summary:focus-visible {
     border-bottom: 1px solid var(--border);
   }
   .body-map {
-    height: 96%;
+    height: calc(100% - 72px);
     width: 100%;
+    transform: translateY(8px);
+  }
+  .anatomy-toolbar {
+    inset-block-start: 10px;
+    inset-inline: 16px;
+    gap: 8px;
   }
   .anatomy-caption {
-    inset-block-start: 16px;
-    inset-inline-start: 20px;
     font-size: 9px;
   }
   .anatomy-bottom {

@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip';
-import { anatomy, visibleComponents, visibleRegions, type View } from '../model';
+import { visibleComponents, visibleRegions, type View } from '../model';
+import { getBodyAnatomy, femalePath, type BodyVariant } from '../body-variants';
+import { HairBehind, BodyHair } from './body-hair';
 export function BodyMap({
   group,
   regionId,
@@ -8,6 +10,7 @@ export function BodyMap({
   selectedRegionId,
   regionNames,
   onRegion,
+  bodyVariant,
 }: {
   group: string | null;
   regionId: string | null;
@@ -15,7 +18,11 @@ export function BodyMap({
   selectedRegionId: string | null;
   regionNames: Record<string, string>;
   onRegion: (id: string) => void;
+  bodyVariant: BodyVariant;
 }) {
+  const anatomy = getBodyAnatomy(bodyVariant);
+  const face =
+    'M180 49 Q186 42 192 49 M207 49 Q216 42 221 49 M193 73 Q200 76 207 73 M200 53L197 64 203 64 M185 83L200 91 215 83';
   const t = useTranslations('App'),
     region = regionId ? anatomy.regions[regionId] : undefined;
   const paths = (list: string[]) => (
@@ -35,7 +42,8 @@ export function BodyMap({
       <svg
         className={`body-map ${region ? 'has-region' : ''}`}
         viewBox={region?.zoom || '0 0 400 670'}
-        aria-label={t('schematic')}
+        aria-label={t('bodyDiagram', { body: t(bodyVariant), view: t(view) })}
+        data-body-variant={bodyVariant}
       >
         <defs>
           <linearGradient id="body" x2="1">
@@ -53,14 +61,12 @@ export function BodyMap({
             <stop offset="1" stopColor="#329e9f" />
           </linearGradient>
         </defs>
+        <HairBehind bodyVariant={bodyVariant} />
         <path d={anatomy.silhouette} fill="url(#body)" stroke="#595959" />
         {view === 'front' && (
-          <path
-            d="M180 49 Q186 42 192 49 M207 49 Q216 42 221 49 M193 73 Q200 76 207 73 M200 53L197 64 203 64 M185 83L200 91 215 83"
-            fill="none"
-            stroke="#666"
-          />
+          <path d={bodyVariant === 'female' ? femalePath(face) : face} fill="none" stroke="#666" />
         )}
+        <BodyHair bodyVariant={bodyVariant} view={view} />
         {visibleComponents(view, region).map((component) => {
           const id = anatomy.componentGroup[component];
           return (
