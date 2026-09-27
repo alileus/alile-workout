@@ -6,6 +6,8 @@ import { Link } from '@/i18n/navigation';
 import { getBook } from '@/features/workout-book/data';
 import { DocumentShell } from '@/components/document-shell';
 import { pageMetadata } from '@/lib/seo';
+import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
@@ -34,9 +36,12 @@ export default async function BookPage({ params }: { params: Promise<{ locale: s
                     : section.name}
                 </h3>
                 {section.regions.map((region) => (
-                  <Link key={region.id} href={`/book/${region.id}`}>
-                    {region.name} ↗
-                  </Link>
+                  <Button key={region.id} asChild variant="outline" className="book-route">
+                    <Link href={`/book/${region.id}`}>
+                      <span>{region.name}</span>
+                      <ArrowUpRight aria-hidden="true" />
+                    </Link>
+                  </Button>
                 ))}
               </div>
             ))}

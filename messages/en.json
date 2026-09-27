@@ -60,6 +60,10 @@
       "Feet": "Feet",
       "Deep trunk": "Deep trunk",
       "Shins & ankles": "Shins & ankles"
-    }
+    },
+    "navigation": "Explore",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "navigationDescription": "Open the workout book, explore anatomy, contribute, or change language."
   }
 }

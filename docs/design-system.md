@@ -10,4 +10,6 @@ Desktop uses 36% anatomy / 29% regions / 35% guide. The selector spans the latte
 
 Use native buttons with accessible names and aria-pressed for toggles. SVG focus uses contrasting fill/stroke; keyboard controls elsewhere retain focus indicators. Respect reduced motion. Rotate directional icons in RTL, never anatomy.
 
+Navigation lives in a shared shadcn bottom drawer on desktop and mobile, opened by a floating plus button. Route links use Button styling; disclosure indicators switch from plus to minus when expanded. Global links and language selection belong in the drawer, not a footer. Back arrows follow text direction. The atlas is centered at a maximum width of 1600px, and the drawer trigger stays inside that boundary.
+
 The gallery is English developer documentation excluded from indexing. Product strings belong in all three message catalogs.

@@ -111,6 +111,9 @@ summary:focus-visible {
   letter-spacing: 0;
 }
 .atlas {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
   height: 100dvh;
   display: grid;
   grid-template-columns: 36% 29% 35%;
@@ -241,16 +244,16 @@ summary:focus-visible {
 }
 .language-switcher {
   display: flex;
-  gap: 14px;
-  align-items: center;
-  font-size: 12px;
-  white-space: nowrap;
-  color: var(--muted-foreground);
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  max-width: 100%;
 }
-.language-switcher a[aria-current] {
-  color: var(--foreground);
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
+.language-switcher a {
+  min-height: 42px;
+  flex: 1;
+  border-radius: 8px;
 }
 .regions-panel,
 .guide-panel {
@@ -275,9 +278,7 @@ summary:focus-visible {
   gap: 8px;
   flex-wrap: wrap;
 }
-.section-top a,
-.panel-footer a,
-.guide-footer a {
+.guide-references a {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -349,14 +350,6 @@ summary:focus-visible {
 .region-indicator {
   font-size: 18px;
   color: var(--muted-foreground);
-}
-.panel-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 40px;
-  padding-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 .guide-empty {
   height: 100%;
@@ -460,7 +453,7 @@ summary:focus-visible {
   border-inline-start: 2px solid #55c9c366;
   padding-inline-start: 12px;
 }
-.guide-footer {
+.guide-references {
   border-top: 1px solid var(--border);
   padding-top: 20px;
   margin-top: 32px;
@@ -468,11 +461,11 @@ summary:focus-visible {
   flex-wrap: wrap;
   gap: 18px;
 }
-.guide-footer details {
+.guide-references details {
   font-size: 12px;
   color: var(--muted-foreground);
 }
-.guide-footer details a {
+.guide-references details a {
   display: flex;
   margin-block: 12px;
 }
@@ -483,9 +476,6 @@ summary:focus-visible {
 }
 .mobile-back {
   display: none !important;
-}
-.mobile-languages {
-  display: none;
 }
 .document-page {
   max-width: 1000px;
@@ -527,9 +517,15 @@ summary:focus-visible {
   margin: 24px 0 10px;
 }
 .book-grid a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  white-space: normal;
+  text-align: start;
+  min-height: 46px;
+  height: auto;
   font-size: 15px;
-  padding: 7px 0;
+  padding: 12px 16px;
+  margin-block: 8px;
 }
 .full-guide {
   max-width: 700px;
@@ -549,8 +545,7 @@ summary:focus-visible {
   margin-top: 8px;
 }
 .contribution-steps a {
-  color: var(--primary);
-  text-decoration: underline;
+  justify-self: start;
 }
 @media (min-width: 1600px) {
   .group-bar {
@@ -566,10 +561,6 @@ summary:focus-visible {
   }
 }
 @media (max-width: 1000px) {
-  .mobile-languages {
-    display: block;
-    width: 100%;
-  }
   .atlas {
     height: 100dvh;
     grid-template-columns: minmax(0, 1fr);
@@ -618,9 +609,6 @@ summary:focus-visible {
     min-height: 38px;
     padding-inline: 18px;
   }
-  .group-bar .language-switcher {
-    display: none;
-  }
   .regions-panel,
   .guide-panel {
     grid-column: 1;
@@ -662,5 +650,168 @@ summary:focus-visible {
     scroll-behavior: auto !important;
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* Bottom navigation and directional/disclosure primitives. */
+.back-icon:dir(rtl) {
+  transform: rotate(180deg);
+}
+.disclosure-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+}
+.disclosure-minus {
+  display: none;
+}
+details[open] > summary .disclosure-plus {
+  display: none;
+}
+details[open] > summary .disclosure-minus {
+  display: inline;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.guide-references {
+  display: block;
+}
+.guide-references summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  min-height: 44px;
+}
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 0 24px;
+}
+.navigation-trigger {
+  transition-property: background-color, color, transform, box-shadow;
+  position: fixed;
+  z-index: 40;
+  inset-inline-end: max(24px, calc((100vw - 1600px) / 2 + 24px));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px #0007;
+  border: 1px solid #ffffff20;
+}
+.navigation-trigger:hover {
+  transform: translateY(-3px);
+}
+.navigation-trigger svg {
+  width: 24px;
+  height: 24px;
+}
+.navigation-drawer {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  border-radius: 24px 24px 0 0 !important;
+  max-height: 85dvh !important;
+}
+.navigation-inner {
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+  padding: 20px 32px max(32px, env(safe-area-inset-bottom));
+  overflow-y: auto;
+}
+.navigation-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+.navigation-heading [data-slot='drawer-title'] {
+  font-size: 24px;
+  font-weight: 600;
+}
+.navigation-heading button {
+  border-radius: 50%;
+}
+.navigation-routes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.navigation-route {
+  min-height: 68px;
+  height: auto;
+  justify-content: flex-start;
+  padding: 18px;
+  font-size: 16px;
+  white-space: normal;
+  text-align: start;
+  border-radius: 14px;
+}
+.navigation-route svg {
+  width: 22px;
+  height: 22px;
+}
+.navigation-route[aria-current='page'] {
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.navigation-settings {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 28px;
+}
+.navigation-languages {
+  display: grid;
+  gap: 12px;
+}
+.regions-panel,
+.guide-panel {
+  padding-bottom: 100px;
+}
+.document-page {
+  padding-bottom: 110px;
+}
+@media (max-width: 600px) {
+  .navigation-inner {
+    padding: 16px 20px max(28px, env(safe-area-inset-bottom));
+  }
+  .navigation-routes {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .navigation-route:first-child {
+    grid-column: 1/-1;
+  }
+  .navigation-route {
+    min-height: 56px;
+    padding: 14px;
+    font-size: 14px;
+  }
+  .navigation-settings {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 22px;
+  }
+  .navigation-settings > a {
+    align-self: flex-start;
+  }
+  .navigation-trigger {
+    inset-inline-end: 20px;
+    bottom: max(20px, env(safe-area-inset-bottom));
+  }
+  .regions-panel,
+  .guide-panel {
+    padding-bottom: 96px;
   }
 }

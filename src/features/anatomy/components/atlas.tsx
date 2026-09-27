@@ -1,10 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowLeft, ArrowUpRight, Search } from 'lucide-react';
+import { ArrowLeft, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { LanguageSwitcher } from '@/components/language-switcher';
-import { Link } from '@/i18n/navigation';
 import { MovementGuide } from '@/features/workout-book/components/movement-guide';
 import type { Book } from '@/features/workout-book/schema';
 import { BodyMap } from './body-map';
@@ -75,14 +73,10 @@ export function Atlas({ book }: { book: Book }) {
             </Button>
           ))}
         </div>
-        <LanguageSwitcher />
       </nav>
       <section className="regions-panel" aria-label={t('regions')}>
         <div className="section-top">
           <span className="eyebrow">{t('regions')}</span>
-          <Link href="/book">
-            {t('book')} <ArrowUpRight size={14} />
-          </Link>
         </div>
         <h2>{group ? label(group.id) : t('groups')}</h2>
         {group && (
@@ -152,28 +146,19 @@ export function Atlas({ book }: { book: Book }) {
             ) && <p className="muted">{t('empty')}</p>}
           </>
         )}
-        <div className="panel-footer">
-          <a href="https://github.com/alileus/alile-workout">
-            GitHub <ArrowUpRight size={14} />
-          </a>
-          <Link href="/contribute">{t('contribute')}</Link>
-          <div className="mobile-languages">
-            <LanguageSwitcher />
-          </div>
-        </div>
       </section>
       <section key={selected || 'empty'} className="guide-panel" aria-label={t('guide')}>
         {region ? (
           <>
             <Button
               className="mobile-back"
-              variant="ghost"
+              variant="outline"
               onClick={() => {
                 setSelected(null);
                 setHovered(null);
               }}
             >
-              <ArrowLeft className="rtl:rotate-180" />
+              <ArrowLeft className="back-icon" aria-hidden="true" />
               {t('backRegions')}
             </Button>
             <MovementGuide region={region} />

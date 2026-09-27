@@ -60,6 +60,10 @@
       "Feet": "القدمان",
       "Deep trunk": "عضلات الجذع العميقة",
       "Shins & ankles": "قصبة الساق والكاحل"
-    }
+    },
+    "navigation": "استكشف",
+    "openNavigation": "فتح التنقل",
+    "closeNavigation": "إغلاق التنقل",
+    "navigationDescription": "افتح دليل التمارين أو استكشف العضلات أو ساهم أو غيّر اللغة."
   }
 }

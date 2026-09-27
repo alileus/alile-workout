@@ -4,6 +4,8 @@ import { Link } from '@/i18n/navigation';
 import type { Locale } from '@/i18n/routing';
 import type { Region } from '../schema';
 import { hasTranslation, suggestionUrl } from '../data';
+import { Button } from '@/components/ui/button';
+import { DisclosureIndicator } from '@/components/disclosure-indicator';
 export function MovementGuide({ region, full = false }: { region: Region; full?: boolean }) {
   const t = useTranslations('App'),
     locale = useLocale() as Locale,
@@ -12,6 +14,22 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
     <article>
       <div className="eyebrow">{t('guide')}</div>
       <h2 className="guide-title">{region.name}</h2>
+      <div className="guide-actions">
+        {!full && (
+          <Button asChild variant="outline">
+            <Link href={`/book/${region.id}`}>
+              {t('openPage')}
+              <ArrowUpRight aria-hidden="true" />
+            </Link>
+          </Button>
+        )}
+        <Button asChild variant="outline">
+          <a href={suggestionUrl(region.id)}>
+            {t('suggest')}
+            <ArrowUpRight aria-hidden="true" />
+          </a>
+        </Button>
+      </div>
       {!translated && (
         <a className="translation-note" href={suggestionUrl(region.id)}>
           {t('fallback')}
@@ -34,8 +52,8 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
               <p>{exercise.alsoWorks}</p>
             </div>
             <details open={full || undefined}>
-              <summary lang={locale}>
-                {t('how')} <span>+</span>
+              <summary lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+                {t('how')} <DisclosureIndicator />
               </summary>
               <div className="instructions">
                 <p>{exercise.instructions}</p>
@@ -48,17 +66,12 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
           </section>
         ))}
       </div>
-      <div className="guide-footer">
-        {!full && (
-          <Link href={`/book/${region.id}`}>
-            {t('openPage')} <ArrowUpRight size={14} />
-          </Link>
-        )}
-        <a href={suggestionUrl(region.id)}>
-          {t('suggest')} <ArrowUpRight size={14} />
-        </a>
+      <section className="guide-references" aria-label={t('reference')}>
         <details>
-          <summary>{t('reference')}</summary>
+          <summary>
+            {t('reference')}
+            <DisclosureIndicator />
+          </summary>
           {region.references.map((url) => (
             <a key={url} href={url} target="_blank" rel="noreferrer">
               {new URL(url).hostname} <ArrowUpRight size={14} />
@@ -66,7 +79,7 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
           ))}
         </details>
         {region.reviewStatus === 'draft' && <p className="review-status">{t('draft')}</p>}
-      </div>
+      </section>
     </article>
   );
 }

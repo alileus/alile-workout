@@ -60,6 +60,10 @@
       "Feet": "足",
       "Deep trunk": "体幹深層筋",
       "Shins & ankles": "すね・足首"
-    }
+    },
+    "navigation": "探索",
+    "openNavigation": "ナビゲーションを開く",
+    "closeNavigation": "ナビゲーションを閉じる",
+    "navigationDescription": "ワークアウトブック、筋肉アトラス、貢献ページへの移動と言語の切り替えができます。"
   }
 }

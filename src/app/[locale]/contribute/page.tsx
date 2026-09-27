@@ -6,6 +6,7 @@ import { DocumentShell } from '@/components/document-shell';
 import { Link } from '@/i18n/navigation';
 import { suggestionUrl } from '@/features/workout-book/data';
 import { pageMetadata } from '@/lib/seo';
+import { Button } from '@/components/ui/button';
 const copy = {
   en: {
     intro: 'You don’t need to code to improve the workout book.',
@@ -90,13 +91,19 @@ export default async function Contribute({ params }: { params: Promise<{ locale:
             <p>{body}</p>
           </section>
         ))}
-        <a href={suggestionUrl()}>{c.action} ↗</a>
+        <Button asChild>
+          <a href={suggestionUrl()}>{c.action} ↗</a>
+        </Button>
         <p>{c.github}</p>
         <h2>{c.code}</h2>
-        <a href="https://github.com/alileus/alile-workout/blob/main/CONTRIBUTING.md">
-          CONTRIBUTING.md ↗
-        </a>
-        <Link href="/design-system">{t('design')} ↗</Link>
+        <Button asChild variant="outline">
+          <a href="https://github.com/alileus/alile-workout/blob/main/CONTRIBUTING.md">
+            CONTRIBUTING.md ↗
+          </a>
+        </Button>
+        <Button asChild variant="outline">
+          <Link href="/design-system">{t('design')} ↗</Link>
+        </Button>
         <p>{c.review}</p>
       </div>
     </DocumentShell>
