@@ -8,7 +8,8 @@ import {
   getRegion,
   suggestionUrl,
 } from '../src/features/workout-book/data';
-import { anatomy, toggleRegion } from '../src/features/anatomy/model';
+import { anatomy, toggleRegion, selectRegion, visibleRegions } from '../src/features/anatomy/model';
+import { musclePath, resolveMuscleRoute } from '../src/features/anatomy/routes';
 import { pageMetadata } from '../src/lib/seo';
 const regions = englishBook.flatMap((g) => g.sections.flatMap((s) => s.regions));
 test('every stable content ID has valid geometry and references', () => {
@@ -30,6 +31,16 @@ test('every stable content ID has valid geometry and references', () => {
 test('translations preserve identities, references, and exercise counts', () => {
   for (const locale of ['ar', 'ja'] as const) {
     const overlay = JSON.parse(fs.readFileSync(`content/book/${locale}/regions.json`, 'utf8'));
+    assert.deepEqual(Object.keys(overlay).sort(), regions.map((region) => region.id).sort());
+    const script =
+      locale === 'ar'
+        ? /\p{Script=Arabic}/u
+        : /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u;
+    const assertTranslated = (text: string, original: string, path: string) => {
+      if (!original) return assert.equal(text, '', path);
+      assert.notEqual(text, original, `Untranslated ${locale} ${path}`);
+      assert.match(text, script, `Missing target-language text in ${locale} ${path}`);
+    };
     for (const id of Object.keys(overlay))
       assert.ok(getRegion('en', id), `Unknown translation ${id}`);
     let translated = 0;
@@ -39,11 +50,28 @@ test('translations preserve identities, references, and exercise counts', () => 
           const original = getRegion('en', region.id)!.region;
           assert.equal(region.exercises.length, original.exercises.length);
           assert.deepEqual(region.references, original.references);
+          assert.equal(region.reviewStatus, original.reviewStatus);
+          for (const field of ['name', 'description', 'note'] as const)
+            assertTranslated(region[field], original[field], `${region.id}.${field}`);
+          region.exercises.forEach((exercise, index) => {
+            for (const field of [
+              'name',
+              'equipment',
+              'volume',
+              'instructions',
+              'cue',
+              'alsoWorks',
+            ] as const)
+              assertTranslated(
+                exercise[field],
+                original.exercises[index][field],
+                `${region.id}.exercises[${index}].${field}`,
+              );
+          });
           if (hasTranslation(locale, region.id)) translated++;
         }
-    console.log(
-      `${locale}: ${translated}/${regions.length} book entries translated; remaining entries explicitly fall back to English`,
-    );
+    assert.equal(translated, regions.length, `${locale} must cover every muscle guide`);
+    console.log(`${locale}: ${translated}/${regions.length} book entries fully translated`);
   }
 });
 const keys = (value: Record<string, unknown>, prefix = ''): string[] =>
@@ -70,21 +98,59 @@ test('selection toggles off and switches to another region', () => {
   assert.equal(toggleRegion('a', 'a'), null);
   assert.equal(toggleRegion('a', 'b'), 'b');
 });
+
+test('diagram selection resolves exact muscles, including revealed deep layers', () => {
+  for (const region of regions) {
+    const geometry = anatomy.regions[region.id];
+    assert.deepEqual(selectRegion(null, region.id), {
+      selected: region.id,
+      group: geometry.group,
+      view: geometry.view,
+    });
+    assert.equal(selectRegion(region.id, region.id)?.selected, null);
+    assert.equal(visibleRegions(geometry.view as 'front' | 'back', region.id).at(-1), region.id);
+    if (geometry.deep)
+      assert.ok(!visibleRegions(geometry.view as 'front' | 'back').includes(region.id));
+  }
+  assert.equal(selectRegion(null, 'unknown'), null);
+});
+
+test('share routes round-trip every group and muscle and reject incorrect group URLs', () => {
+  const paths = new Set<string>();
+  for (const group of englishBook) {
+    paths.add(musclePath(group.id));
+    assert.equal(resolveMuscleRoute(englishBook, [group.id])?.group.id, group.id);
+    for (const section of group.sections)
+      for (const region of section.regions) {
+        const path = musclePath(group.id, region.id);
+        paths.add(path);
+        assert.equal(
+          resolveMuscleRoute(englishBook, path.split('/').slice(2))?.region?.id,
+          region.id,
+        );
+        const otherGroup = englishBook.find((entry) => entry.id !== group.id)!;
+        assert.equal(resolveMuscleRoute(englishBook, [otherGroup.id, region.id]), undefined);
+      }
+  }
+  assert.equal(paths.size, englishBook.length + regions.length);
+  for (const slug of [[], ['unknown'], ['chest', 'unknown'], ['chest', regions[0].id, 'extra']])
+    assert.equal(resolveMuscleRoute(englishBook, slug), undefined);
+});
 test('metadata preserves canonical host and locale alternatives', () => {
   const meta = pageMetadata(
     'ar',
-    '/book/chest-clavicular-head',
+    '/muscles/chest/chest-clavicular-head',
     'title',
     'description',
     'chest-clavicular-head',
   );
   assert.equal(
     meta.alternates?.canonical,
-    'https://workout.alile.us/ar/book/chest-clavicular-head',
+    'https://workout.alile.us/ar/muscles/chest/chest-clavicular-head',
   );
   assert.equal(
     meta.alternates?.languages?.ja,
-    'https://workout.alile.us/ja/book/chest-clavicular-head',
+    'https://workout.alile.us/ja/muscles/chest/chest-clavicular-head',
   );
   assert.deepEqual(meta.robots, {
     index: process.env.VERCEL_ENV === 'production',

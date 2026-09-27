@@ -2,26 +2,2244 @@
   "chest-clavicular-head": {
     "id": "chest-clavicular-head",
     "name": "鎖骨部",
-    "description": "大胸筋の上部は肩関節の屈曲を補助します。インクラインプレスでは負荷の角度が変わり、この部位がより強調されます。",
-    "note": "インクラインプレスは胸の上部を強調しますが、大胸筋の両部位が働きます。",
+    "description": "大胸筋の上部は肩関節の屈曲を補助します。インクラインプレスは負荷の角度を変え、この部位を重点的に使います。",
+    "note": "インクラインプレスは胸の上部を重点的に使いますが、大胸筋の両部位が働きます。",
     "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
     "reviewStatus": "draft",
     "exercises": [
       {
-        "name": "インクライン・ダンベルプレス",
-        "equipment": "複合種目 · ダンベル",
+        "name": "インクラインダンベルプレス",
+        "equipment": "複合種目・ダンベル",
         "volume": "3セット × 8〜12回",
-        "instructions": "ベンチを15〜30度程度の低い傾斜に設定します。胸の上部の横にダンベルを構え、上方かつ少し内側に押し上げてから、ゆっくり下ろします。",
-        "cue": "肩をベンチで支え、上で肩をすくめないようにします。",
+        "instructions": "ベンチを15〜30度程度の緩い傾斜に設定します。ダンベルを胸の上部の横から、上方かつ少し内側へ押し上げ、制御しながら下ろします。",
+        "cue": "肩をベンチで支え、押し上げた位置で肩をすくめないようにします。",
         "alsoWorks": "大胸筋胸肋部、三角筋前部、上腕三頭筋"
       },
       {
-        "name": "バーベル・ベンチプレス",
-        "equipment": "複合種目 · バーベル",
+        "name": "バーベルベンチプレス",
+        "equipment": "複合種目・バーベル",
         "volume": "3〜4セット × 5〜8回",
-        "instructions": "足を床につけ、肩甲骨をベンチで支えます。肩幅より少し広くバーを握り、胸の中央へ制御して下ろしてから押し上げます。",
-        "cue": "手首を肘の上に保ちます。補助者またはセーフティーバーを利用してください。",
+        "instructions": "足を床につけ、肩甲骨をベンチで支え、肩幅より少し広くバーを握ります。胸の中央へ制御しながら下ろし、押し上げます。",
+        "cue": "手首を肘の上に保ちます。補助者またはセーフティバーを使ってください。",
         "alsoWorks": "大胸筋胸肋部、三角筋前部、上腕三頭筋"
+      }
+    ]
+  },
+  "chest-sternocostal-head": {
+    "id": "chest-sternocostal-head",
+    "name": "胸肋部",
+    "description": "大胸筋の広い中部・下部で、腕を胸の前で内側へ引き寄せます。フラットプレスやフライでは、胸の他の部位とともに負荷がかかります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バーベルベンチプレス",
+        "equipment": "複合種目・バーベル",
+        "volume": "3〜4セット × 5〜8回",
+        "instructions": "足を床につけ、肩甲骨をベンチで支え、肩幅より少し広くバーを握ります。胸の中央へ制御しながら下ろし、押し上げます。",
+        "cue": "手首を肘の上に保ちます。補助者またはセーフティバーを使ってください。",
+        "alsoWorks": "大胸筋鎖骨部、三角筋前部、上腕三頭筋"
+      },
+      {
+        "name": "ケーブルチェストフライ",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "2つのプーリーの間に立ち、足を前後に開きます。肘を軽く曲げたまま胸の前で両手を合わせ、ゆっくり戻します。",
+        "cue": "肩関節から動かし、肘の角度を一定に保ちます。",
+        "alsoWorks": "大胸筋鎖骨部、三角筋前部"
+      }
+    ]
+  },
+  "chest-pectoralis-minor": {
+    "id": "chest-pectoralis-minor",
+    "name": "小胸筋",
+    "description": "大胸筋の下にある深層の筋肉で、肩甲骨を動かし、安定させます。",
+    "note": "前鋸筋とともに肩甲骨を前へ出す動きを鍛えます。小胸筋だけを分離して使う運動ではありません。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "インクラインプッシュアッププラス",
+        "equipment": "肩甲骨の制御・ベンチ",
+        "volume": "2〜3セット × 8〜12回",
+        "instructions": "安定したベンチに手を置き、制御しながら腕立て伏せを行います。上で肘を伸ばしたままベンチをさらに押し、肩甲骨を肋骨に沿って前へ動かします。",
+        "cue": "体幹を安定させ、肩をすくめずに肩甲骨を動かします。",
+        "alsoWorks": "前鋸筋。腕立て伏せの動作中は大胸筋と上腕三頭筋も働きます。"
+      }
+    ]
+  },
+  "serratus-serratus-anterior": {
+    "id": "serratus-serratus-anterior",
+    "name": "前鋸筋",
+    "description": "肋骨の側面に付着し、肩甲骨を胸郭に沿わせて保持します。",
+    "note": "",
+    "references": [
+      "https://www.acefitness.org/certifiednewsarticle/2660/a-commonsense-approach-to-addressing-shoulder-instability/"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "インクラインプッシュアッププラス",
+        "equipment": "肩甲骨の制御・ベンチ",
+        "volume": "2〜3セット × 8〜12回",
+        "instructions": "安定したベンチに手を置き、制御しながら腕立て伏せを行います。上で肘を伸ばしたままベンチをさらに押し、肩甲骨を肋骨に沿って前へ動かします。",
+        "cue": "体幹を安定させ、肩をすくめずに肩甲骨を動かします。",
+        "alsoWorks": "小胸筋。腕立て伏せの動作中は胸筋と上腕三頭筋も働きます。"
+      },
+      {
+        "name": "前腕ウォールスライド",
+        "equipment": "肩甲骨の制御・壁",
+        "volume": "2セット × 8〜12回",
+        "instructions": "前腕を壁につけます。壁へ軽く押しながら上に滑らせ、元に戻します。",
+        "cue": "肩甲骨が回るように動かし、肋骨の位置を安定させます。",
+        "alsoWorks": "僧帽筋上部・下部、三角筋"
+      }
+    ]
+  },
+  "back-latissimus-dorsi": {
+    "id": "back-latissimus-dorsi",
+    "name": "広背筋",
+    "description": "背中の広い筋肉で、腕を後ろへ引き、体に近づけます。懸垂、ラットプルダウン、ローイングで使われます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "懸垂",
+        "equipment": "複合種目・懸垂バー",
+        "volume": "3セット × 4〜8回",
+        "instructions": "安定したぶら下がり姿勢から、肘を下へ引き、胸をバーへ近づけます。落下せずに体を下ろし、必要に応じて補助を使います。",
+        "cue": "脚を振って勢いをつけず、動きを制御します。",
+        "alsoWorks": "上腕二頭筋、上腕筋、前腕屈筋群。菱形筋群と僧帽筋も補助します。"
+      },
+      {
+        "name": "ラットプルダウン",
+        "equipment": "複合種目・ケーブル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "安定して座り、バーを胸の上部へ引きます。頭上へ制御しながら戻します。",
+        "cue": "バーは頭の前を通し、上体を大きく後ろへ倒さないようにします。",
+        "alsoWorks": "上腕二頭筋、上腕筋、大円筋"
+      }
+    ]
+  },
+  "back-rhomboids": {
+    "id": "back-rhomboids",
+    "name": "菱形筋群",
+    "description": "深層にある筋肉で、肩甲骨を背骨へ引き寄せ、ローイング動作の制御を助けます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "チェストサポートロー",
+        "equipment": "複合種目・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "傾斜したベンチにうつ伏せになります。ダンベルを肋骨へ引き寄せ、無理なく伸びる位置まで下ろします。",
+        "cue": "胸を浮かせずに肩甲骨を動かします。",
+        "alsoWorks": "僧帽筋中部、広背筋、三角筋後部、上腕二頭筋"
+      },
+      {
+        "name": "リバースフライ",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "2〜3セット × 12〜15回",
+        "instructions": "股関節から上体を倒すか、ベンチで胸を支えます。肘を軽く曲げて腕を外へ開き、ゆっくり戻します。",
+        "cue": "首の力を抜き、制御できる軽い重量を使います。",
+        "alsoWorks": "三角筋後部、僧帽筋中部"
+      }
+    ]
+  },
+  "back-erector-spinae": {
+    "id": "back-erector-spinae",
+    "name": "脊柱起立筋群",
+    "description": "背骨に沿って走る筋群で、体幹を伸ばし、前に曲がる力に抵抗します。",
+    "note": "これらの運動では、脊柱の伸筋は主に姿勢が崩れるのを防ぐために働きます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ルーマニアンデッドリフト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "膝を軽く曲げ、お尻を後ろへ引きながらバーを脚の近くに保ちます。制御できる深さで止め、立ち上がります。",
+        "cue": "背中の位置を安定させ、股関節から動かします。",
+        "alsoWorks": "ハムストリングス、大殿筋。前腕の筋肉が握りを維持します。"
+      },
+      {
+        "name": "バードドッグ",
+        "equipment": "安定性・自重",
+        "volume": "2〜3セット × 左右各6〜10回",
+        "instructions": "四つんばいから、体幹を回さずに片腕と反対側の脚を伸ばします。少し止めて戻し、左右を入れ替えます。",
+        "cue": "高く上げるよりも、遠くへ伸ばすことを意識します。",
+        "alsoWorks": "多裂筋、大殿筋、腹壁の筋肉"
+      }
+    ]
+  },
+  "traps-upper-trapezius": {
+    "id": "traps-upper-trapezius",
+    "name": "僧帽筋上部",
+    "description": "上部線維は肩甲骨を引き上げ、上方回旋にも関わります。シュラッグはこの引き上げ動作に負荷をかけます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ダンベルシュラッグ",
+        "equipment": "上部を重点的に・ダンベル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "ダンベルを体の横に持って立ちます。肩を耳へ近づけるように上げ、短く止めてから制御して下ろします。",
+        "cue": "頭を自然な位置に保ち、肩を回さないようにします。",
+        "alsoWorks": "肩甲挙筋。前腕の筋肉が握りを維持します。"
+      },
+      {
+        "name": "ファーマーズキャリー",
+        "equipment": "握力と安定性・ダンベル",
+        "volume": "20〜40メートルの運搬を3回",
+        "instructions": "両手にダンベルを持ち、小さく安定した歩幅で歩きます。上体をまっすぐにし、重りを安定させます。",
+        "cue": "手首を自然な位置に保ち、姿勢を維持できる重量を選びます。",
+        "alsoWorks": "前腕屈筋群、腹壁の筋肉。下半身が運搬動作を支えます。"
+      }
+    ]
+  },
+  "traps-middle-trapezius": {
+    "id": "traps-middle-trapezius",
+    "name": "僧帽筋中部",
+    "description": "肩甲骨を背骨へ引き寄せ、ローイング動作の制御に関わります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "チェストサポートロー",
+        "equipment": "中部を重点的に・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "傾斜したベンチで胸を支え、重りを肋骨へ引き寄せます。下ろすときは肩甲骨を制御しながら動かします。",
+        "cue": "胸をベンチで支え続けます。広背筋や他の背筋も働きます。",
+        "alsoWorks": "菱形筋群、三角筋後部、広背筋、上腕二頭筋"
+      },
+      {
+        "name": "リバースフライ",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "2〜3セット × 12〜15回",
+        "instructions": "股関節から上体を倒すか、ベンチで胸を支えます。肘を軽く曲げて腕を外へ開き、ゆっくり戻します。",
+        "cue": "首の力を抜き、制御できる軽い重量を使います。",
+        "alsoWorks": "三角筋後部、菱形筋群"
+      }
+    ]
+  },
+  "traps-lower-trapezius": {
+    "id": "traps-lower-trapezius",
+    "name": "僧帽筋下部",
+    "description": "肩帯の他の筋肉と協力して、肩甲骨を下げ、上方回旋させる働きを助けます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "プローンYレイズ",
+        "equipment": "下部を重点的に・軽いダンベル",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "傾斜したベンチにうつ伏せになります。親指を上に向け、両腕を斜め前へY字に無理なく上げ、ゆっくり下ろします。",
+        "cue": "自重または非常に軽い重りから始め、背中を反らさないようにします。",
+        "alsoWorks": "僧帽筋中部・上部、前鋸筋。回旋筋腱板が肩関節を安定させます。"
+      }
+    ]
+  },
+  "shoulders-anterior-deltoid": {
+    "id": "shoulders-anterior-deltoid",
+    "name": "三角筋前部",
+    "description": "前部線維は腕を前方へ上げる働きを助け、プレス動作にも関わります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ダンベルショルダープレス",
+        "equipment": "複合種目・ダンベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "肩の高さでダンベルを構えます。体幹を安定させ、無理のない範囲で頭上へ押し上げ、滑らかに下ろします。",
+        "cue": "肋骨を骨盤の真上に保ちます。",
+        "alsoWorks": "三角筋中部、上腕三頭筋。僧帽筋と前鋸筋が肩甲骨を安定させます。"
+      },
+      {
+        "name": "インクラインダンベルプレス",
+        "equipment": "複合種目・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "ベンチを15〜30度程度の緩い傾斜に設定します。ダンベルを胸の上部の横から、上方かつ少し内側へ押し上げ、制御しながら下ろします。",
+        "cue": "肩をベンチで支え、押し上げた位置で肩をすくめないようにします。",
+        "alsoWorks": "大胸筋、上腕三頭筋"
+      }
+    ]
+  },
+  "shoulders-middle-deltoid": {
+    "id": "shoulders-middle-deltoid",
+    "name": "三角筋中部",
+    "description": "主に腕を体の横へ上げる働きがあり、サイドレイズなどで使われます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ダンベルサイドレイズ",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "肘を軽く曲げ、腕を横より少し前の方向へ肩の高さ程度まで上げ、ゆっくり下ろします。",
+        "cue": "肘から動かし、上体を振らないようにします。",
+        "alsoWorks": "棘上筋、僧帽筋上部、前鋸筋"
+      },
+      {
+        "name": "ダンベルショルダープレス",
+        "equipment": "複合種目・ダンベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "肩の高さでダンベルを構えます。体幹を安定させ、無理のない範囲で頭上へ押し上げ、滑らかに下ろします。",
+        "cue": "肋骨を骨盤の真上に保ちます。",
+        "alsoWorks": "三角筋前部、上腕三頭筋。回旋筋腱板が肩関節を安定させます。"
+      }
+    ]
+  },
+  "shoulders-posterior-deltoid": {
+    "id": "shoulders-posterior-deltoid",
+    "name": "三角筋後部",
+    "description": "腕を後方や外側へ動かします。ローイングやリバースフライで鍛えられます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "リバースフライ",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "2〜3セット × 12〜15回",
+        "instructions": "股関節から上体を倒すか、ベンチで胸を支えます。肘を軽く曲げて腕を外へ開き、ゆっくり戻します。",
+        "cue": "首の力を抜き、制御できる軽い重量を使います。",
+        "alsoWorks": "僧帽筋中部、菱形筋群"
+      },
+      {
+        "name": "チェストサポートロー",
+        "equipment": "複合種目・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "傾斜したベンチにうつ伏せになります。ダンベルを肋骨へ引き寄せ、無理なく伸びる位置まで下ろします。",
+        "cue": "胸を浮かせずに肩甲骨を動かします。",
+        "alsoWorks": "広背筋、菱形筋群、僧帽筋中部、上腕二頭筋"
+      }
+    ]
+  },
+  "cuff-supraspinatus": {
+    "id": "cuff-supraspinatus",
+    "name": "棘上筋",
+    "description": "腕を上げ始める動作とその後の挙上を補助し、肩関節の安定にも関わります。",
+    "note": "",
+    "references": [
+      "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "サムアップスキャプション",
+        "equipment": "腕の挙上・軽いダンベル",
+        "volume": "2セット × 8〜12回",
+        "instructions": "親指を上に向け、腕を体の真横より少し前へ無理のない高さまで上げ、ゆっくり下ろします。",
+        "cue": "軽い重りを使い、肩をすくめないようにします。",
+        "alsoWorks": "三角筋。僧帽筋と前鋸筋が肩甲骨を回旋させます。"
+      }
+    ]
+  },
+  "cuff-infraspinatus": {
+    "id": "cuff-infraspinatus",
+    "name": "棘下筋",
+    "description": "上腕を外旋させ、肩の安定を助けます。",
+    "note": "",
+    "references": [
+      "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンド外旋",
+        "equipment": "肩の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 10〜15回",
+        "instructions": "肘を曲げて体の横に置きます。弱い抵抗のバンドに逆らって前腕を外へ回し、ゆっくり戻します。",
+        "cue": "上腕を動かさず、体幹をひねらないようにします。",
+        "alsoWorks": "小円筋、三角筋後部"
+      }
+    ]
+  },
+  "cuff-teres-minor": {
+    "id": "cuff-teres-minor",
+    "name": "小円筋",
+    "description": "肩関節の外旋と安定を助けます。",
+    "note": "",
+    "references": [
+      "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンド外旋",
+        "equipment": "肩の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 10〜15回",
+        "instructions": "肘を曲げて体の横に置きます。弱い抵抗のバンドに逆らって前腕を外へ回し、ゆっくり戻します。",
+        "cue": "上腕を動かさず、体幹をひねらないようにします。",
+        "alsoWorks": "棘下筋、三角筋後部"
+      }
+    ]
+  },
+  "cuff-subscapularis": {
+    "id": "cuff-subscapularis",
+    "name": "肩甲下筋",
+    "description": "肩甲骨の肋骨側の面にあり、上腕を内旋させます。",
+    "note": "",
+    "references": [
+      "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンド内旋",
+        "equipment": "肩の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 10〜15回",
+        "instructions": "固定したバンドの横に立ち、肘を曲げて体の横に置きます。バンドに逆らって前腕を腹部へ近づけ、ゆっくり戻します。",
+        "cue": "肩が前へ巻き込まれない範囲で動かします。",
+        "alsoWorks": "大胸筋、広背筋、三角筋前部"
+      }
+    ]
+  },
+  "neck-sternocleidomastoid": {
+    "id": "neck-sternocleidomastoid",
+    "name": "胸鎖乳突筋",
+    "description": "首を曲げ、頭を反対側へ回す動きに関わります。",
+    "note": "",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い頸部屈曲の等尺性運動",
+        "equipment": "首の制御・手による抵抗",
+        "volume": "1〜2セット × 3秒保持を5回",
+        "instructions": "背すじを伸ばして座り、手のひらを額に当てます。頭を動かさずに軽く押し、力を抜きます。",
+        "cue": "普通に呼吸し、最大の力を出したり、痛みをこらえて押したりしないでください。",
+        "alsoWorks": "深層頸部屈筋群、斜角筋群"
+      },
+      {
+        "name": "軽い頸部側屈の等尺性運動",
+        "equipment": "首の制御・手による抵抗",
+        "volume": "1〜2セット × 左右各3秒保持を5回",
+        "instructions": "耳の上に手のひらを当てます。頭を動かさずに横へ軽く押し、力を抜きます。",
+        "cue": "頭を傾けず、肩の力を抜きます。",
+        "alsoWorks": "斜角筋群、その他の頸部安定筋"
+      }
+    ]
+  },
+  "neck-longus-colli-longus-capitis": {
+    "id": "neck-longus-colli-longus-capitis",
+    "name": "頸長筋・頭長筋",
+    "description": "首の前面にある深層筋で、軽くうなずく動きと頸部の制御を支えます。",
+    "note": "",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "頭を支えたチンノッド",
+        "equipment": "首の深層筋の制御・自重",
+        "volume": "1〜2セット × 3秒保持を5〜8回",
+        "instructions": "頭を楽に支えて横になります。「はい」とうなずくように小さく動かし、力を抜きます。",
+        "cue": "頭を支持面につけたまま、軽い力で行います。",
+        "alsoWorks": "その他の深層頸部屈筋。力を強めると表層の筋肉も働きます。"
+      }
+    ]
+  },
+  "neck-scalenes": {
+    "id": "neck-scalenes",
+    "name": "斜角筋群",
+    "description": "首を横に曲げる働きを補助し、上部の肋骨を安定させたり引き上げたりします。",
+    "note": "",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い頸部側屈の等尺性運動",
+        "equipment": "首の制御・手による抵抗",
+        "volume": "1〜2セット × 左右各3秒保持を5回",
+        "instructions": "耳の上に手のひらを当てます。頭を動かさずに横へ軽く押し、力を抜きます。",
+        "cue": "頭を傾けず、肩の力を抜きます。",
+        "alsoWorks": "胸鎖乳突筋、頸部安定筋"
+      }
+    ]
+  },
+  "neck-splenius-capitis-cervicis": {
+    "id": "neck-splenius-capitis-cervicis",
+    "name": "頭板状筋・頸板状筋",
+    "description": "首の後面にある筋肉で、頭を後ろへ反らし、同じ側へ回す動きを助けます。",
+    "note": "",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い頸部伸展の等尺性運動",
+        "equipment": "首の制御・手による抵抗",
+        "volume": "1〜2セット × 3秒保持を5回",
+        "instructions": "頭を自然な位置に保ち、後頭部に当てた手へ軽く押します。頭は動かさず、各回の間に力を抜きます。",
+        "cue": "顎を上げたり、力みすぎたりしないようにします。",
+        "alsoWorks": "半棘筋群、僧帽筋上部、その他の頸部伸筋"
+      }
+    ]
+  },
+  "neck-levator-scapulae": {
+    "id": "neck-levator-scapulae",
+    "name": "肩甲挙筋",
+    "description": "首と肩甲骨の内側上部をつなぎ、肩甲骨を引き上げます。",
+    "note": "",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ダンベルシュラッグ",
+        "equipment": "上部を重点的に・ダンベル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "ダンベルを体の横に持って立ちます。肩を耳へ近づけるように上げ、短く止めてから制御して下ろします。",
+        "cue": "頭を自然な位置に保ち、肩を回さないようにします。",
+        "alsoWorks": "僧帽筋上部。前腕の筋肉が重りを保持します。"
+      }
+    ]
+  },
+  "neck-suboccipital-muscles": {
+    "id": "neck-suboccipital-muscles",
+    "name": "後頭下筋群",
+    "description": "頭蓋骨の下にある小さな筋群で、上部頸椎の伸展と回旋を細かく調整します。",
+    "note": "軽い負荷で周囲の筋肉とともに働かせます。この動きで小さな筋肉だけを分離することはできません。",
+    "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い頸部伸展の等尺性運動",
+        "equipment": "首の制御・手による抵抗",
+        "volume": "1〜2セット × 3秒保持を5回",
+        "instructions": "頭を自然な位置に保ち、後頭部に当てた手へ軽く押します。頭は動かさず、各回の間に力を抜きます。",
+        "cue": "顎を上げたり、力みすぎたりしないようにします。",
+        "alsoWorks": "その他の頸部伸筋と安定筋"
+      }
+    ]
+  },
+  "biceps-long-head": {
+    "id": "biceps-long-head",
+    "name": "長頭",
+    "description": "上腕二頭筋の外側にある頭で、肩関節をまたぎ、肘の屈曲と前腕の回外に関わります。",
+    "note": "上腕二頭筋の両方の頭が働き、肩の位置によって負荷のかかり方が変わります。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "インクラインダンベルカール",
+        "equipment": "肘の屈曲・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "傾斜したベンチに背中をつけて座り、腕を自然に垂らします。上腕を動かさずにダンベルを上げ、ゆっくり下ろします。",
+        "cue": "肩を楽な位置に保ち、腕を無理に後ろへ引かないようにします。",
+        "alsoWorks": "上腕二頭筋短頭、上腕筋、腕橈骨筋"
+      },
+      {
+        "name": "ダンベルカール",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "腕を体の横に置きます。手のひらを上へ向けながら重りを上げ、無理なく腕を伸ばせる位置まで下ろします。",
+        "cue": "肘を肋骨の近くに保ち、上体を動かさないようにします。",
+        "alsoWorks": "上腕二頭筋短頭、上腕筋、腕橈骨筋"
+      }
+    ]
+  },
+  "biceps-short-head": {
+    "id": "biceps-short-head",
+    "name": "短頭",
+    "description": "内側にある頭で、カールや引く動作で長頭とともに働きます。",
+    "note": "これらのカールは両方の頭を鍛えるもので、短頭だけを分離する運動ではありません。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "プリーチャーカール",
+        "equipment": "単関節種目・カールベンチ",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "上腕をパッドに乗せ、無理のない範囲で肘を曲げて重りを上げ、徐々に下ろします。",
+        "cue": "下で反動を使ったり、肘を無理に伸ばしたりしないようにします。",
+        "alsoWorks": "上腕二頭筋長頭、上腕筋、腕橈骨筋"
+      },
+      {
+        "name": "ダンベルカール",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "腕を体の横に置きます。手のひらを上へ向けながら重りを上げ、無理なく腕を伸ばせる位置まで下ろします。",
+        "cue": "肘を肋骨の近くに保ち、上体を動かさないようにします。",
+        "alsoWorks": "上腕二頭筋長頭、上腕筋、腕橈骨筋"
+      }
+    ]
+  },
+  "biceps-brachialis-supporting-muscle": {
+    "id": "biceps-brachialis-supporting-muscle",
+    "name": "上腕筋・補助筋",
+    "description": "上腕二頭筋の下にあり、前腕の向きにかかわらず肘を曲げます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ハンマーカール",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "3セット × 10〜12回",
+        "instructions": "手のひらを向かい合わせてダンベルを持ちます。肘を曲げて上げ、ゆっくり下ろします。",
+        "cue": "動作中は手首を自然な位置に保ちます。",
+        "alsoWorks": "上腕二頭筋、腕橈骨筋"
+      },
+      {
+        "name": "リバースカール",
+        "equipment": "肘の屈曲・ダンベル",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "手のひらを下に向けて軽いダンベルを持ちます。手首を自然な位置に保ち、肘を曲げて上げ、ゆっくり下ろします。",
+        "cue": "肘を体の横に保ち、手首を反らして持ち上げないようにします。",
+        "alsoWorks": "腕橈骨筋、上腕二頭筋。手首の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "triceps-long-head": {
+    "id": "triceps-long-head",
+    "name": "長頭",
+    "description": "肩と肘の両方の関節をまたぎます。頭上で行う肘の伸展では、筋肉がより伸びた位置で鍛えられます。",
+    "note": "腕を頭上に上げると長頭が伸ばされます。肘を伸ばす動きには3つの頭すべてが関わります。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "オーバーヘッドケーブルエクステンション",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "低いケーブルに背を向け、両手を頭上に構えます。肘を伸ばし、ゆっくり戻します。",
+        "cue": "体幹を安定させ、肩が楽な位置で行います。",
+        "alsoWorks": "上腕三頭筋の外側頭・内側頭"
+      },
+      {
+        "name": "ケーブルプレスダウン",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "まっすぐ立ち、肘を体の横に置きます。肘を伸ばしてハンドルを下げ、制御しながら戻します。",
+        "cue": "上腕を動かさず、手首を自然な位置に保ちます。",
+        "alsoWorks": "上腕三頭筋の外側頭・内側頭"
+      }
+    ]
+  },
+  "triceps-lateral-head": {
+    "id": "triceps-lateral-head",
+    "name": "外側頭",
+    "description": "外側にある頭で、力強く肘を伸ばす働きに関わります。",
+    "note": "これらの動作では、上腕三頭筋の3つの頭すべてに負荷がかかります。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ケーブルプレスダウン",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "まっすぐ立ち、肘を体の横に置きます。肘を伸ばしてハンドルを下げ、制御しながら戻します。",
+        "cue": "上腕を動かさず、手首を自然な位置に保ちます。",
+        "alsoWorks": "上腕三頭筋の長頭・内側頭"
+      },
+      {
+        "name": "ナロープッシュアップ",
+        "equipment": "複合種目・自重",
+        "volume": "3セット × 6〜12回",
+        "instructions": "手を肩幅より少し狭く置きます。体を一直線に保って胸を下ろし、押し上げます。",
+        "cue": "肘は後方へ向けます。手を高い台に置くと負荷を軽くできます。",
+        "alsoWorks": "上腕三頭筋の他の頭、大胸筋、三角筋前部"
+      }
+    ]
+  },
+  "triceps-medial-head": {
+    "id": "triceps-medial-head",
+    "name": "内側頭",
+    "description": "深部にある頭で、幅広い動作で肘を伸ばす働きを支えます。",
+    "note": "肘を伸ばすとき、内側頭は他の頭とともに働きます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ケーブルプレスダウン",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "まっすぐ立ち、肘を体の横に置きます。肘を伸ばしてハンドルを下げ、制御しながら戻します。",
+        "cue": "上腕を動かさず、手首を自然な位置に保ちます。",
+        "alsoWorks": "上腕三頭筋の長頭・外側頭"
+      },
+      {
+        "name": "オーバーヘッドケーブルエクステンション",
+        "equipment": "単関節種目・ケーブル",
+        "volume": "3セット × 10〜15回",
+        "instructions": "低いケーブルに背を向け、両手を頭上に構えます。肘を伸ばし、ゆっくり戻します。",
+        "cue": "体幹を安定させ、肩が楽な位置で行います。",
+        "alsoWorks": "上腕三頭筋の長頭・外側頭"
+      }
+    ]
+  },
+  "forearms-brachioradialis": {
+    "id": "forearms-brachioradialis",
+    "name": "腕橈骨筋",
+    "description": "前腕が中間位に近く、親指が上を向いた姿勢で、特に効率よく肘を曲げます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ハンマーカール",
+        "equipment": "肘の屈曲・ダンベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "手のひらを内側に向けてダンベルを持ちます。反動を使わずに肘を曲げ、ゆっくり下ろします。",
+        "cue": "手首を自然な位置に保ちます。上腕二頭筋と上腕筋も働きます。",
+        "alsoWorks": "上腕筋、上腕二頭筋"
+      },
+      {
+        "name": "リバースカール",
+        "equipment": "肘の屈曲・ダンベル",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "手のひらを下に向けて軽いダンベルを持ちます。手首を自然な位置に保ち、肘を曲げて上げ、ゆっくり下ろします。",
+        "cue": "肘を体の横に保ち、手首を反らして持ち上げないようにします。",
+        "alsoWorks": "上腕筋、上腕二頭筋。手首の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "forearms-flexor-carpi-radialis": {
+    "id": "forearms-flexor-carpi-radialis",
+    "name": "橈側手根屈筋",
+    "description": "手首を曲げ、親指側へ動かします。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "橈側寄りのリストカール",
+        "equipment": "手首の制御・軽いダンベル",
+        "volume": "2セット × 10〜15回",
+        "instructions": "手のひらを上に向けて前腕を支えます。手首をやや親指側へ曲げ、ゆっくり下ろします。",
+        "cue": "前腕を支えたまま、横方向へ無理に動かさないようにします。",
+        "alsoWorks": "その他の手首の屈筋。橈側の手首伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "forearms-flexor-carpi-ulnaris": {
+    "id": "forearms-flexor-carpi-ulnaris",
+    "name": "尺側手根屈筋",
+    "description": "手首を曲げ、小指側へ動かします。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "尺側寄りのリストカール",
+        "equipment": "手首の制御・軽いダンベル",
+        "volume": "2セット × 10〜15回",
+        "instructions": "手のひらを上に向けて前腕を支えます。手首を小指側へ軽く曲げ、ゆっくり下ろします。",
+        "cue": "小さな範囲と軽い抵抗で行います。他の手首の屈筋も働きます。",
+        "alsoWorks": "その他の手首の屈筋。尺側手根伸筋が小指側への動きを助けます。"
+      }
+    ]
+  },
+  "forearms-flexor-digitorum-superficialis": {
+    "id": "forearms-flexor-digitorum-superficialis",
+    "name": "浅指屈筋",
+    "description": "指の中間の関節を曲げ、握る動作に関わります。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "柔らかいパテの握り込み",
+        "equipment": "指の屈曲・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "柔らかい運動用パテを指で包み、滑らかに握ってから完全に緩めます。",
+        "cue": "手首を自然な位置に保ち、最大の力で握らないようにします。",
+        "alsoWorks": "深指屈筋、親指の屈筋、手内在筋"
+      }
+    ]
+  },
+  "forearms-flexor-digitorum-profundus": {
+    "id": "forearms-flexor-digitorum-profundus",
+    "name": "深指屈筋",
+    "description": "指先の関節を曲げ、握力を支える深層筋です。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "柔らかいパテの握り込み",
+        "equipment": "指の屈曲・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "柔らかい運動用パテを指で包み、滑らかに握ってから完全に緩めます。",
+        "cue": "手首を自然な位置に保ち、最大の力で握らないようにします。",
+        "alsoWorks": "浅指屈筋、親指の屈筋、手内在筋"
+      }
+    ]
+  },
+  "forearms-flexor-pollicis-longus": {
+    "id": "forearms-flexor-pollicis-longus",
+    "name": "長母指屈筋",
+    "description": "親指の先の関節を曲げ、つまむ動作に関わります。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "親指のパテプレス",
+        "equipment": "親指の屈曲・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "親指を手のひらへ向けて柔らかいパテに押し込み、力を抜きます。",
+        "cue": "親指の関節の向きを整え、動きの終点へ無理に押し込まないようにします。",
+        "alsoWorks": "短母指屈筋、その他の母指球筋"
+      }
+    ]
+  },
+  "forearms-extensor-carpi-radialis-longus-brevis": {
+    "id": "forearms-extensor-carpi-radialis-longus-brevis",
+    "name": "長橈側手根伸筋・短橈側手根伸筋",
+    "description": "手首を反らし、親指側へ動かす働きを助けます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "リバースリストカール",
+        "equipment": "単関節種目・ダンベル",
+        "volume": "2〜3セット × 12〜20回",
+        "instructions": "手のひらを下に向けて前腕を支えます。手首を反らして手の甲を上げ、制御しながら下ろします。",
+        "cue": "前腕を支え、小さな範囲で丁寧に動かします。",
+        "alsoWorks": "尺側手根伸筋、指の伸筋"
+      }
+    ]
+  },
+  "forearms-extensor-carpi-ulnaris": {
+    "id": "forearms-extensor-carpi-ulnaris",
+    "name": "尺側手根伸筋",
+    "description": "手首を反らし、小指側へ動かします。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "尺側寄りの手首伸展",
+        "equipment": "手首の制御・軽いダンベル",
+        "volume": "2セット × 10〜15回",
+        "instructions": "手のひらを下に向けて前腕を支え、手首をやや小指側へ反らします。制御しながら戻します。",
+        "cue": "肘を振らず、小さく動かします。",
+        "alsoWorks": "その他の手首の伸筋。尺側手根屈筋が小指側への動きを助けます。"
+      }
+    ]
+  },
+  "forearms-extensor-digitorum": {
+    "id": "forearms-extensor-digitorum",
+    "name": "総指伸筋",
+    "description": "指を伸ばし、手首を反らす働きも助けます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンドフィンガーオープン",
+        "equipment": "指の伸展・弱い抵抗のバンド",
+        "volume": "1〜2セット × 10〜15回",
+        "instructions": "指に弱い抵抗のバンドをかけます。抵抗に逆らってゆっくり開き、元に戻します。",
+        "cue": "手首を安定させ、動きを制御します。",
+        "alsoWorks": "その他の指の伸筋、背側骨間筋"
+      }
+    ]
+  },
+  "forearms-extensor-pollicis-longus-brevis": {
+    "id": "forearms-extensor-pollicis-longus-brevis",
+    "name": "長母指伸筋・短母指伸筋",
+    "description": "親指の関節を伸ばします。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "抵抗をかけた親指の伸展",
+        "equipment": "親指の伸展・弱い抵抗のバンド",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "親指と手に弱い抵抗のバンドをかけます。親指を伸ばして手のひらから持ち上げ、元に戻します。",
+        "cue": "抵抗を軽くし、手首を動かさないようにします。",
+        "alsoWorks": "長母指外転筋。手首の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "forearms-abductor-pollicis-longus": {
+    "id": "forearms-abductor-pollicis-longus",
+    "name": "長母指外転筋",
+    "description": "親指を付け根から手の外側へ開きます。",
+    "note": "親指を開く動きには複数の筋肉が関わり、それぞれの関与は動かす方向によって異なります。",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "親指リフト",
+        "equipment": "親指の外転・弱い抵抗のバンド",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "手のひらを上に向け、軽い抵抗に逆らって親指を手のひらの面から持ち上げます。",
+        "cue": "親指を軽く曲げた状態に保ち、手首を支えます。",
+        "alsoWorks": "短母指外転筋、その他の親指の安定筋"
+      }
+    ]
+  },
+  "forearms-pronator-teres": {
+    "id": "forearms-pronator-teres",
+    "name": "円回内筋",
+    "description": "手のひらを下に向けるように前腕を回し、肘の屈曲も助けます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "抵抗をかけた前腕の回内",
+        "equipment": "前腕の回旋・軽いレバー状の道具",
+        "volume": "2セット × 8〜12回",
+        "instructions": "肘と前腕を支えます。軽いレバー状の道具を重りに近い位置で持ち、手のひらを下へ回してからゆっくり戻します。",
+        "cue": "短いレバーから始め、肘を動かさないようにします。",
+        "alsoWorks": "方形回内筋、手首の安定筋"
+      }
+    ]
+  },
+  "forearms-pronator-quadratus": {
+    "id": "forearms-pronator-quadratus",
+    "name": "方形回内筋",
+    "description": "前腕の手首寄りの深層にあり、手のひらを下に向けるように前腕を回します。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "抵抗をかけた前腕の回内",
+        "equipment": "前腕の回旋・軽いレバー状の道具",
+        "volume": "2セット × 8〜12回",
+        "instructions": "肘と前腕を支えます。軽いレバー状の道具を重りに近い位置で持ち、手のひらを下へ回してからゆっくり戻します。",
+        "cue": "短いレバーから始め、肘を動かさないようにします。",
+        "alsoWorks": "円回内筋、手首の安定筋"
+      }
+    ]
+  },
+  "forearms-supinator": {
+    "id": "forearms-supinator",
+    "name": "回外筋",
+    "description": "前腕の肘寄りの深層にあり、手のひらを上に向けるように前腕を回します。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "抵抗をかけた前腕の回外",
+        "equipment": "前腕の回旋・軽いレバー状の道具",
+        "volume": "2セット × 8〜12回",
+        "instructions": "肘と前腕を支えます。軽いレバー状の道具で抵抗をかけながら手のひらを上へ回し、ゆっくり戻します。",
+        "cue": "肩を回さず、前腕で動かします。",
+        "alsoWorks": "上腕二頭筋、手首の安定筋"
+      }
+    ]
+  },
+  "hands-abductor-pollicis-brevis": {
+    "id": "hands-abductor-pollicis-brevis",
+    "name": "短母指外転筋",
+    "description": "親指を手のひらの面から離すように持ち上げます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "親指リフト",
+        "equipment": "親指の外転・弱い抵抗のバンド",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "手のひらを上に向け、軽い抵抗に逆らって親指を手のひらの面から持ち上げます。",
+        "cue": "親指を軽く曲げた状態に保ち、手首を支えます。",
+        "alsoWorks": "その他の母指球筋が親指を安定させます。"
+      }
+    ]
+  },
+  "hands-flexor-pollicis-brevis": {
+    "id": "hands-flexor-pollicis-brevis",
+    "name": "短母指屈筋",
+    "description": "親指の付け根の関節を曲げます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "親指のパテプレス",
+        "equipment": "親指の屈曲・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "親指を手のひらへ向けて柔らかいパテに押し込み、力を抜きます。",
+        "cue": "親指の関節の向きを整え、動きの終点へ無理に押し込まないようにします。",
+        "alsoWorks": "長母指屈筋、その他の母指球筋"
+      }
+    ]
+  },
+  "hands-opponens-pollicis": {
+    "id": "hands-opponens-pollicis",
+    "name": "母指対立筋",
+    "description": "親指を回しながら手のひらを横切る方向へ動かし、他の指と向かい合わせます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "パテを使った親指の対立運動",
+        "equipment": "親指の制御・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "小指の付け根付近に柔らかいパテを置きます。親指を手のひらの反対側へ動かして押します。",
+        "cue": "先端だけを曲げず、親指の付け根から動かします。",
+        "alsoWorks": "短母指外転筋、短母指屈筋"
+      }
+    ]
+  },
+  "hands-adductor-pollicis": {
+    "id": "hands-adductor-pollicis",
+    "name": "母指内転筋",
+    "description": "親指を手に近づけ、鍵を持つような横つまみを支えます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽いキーピンチ",
+        "equipment": "親指の内転・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "親指の腹と人さし指の側面の間に柔らかいパテを挟みます。軽くつまみ、力を抜きます。",
+        "cue": "親指の向きを整え、関節を突っ張らせないようにします。",
+        "alsoWorks": "第1背側骨間筋、親指の屈筋"
+      }
+    ]
+  },
+  "hands-hypothenar-muscles": {
+    "id": "hands-hypothenar-muscles",
+    "name": "小指球筋群",
+    "description": "小指外転筋、短小指屈筋、小指対立筋が、手の小指側の動きを制御します。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "小指の対立運動",
+        "equipment": "手の制御・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "手のひらの小指側を親指へ近づけるように丸め、柔らかいパテを軽く押します。",
+        "cue": "手首を曲げず、小さく丁寧に動かします。",
+        "alsoWorks": "母指球筋、指の屈筋"
+      }
+    ]
+  },
+  "hands-lumbricals": {
+    "id": "hands-lumbricals",
+    "name": "虫様筋",
+    "description": "指の付け根の関節を曲げながら、中間と先端の関節を伸ばす働きを助けます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "指の付け根で行うパテプレス",
+        "equipment": "手内在筋の制御・柔らかい運動用パテ",
+        "volume": "1〜2セット × 軽く8〜12回",
+        "instructions": "指先を比較的まっすぐに保ち、付け根の関節を曲げて柔らかいパテを押します。ゆっくり力を抜きます。",
+        "cue": "指の中間の関節が折れ曲がらないようにします。",
+        "alsoWorks": "手の骨間筋。指の伸筋が関節の位置を調整します。"
+      }
+    ]
+  },
+  "hands-dorsal-interossei": {
+    "id": "hands-dorsal-interossei",
+    "name": "背側骨間筋",
+    "description": "指を広げ、付け根の関節の制御を助けます。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "抵抗をかけた指開き",
+        "equipment": "指の外転・弱い抵抗のバンド",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "弱い抵抗のループに逆らって指を広げ、制御しながら戻します。",
+        "cue": "手首を動かさず、指を無理なく伸ばした状態に保ちます。",
+        "alsoWorks": "小指外転筋。指の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "hands-palmar-interossei": {
+    "id": "hands-palmar-interossei",
+    "name": "掌側骨間筋",
+    "description": "指を閉じ、付け根の関節の動きを調整します。",
+    "note": "",
+    "references": [
+      "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "指の内転プレス",
+        "equipment": "指の内転・柔らかい運動用パテ",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "隣り合う指の間に小さな柔らかいパテを挟みます。指を閉じて押します。",
+        "cue": "指をひねらず、軽い力で行います。",
+        "alsoWorks": "虫様筋。指の屈筋と伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "core-rectus-abdominis": {
+    "id": "core-rectus-abdominis",
+    "name": "腹直筋",
+    "description": "腹部の前面を縦に走り、体幹を曲げます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "リバースクランチ",
+        "equipment": "体幹の屈曲・自重",
+        "volume": "3セット × 8〜15回",
+        "instructions": "仰向けで膝を曲げます。骨盤を肋骨へ近づけるように丸め、尾骨を少し持ち上げてから制御して下ろします。",
+        "cue": "脚を振らず、骨盤を小さく丸めます。",
+        "alsoWorks": "腹斜筋群。股関節屈筋群が脚の位置を支えます。"
+      },
+      {
+        "name": "デッドバグ",
+        "equipment": "動作の制御・自重",
+        "volume": "3セット × 左右各6〜10回",
+        "instructions": "仰向けで股関節と膝を曲げます。片腕と反対側の脚をゆっくり伸ばして戻し、左右を交互に行います。",
+        "cue": "肋骨を開かず、腰の位置を安定させます。",
+        "alsoWorks": "腹横筋、腹斜筋群。股関節屈筋群が脚を制御します。"
+      }
+    ]
+  },
+  "core-internal-external-obliques": {
+    "id": "core-internal-external-obliques",
+    "name": "内腹斜筋・外腹斜筋",
+    "description": "体幹の回旋と側屈を制御し、負荷に対してそれらの動きを抑える働きも助けます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "パロフプレス",
+        "equipment": "回旋への抵抗・ケーブル",
+        "volume": "3セット × 左右各8〜12回",
+        "instructions": "ケーブルに対して横向きに立ち、ハンドルを胸の前で持ちます。正面へ押し出して止め、体を回さずに戻します。",
+        "cue": "骨盤と肩を正面へ向けたままにします。",
+        "alsoWorks": "腹横筋、腹直筋。殿筋群が安定を保ちます。"
+      },
+      {
+        "name": "サイドプランク",
+        "equipment": "等尺性運動・自重",
+        "volume": "3セット × 左右各20〜40秒",
+        "instructions": "片方の前腕と足の側面で体を支えます。腰を上げ、体を一直線にします。膝を曲げると負荷を軽くできます。",
+        "cue": "肩を肘の真上に置き、安定して呼吸します。",
+        "alsoWorks": "腰方形筋、中殿筋、肩の安定筋"
+      }
+    ]
+  },
+  "core-transversus-abdominis": {
+    "id": "core-transversus-abdominis",
+    "name": "腹横筋",
+    "description": "腹圧と体幹の安定に関わる深層の筋肉です。",
+    "note": "腹壁の深層筋は、体幹を支える協調した力の一部として働きます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "デッドバグ",
+        "equipment": "動作の制御・自重",
+        "volume": "3セット × 左右各6〜10回",
+        "instructions": "仰向けで股関節と膝を曲げます。片腕と反対側の脚をゆっくり伸ばして戻し、左右を交互に行います。",
+        "cue": "肋骨を開かず、腰の位置を安定させます。",
+        "alsoWorks": "腹直筋、腹斜筋群。股関節屈筋群が脚を制御します。"
+      },
+      {
+        "name": "パロフプレス",
+        "equipment": "回旋への抵抗・ケーブル",
+        "volume": "3セット × 左右各8〜12回",
+        "instructions": "ケーブルに対して横向きに立ち、ハンドルを胸の前で持ちます。正面へ押し出して止め、体を回さずに戻します。",
+        "cue": "骨盤と肩を正面へ向けたままにします。",
+        "alsoWorks": "腹斜筋群、腹直筋。殿筋群が安定を保ちます。"
+      }
+    ]
+  },
+  "deepcore-multifidus": {
+    "id": "deepcore-multifidus",
+    "name": "多裂筋",
+    "description": "背骨の深部にある短い筋群で、個々の椎骨の動きを制御します。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バードドッグ",
+        "equipment": "安定性・自重",
+        "volume": "2〜3セット × 左右各6〜10回",
+        "instructions": "四つんばいから、体幹を回さずに片腕と反対側の脚を伸ばします。少し止めて戻し、左右を入れ替えます。",
+        "cue": "高く上げるよりも、遠くへ伸ばすことを意識します。",
+        "alsoWorks": "脊柱起立筋群、大殿筋、腹壁の筋肉"
+      }
+    ]
+  },
+  "deepcore-quadratus-lumborum": {
+    "id": "deepcore-quadratus-lumborum",
+    "name": "腰方形筋",
+    "description": "骨盤、腰椎、最下部の肋骨をつなぎ、体が横に曲がる力に抵抗します。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "スーツケースキャリー",
+        "equipment": "体幹の側方安定性・ダンベル",
+        "volume": "左右各2〜3回の運搬 × 15〜30メートル",
+        "instructions": "適度な重さのダンベルを片手で持ち、体を傾けずに安定して歩きます。手を入れ替えます。",
+        "cue": "骨盤を水平に保ち、呼吸を続けます。",
+        "alsoWorks": "腹斜筋群、脊柱の伸筋。前腕と肩の筋肉が重りを保持します。"
+      },
+      {
+        "name": "サイドプランク",
+        "equipment": "等尺性運動・自重",
+        "volume": "3セット × 左右各20〜40秒",
+        "instructions": "片方の前腕と足の側面で体を支えます。腰を上げ、体を一直線にします。膝を曲げると負荷を軽くできます。",
+        "cue": "肩を肘の真上に置き、安定して呼吸します。",
+        "alsoWorks": "腹斜筋群、中殿筋、肩の安定筋"
+      }
+    ]
+  },
+  "deepcore-diaphragm": {
+    "id": "deepcore-diaphragm",
+    "name": "横隔膜",
+    "description": "呼吸の主な筋肉で、体幹内の圧力を協調して調整する働きにも関わります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "コントロールした横隔膜呼吸",
+        "equipment": "呼吸の制御・自重",
+        "volume": "ゆっくり5〜8呼吸",
+        "instructions": "楽に座るか横になります。下部の肋骨が広がるように穏やかに吸い、無理に押し出さずに吐きます。",
+        "cue": "肩の力を抜きます。呼吸の制御を練習するもので、単独の筋肉の最大筋力を鍛える運動ではありません。",
+        "alsoWorks": "肋間筋。腹壁と骨盤底筋が協調して圧力を調整します。"
+      }
+    ]
+  },
+  "deepcore-pelvic-floor": {
+    "id": "deepcore-pelvic-floor",
+    "name": "骨盤底筋群",
+    "description": "肛門挙筋と尾骨筋が骨盤内臓器を支え、圧力の調整や排尿・排便のコントロールに関わります。",
+    "note": "軽く引き上げた後、十分に緩めます。骨盤周辺の症状が続く場合は、個別の評価が必要です。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い骨盤底筋の収縮と弛緩",
+        "equipment": "骨盤の制御・自重",
+        "volume": "軽い収縮と十分な弛緩を5回",
+        "instructions": "普通に呼吸しながら、おならを我慢するときに使う筋肉を軽く引き上げます。完全に緩めてから繰り返します。",
+        "cue": "下へいきんだり、お尻を締めたりしないでください。排尿を途中で止める方法では練習しないでください。",
+        "alsoWorks": "腹壁の深層筋と横隔膜が協調して圧力を調整します。"
+      }
+    ]
+  },
+  "quads-rectus-femoris": {
+    "id": "quads-rectus-femoris",
+    "name": "大腿直筋",
+    "description": "股関節と膝関節をまたぎ、股関節の屈曲と膝の伸展に関わります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "レッグエクステンション",
+        "equipment": "単関節種目・マシン",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "マシンの回転軸を膝に合わせます。無理のない範囲で脚を伸ばし、徐々に下ろします。",
+        "cue": "蹴り上げたり反動を使ったりせず、動きを制御します。",
+        "alsoWorks": "外側広筋、内側広筋、中間広筋"
+      },
+      {
+        "name": "フロントスクワット",
+        "equipment": "複合種目・バーベル",
+        "volume": "3〜4セット × 4〜8回",
+        "instructions": "肩の前でバーを安定して支えます。体幹を固め、お尻を両脚の間へ下ろします。足で床を押して立ち上がります。",
+        "cue": "肘を高く保ち、膝をつま先と同じ方向へ動かします。",
+        "alsoWorks": "大腿四頭筋の他の筋、大殿筋、内転筋群、体幹の安定筋"
+      }
+    ]
+  },
+  "quads-vastus-lateralis": {
+    "id": "quads-vastus-lateralis",
+    "name": "外側広筋",
+    "description": "太ももの外側にある大きな筋肉で、膝を伸ばす働きに関わります。",
+    "note": "これらの動作は大腿四頭筋をまとめて鍛えます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "フロントスクワット",
+        "equipment": "複合種目・バーベル",
+        "volume": "3〜4セット × 4〜8回",
+        "instructions": "肩の前でバーを安定して支えます。体幹を固め、お尻を両脚の間へ下ろします。足で床を押して立ち上がります。",
+        "cue": "肘を高く保ち、膝をつま先と同じ方向へ動かします。",
+        "alsoWorks": "大腿四頭筋の他の筋、大殿筋、内転筋群、体幹の安定筋"
+      },
+      {
+        "name": "レッグエクステンション",
+        "equipment": "単関節種目・マシン",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "マシンの回転軸を膝に合わせます。無理のない範囲で脚を伸ばし、徐々に下ろします。",
+        "cue": "蹴り上げたり反動を使ったりせず、動きを制御します。",
+        "alsoWorks": "大腿直筋、内側広筋、中間広筋"
+      }
+    ]
+  },
+  "quads-vastus-medialis": {
+    "id": "quads-vastus-medialis",
+    "name": "内側広筋",
+    "description": "太ももの内側にあり、膝の伸展と膝蓋骨の動きの制御に関わります。",
+    "note": "足の向きを工夫しても、この部位だけを分離して鍛えることはできません。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ブルガリアンスクワット",
+        "equipment": "片側ずつ行う種目・ダンベル",
+        "volume": "3セット × 左右各8〜10回",
+        "instructions": "後ろ足を低いベンチに置きます。前脚で体を下ろし、押し戻します。",
+        "cue": "前足全体を床につけておける足幅を選びます。",
+        "alsoWorks": "大腿四頭筋の他の筋、大殿筋、内転筋群。中殿筋が安定を保ちます。"
+      },
+      {
+        "name": "レッグエクステンション",
+        "equipment": "単関節種目・マシン",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "マシンの回転軸を膝に合わせます。無理のない範囲で脚を伸ばし、徐々に下ろします。",
+        "cue": "蹴り上げたり反動を使ったりせず、動きを制御します。",
+        "alsoWorks": "大腿直筋、外側広筋、中間広筋"
+      }
+    ]
+  },
+  "quads-vastus-intermedius": {
+    "id": "quads-vastus-intermedius",
+    "name": "中間広筋",
+    "description": "大腿直筋の下にある深層筋で、膝を伸ばします。",
+    "note": "この深層筋は、膝を伸ばす他の筋肉とともに働きます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "レッグエクステンション",
+        "equipment": "単関節種目・マシン",
+        "volume": "2〜3セット × 10〜15回",
+        "instructions": "マシンの回転軸を膝に合わせます。無理のない範囲で脚を伸ばし、徐々に下ろします。",
+        "cue": "蹴り上げたり反動を使ったりせず、動きを制御します。",
+        "alsoWorks": "大腿直筋、外側広筋、内側広筋"
+      },
+      {
+        "name": "フロントスクワット",
+        "equipment": "複合種目・バーベル",
+        "volume": "3〜4セット × 4〜8回",
+        "instructions": "肩の前でバーを安定して支えます。体幹を固め、お尻を両脚の間へ下ろします。足で床を押して立ち上がります。",
+        "cue": "肘を高く保ち、膝をつま先と同じ方向へ動かします。",
+        "alsoWorks": "大腿四頭筋の他の筋、大殿筋、内転筋群、体幹の安定筋"
+      }
+    ]
+  },
+  "hamstrings-biceps-femoris": {
+    "id": "hamstrings-biceps-femoris",
+    "name": "大腿二頭筋",
+    "description": "太もも裏の外側にあり、長頭と短頭からなります。両方が膝を曲げ、長頭は股関節も伸ばします。",
+    "note": "ヒップヒンジでは長頭に負荷がかかり、レッグカールでは短頭も働きます。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ルーマニアンデッドリフト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "膝を軽く曲げ、お尻を後ろへ引きながらバーを脚の近くに保ちます。制御できる深さで止め、立ち上がります。",
+        "cue": "背中の位置を安定させ、股関節から動かします。",
+        "alsoWorks": "半腱様筋、半膜様筋、大殿筋。脊柱の伸筋が安定を保ちます。"
+      },
+      {
+        "name": "シーテッドレッグカール",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 10〜15回",
+        "instructions": "パッドを調整して太ももを固定します。膝を曲げてパッドを下・後方へ引き、ゆっくり戻します。",
+        "cue": "動作中はお尻を座面につけておきます。",
+        "alsoWorks": "半腱様筋、半膜様筋、腓腹筋"
+      }
+    ]
+  },
+  "hamstrings-semitendinosus": {
+    "id": "hamstrings-semitendinosus",
+    "name": "半腱様筋",
+    "description": "太もも裏の内側にある筋肉で、股関節を伸ばし、膝を曲げます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ルーマニアンデッドリフト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "膝を軽く曲げ、お尻を後ろへ引きながらバーを脚の近くに保ちます。制御できる深さで止め、立ち上がります。",
+        "cue": "背中の位置を安定させ、股関節から動かします。",
+        "alsoWorks": "大腿二頭筋長頭、半膜様筋、大殿筋。脊柱の伸筋が安定を保ちます。"
+      },
+      {
+        "name": "シーテッドレッグカール",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 10〜15回",
+        "instructions": "パッドを調整して太ももを固定します。膝を曲げてパッドを下・後方へ引き、ゆっくり戻します。",
+        "cue": "動作中はお尻を座面につけておきます。",
+        "alsoWorks": "大腿二頭筋、半膜様筋、腓腹筋"
+      }
+    ]
+  },
+  "hamstrings-semimembranosus": {
+    "id": "hamstrings-semimembranosus",
+    "name": "半膜様筋",
+    "description": "太もも裏の内側深部にあり、半腱様筋と同様に股関節と膝関節に働きます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "シーテッドレッグカール",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 10〜15回",
+        "instructions": "パッドを調整して太ももを固定します。膝を曲げてパッドを下・後方へ引き、ゆっくり戻します。",
+        "cue": "動作中はお尻を座面につけておきます。",
+        "alsoWorks": "大腿二頭筋、半腱様筋、腓腹筋"
+      },
+      {
+        "name": "ルーマニアンデッドリフト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "膝を軽く曲げ、お尻を後ろへ引きながらバーを脚の近くに保ちます。制御できる深さで止め、立ち上がります。",
+        "cue": "背中の位置を安定させ、股関節から動かします。",
+        "alsoWorks": "大腿二頭筋長頭、半腱様筋、大殿筋。脊柱の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "glutes-gluteus-maximus": {
+    "id": "glutes-gluteus-maximus",
+    "name": "大殿筋",
+    "description": "殿筋の中で最も大きく、股関節を力強く伸ばし、外旋にも関わります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バーベルヒップスラスト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 8〜12回",
+        "instructions": "安定したベンチで上背部を支え、パッドをつけたバーを骨盤の上に置きます。足で床を押して股関節を伸ばします。",
+        "cue": "腰を反らすのではなく、肋骨を開かずに動作を終えます。",
+        "alsoWorks": "ハムストリングス、大内転筋。腹壁の筋肉が安定を保ちます。"
+      },
+      {
+        "name": "ステップアップ",
+        "equipment": "片側ずつ行う種目・ダンベル",
+        "volume": "3セット × 左右各8〜10回",
+        "instructions": "安定した台に片足全体を乗せます。その脚で体を押し上げて立ち、ゆっくり下ります。",
+        "cue": "骨盤を水平に保ち、後ろ足で強く蹴らないようにします。",
+        "alsoWorks": "大腿四頭筋、内転筋群。中殿筋が安定を保ちます。"
+      }
+    ]
+  },
+  "glutes-gluteus-medius": {
+    "id": "glutes-gluteus-medius",
+    "name": "中殿筋",
+    "description": "脚を外側へ動かし、片脚で立つときに骨盤を安定させる働きを助けます。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "横向きの股関節外転",
+        "equipment": "単関節種目・自重",
+        "volume": "2〜3セット × 左右各12〜15回",
+        "instructions": "横向きになり、上側の脚を伸ばします。少し持ち上げ、骨盤を回さずに下ろします。",
+        "cue": "つま先を正面へ向け、骨盤を上下に重ねた位置に保ちます。",
+        "alsoWorks": "小殿筋、大腿筋膜張筋"
+      },
+      {
+        "name": "バンドラテラルウォーク",
+        "equipment": "股関節の外転・抵抗バンド",
+        "volume": "2〜3セット × 各方向8〜12歩",
+        "instructions": "膝の上に弱い抵抗のバンドを巻きます。膝を浅く曲げ、張力と骨盤の水平を保ちながら横へ歩きます。",
+        "cue": "膝を足と同じ方向へ向け、上体を左右に揺らさないようにします。",
+        "alsoWorks": "小殿筋、大腿筋膜張筋。大腿四頭筋が立位姿勢を支えます。"
+      }
+    ]
+  },
+  "glutes-gluteus-minimus": {
+    "id": "glutes-gluteus-minimus",
+    "name": "小殿筋",
+    "description": "中殿筋の下にある深層筋で、股関節の外転と骨盤の制御を助けます。",
+    "note": "股関節の外転では、小殿筋と他の外転筋に負荷がかかります。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "横向きの股関節外転",
+        "equipment": "単関節種目・自重",
+        "volume": "2〜3セット × 左右各12〜15回",
+        "instructions": "横向きになり、上側の脚を伸ばします。少し持ち上げ、骨盤を回さずに下ろします。",
+        "cue": "つま先を正面へ向け、骨盤を上下に重ねた位置に保ちます。",
+        "alsoWorks": "中殿筋、大腿筋膜張筋"
+      },
+      {
+        "name": "バンドラテラルウォーク",
+        "equipment": "股関節の外転・抵抗バンド",
+        "volume": "2〜3セット × 各方向8〜12歩",
+        "instructions": "膝の上に弱い抵抗のバンドを巻きます。膝を浅く曲げ、張力と骨盤の水平を保ちながら横へ歩きます。",
+        "cue": "膝を足と同じ方向へ向け、上体を左右に揺らさないようにします。",
+        "alsoWorks": "中殿筋、大腿筋膜張筋。大腿四頭筋が立位姿勢を支えます。"
+      }
+    ]
+  },
+  "adductors-adductor-longus": {
+    "id": "adductors-adductor-longus",
+    "name": "長内転筋",
+    "description": "太もも内側の表層にあり、股関節を内転させます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "横向きの股関節内転",
+        "equipment": "股関節の内転・自重",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "横向きになり、上側の脚を前に交差させて支えにします。下側の脚を伸ばしたまま少し上げ、下ろします。",
+        "cue": "骨盤を安定させ、下側の膝を正面へ向けます。",
+        "alsoWorks": "その他の内転筋、薄筋、恥骨筋"
+      }
+    ]
+  },
+  "adductors-adductor-brevis": {
+    "id": "adductors-adductor-brevis",
+    "name": "短内転筋",
+    "description": "長内転筋の下にある、より短い深層の内転筋です。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ボールを使った内転筋スクイーズ",
+        "equipment": "股関節の内転・柔らかいボール",
+        "volume": "2セット × 3〜5秒保持を6〜10回",
+        "instructions": "膝を曲げて横になり、柔らかいボールを両膝の間に挟みます。軽く押し、完全に力を抜きます。",
+        "cue": "呼吸を続け、強く押しすぎたり息を止めたりしないようにします。",
+        "alsoWorks": "長内転筋、大内転筋、薄筋、恥骨筋"
+      }
+    ]
+  },
+  "adductors-adductor-magnus": {
+    "id": "adductors-adductor-magnus",
+    "name": "大内転筋",
+    "description": "太もも内側の大きな筋肉で、股関節を内転させる部位と、伸展させるハムストリング部があります。",
+    "note": "ヒップヒンジでは股関節を伸ばす部位が働き、内転運動では内転を担う部位に負荷がかかります。",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "横向きの股関節内転",
+        "equipment": "股関節の内転・自重",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "横向きになり、上側の脚を前に交差させて支えにします。下側の脚を伸ばしたまま少し上げ、下ろします。",
+        "cue": "骨盤を安定させ、下側の膝を正面へ向けます。",
+        "alsoWorks": "その他の内転筋、薄筋"
+      },
+      {
+        "name": "ルーマニアンデッドリフト",
+        "equipment": "複合種目・バーベル",
+        "volume": "3セット × 6〜10回",
+        "instructions": "膝を軽く曲げ、お尻を後ろへ引きながらバーを脚の近くに保ちます。制御できる深さで止め、立ち上がります。",
+        "cue": "背中の位置を安定させ、股関節から動かします。",
+        "alsoWorks": "ハムストリングス、大殿筋。脊柱の伸筋が安定を保ちます。"
+      }
+    ]
+  },
+  "adductors-gracilis": {
+    "id": "adductors-gracilis",
+    "name": "薄筋",
+    "description": "股関節と膝関節をまたぎ、股関節の内転と膝の屈曲に関わります。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "横向きの股関節内転",
+        "equipment": "股関節の内転・自重",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "横向きになり、上側の脚を前に交差させて支えにします。下側の脚を伸ばしたまま少し上げ、下ろします。",
+        "cue": "骨盤を安定させ、下側の膝を正面へ向けます。",
+        "alsoWorks": "その他の内転筋、恥骨筋"
+      }
+    ]
+  },
+  "adductors-pectineus": {
+    "id": "adductors-pectineus",
+    "name": "恥骨筋",
+    "description": "太もも内側の上部にある短い筋肉で、股関節の内転と屈曲を助けます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ボールを使った内転筋スクイーズ",
+        "equipment": "股関節の内転・柔らかいボール",
+        "volume": "2セット × 3〜5秒保持を6〜10回",
+        "instructions": "膝を曲げて横になり、柔らかいボールを両膝の間に挟みます。軽く押し、完全に力を抜きます。",
+        "cue": "呼吸を続け、強く押しすぎたり息を止めたりしないようにします。",
+        "alsoWorks": "その他の内転筋、薄筋"
+      },
+      {
+        "name": "立位での抵抗付きマーチ",
+        "equipment": "股関節の屈曲・弱い抵抗のバンド",
+        "volume": "2〜3セット × 左右各8〜12回",
+        "instructions": "バランス用の支えを使い、足に弱い抵抗のバンドをかけます。片膝を股関節の高さへ上げ、ゆっくり下ろします。",
+        "cue": "骨盤を水平に保ち、上体を後ろへ倒さないようにします。",
+        "alsoWorks": "腸腰筋、大腿直筋、縫工筋"
+      }
+    ]
+  },
+  "hipflexors-psoas-major": {
+    "id": "hipflexors-psoas-major",
+    "name": "大腰筋",
+    "description": "腰椎から大腿骨上部へ走り、股関節の屈曲に関わります。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "立位での抵抗付きマーチ",
+        "equipment": "股関節の屈曲・弱い抵抗のバンド",
+        "volume": "2〜3セット × 左右各8〜12回",
+        "instructions": "バランス用の支えを使い、足に弱い抵抗のバンドをかけます。片膝を股関節の高さへ上げ、ゆっくり下ろします。",
+        "cue": "骨盤を水平に保ち、上体を後ろへ倒さないようにします。",
+        "alsoWorks": "腸骨筋、大腿直筋、縫工筋、大腿筋膜張筋"
+      }
+    ]
+  },
+  "hipflexors-iliacus": {
+    "id": "hipflexors-iliacus",
+    "name": "腸骨筋",
+    "description": "骨盤の内側に広がり、大腰筋とともに腸腰筋を構成します。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "立位での抵抗付きマーチ",
+        "equipment": "股関節の屈曲・弱い抵抗のバンド",
+        "volume": "2〜3セット × 左右各8〜12回",
+        "instructions": "バランス用の支えを使い、足に弱い抵抗のバンドをかけます。片膝を股関節の高さへ上げ、ゆっくり下ろします。",
+        "cue": "骨盤を水平に保ち、上体を後ろへ倒さないようにします。",
+        "alsoWorks": "大腰筋、大腿直筋、縫工筋"
+      }
+    ]
+  },
+  "hipflexors-tensor-fasciae-latae": {
+    "id": "hipflexors-tensor-fasciae-latae",
+    "name": "大腿筋膜張筋",
+    "description": "股関節の屈曲、外転、内旋を助けます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "立位での抵抗付きマーチ",
+        "equipment": "股関節の屈曲・弱い抵抗のバンド",
+        "volume": "2〜3セット × 左右各8〜12回",
+        "instructions": "バランス用の支えを使い、足に弱い抵抗のバンドをかけます。片膝を股関節の高さへ上げ、ゆっくり下ろします。",
+        "cue": "骨盤を水平に保ち、上体を後ろへ倒さないようにします。",
+        "alsoWorks": "腸腰筋、大腿直筋、縫工筋"
+      },
+      {
+        "name": "バンドラテラルウォーク",
+        "equipment": "股関節の外転・抵抗バンド",
+        "volume": "2〜3セット × 各方向8〜12歩",
+        "instructions": "膝の上に弱い抵抗のバンドを巻きます。膝を浅く曲げ、張力と骨盤の水平を保ちながら横へ歩きます。",
+        "cue": "膝を足と同じ方向へ向け、上体を左右に揺らさないようにします。",
+        "alsoWorks": "中殿筋、小殿筋。大腿四頭筋が立位姿勢を支えます。"
+      }
+    ]
+  },
+  "hipflexors-sartorius": {
+    "id": "hipflexors-sartorius",
+    "name": "縫工筋",
+    "description": "細長い帯状の筋肉で、股関節の屈曲・外転・外旋を助け、膝も曲げます。",
+    "note": "マーチは股関節の屈曲に負荷をかけますが、縫工筋のすべての働きを個別に鍛えるものではありません。",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "立位での抵抗付きマーチ",
+        "equipment": "股関節の屈曲・弱い抵抗のバンド",
+        "volume": "2〜3セット × 左右各8〜12回",
+        "instructions": "バランス用の支えを使い、足に弱い抵抗のバンドをかけます。片膝を股関節の高さへ上げ、ゆっくり下ろします。",
+        "cue": "骨盤を水平に保ち、上体を後ろへ倒さないようにします。",
+        "alsoWorks": "腸腰筋、大腿直筋、大腿筋膜張筋"
+      }
+    ]
+  },
+  "hiprotators-piriformis": {
+    "id": "hiprotators-piriformis",
+    "name": "梨状筋",
+    "description": "仙骨から大腿骨上部へ走ります。股関節の角度によって働き方が変わります。",
+    "note": "無理のない範囲で動かします。複数の筋肉で回旋の負荷を受ける運動で、1つの筋肉だけを分離するものではありません。",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "その他の深層股関節回旋筋、大殿筋"
+      }
+    ]
+  },
+  "hiprotators-obturator-internus": {
+    "id": "hiprotators-obturator-internus",
+    "name": "内閉鎖筋",
+    "description": "骨盤内の深層筋で、大腿骨付近で短い外旋筋群と合流します。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "双子筋群、外閉鎖筋、大腿方形筋、大殿筋"
+      }
+    ]
+  },
+  "hiprotators-obturator-externus": {
+    "id": "hiprotators-obturator-externus",
+    "name": "外閉鎖筋",
+    "description": "閉鎖膜の外側にある深層の外旋筋です。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "その他の深層回旋筋、大殿筋"
+      }
+    ]
+  },
+  "hiprotators-superior-gemellus": {
+    "id": "hiprotators-superior-gemellus",
+    "name": "上双子筋",
+    "description": "内閉鎖筋の腱の上にある小さな筋肉で、外旋を助けます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "内閉鎖筋、下双子筋、その他の外旋筋"
+      }
+    ]
+  },
+  "hiprotators-inferior-gemellus": {
+    "id": "hiprotators-inferior-gemellus",
+    "name": "下双子筋",
+    "description": "内閉鎖筋の腱の下にある小さな筋肉で、外旋を助けます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "内閉鎖筋、上双子筋、その他の外旋筋"
+      }
+    ]
+  },
+  "hiprotators-quadratus-femoris": {
+    "id": "hiprotators-quadratus-femoris",
+    "name": "大腿方形筋",
+    "description": "短く平たい外旋筋で、股関節の内転も助けます。",
+    "note": "",
+    "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "座位でのバンド股関節外旋",
+        "equipment": "股関節の回旋・弱い抵抗のバンド",
+        "volume": "2セット × 左右各8〜12回",
+        "instructions": "膝を曲げて支えた姿勢で座ります。軽い抵抗に逆らって太ももを外旋させ、足が内側へ動くようにします。ゆっくり戻します。",
+        "cue": "骨盤を動かさないようにします。股関節の位置で働く回旋筋が変わります。",
+        "alsoWorks": "その他の深層回旋筋、大殿筋"
+      }
+    ]
+  },
+  "calves-gastrocnemius": {
+    "id": "calves-gastrocnemius",
+    "name": "腓腹筋",
+    "description": "ふくらはぎの目立つ二頭の筋肉で、膝と足首をまたぎます。膝を伸ばしたカーフレイズでは、ヒラメ筋とともに負荷がかかります。",
+    "note": "",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "スタンディングカーフレイズ",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 8〜15回",
+        "instructions": "膝を軽く伸ばし、前足部で支えてかかとを上げます。少し止め、ゆっくり下ろします。",
+        "cue": "反動を使わず、無理のない範囲を十分に動かします。",
+        "alsoWorks": "ヒラメ筋、足部と足首の安定筋"
+      },
+      {
+        "name": "シングルレッグカーフレイズ",
+        "equipment": "片側ずつ行う種目・自重",
+        "volume": "3セット × 左右各10〜15回",
+        "instructions": "支えにつかまってバランスを取り、片脚のかかとを制御しながら上げ下げします。",
+        "cue": "足首の向きを整え、外側へ倒れないようにします。",
+        "alsoWorks": "ヒラメ筋、足部と足首の安定筋"
+      }
+    ]
+  },
+  "calves-soleus": {
+    "id": "calves-soleus",
+    "name": "ヒラメ筋",
+    "description": "腓腹筋の下にあり、足首に作用します。膝を曲げたカーフレイズでは腓腹筋の関与が小さくなります。",
+    "note": "膝を曲げると腓腹筋の関与が減り、ヒラメ筋への負荷が中心になります。",
+    "references": ["https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "シーテッドカーフレイズ",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 12〜20回",
+        "instructions": "膝を約90度に曲げ、抵抗に逆らってかかとを上げ、ゆっくり下ろします。",
+        "cue": "前足部で押し、下ろし切る位置でも制御を保ちます。",
+        "alsoWorks": "膝を曲げると腓腹筋の関与が小さくなります。足部の安定筋も働きます。"
+      },
+      {
+        "name": "スタンディングカーフレイズ",
+        "equipment": "単関節種目・マシン",
+        "volume": "3セット × 8〜15回",
+        "instructions": "膝を軽く伸ばし、前足部で支えてかかとを上げます。少し止め、ゆっくり下ろします。",
+        "cue": "反動を使わず、無理のない範囲を十分に動かします。",
+        "alsoWorks": "腓腹筋、足部と足首の安定筋"
+      }
+    ]
+  },
+  "lowerleg-tibialis-anterior": {
+    "id": "lowerleg-tibialis-anterior",
+    "name": "前脛骨筋",
+    "description": "足の前部を持ち上げ、足裏を内側へ向けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "支持付きトーレイズ",
+        "equipment": "足首の背屈・自重",
+        "volume": "2〜3セット × 12〜20回",
+        "instructions": "背中を支え、かかとを床につけて立ちます。足の前部を上げ、短く止めてから下ろします。",
+        "cue": "体を揺らさず、足首から動かします。",
+        "alsoWorks": "足指の伸筋"
+      },
+      {
+        "name": "バンドを使った足部内がえし",
+        "equipment": "足首の制御・弱い抵抗のバンド",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "脚を支えて座ります。弱い抵抗のバンドに逆らって足裏を内側へ小さく向け、戻します。",
+        "cue": "膝と股関節を動かさず、足首で動かします。",
+        "alsoWorks": "後脛骨筋"
+      }
+    ]
+  },
+  "lowerleg-tibialis-posterior": {
+    "id": "lowerleg-tibialis-posterior",
+    "name": "後脛骨筋",
+    "description": "ふくらはぎの深層筋で、足裏を内側へ向け、足首の底屈と土踏まずの支持を助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンドを使った足部内がえし",
+        "equipment": "足首の制御・弱い抵抗のバンド",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "脚を支えて座ります。弱い抵抗のバンドに逆らって足裏を内側へ小さく向け、戻します。",
+        "cue": "膝と股関節を動かさず、足首で動かします。",
+        "alsoWorks": "前脛骨筋"
+      },
+      {
+        "name": "シングルレッグカーフレイズ",
+        "equipment": "片側ずつ行う種目・自重",
+        "volume": "3セット × 左右各10〜15回",
+        "instructions": "支えにつかまってバランスを取り、片脚のかかとを制御しながら上げ下げします。",
+        "cue": "足首の向きを整え、外側へ倒れないようにします。",
+        "alsoWorks": "腓腹筋、ヒラメ筋。足部の筋肉が安定を保ちます。"
+      }
+    ]
+  },
+  "lowerleg-fibularis-longus-brevis": {
+    "id": "lowerleg-fibularis-longus-brevis",
+    "name": "長腓骨筋・短腓骨筋",
+    "description": "すねの外側にある筋肉で、足裏を外側へ向け、足首の底屈を助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "バンドを使った足部外がえし",
+        "equipment": "足首の制御・弱い抵抗のバンド",
+        "volume": "2セット × 左右各10〜15回",
+        "instructions": "脚を支えて座ります。弱い抵抗のバンドに逆らって足裏を外側へ向け、ゆっくり戻します。",
+        "cue": "脚全体を回さないようにします。",
+        "alsoWorks": "第三腓骨筋、足部の安定筋"
+      }
+    ]
+  },
+  "lowerleg-extensor-digitorum-longus": {
+    "id": "lowerleg-extensor-digitorum-longus",
+    "name": "長趾伸筋",
+    "description": "母趾以外の足指を伸ばし、足首の背屈を助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い抵抗をかけた足指伸展",
+        "equipment": "足指の伸展・弱い抵抗のバンド",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を支え、非常に弱い抵抗のバンドに逆らって足指を上げ、ゆっくり下ろします。",
+        "cue": "足指の動きを中心にするため、足首を動かさないようにします。",
+        "alsoWorks": "長母趾伸筋、足指の短伸筋"
+      },
+      {
+        "name": "支持付きトーレイズ",
+        "equipment": "足首の背屈・自重",
+        "volume": "2〜3セット × 12〜20回",
+        "instructions": "背中を支え、かかとを床につけて立ちます。足の前部を上げ、短く止めてから下ろします。",
+        "cue": "体を揺らさず、足首から動かします。",
+        "alsoWorks": "前脛骨筋、長母趾伸筋"
+      }
+    ]
+  },
+  "lowerleg-extensor-hallucis-longus": {
+    "id": "lowerleg-extensor-hallucis-longus",
+    "name": "長母趾伸筋",
+    "description": "母趾を伸ばし、足首の背屈を助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い抵抗をかけた足指伸展",
+        "equipment": "足指の伸展・弱い抵抗のバンド",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を支え、非常に弱い抵抗のバンドに逆らって足指を上げ、ゆっくり下ろします。",
+        "cue": "足指の動きを中心にするため、足首を動かさないようにします。",
+        "alsoWorks": "その他の足指の伸筋。前脛骨筋が安定を保ちます。"
+      }
+    ]
+  },
+  "lowerleg-flexor-digitorum-longus": {
+    "id": "lowerleg-flexor-digitorum-longus",
+    "name": "長趾屈筋",
+    "description": "すねの後面深部にあり、母趾以外の足指を曲げ、足を支える働きを助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "タオルカール",
+        "equipment": "足指の屈曲・タオル",
+        "volume": "2セット × 8〜12回",
+        "instructions": "かかとを床に、足指をタオルに乗せて座ります。足指でタオルを引き寄せ、力を抜きます。",
+        "cue": "足首の力を抜き、小さく滑らかに動かします。",
+        "alsoWorks": "短趾屈筋、足底方形筋、足内在筋"
+      }
+    ]
+  },
+  "lowerleg-flexor-hallucis-longus": {
+    "id": "lowerleg-flexor-hallucis-longus",
+    "name": "長母趾屈筋",
+    "description": "すねの後面深部にあり、母趾を曲げ、地面を蹴り出す動作に関わります。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "母趾プレス",
+        "equipment": "足指の屈曲・床",
+        "volume": "2セット × 3秒保持を8〜12回",
+        "instructions": "かかとと前足部を床につけます。母趾を床へ軽く押し、力を抜きます。",
+        "cue": "他の足指を握り込まず、土踏まずを安定させます。",
+        "alsoWorks": "短母趾屈筋、その他の足内在筋"
+      }
+    ]
+  },
+  "feet-abductor-hallucis": {
+    "id": "feet-abductor-hallucis",
+    "name": "母趾外転筋",
+    "description": "足の内側を走り、母趾を第2趾から離すように動かします。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "ショートフット保持",
+        "equipment": "土踏まずの制御・床",
+        "volume": "2セット × 3〜5秒保持を6〜10回",
+        "instructions": "足指を伸ばしたまま、前足部をかかとへ軽く引き寄せて土踏まずを上げます。その後、完全に力を抜きます。",
+        "cue": "足指を丸めたり、足の外側へ体重を逃がしたりしないようにします。",
+        "alsoWorks": "その他の足内在筋、後脛骨筋"
+      },
+      {
+        "name": "足指開き",
+        "equipment": "足内在筋の制御・自重",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を床に置き、足指を軽く広げます。少し止め、力を抜きます。",
+        "cue": "かかとを床につけ、個々の指を無理に広げないようにします。",
+        "alsoWorks": "足の骨間筋、小趾外転筋"
+      }
+    ]
+  },
+  "feet-flexor-hallucis-brevis": {
+    "id": "feet-flexor-hallucis-brevis",
+    "name": "短母趾屈筋",
+    "description": "足裏にある短い筋肉で、母趾を付け根から曲げます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "母趾プレス",
+        "equipment": "足指の屈曲・床",
+        "volume": "2セット × 3秒保持を8〜12回",
+        "instructions": "かかとと前足部を床につけます。母趾を床へ軽く押し、力を抜きます。",
+        "cue": "他の足指を握り込まず、土踏まずを安定させます。",
+        "alsoWorks": "長母趾屈筋、土踏まずの安定筋"
+      }
+    ]
+  },
+  "feet-adductor-hallucis": {
+    "id": "feet-adductor-hallucis",
+    "name": "母趾内転筋",
+    "description": "母趾を他の足指へ近づけ、前足部の安定に関わります。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "足指の内転スクイーズ",
+        "equipment": "足指の制御・柔らかいスポンジ",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "隣り合う足指の間に小さな柔らかいスポンジを挟みます。足指を軽く閉じ、力を抜きます。",
+        "cue": "足の他の部分はリラックスさせます。",
+        "alsoWorks": "足の骨間筋、足指の屈筋"
+      },
+      {
+        "name": "ショートフット保持",
+        "equipment": "土踏まずの制御・床",
+        "volume": "2セット × 3〜5秒保持を6〜10回",
+        "instructions": "足指を伸ばしたまま、前足部をかかとへ軽く引き寄せて土踏まずを上げます。その後、完全に力を抜きます。",
+        "cue": "足指を丸めたり、足の外側へ体重を逃がしたりしないようにします。",
+        "alsoWorks": "その他の足内在筋、後脛骨筋"
+      }
+    ]
+  },
+  "feet-flexor-digitorum-brevis": {
+    "id": "feet-flexor-digitorum-brevis",
+    "name": "短趾屈筋",
+    "description": "足裏にある短い筋肉で、母趾以外の足指を曲げます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "タオルカール",
+        "equipment": "足指の屈曲・タオル",
+        "volume": "2セット × 8〜12回",
+        "instructions": "かかとを床に、足指をタオルに乗せて座ります。足指でタオルを引き寄せ、力を抜きます。",
+        "cue": "足首の力を抜き、小さく滑らかに動かします。",
+        "alsoWorks": "長趾屈筋、足底方形筋、足の虫様筋"
+      }
+    ]
+  },
+  "feet-quadratus-plantae": {
+    "id": "feet-quadratus-plantae",
+    "name": "足底方形筋",
+    "description": "長趾屈筋と協力して、母趾以外の足指を曲げます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "タオルカール",
+        "equipment": "足指の屈曲・タオル",
+        "volume": "2セット × 8〜12回",
+        "instructions": "かかとを床に、足指をタオルに乗せて座ります。足指でタオルを引き寄せ、力を抜きます。",
+        "cue": "足首の力を抜き、小さく滑らかに動かします。",
+        "alsoWorks": "長趾屈筋、短趾屈筋"
+      }
+    ]
+  },
+  "feet-foot-interossei-lumbricals": {
+    "id": "feet-foot-interossei-lumbricals",
+    "name": "足の骨間筋・虫様筋",
+    "description": "足指の間隔と、指の関節を曲げる動き・伸ばす動きのバランスを調整します。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "足指開き",
+        "equipment": "足内在筋の制御・自重",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を床に置き、足指を軽く広げます。少し止め、力を抜きます。",
+        "cue": "かかとを床につけ、個々の指を無理に広げないようにします。",
+        "alsoWorks": "母趾外転筋、小趾外転筋"
+      },
+      {
+        "name": "足指の内転スクイーズ",
+        "equipment": "足指の制御・柔らかいスポンジ",
+        "volume": "1〜2セット × 8〜12回",
+        "instructions": "隣り合う足指の間に小さな柔らかいスポンジを挟みます。足指を軽く閉じ、力を抜きます。",
+        "cue": "足の他の部分はリラックスさせます。",
+        "alsoWorks": "その他の足内在筋"
+      }
+    ]
+  },
+  "feet-abductor-digiti-minimi": {
+    "id": "feet-abductor-digiti-minimi",
+    "name": "小趾外転筋",
+    "description": "足の外側を走り、小趾を外へ動かす働きを助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "足指開き",
+        "equipment": "足内在筋の制御・自重",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を床に置き、足指を軽く広げます。少し止め、力を抜きます。",
+        "cue": "かかとを床につけ、個々の指を無理に広げないようにします。",
+        "alsoWorks": "足の骨間筋、母趾外転筋"
+      },
+      {
+        "name": "ショートフット保持",
+        "equipment": "土踏まずの制御・床",
+        "volume": "2セット × 3〜5秒保持を6〜10回",
+        "instructions": "足指を伸ばしたまま、前足部をかかとへ軽く引き寄せて土踏まずを上げます。その後、完全に力を抜きます。",
+        "cue": "足指を丸めたり、足の外側へ体重を逃がしたりしないようにします。",
+        "alsoWorks": "その他の足内在筋"
+      }
+    ]
+  },
+  "feet-extensor-digitorum-hallucis-brevis": {
+    "id": "feet-extensor-digitorum-hallucis-brevis",
+    "name": "短趾伸筋・短母趾伸筋",
+    "description": "足の甲にある短い筋肉で、足指を伸ばす働きを助けます。",
+    "note": "",
+    "references": [
+      "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+    ],
+    "reviewStatus": "draft",
+    "exercises": [
+      {
+        "name": "軽い抵抗をかけた足指伸展",
+        "equipment": "足指の伸展・弱い抵抗のバンド",
+        "volume": "2セット × 8〜12回",
+        "instructions": "足を支え、非常に弱い抵抗のバンドに逆らって足指を上げ、ゆっくり下ろします。",
+        "cue": "足指の動きを中心にするため、足首を動かさないようにします。",
+        "alsoWorks": "足指の長伸筋"
       }
     ]
   }

@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Self-hosted font assets generated from the installed Fontsource packages.
+/public/fonts/
+/src/generated/fonts.json

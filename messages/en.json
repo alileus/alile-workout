@@ -60,6 +60,65 @@
       "Feet": "Feet",
       "Deep trunk": "Deep trunk",
       "Shins & ankles": "Shins & ankles"
+    },
+    "navigation": "Explore",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "navigationDescription": "Explore anatomy, contribute, or change language.",
+    "groupDescription": "Explore {muscle} muscles, individual regions, exercises, and the other muscles each movement works.",
+    "intro": {
+      "eyebrow": "Anatomy, made practical",
+      "title": "Choose what to train today.",
+      "description": "Explore the muscles behind each movement. Start with a training group above, or select a muscle directly on the diagram.",
+      "choose": {
+        "title": "Choose a training group",
+        "description": "Browse chest, back, shoulders, arms, core, or legs to see their individual muscle regions."
+      },
+      "explore": {
+        "title": "Find the exact muscle",
+        "description": "Hover to highlight a region. Select it to open its guide, including deeper muscles available in the list."
+      },
+      "learn": {
+        "title": "Understand the movement",
+        "description": "See exercise options, how to perform them, and which other muscles are involved. Each muscle has its own link to save or share."
+      },
+      "community": "An open workout book, built together. Suggest corrections, improve translations, or contribute an exercise."
     }
+  },
+  "DesignSystem": {
+    "reference": "Contributor reference",
+    "title": "Design system",
+    "intro": "Neutral surfaces, teal interactions, logical spacing. Shared shadcn/ui primitives.",
+    "colors": "Color tokens",
+    "tokens": {
+      "background": "Background",
+      "foreground": "Foreground",
+      "primary": "Primary",
+      "muted": "Muted",
+      "accent": "Accent",
+      "border": "Border",
+      "destructive": "Destructive"
+    },
+    "buttons": "Buttons",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "outline": "Outline",
+    "ghost": "Ghost",
+    "disabled": "Disabled",
+    "status": "Status",
+    "selected": "Selected",
+    "deep": "Deep layer",
+    "draft": "Draft",
+    "typography": "Type & direction",
+    "sectionSample": "Section label / 11 px",
+    "bodySample": "Body copy / 15 px / comfortable line height",
+    "sample": "Select a muscle region to explore its exercises.",
+    "interactionTitle": "Interaction rules",
+    "interactionBody": "Hover previews anatomy. Click toggles the pinned region. Focus uses the same color cues. Keep anatomy unmirrored in right-to-left layouts."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "This page does not exist. Return to the atlas to find a muscle guide.",
+    "back": "Back to the atlas"
   }
 }

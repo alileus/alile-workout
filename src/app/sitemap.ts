@@ -1,14 +1,17 @@
 import type { MetadataRoute } from 'next';
 import { englishBook } from '@/features/workout-book/data';
 import { routing } from '@/i18n/routing';
+import { musclePath } from '@/features/anatomy/routes';
 import { siteUrl, isProduction } from '@/lib/seo';
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!isProduction) return [];
   const paths = [
     '',
-    '/book',
     '/contribute',
-    ...englishBook.flatMap((g) => g.sections.flatMap((s) => s.regions.map((r) => `/book/${r.id}`))),
+    ...englishBook.flatMap((g) => [
+      musclePath(g.id),
+      ...g.sections.flatMap((s) => s.regions.map((r) => musclePath(g.id, r.id))),
+    ]),
   ];
   return paths.flatMap((path) =>
     routing.locales.map((locale) => ({
