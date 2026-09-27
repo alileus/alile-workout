@@ -4,30 +4,33 @@
 
 /* Semantic tokens are the public design-system contract. */
 :root {
-  --background: #171717;
-  --foreground: #eeeeee;
-  --card: #1c1c1c;
-  --card-foreground: #eeeeee;
-  --popover: #232323;
-  --popover-foreground: #eeeeee;
-  --primary: #55c9c3;
-  --primary-foreground: #102928;
-  --secondary: #292929;
-  --secondary-foreground: #dedede;
-  --muted: #262626;
-  --muted-foreground: #a2a2a2;
-  --accent: #243b3b;
-  --accent-foreground: #9fe6e0;
+  --background: #161513;
+  --foreground: #e7e3da;
+  --card: #1f1e1b;
+  --card-foreground: #e7e3da;
+  --popover: #27251f;
+  --popover-foreground: #e7e3da;
+  --primary: #d4af72;
+  --primary-foreground: #241c10;
+  --secondary: #302e29;
+  --secondary-foreground: #ded8cc;
+  --muted: #2b2925;
+  --muted-foreground: #aaa497;
+  --accent: #3a3022;
+  --accent-foreground: #f0d5a5;
   --destructive: #f38282;
-  --border: #333333;
-  --input: #3b3b3b;
-  --ring: #55c9c3;
+  --border: #3a3731;
+  --input: #49453c;
+  --ring: #d4af72;
+  --paper: #ded6c7;
+  --graphite: #817b70;
+  --sketch-grain: url('/textures/graphite-grain.svg');
   --radius: 0.75rem;
-  --chart-1: #55c9c3;
-  --chart-2: #a2a2a2;
-  --chart-3: #ededed;
-  --chart-4: #777;
-  --chart-5: #444;
+  --chart-1: #d4af72;
+  --chart-2: #aaa497;
+  --chart-3: #e7e3da;
+  --chart-4: #817b70;
+  --chart-5: #49453c;
 }
 @theme inline {
   --color-background: var(--background);
@@ -79,6 +82,7 @@ html[lang='ja'] {
 body {
   margin: 0;
   background: var(--background);
+  background-image: var(--sketch-grain);
   color: var(--foreground);
   font-family: var(--app-font);
   line-height: 1.6;
@@ -110,7 +114,7 @@ summary:focus-visible {
   outline-offset: 4px;
 }
 ::selection {
-  background: #55c9c350;
+  background: color-mix(in srgb, var(--primary) 32%, transparent);
 }
 .muted {
   color: var(--muted-foreground);
@@ -127,11 +131,11 @@ summary:focus-visible {
 }
 .atlas {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1760px;
   margin-inline: auto;
   height: 100dvh;
   display: grid;
-  grid-template-columns: 36% 29% 35%;
+  grid-template-columns: 33% 32% 35%;
   grid-template-rows: auto minmax(0, 1fr);
   overflow: hidden;
 }
@@ -140,7 +144,7 @@ summary:focus-visible {
   grid-row: 1/3;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 40%, #272727, #191919 70%);
+  background: radial-gradient(ellipse at 50% 40%, #39363060, transparent 72%);
   border-inline-end: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -152,36 +156,12 @@ summary:focus-visible {
   inset-inline-start: 26px;
   z-index: 1;
 }
-.anatomy-circles {
-  position: absolute;
-  width: 88%;
-  aspect-ratio: 1;
-  border: 1px solid #ffffff04;
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 75px #ffffff02,
-    0 0 0 150px #ffffff02;
-  pointer-events: none;
-}
 .body-map {
   height: 84%;
   width: 90%;
   position: relative;
   max-height: 900px;
   overflow: visible;
-}
-.body-muscle {
-  stroke: #3e3e3e;
-  stroke-width: 0.8;
-  pointer-events: none;
-  transition:
-    opacity 0.15s,
-    fill 0.15s;
-}
-.body-muscle.active {
-  fill: url(#selected);
-  outline: none;
-  stroke: #a3e6df;
 }
 .body-region {
   outline: none;
@@ -195,17 +175,28 @@ summary:focus-visible {
 }
 .body-region:hover,
 .body-region:focus-visible {
-  fill: url(#selected);
-  stroke: #a3e6df;
+  fill: var(--primary);
+  fill-opacity: 0.56;
+  stroke: var(--accent-foreground);
+  stroke-width: 0.9;
   outline: none;
 }
-.has-region .body-muscle {
-  opacity: 0.4;
-}
 .region-overlay {
-  stroke: #b6eee9;
-  stroke-width: 0.6;
+  fill: var(--primary);
+  fill-opacity: 0.5;
+  stroke: var(--accent-foreground);
+  stroke-width: 0.9;
   pointer-events: none;
+}
+.anatomy-art {
+  opacity: 0.95;
+}
+.group-overlay {
+  fill: var(--primary);
+  fill-opacity: 0.32;
+  stroke: var(--primary);
+  stroke-opacity: 0.65;
+  stroke-width: 0.4;
 }
 .region-overlay.deep {
   stroke-dasharray: 2 2;
@@ -231,10 +222,10 @@ summary:focus-visible {
 }
 .view-switch {
   display: flex;
-  border: 1px solid #444;
+  border: 1px solid var(--input);
   border-radius: 100px;
   padding: 4px;
-  background: #1b1b1be8;
+  background: color-mix(in srgb, var(--background) 92%, transparent);
   flex-shrink: 0;
 }
 .view-switch button {
@@ -428,7 +419,7 @@ summary:focus-visible {
   width: 100%;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ffffff07;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 45%, transparent);
   padding: 14px 0;
   text-align: start;
   font-size: 15px;
@@ -442,7 +433,7 @@ summary:focus-visible {
 }
 .region-button:focus-visible {
   outline: none;
-  background: #55c9c30c;
+  background: color-mix(in srgb, var(--primary) 6%, transparent);
 }
 .region-indicator {
   font-size: 18px;
@@ -485,7 +476,7 @@ summary:focus-visible {
   overflow-wrap: anywhere;
 }
 .description {
-  color: #c4c4c4;
+  color: var(--secondary-foreground);
   font-size: 15px;
   line-height: 1.8;
 }
@@ -516,7 +507,7 @@ summary:focus-visible {
 }
 .exercise-number {
   font-size: 13px;
-  color: #777;
+  color: var(--muted-foreground);
   font-variant-numeric: tabular-nums;
 }
 .equipment {
@@ -529,7 +520,7 @@ summary:focus-visible {
 .also-works p {
   font-size: 14px;
   margin-top: 6px;
-  color: #bcbcbc;
+  color: var(--secondary-foreground);
   line-height: 1.65;
 }
 .exercise summary {
@@ -541,13 +532,13 @@ summary:focus-visible {
 }
 .instructions {
   font-size: 14px;
-  color: #bcbcbc;
+  color: var(--secondary-foreground);
 }
 .instructions p {
   margin-top: 16px;
 }
 .cue {
-  border-inline-start: 2px solid #55c9c366;
+  border-inline-start: 2px solid color-mix(in srgb, var(--primary) 40%, transparent);
   padding-inline-start: 12px;
 }
 .guide-references {
@@ -568,7 +559,7 @@ summary:focus-visible {
 }
 .review-status {
   font-size: 11px;
-  color: #888;
+  color: var(--muted-foreground);
   width: 100%;
 }
 .mobile-back {
@@ -919,4 +910,9 @@ summary::-webkit-details-marker {
   .guide-panel {
     padding-bottom: 96px;
   }
+}
+
+.sketch-specimen {
+  background-color: var(--card);
+  background-image: var(--sketch-grain);
 }

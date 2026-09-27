@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { DocumentShell } from '@/components/document-shell';
 import { pageMetadata } from '@/lib/seo';
+import Image from 'next/image';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
@@ -29,18 +30,38 @@ export default async function DesignSystem({ params }: { params: Promise<{ local
         <p className="muted">{t('intro')}</p>
         <h2>{t('colors')}</h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {['background', 'foreground', 'primary', 'muted', 'accent', 'border', 'destructive'].map(
-            (token) => (
-              <div key={token}>
-                <div className="h-16 rounded-lg border" style={{ background: `var(--${token})` }} />
-                <p className="mt-2 text-sm">{t(`tokens.${token}`)}</p>
-                <code dir="ltr" className="text-xs text-muted-foreground">
-                  --{token}
-                </code>
-              </div>
-            ),
-          )}
+          {[
+            'background',
+            'foreground',
+            'primary',
+            'muted',
+            'accent',
+            'border',
+            'paper',
+            'graphite',
+            'destructive',
+          ].map((token) => (
+            <div key={token}>
+              <div className="h-16 rounded-lg border" style={{ background: `var(--${token})` }} />
+              <p className="mt-2 text-sm">{t(`tokens.${token}`)}</p>
+              <code dir="ltr" className="text-xs text-muted-foreground">
+                --{token}
+              </code>
+            </div>
+          ))}
         </div>
+        <h2>{t('artworkTitle')}</h2>
+        <p className="muted">{t('artworkBody')}</p>
+        <div className="sketch-specimen mt-6 grid grid-cols-2 gap-6 rounded-xl border p-6">
+          {(['front', 'back'] as const).map((view) => (
+            <figure key={view} className="flex flex-col items-center gap-4">
+              <Image src={`/anatomy/${view}.svg`} width={240} height={402} alt={t(view)} />
+              <figcaption className="eyebrow">{t(view)}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <h2>{t('textureTitle')}</h2>
+        <p className="muted">{t('textureBody')}</p>
         <h2>{t('buttons')}</h2>
         <div className="flex flex-wrap gap-3">
           <Button>{t('primary')}</Button>
