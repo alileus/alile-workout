@@ -11,6 +11,8 @@ Repository setup does not create a Vercel project, deploy, or change DNS.
 
 ## Verification
 
+Vercel Web Analytics and Speed Insights are mounted once in the shared locale layout using their Next.js integrations. Enable both products in the Vercel project dashboard and redeploy after enabling them. The packages alone do not enable the project-side services. Local development uses the packages' development behavior; no custom events or additional user data are configured. See the [Analytics setup](https://vercel.com/docs/analytics/quickstart) and [Speed Insights setup](https://vercel.com/docs/speed-insights/quickstart).
+
 Production robots permits crawling, sitemap lists localized pages and canonical URLs point to https://workout.alile.us.
 
 Other builds return a blocking robots file, empty sitemap, noindex metadata and X-Robots-Tag: noindex, nofollow. Indexing controls are not access controls; use Vercel Deployment Protection if required.
