@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { ImageResponse } from 'next/og';
-import { anatomy, groupPaths, type View } from '@/features/anatomy/model';
+import { anatomy, artworkTransform, groupPaths, type View } from '@/features/anatomy/model';
 import { englishBook } from '@/features/workout-book/data';
 // Deliberately language-neutral. No Arabic shaping or remote-font dependency.
 export async function GET(request: Request) {
@@ -18,10 +18,12 @@ export async function GET(request: Request) {
   const overlay = highlight
     .map((d) => `<path d="${d}"/><path d="${d}" transform="translate(400 0) scale(-1 1)"/>`)
     .join('');
-  const svg = artwork.replace(
-    '</svg>',
-    `<g fill="#d4af72" fill-opacity="0.48" stroke="#f0d5a5" stroke-width="0.6">${overlay}</g></svg>`,
-  );
+  const svg = artwork
+    .replace(/(<svg\b[^>]*>)/, `$1<g transform="${artworkTransform(view)}">`)
+    .replace(
+      '</svg>',
+      `<g fill="#d4af72" fill-opacity="0.48" stroke="#f0d5a5" stroke-width="0.6">${overlay}</g></g></svg>`,
+    );
   const uri = `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
   return new ImageResponse(
     <div

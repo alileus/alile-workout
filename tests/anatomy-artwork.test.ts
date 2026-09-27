@@ -2,7 +2,20 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { anatomy, groupPaths, visibleRegions } from '../src/features/anatomy/model';
+import {
+  anatomy,
+  groupPaths,
+  resolveArtworkView,
+  visibleRegions,
+} from '../src/features/anatomy/model';
+
+test('switching anatomy waits for the requested image without blanking the loaded view', () => {
+  assert.equal(resolveArtworkView('back', { front: true, back: false }), 'front');
+  assert.equal(resolveArtworkView('front', { front: false, back: true }), 'back');
+  assert.equal(resolveArtworkView('back', { front: true, back: true }), 'back');
+  assert.equal(resolveArtworkView('front', { front: true, back: true }), 'front');
+  assert.equal(resolveArtworkView('back', { front: false, back: false }), 'back');
+});
 
 test('every mirrored highlight and its stroke stay inside the actual artwork', () => {
   execFileSync(process.execPath, ['scripts/audit-anatomy.mjs'], { encoding: 'utf8' });
