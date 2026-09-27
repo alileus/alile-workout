@@ -1,7 +1,7 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowLeft, ArrowUpRight, Search, Layers } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Search, Layers, Minimize2, Maximize2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useRouter } from '@/i18n/navigation';
 import { musclePath } from '../routes';
@@ -10,6 +10,7 @@ import type { Book } from '@/features/workout-book/schema';
 import { suggestionUrl } from '@/features/workout-book/data';
 import { BodyMap } from './body-map';
 import { anatomy, selectRegion, type View } from '../model';
+import { useCompactAnatomy } from '../use-compact-anatomy';
 export function Atlas({
   book,
   groupId = null,
@@ -20,6 +21,8 @@ export function Atlas({
   selected?: string | null;
 }) {
   const router = useRouter();
+  const { compact, toggle: toggleCompact } = useCompactAnatomy();
+  const anatomyId = useId();
   const groupButtons = useRef<HTMLDivElement>(null);
   const t = useTranslations('App'),
     locale = useLocale();
@@ -67,10 +70,39 @@ export function Atlas({
       ?.scrollIntoView({ block: 'nearest', inline: 'center' });
   }, [groupId]);
   return (
-    <main className={`atlas ${region ? 'guide-open' : ''} ${!group ? 'atlas-home' : ''}`}>
+    <main
+      className={`atlas ${compact ? 'anatomy-compact' : ''} ${region ? 'guide-open' : ''} ${!group ? 'atlas-home' : ''}`}
+    >
       <h1 className="sr-only">{region?.name || (group ? label(group.id) : t('title'))}</h1>
-      <section className="anatomy-panel" aria-label={t('atlas')}>
+      <nav className="group-bar" aria-label={t('groups')}>
+        <div className="group-buttons" ref={groupButtons}>
+          {book.map((g) => (
+            <Button variant={g.id === groupId ? 'default' : 'outline'} key={g.id} asChild>
+              <Link
+                href={musclePath(g.id === groupId ? null : g.id)}
+                scroll={false}
+                aria-current={g.id === groupId ? 'page' : undefined}
+                onClick={() => chooseGroup(g.id)}
+              >
+                {label(g.id)}
+              </Link>
+            </Button>
+          ))}
+        </div>
+      </nav>
+      <section id={anatomyId} className="anatomy-panel" aria-label={t('atlas')}>
         <span className="anatomy-caption eyebrow">{t('schematic')}</span>
+        <Button
+          className="anatomy-size-toggle"
+          variant="outline"
+          size="icon"
+          aria-label={t(compact ? 'expandAnatomy' : 'collapseAnatomy')}
+          aria-expanded={!compact}
+          aria-controls={anatomyId}
+          onClick={toggleCompact}
+        >
+          {compact ? <Maximize2 aria-hidden="true" /> : <Minimize2 aria-hidden="true" />}
+        </Button>
         <BodyMap
           group={activeId ? null : groupId}
           regionId={visibleActiveId}
@@ -101,22 +133,6 @@ export function Atlas({
           </div>
         </div>
       </section>
-      <nav className="group-bar" aria-label={t('groups')}>
-        <div className="group-buttons" ref={groupButtons}>
-          {book.map((g) => (
-            <Button variant={g.id === groupId ? 'default' : 'outline'} key={g.id} asChild>
-              <Link
-                href={musclePath(g.id === groupId ? null : g.id)}
-                scroll={false}
-                aria-current={g.id === groupId ? 'page' : undefined}
-                onClick={() => chooseGroup(g.id)}
-              >
-                {label(g.id)}
-              </Link>
-            </Button>
-          ))}
-        </div>
-      </nav>
       <section className="regions-panel" aria-label={t('regions')}>
         {!group ? (
           <div className="atlas-intro">

@@ -1,61 +1,117 @@
-# alile-workout
+<a href="https://workout.alile.us">
+  <img src="docs/assets/readme-banner.png" alt="alile-workout — A field guide to movement. Pencil illustrations of front and back muscle anatomy." width="1600" />
+</a>
 
-An open muscle atlas and workout book. Choose a training-day group, explore individual regions, and see movements with the other muscles they involve.
+<h1 align="center">alile-workout</h1>
 
-Next.js App Router · TypeScript · Tailwind CSS 4 · shadcn/ui · next-intl
+<p align="center">
+  An open muscle atlas and community workout book.<br />
+  Choose what to train, explore the anatomy, and understand the movements behind it.
+</p>
+
+<p align="center">
+  <a href="https://github.com/alileus/alile-workout/actions/workflows/ci.yml"><img src="https://github.com/alileus/alile-workout/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-d4af72?labelColor=27251f" alt="MIT license" /></a>
+  <a href=".nvmrc"><img src="https://img.shields.io/badge/Node.js-24-d4af72?labelColor=27251f" alt="Node.js 24" /></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-d4af72?labelColor=27251f" alt="Contributions welcome" /></a>
+</p>
+
+<p align="center">
+  <a href="https://workout.alile.us/en"><strong>Explore the atlas</strong></a> ·
+  <a href="https://workout.alile.us/ar">العربية</a> ·
+  <a href="https://workout.alile.us/ja">日本語</a> ·
+  <a href="https://workout.alile.us/en/design-system">Design system</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a>
+</p>
+
+## Start with a muscle. Follow the movement.
+
+Training advice is easier to understand when you can see what it involves. This project connects an interactive anatomy drawing to practical exercise guides, with the source, content, and translations open to contribution.
+
+- **Explore 100 muscle regions.** Browse Chest, Back, Shoulders, Arms, Core, and Legs, or select a region on the front/back anatomy.
+- **Understand each exercise.** Find instructions, technique cues, suggested volume, and the other muscles involved.
+- **Share the exact muscle.** Every group and region has its own URL, localized metadata, and an anatomy-based social preview.
+- **Read in three languages.** English, Arabic with RTL support, and Japanese cover the interface and all muscle guides.
+- **Use it on any screen.** Responsive layouts, keyboard-accessible region selection, and a shared sketchbook-inspired design system.
+
+Try [Chest → Clavicular head](https://workout.alile.us/en/muscles/chest/chest-clavicular-head), then switch views and explore.
+
+## Help build the book
+
+You do not need to write code to contribute. Coaches, athletes, translators, illustrators, and developers can all help improve it.
+
+| I want to…                                   | Start here                                                                                                                                               |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Correct a guide or suggest an exercise       | [Submit a workout book update](https://github.com/alileus/alile-workout/issues/new?template=book-update.yml)                                             |
+| Improve English, Arabic, or Japanese wording | [Suggest a translation](https://github.com/alileus/alile-workout/issues/new?template=book-update.yml) or read the [content guide](docs/content-guide.md) |
+| Improve the anatomy or visual design         | Read the [artwork guide](docs/artwork/README.md) and [design system](docs/design-system.md)                                                              |
+| Fix a bug or build a feature                 | Read [CONTRIBUTING.md](CONTRIBUTING.md), then [browse issues](https://github.com/alileus/alile-workout/issues)                                           |
+
+Every muscle guide also includes **Suggest an edit**, which opens a form with the relevant entry already filled in. A free GitHub account is required. Suggestions are reviewed before publication; accepted updates become versioned pull requests.
+
+The book is a **community draft awaiting expert review**. Its 100 regions are not a claim of exhaustive anatomical coverage. Deep layers are schematic, and each entry includes references and review status. Evidence-backed corrections and fluent-speaker reviews are especially welcome.
 
 ## Run locally
 
-Use Node.js 24 LTS and npm. No database, account or secrets are required.
+Use **Node.js 24** and npm. No database, account, or application secrets are needed to run the app.
 
 ```sh
+git clone https://github.com/alileus/alile-workout.git
+cd alile-workout
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. Routes: `/en`, `/ar` (RTL), `/ja`.
+Open [localhost:3000](http://localhost:3000). Localized routes start at `/en`, `/ar`, and `/ja`.
 
-```sh
-npm run check   # formatting, lint, types, content checks, production build
-npm run format
-```
+| Command          | What it does                                                         |
+| ---------------- | -------------------------------------------------------------------- |
+| `npm run dev`    | Start the local development server                                   |
+| `npm run check`  | Run formatting, lint, types, tests, and a production build           |
+| `npm test`       | Check content, translations, routing, metadata, and anatomy geometry |
+| `npm run format` | Format the project with Prettier                                     |
+| `npm run build`  | Build the production app                                             |
+| `npm start`      | Serve an existing production build                                   |
 
-## Contribute without coding
+For a first PR, fork the repository, branch from `main`, make a focused change, and run `npm run check`. Include how you verified it. UI changes should work on mobile, with a keyboard, and in all three locales, including RTL.
 
-Choose **Suggest an edit** in any muscle guide, or use the [workout book form](https://github.com/alileus/alile-workout/issues/new?template=book-update.yml). Submit corrections, exercise suggestions, references or translations in English, Arabic or Japanese. A free GitHub account is required. Maintainers review suggestions and convert accepted changes into PRs; submissions do not publish automatically.
+## Inside the project
 
-## Project map
+**Next.js App Router · React · TypeScript · Tailwind CSS · shadcn/ui · next-intl · Zod**
 
-| Location                    | Responsibility                                           |
-| --------------------------- | -------------------------------------------------------- |
-| `src/app`                   | Routes, server-rendered pages, SEO and dynamic images    |
-| `src/features/anatomy`      | Interactive anatomy and schematic geometry               |
-| `src/features/workout-book` | Schema, content loader, movement guide                   |
-| `src/components/ui`         | Reusable shadcn/ui primitives                            |
-| `src/app/globals.css`       | Semantic tokens and responsive layout                    |
-| `src/i18n`, `messages`      | Locale routing and translated interface                  |
-| `content/book`              | Versioned workout content and translations               |
-| `tests`                     | Content, geometry, locale, metadata and selection checks |
+Features own their behavior and data; shared components and design tokens keep contributions consistent. Workout entries live in versioned JSON, separate from the anatomy illustration.
 
-See [architecture](docs/architecture.md), [design system](docs/design-system.md), [content guide](docs/content-guide.md), and [contributing](CONTRIBUTING.md). The component gallery is available at `/en/design-system` and in the other locales.
+| Location                    | Responsibility                                                      |
+| --------------------------- | ------------------------------------------------------------------- |
+| `src/features/anatomy`      | Region selection, front/back views, geometry, and share routes      |
+| `src/features/workout-book` | Content schema, locale-aware loader, and movement guides            |
+| `content/book`              | Workout entries and complete Arabic/Japanese translations           |
+| `src/components/ui`         | Reusable shadcn/ui primitives                                       |
+| `src/app/globals.css`       | Shared visual tokens and responsive layout                          |
+| `src/app`                   | Pages, metadata, social images, sitemap, and robots                 |
+| `src/i18n` · `messages`     | Locale routing and interface translations                           |
+| `public/anatomy`            | Pencil-style front/back SVG artwork                                 |
+| `tests`                     | Content integrity, translation coverage, routes, and artwork checks |
 
-## Content status
+[Architecture](docs/architecture.md) · [Design system](docs/design-system.md) · [Content guide](docs/content-guide.md) · [Artwork provenance & tooling](docs/artwork/README.md)
 
-The imported prototype has **100 schematic regions** across Chest, Back, Shoulders, Arms, Core and Legs. It is a community draft awaiting expert review, not a claim of exhaustive anatomical coverage. Small muscles and deep layers are shown schematically. References and review status belong to each entry.
+The banner uses the same anatomy vectors as the app. Rebuild it with `node scripts/create-readme-banner.mjs`.
 
-The interface, contribution flows, and all 100 muscle guides are available in English, Arabic, and Japanese. Translations include names, descriptions, exercises, instructions, cues, equipment, volume, and other muscles involved. Tests require complete coverage and reject unchanged English text in translated fields. Content remains a community draft open to fluent-speaker and expert review.
+## Releases
 
-## Branches and future hosting
+| Branch       | Environment       | URL                                            |
+| ------------ | ----------------- | ---------------------------------------------- |
+| `main`       | Preview / testing | [workout.alile.dev](https://workout.alile.dev) |
+| `production` | Live              | [workout.alile.us](https://workout.alile.us)   |
 
-| Branch       | Vercel environment | Domain              |
-| ------------ | ------------------ | ------------------- |
-| `main`       | Preview            | `workout.alile.dev` |
-| `production` | Production         | `workout.alile.us`  |
+Pull requests target `main`. Maintainers promote verified changes to `production` through a release PR; Vercel deploys pushes automatically. The preview is protected by Vercel sign-in. See the [deployment guide](docs/deployment.md) for configuration details.
 
-**Vercel is not connected by this setup.** Set Vercel's Production Branch to `production` before deploying, and assign the testing domain to `main`. Once connected, pushes trigger deployments. See [deployment setup](docs/deployment.md).
+Only production permits search indexing. Pages include canonical URLs, language alternatives, structured data, and dynamic social images. Preview and local builds use `noindex`.
 
-Only builds with `VERCEL_ENV=production` permit indexing. Preview/local builds use noindex metadata, a noindex response header, a blocking robots file and an empty sitemap. Canonicals always use the live domain. Dynamic PNG share images use language-neutral anatomy highlights.
+## License & credits
 
-## License
+[MIT](LICENSE) © alile-workout contributors. Contributions use the same license; linked third-party references retain their own licenses.
 
-[MIT](LICENSE). Contributions use the same license. Linked third-party references retain their own licenses.
+The pencil anatomy was generated with GPT Image, approved as a visual reference, and traced into SVG. Its source and rebuild instructions are documented in the [artwork guide](docs/artwork/README.md).
+
+Built with care by [alileus](https://github.com/alileus) and [everyone who contributes](https://github.com/alileus/alile-workout/graphs/contributors).
