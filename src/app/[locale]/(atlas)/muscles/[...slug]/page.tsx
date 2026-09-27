@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { englishBook, getBook } from '@/features/workout-book/data';
-import { Atlas } from '@/features/anatomy/components/atlas';
 import { musclePath, resolveMuscleRoute } from '@/features/anatomy/routes';
 import { pageMetadata, siteUrl } from '@/lib/seo';
 
@@ -73,12 +72,6 @@ export default async function MusclePage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }}
-      />
-      <Atlas
-        key={entry.group.id}
-        book={entry.book}
-        groupId={entry.group.id}
-        selected={entry.region?.id ?? null}
       />
     </>
   );

@@ -1,3 +1,4 @@
+import type { Viewport } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -7,6 +8,11 @@ import { routing } from '@/i18n/routing';
 import { NavigationDrawer } from '@/components/navigation-drawer';
 import '../globals.css';
 import fonts from '@/generated/fonts.json';
+export const viewport: Viewport = {
+  themeColor: '#161513',
+  colorScheme: 'dark',
+  viewportFit: 'cover',
+};
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
