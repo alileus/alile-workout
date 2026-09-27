@@ -4,7 +4,28 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    groups:
+      react:
+        patterns: [react, react-dom, '@types/react', '@types/react-dom']
+      next:
+        patterns: [next, eslint-config-next]
+      minor-and-patch:
+        patterns: ['*']
+        update-types: [minor, patch]
+    ignore:
+      # Keep runtime declarations aligned with .nvmrc / Vercel Node 24.
+      - dependency-name: '@types/node'
+        update-types: [version-update:semver-major]
+      # Next's React lint plugin does not support ESLint 10 yet.
+      - dependency-name: eslint
+        versions: ['10.x']
+      # typescript-eslint currently supports TypeScript <6.1.
+      - dependency-name: typescript
+        versions: ['>=6.1.0 <8.0.0']
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      actions:
+        patterns: ['*']
