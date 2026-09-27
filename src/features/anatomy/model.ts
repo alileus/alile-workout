@@ -47,3 +47,24 @@ export function visibleComponents(view: View, region?: RegionGeometry) {
 export function toggleRegion(current: string | null, next: string) {
   return current === next ? null : next;
 }
+export function visibleRegions(view: View, activeId: string | null = null) {
+  const active = activeId ? anatomy.regions[activeId] : undefined;
+  const components = visibleComponents(view, active);
+  const regions = Object.entries(anatomy.regions)
+    .filter(
+      ([id, region]) =>
+        id !== activeId &&
+        !region.deep &&
+        region.view === view &&
+        components.includes(region.component) &&
+        (!active?.zoom || region.component === active.component),
+    )
+    .map(([id]) => id);
+  // The revealed region sits above superficial hit areas, including deep cutaways.
+  return active?.view === view ? [...regions, activeId!] : regions;
+}
+export function selectRegion(current: string | null, next: string) {
+  const region = anatomy.regions[next];
+  if (!region) return null;
+  return { selected: toggleRegion(current, next), group: region.group, view: region.view as View };
+}

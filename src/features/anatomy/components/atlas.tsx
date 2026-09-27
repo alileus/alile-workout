@@ -1,21 +1,32 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowLeft, ArrowUpRight, Search } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Search, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { LanguageSwitcher } from '@/components/language-switcher';
-import { Link } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
+import { musclePath } from '../routes';
 import { MovementGuide } from '@/features/workout-book/components/movement-guide';
 import type { Book } from '@/features/workout-book/schema';
+import { suggestionUrl } from '@/features/workout-book/data';
 import { BodyMap } from './body-map';
-import { anatomy, toggleRegion, type View } from '../model';
-export function Atlas({ book }: { book: Book }) {
+import { anatomy, selectRegion, type View } from '../model';
+export function Atlas({
+  book,
+  groupId = null,
+  selected = null,
+}: {
+  book: Book;
+  groupId?: string | null;
+  selected?: string | null;
+}) {
+  const router = useRouter();
+  const groupButtons = useRef<HTMLDivElement>(null);
   const t = useTranslations('App'),
     locale = useLocale();
-  const [groupId, setGroup] = useState<string | null>('chest'),
-    [selected, setSelected] = useState<string | null>(null),
-    [hovered, setHovered] = useState<string | null>(null),
-    [view, setView] = useState<View>('front'),
+  const [hovered, setHovered] = useState<string | null>(null),
+    [view, setView] = useState<View>(
+      () => book.find((entry) => entry.id === groupId)?.view || 'front',
+    ),
     [search, setSearch] = useState('');
   const group = book.find((g) => g.id === groupId),
     activeId = hovered || selected,
@@ -24,21 +35,42 @@ export function Atlas({ book }: { book: Book }) {
   const activeRegion = group?.sections.flatMap((s) => s.regions).find((r) => r.id === activeId);
   const displayView = (active?.view || view) as View;
   const chooseGroup = (id: string) => {
-    setGroup((current) => (current === id ? null : id));
-    setSelected(null);
     setHovered(null);
     setSearch('');
     const next = book.find((g) => g.id === id);
     if (next) setView(next.view);
   };
+  const chooseRegion = (id: string) => {
+    const next = selectRegion(selected, id);
+    if (!next) return;
+    router.push(musclePath(next.group, next.selected), { scroll: false });
+    setHovered(null);
+    setSearch('');
+    setView(next.view);
+  };
+  const regionNames = Object.fromEntries(
+    book.flatMap((g) => g.sections.flatMap((s) => s.regions.map((r) => [r.id, r.name]))),
+  );
   const label = (id: string) => t(id === 'back' ? 'backGroup' : id);
+  useEffect(() => {
+    groupButtons.current
+      ?.querySelector('[aria-current="page"]')
+      ?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }, [groupId]);
   return (
-    <main className={`atlas ${region ? 'guide-open' : ''}`}>
-      <h1 className="sr-only">{t('title')}</h1>
+    <main className={`atlas ${region ? 'guide-open' : ''} ${!group ? 'atlas-home' : ''}`}>
+      <h1 className="sr-only">{region?.name || (group ? label(group.id) : t('title'))}</h1>
       <section className="anatomy-panel" aria-label={t('atlas')}>
         <span className="anatomy-caption eyebrow">{t('schematic')}</span>
         <div className="anatomy-circles" aria-hidden="true" />
-        <BodyMap group={groupId} regionId={activeId} view={displayView} onGroup={chooseGroup} />
+        <BodyMap
+          group={groupId}
+          regionId={activeId}
+          selectedRegionId={selected}
+          regionNames={regionNames}
+          view={displayView}
+          onRegion={chooseRegion}
+        />
         <div className="anatomy-bottom">
           <div className="region-label" aria-live="polite">
             {active?.deep && <span className="eyebrow">{t('deep')}</span>}
@@ -52,7 +84,7 @@ export function Atlas({ book }: { book: Book }) {
                 aria-pressed={displayView === side}
                 onClick={() => {
                   setView(side);
-                  setSelected(null);
+                  if (selected) router.push(musclePath(groupId), { scroll: false });
                   setHovered(null);
                 }}
               >
@@ -63,117 +95,146 @@ export function Atlas({ book }: { book: Book }) {
         </div>
       </section>
       <nav className="group-bar" aria-label={t('groups')}>
-        <div className="group-buttons">
+        <div className="group-buttons" ref={groupButtons}>
           {book.map((g) => (
-            <Button
-              variant={g.id === groupId ? 'default' : 'outline'}
-              key={g.id}
-              aria-pressed={g.id === groupId}
-              onClick={() => chooseGroup(g.id)}
-            >
-              {label(g.id)}
+            <Button variant={g.id === groupId ? 'default' : 'outline'} key={g.id} asChild>
+              <Link
+                href={musclePath(g.id === groupId ? null : g.id)}
+                scroll={false}
+                aria-current={g.id === groupId ? 'page' : undefined}
+                onClick={() => chooseGroup(g.id)}
+              >
+                {label(g.id)}
+              </Link>
             </Button>
           ))}
         </div>
-        <LanguageSwitcher />
       </nav>
       <section className="regions-panel" aria-label={t('regions')}>
-        <div className="section-top">
-          <span className="eyebrow">{t('regions')}</span>
-          <Link href="/book">
-            {t('book')} <ArrowUpRight size={14} />
-          </Link>
-        </div>
-        <h2>{group ? label(group.id) : t('groups')}</h2>
-        {group && (
+        {!group ? (
+          <div className="atlas-intro">
+            <span className="eyebrow">{t('intro.eyebrow')}</span>
+            <h2>{t('intro.title')}</h2>
+            <p className="intro-description">{t('intro.description')}</p>
+            <ol className="intro-steps">
+              {(['choose', 'explore', 'learn'] as const).map((step, index) => (
+                <li key={step}>
+                  <span className="intro-number" aria-hidden="true">
+                    0{index + 1}
+                  </span>
+                  <div>
+                    <h3>{t(`intro.${step}.title`)}</h3>
+                    <p>{t(`intro.${step}.description`)}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <div className="intro-note">
+              <p>{t('intro.community')}</p>
+              <Button asChild variant="outline">
+                <Link href="/contribute">{t('contribute')}</Link>
+              </Button>
+            </div>
+          </div>
+        ) : (
           <>
-            <label className="search-field">
-              <Search size={16} />
-              <input
-                aria-label={t('search')}
-                placeholder={t('search')}
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </label>
-            {group.sections.map((section) => {
-              const regions = section.regions.filter((r) =>
-                `${r.name} ${r.description}`
-                  .toLocaleLowerCase(locale)
-                  .includes(search.toLocaleLowerCase(locale)),
-              );
-              return (
-                regions.length > 0 && (
-                  <section className="region-section" key={section.name}>
-                    <h3>
-                      {t.has(`sectionNames.${section.name}`)
-                        ? t(`sectionNames.${section.name}`)
-                        : section.name}
-                    </h3>
-                    {regions.map((r) => (
-                      <button
-                        className="region-button"
-                        type="button"
-                        key={r.id}
-                        aria-pressed={r.id === selected}
-                        onPointerEnter={(e) => {
-                          if (e.pointerType !== 'touch') setHovered(r.id);
-                        }}
-                        onPointerLeave={() => setHovered(null)}
-                        onFocus={() => setHovered(r.id)}
-                        onBlur={() => setHovered(null)}
-                        onClick={() => {
-                          setSelected(toggleRegion(selected, r.id));
-                          setHovered(null);
-                        }}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Escape') {
-                            setSelected(null);
-                            setHovered(null);
-                          }
-                        }}
-                      >
-                        <span>{r.name}</span>
-                        <span className="region-indicator" aria-hidden="true">
-                          {r.id === selected ? '−' : '+'}
-                        </span>
-                      </button>
-                    ))}
-                  </section>
-                )
-              );
-            })}
-            {!group.sections.some((s) =>
-              s.regions.some((r) =>
-                `${r.name} ${r.description}`
-                  .toLocaleLowerCase(locale)
-                  .includes(search.toLocaleLowerCase(locale)),
-              ),
-            ) && <p className="muted">{t('empty')}</p>}
+            <div className="section-top">
+              <h2>{group ? label(group.id) : t('groups')}</h2>
+              <Button asChild variant="outline" size="sm">
+                <a
+                  href={suggestionUrl(selected || groupId || undefined)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t('suggest')}
+                  <ArrowUpRight aria-hidden="true" />
+                </a>
+              </Button>
+            </div>
+            {group && (
+              <>
+                <label className="search-field">
+                  <Search size={16} />
+                  <input
+                    aria-label={t('search')}
+                    placeholder={t('search')}
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                </label>
+                {group.sections.map((section) => {
+                  const regions = section.regions.filter((r) =>
+                    `${r.name} ${r.description}`
+                      .toLocaleLowerCase(locale)
+                      .includes(search.toLocaleLowerCase(locale)),
+                  );
+                  return (
+                    regions.length > 0 && (
+                      <section className="region-section" key={section.name}>
+                        <h3>
+                          {t.has(`sectionNames.${section.name}`)
+                            ? t(`sectionNames.${section.name}`)
+                            : section.name}
+                        </h3>
+                        {regions.map((r) => (
+                          <Link
+                            className="region-button"
+                            href={musclePath(group.id, r.id === selected ? null : r.id)}
+                            scroll={false}
+                            key={r.id}
+                            aria-current={r.id === selected ? 'page' : undefined}
+                            onPointerEnter={(e) => {
+                              if (e.pointerType !== 'touch') setHovered(r.id);
+                            }}
+                            onPointerLeave={() => setHovered(null)}
+                            onFocus={() => setHovered(r.id)}
+                            onBlur={() => setHovered(null)}
+                            onClick={() => {
+                              setHovered(null);
+                              setSearch('');
+                              setView(anatomy.regions[r.id].view as View);
+                            }}
+                            onKeyDown={(e) => {
+                              if (e.key === 'Escape') {
+                                router.push(musclePath(groupId), { scroll: false });
+                                setHovered(null);
+                              }
+                            }}
+                          >
+                            <span>{r.name}</span>
+                            <span className="region-indicator" aria-hidden="true">
+                              {r.id === selected ? '−' : '+'}
+                            </span>
+                          </Link>
+                        ))}
+                      </section>
+                    )
+                  );
+                })}
+                {!group.sections.some((s) =>
+                  s.regions.some((r) =>
+                    `${r.name} ${r.description}`
+                      .toLocaleLowerCase(locale)
+                      .includes(search.toLocaleLowerCase(locale)),
+                  ),
+                ) && <p className="muted">{t('empty')}</p>}
+              </>
+            )}
           </>
         )}
-        <div className="panel-footer">
-          <a href="https://github.com/alileus/alile-workout">
-            GitHub <ArrowUpRight size={14} />
-          </a>
-          <Link href="/contribute">{t('contribute')}</Link>
-          <div className="mobile-languages">
-            <LanguageSwitcher />
-          </div>
-        </div>
       </section>
       <section key={selected || 'empty'} className="guide-panel" aria-label={t('guide')}>
         {region ? (
           <>
             <Button
               className="mobile-back"
-              variant="ghost"
+              variant="outline"
               onClick={() => {
-                setSelected(null);
+                router.push(musclePath(groupId), { scroll: false });
                 setHovered(null);
               }}
             >
-              <ArrowLeft className="rtl:rotate-180" />
+              <ArrowLeft className="back-icon" aria-hidden="true" />
               {t('backRegions')}
             </Button>
             <MovementGuide region={region} />
@@ -181,7 +242,7 @@ export function Atlas({ book }: { book: Book }) {
         ) : (
           <div className="guide-empty">
             <span className="empty-icon" aria-hidden="true">
-              ↗
+              <Layers size={18} />
             </span>
             <h2>{t('guide')}</h2>
             <p>{t('choose')}</p>

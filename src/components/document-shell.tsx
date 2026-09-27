@@ -1,15 +1,18 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { LanguageSwitcher } from './language-switcher';
+import { Button } from './ui/button';
+import { ArrowLeft } from 'lucide-react';
 export function DocumentShell({ children }: { children: React.ReactNode }) {
   const t = useTranslations('App');
   return (
     <main className="document-page">
       <nav className="document-nav">
-        <Link href="/">← {t('atlas')}</Link>
-        <Link href="/book">{t('book')}</Link>
-        <Link href="/contribute">{t('contribute')}</Link>
-        <LanguageSwitcher />
+        <Button asChild variant="outline">
+          <Link href="/">
+            <ArrowLeft className="back-icon" aria-hidden="true" />
+            {t('atlas')}
+          </Link>
+        </Button>
       </nav>
       {children}
     </main>

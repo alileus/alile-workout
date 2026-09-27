@@ -12,7 +12,7 @@ Submit the Book Update form. A maintainer checks sources, edits JSON, runs check
 
 ## Translations
 
-Copy the entire English region object to content/book/ar/regions.json or content/book/ja/regions.json, keyed by ID. Preserve IDs, references and exercise count. Translate all visible fields and request fluent-speaker review. Tests report coverage.
+Copy the entire English region object to content/book/ar/regions.json or content/book/ja/regions.json, keyed by ID. Preserve IDs, references, review status, exercise order, and exercise count. Translate all visible fields, retain the source's repetitions, timing, limitations and safety cues, and request fluent-speaker review. All 100 current guides are translated. Tests require complete coverage in both languages and reject untranslated visible fields, so new entries must include Arabic and Japanese translations.
 
 Missing translations are explicitly labeled English and given appropriate language/direction attributes. Interface strings live in messages and must have matching keys.
 
