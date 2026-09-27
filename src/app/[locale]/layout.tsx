@@ -4,8 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { NavigationDrawer } from '@/components/navigation-drawer';
 import '../globals.css';
-import '@fontsource-variable/noto-sans-arabic';
-import '@fontsource-variable/noto-sans-jp';
+import fonts from '@/generated/fonts.json';
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -21,6 +20,19 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="dark">
+      <head>
+        {fonts[locale].preload.map((href) => (
+          <link
+            key={href}
+            rel="preload"
+            href={href}
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        ))}
+        {fonts[locale].stylesheet && <link rel="stylesheet" href={fonts[locale].stylesheet} />}
+      </head>
       <body>
         <NextIntlClientProvider>
           {children}

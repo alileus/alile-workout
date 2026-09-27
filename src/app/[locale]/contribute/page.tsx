@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation';
 import { suggestionUrl } from '@/features/workout-book/data';
 import { pageMetadata } from '@/lib/seo';
 import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
 const copy = {
   en: {
     intro: 'You don’t need to code to improve the workout book.',
@@ -24,6 +25,7 @@ const copy = {
     action: 'Suggest a book update',
     github: 'A free GitHub account is needed to submit a suggestion.',
     code: 'For developers',
+    docs: 'Contribution guide',
     review:
       'The current book is a community draft awaiting expert review. Illustrations show approximate locations, including deep-layer cutaways.',
   },
@@ -43,6 +45,7 @@ const copy = {
     action: 'اقترح تحديثًا للدليل',
     github: 'يلزم حساب GitHub مجاني لإرسال الاقتراح.',
     code: 'للمطورين',
+    docs: 'دليل المساهمة',
     review:
       'الدليل مسودة مجتمعية تحتاج إلى مراجعة مختصين. الرسوم توضح مواقع تقريبية للعضلات، بما فيها الطبقات العميقة.',
   },
@@ -62,6 +65,7 @@ const copy = {
     action: '記事の更新を提案',
     github: '提案の送信には無料のGitHubアカウントが必要です。',
     code: '開発者向け',
+    docs: '貢献ガイド',
     review:
       '現在の内容は専門家による確認が必要な草稿です。図は深層筋を含め、おおよその位置を示しています。',
   },
@@ -92,17 +96,23 @@ export default async function Contribute({ params }: { params: Promise<{ locale:
           </section>
         ))}
         <Button asChild>
-          <a href={suggestionUrl()}>{c.action} ↗</a>
+          <a href={suggestionUrl()} target="_blank" rel="noreferrer">
+            {c.action} <ArrowUpRight aria-hidden="true" />
+          </a>
         </Button>
         <p>{c.github}</p>
         <h2>{c.code}</h2>
         <Button asChild variant="outline">
-          <a href="https://github.com/alileus/alile-workout/blob/main/CONTRIBUTING.md">
-            CONTRIBUTING.md ↗
+          <a
+            href="https://github.com/alileus/alile-workout/blob/main/CONTRIBUTING.md"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c.docs} <ArrowUpRight aria-hidden="true" />
           </a>
         </Button>
         <Button asChild variant="outline">
-          <Link href="/design-system">{t('design')} ↗</Link>
+          <Link href="/design-system">{t('design')}</Link>
         </Button>
         <p>{c.review}</p>
       </div>

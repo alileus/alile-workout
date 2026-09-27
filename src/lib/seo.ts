@@ -8,9 +8,10 @@ export function pageMetadata(
   title: string,
   description: string,
   region?: string,
+  group?: string,
 ): Metadata {
   const url = `${siteUrl}/${locale}${path}`;
-  const image = `${siteUrl}/api/og${region ? `?region=${encodeURIComponent(region)}` : ''}`;
+  const image = `${siteUrl}/api/og${region ? `?region=${encodeURIComponent(region)}` : group ? `?group=${encodeURIComponent(group)}` : ''}`;
   return {
     title,
     description,
@@ -31,7 +32,7 @@ export function pageMetadata(
       url,
       type: 'website',
       locale: { en: 'en_US', ar: 'ar_SA', ja: 'ja_JP' }[locale],
-      images: [{ url: image, width: 1200, height: 630, alt: 'Muscle anatomy diagram' }],
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
     twitter: { card: 'summary_large_image', title, description, images: [image] },
   };

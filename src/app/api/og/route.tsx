@@ -1,13 +1,26 @@
 import { ImageResponse } from 'next/og';
 import { anatomy, visibleComponents, type View } from '@/features/anatomy/model';
+import { englishBook } from '@/features/workout-book/data';
 // Deliberately language-neutral. No Arabic shaping or remote-font dependency.
 export async function GET(request: Request) {
-  const id = new URL(request.url).searchParams.get('region');
+  const params = new URL(request.url).searchParams;
+  const id = params.get('region');
+  const groupId = params.get('group');
+  const group = englishBook.find((entry) => entry.id === groupId);
   const region = id && Object.hasOwn(anatomy.regions, id) ? anatomy.regions[id] : undefined;
   if (id && !region) return new Response('Unknown region', { status: 404 });
-  const highlight = region?.d || anatomy.paths.chest;
+  if (groupId && !group) return new Response('Unknown group', { status: 404 });
+  const view = (region?.view || group?.view || 'front') as View;
+  const components = visibleComponents(view, region);
+  const highlight =
+    region?.d ||
+    (group
+      ? components
+          .filter((component) => anatomy.componentGroup[component] === group.id)
+          .flatMap((component) => anatomy.paths[component])
+      : anatomy.paths.chest);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 670"><path d="${anatomy.silhouette}" fill="#333" stroke="#555"/>${visibleComponents(
-    (region?.view || 'front') as View,
+    view,
     region,
   )
     .flatMap((component) => anatomy.paths[component])

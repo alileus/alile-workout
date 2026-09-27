@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { BookOpen, CodeXml, Layers, Minus, Plus, Users, ArrowUpRight } from 'lucide-react';
+import { CodeXml, Layers, Minus, Menu, Users, ArrowUpRight } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/language-switcher';
@@ -20,20 +20,14 @@ export function NavigationDrawer() {
     locale = useLocale(),
     pathname = usePathname();
   const routes = [
-    { href: '/book', label: t('book'), icon: BookOpen },
     { href: '/', label: t('atlas'), icon: Layers },
     { href: '/contribute', label: t('contribute'), icon: Users },
   ];
   return (
-    <Drawer direction="bottom" open={open} onOpenChange={setOpen}>
+    <Drawer direction="bottom" open={open} onOpenChange={setOpen} autoFocus>
       <DrawerTrigger asChild>
-        <Button
-          className="navigation-trigger"
-          size="icon"
-          aria-label={t('openNavigation')}
-          title={t('openNavigation')}
-        >
-          <Plus aria-hidden="true" />
+        <Button className="navigation-trigger" size="icon" aria-label={t('openNavigation')}>
+          <Menu aria-hidden="true" />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="navigation-drawer" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
@@ -52,7 +46,7 @@ export function NavigationDrawer() {
               <Button
                 key={href}
                 asChild
-                variant={href === '/book' ? 'default' : 'outline'}
+                variant={href === '/' ? 'default' : 'outline'}
                 className="navigation-route"
               >
                 <Link

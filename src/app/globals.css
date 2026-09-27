@@ -52,23 +52,35 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-sans: Arial, 'Noto Sans Arabic', 'Noto Sans JP', sans-serif;
+  --font-sans: var(--app-font);
 }
 * {
   box-sizing: border-box;
   border-color: var(--border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
 }
-html[lang='ar'] body {
-  font-family: 'Noto Sans Arabic Variable', Arial, sans-serif;
+html {
+  --app-font: Arial, sans-serif;
+  scrollbar-gutter: stable;
 }
-html[lang='ja'] body {
-  font-family: 'Noto Sans JP Variable', Arial, sans-serif;
+@supports (scrollbar-gutter: stable) {
+  /* The root already reserves the gutter; Radix's scroll lock must not add it twice. */
+  html body[data-scroll-locked] {
+    margin-right: 0 !important;
+  }
+}
+html[lang='ar'] {
+  --app-font: 'Noto Sans Arabic Variable', Arial, sans-serif;
+}
+html[lang='ja'] {
+  --app-font: 'Noto Sans JP Variable', Arial, sans-serif;
 }
 body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, 'Noto Sans Arabic', 'Noto Sans JP', sans-serif;
+  font-family: var(--app-font);
   line-height: 1.6;
 }
 button,
@@ -86,6 +98,9 @@ a {
 }
 a:hover {
   color: var(--primary);
+}
+a[data-variant='default']:hover {
+  color: var(--primary-foreground);
 }
 button:focus-visible,
 a:focus-visible,
@@ -158,17 +173,31 @@ summary:focus-visible {
 .body-muscle {
   stroke: #3e3e3e;
   stroke-width: 0.8;
-  cursor: pointer;
+  pointer-events: none;
   transition:
     opacity 0.15s,
     fill 0.15s;
 }
-.body-muscle.active,
-.body-muscle:hover,
-.body-muscle:focus {
+.body-muscle.active {
   fill: url(#selected);
   outline: none;
   stroke: #a3e6df;
+}
+.body-region {
+  outline: none;
+  cursor: pointer;
+  pointer-events: all;
+  stroke: transparent;
+  stroke-width: 0.8;
+}
+.body-region:focus {
+  outline: none;
+}
+.body-region:hover,
+.body-region:focus-visible {
+  fill: url(#selected);
+  stroke: #a3e6df;
+  outline: none;
 }
 .has-region .body-muscle {
   opacity: 0.4;
@@ -215,12 +244,10 @@ summary:focus-visible {
 .group-bar {
   grid-column: 2/4;
   grid-row: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 28px;
+  position: sticky;
+  top: 0;
+  min-width: 0;
+  padding-block: 20px;
   border-bottom: 1px solid var(--border);
   z-index: 2;
   background: var(--background);
@@ -228,18 +255,31 @@ summary:focus-visible {
 .group-buttons {
   display: flex;
   gap: 8px;
+  width: 100%;
   overflow-x: auto;
-  scrollbar-width: none;
   max-width: 100%;
-  padding: 4px;
+  padding: 4px 24px 12px;
+  scroll-padding-inline: 24px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20px,
+    black calc(100% - 20px),
+    transparent
+  );
 }
-.group-buttons button {
+.group-buttons a {
+  flex: 1 0 auto;
+  scroll-snap-align: center;
   border-radius: 100px;
   min-height: 42px;
   padding-inline: 18px;
   background: transparent;
 }
-.group-buttons button[aria-pressed='true'] {
+.group-buttons a[aria-current='page'] {
   background: var(--primary);
 }
 .language-switcher {
@@ -258,11 +298,10 @@ summary:focus-visible {
 .regions-panel,
 .guide-panel {
   grid-row: 2;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
   min-height: 0;
   padding: 32px clamp(22px, 2.4vw, 44px) 40px;
-  scrollbar-width: thin;
-  scrollbar-color: #444 transparent;
 }
 .regions-panel {
   grid-column: 2;
@@ -270,6 +309,63 @@ summary:focus-visible {
 }
 .guide-panel {
   grid-column: 3;
+}
+.atlas-home .regions-panel {
+  grid-column: 2 / 4;
+  border-inline-end: 0;
+}
+.atlas-home .guide-panel {
+  display: none;
+}
+.atlas-intro {
+  max-width: 640px;
+  padding-block: clamp(12px, 4vh, 48px) 56px;
+  margin-inline: auto;
+}
+.atlas-intro h2 {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.2;
+  margin-block: 14px 18px;
+  text-wrap: balance;
+}
+.intro-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+}
+.intro-steps {
+  list-style: none;
+  margin-block: 30px;
+  padding: 0;
+}
+.intro-steps li {
+  display: flex;
+  gap: 18px;
+  padding-block: 20px;
+  border-top: 1px solid var(--border);
+}
+.intro-number {
+  color: var(--primary);
+  font-size: 13px;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.intro-steps h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.intro-steps p,
+.intro-note p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+.intro-note {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-top: 8px;
 }
 .section-top {
   display: flex;
@@ -286,10 +382,10 @@ summary:focus-visible {
   color: var(--muted-foreground);
 }
 .regions-panel h2 {
-  font-size: clamp(30px, 3vw, 44px);
+  font-size: clamp(24px, 2vw, 30px);
   font-weight: 600;
   letter-spacing: -0.04em;
-  margin: 12px 0 24px;
+  margin: 0;
   line-height: 1.2;
 }
 .search-field {
@@ -299,7 +395,8 @@ summary:focus-visible {
   color: var(--muted-foreground);
   border-bottom: 1px solid var(--border);
   padding: 8px 0 14px;
-  margin-bottom: 28px;
+  margin-top: 14px;
+  margin-bottom: 16px;
 }
 .search-field input {
   border: 0;
@@ -339,7 +436,7 @@ summary:focus-visible {
   transition: color 0.15s;
 }
 .region-button:hover,
-.region-button[aria-pressed='true'],
+.region-button[aria-current='page'],
 .region-button:focus-visible {
   color: var(--primary);
 }
@@ -502,31 +599,6 @@ summary:focus-visible {
   font-size: 28px;
   margin-block: 32px 18px;
 }
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 36px 64px;
-}
-.book-grid section {
-  border-top: 1px solid var(--border);
-  padding-top: 20px;
-}
-.book-grid h3 {
-  font-size: 13px;
-  color: var(--muted-foreground);
-  margin: 24px 0 10px;
-}
-.book-grid a {
-  display: flex;
-  justify-content: space-between;
-  white-space: normal;
-  text-align: start;
-  min-height: 46px;
-  height: auto;
-  font-size: 15px;
-  padding: 12px 16px;
-  margin-block: 8px;
-}
 .full-guide {
   max-width: 700px;
   margin: auto;
@@ -549,7 +621,7 @@ summary:focus-visible {
 }
 @media (min-width: 1600px) {
   .group-bar {
-    padding: 28px 40px;
+    padding-block: 24px;
   }
   .regions-panel,
   .guide-panel {
@@ -598,14 +670,14 @@ summary:focus-visible {
     grid-column: 1;
     grid-row: 2;
     display: block;
-    padding: 10px 16px;
+    padding: 10px 0;
     border-bottom: 1px solid var(--border);
   }
   .group-buttons {
     width: 100%;
     gap: 8px;
   }
-  .group-buttons button {
+  .group-buttons a {
     min-height: 38px;
     padding-inline: 18px;
   }
@@ -615,8 +687,19 @@ summary:focus-visible {
     grid-row: 3;
     padding: 24px;
     min-height: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
     border: 0;
+  }
+  .atlas-home .regions-panel {
+    grid-column: 1;
+  }
+  .atlas-intro {
+    padding-top: 0;
+  }
+  .intro-note {
+    align-items: start;
+    flex-direction: column;
   }
   .guide-panel {
     display: none;
@@ -630,14 +713,13 @@ summary:focus-visible {
   .mobile-back {
     display: inline-flex !important;
     margin-bottom: 20px;
-    padding-inline: 0;
+    min-height: 44px;
+    padding-inline: 14px;
+    gap: 10px;
   }
   .regions-panel h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  .book-grid {
-    grid-template-columns: 1fr;
+    font-size: 26px;
+    margin: 0;
   }
   .document-nav {
     margin-bottom: 36px;
@@ -698,7 +780,8 @@ summary::-webkit-details-marker {
   transition-property: background-color, color, transform, box-shadow;
   position: fixed;
   z-index: 40;
-  inset-inline-end: max(24px, calc((100vw - 1600px) / 2 + 24px));
+  left: 50%;
+  transform: translateX(-50%);
   bottom: max(24px, env(safe-area-inset-bottom));
   width: 52px;
   height: 52px;
@@ -707,7 +790,7 @@ summary::-webkit-details-marker {
   border: 1px solid #ffffff20;
 }
 .navigation-trigger:hover {
-  transform: translateY(-3px);
+  transform: translate(-50%, -3px);
 }
 .navigation-trigger svg {
   width: 24px;
@@ -715,7 +798,7 @@ summary::-webkit-details-marker {
 }
 .navigation-drawer {
   width: 100%;
-  max-width: 1600px;
+  max-width: 400px;
   margin-inline: auto;
   border-radius: 24px 24px 0 0 !important;
   max-height: 85dvh !important;
@@ -725,7 +808,8 @@ summary::-webkit-details-marker {
   max-width: 920px;
   margin-inline: auto;
   padding: 20px 32px max(32px, env(safe-area-inset-bottom));
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 .navigation-heading {
   display: flex;
@@ -743,7 +827,7 @@ summary::-webkit-details-marker {
 }
 .navigation-routes {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
 }
 .navigation-route {
@@ -765,13 +849,15 @@ summary::-webkit-details-marker {
 }
 .navigation-settings {
   display: flex;
-  align-items: end;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
   padding-top: 28px;
 }
 .navigation-languages {
   display: grid;
+  justify-items: center;
+  max-width: 100%;
   gap: 12px;
 }
 .regions-panel,
@@ -781,16 +867,41 @@ summary::-webkit-details-marker {
 .document-page {
   padding-bottom: 110px;
 }
+/* Shared scrollbar design for pages, panels, drawers and horizontal scrollers. */
+@supports selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-foreground);
+  }
+  ::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
 @media (max-width: 600px) {
   .navigation-inner {
     padding: 16px 20px max(28px, env(safe-area-inset-bottom));
   }
   .navigation-routes {
-    grid-template-columns: 1fr 1fr;
     gap: 10px;
-  }
-  .navigation-route:first-child {
-    grid-column: 1/-1;
   }
   .navigation-route {
     min-height: 56px;
@@ -798,16 +909,10 @@ summary::-webkit-details-marker {
     font-size: 14px;
   }
   .navigation-settings {
-    align-items: stretch;
-    flex-direction: column;
     gap: 18px;
     padding-top: 22px;
   }
-  .navigation-settings > a {
-    align-self: flex-start;
-  }
   .navigation-trigger {
-    inset-inline-end: 20px;
     bottom: max(20px, env(safe-area-inset-bottom));
   }
   .regions-panel,

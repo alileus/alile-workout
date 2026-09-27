@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "fonts": "node scripts/prepare-fonts.mjs",
+    "postinstall": "npm run fonts",
+    "predev": "npm run fonts",
+    "prebuild": "npm run fonts",
+    "pretypecheck": "npm run fonts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

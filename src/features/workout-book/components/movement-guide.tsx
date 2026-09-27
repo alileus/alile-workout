@@ -1,12 +1,11 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowUpRight } from 'lucide-react';
-import { Link } from '@/i18n/navigation';
 import type { Locale } from '@/i18n/routing';
 import type { Region } from '../schema';
 import { hasTranslation, suggestionUrl } from '../data';
 import { Button } from '@/components/ui/button';
 import { DisclosureIndicator } from '@/components/disclosure-indicator';
-export function MovementGuide({ region, full = false }: { region: Region; full?: boolean }) {
+export function MovementGuide({ region }: { region: Region }) {
   const t = useTranslations('App'),
     locale = useLocale() as Locale,
     translated = hasTranslation(locale, region.id);
@@ -15,24 +14,22 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
       <div className="eyebrow">{t('guide')}</div>
       <h2 className="guide-title">{region.name}</h2>
       <div className="guide-actions">
-        {!full && (
-          <Button asChild variant="outline">
-            <Link href={`/book/${region.id}`}>
-              {t('openPage')}
-              <ArrowUpRight aria-hidden="true" />
-            </Link>
-          </Button>
-        )}
         <Button asChild variant="outline">
-          <a href={suggestionUrl(region.id)}>
+          <a href={suggestionUrl(region.id)} target="_blank" rel="noreferrer">
             {t('suggest')}
             <ArrowUpRight aria-hidden="true" />
           </a>
         </Button>
       </div>
       {!translated && (
-        <a className="translation-note" href={suggestionUrl(region.id)}>
+        <a
+          className="translation-note"
+          href={suggestionUrl(region.id)}
+          target="_blank"
+          rel="noreferrer"
+        >
           {t('fallback')}
+          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
       )}
       <div lang={translated ? locale : 'en'} dir={translated && locale === 'ar' ? 'rtl' : 'ltr'}>
@@ -51,7 +48,7 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
               </span>
               <p>{exercise.alsoWorks}</p>
             </div>
-            <details open={full || undefined}>
+            <details open>
               <summary lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
                 {t('how')} <DisclosureIndicator />
               </summary>
@@ -74,7 +71,7 @@ export function MovementGuide({ region, full = false }: { region: Region; full?:
           </summary>
           {region.references.map((url) => (
             <a key={url} href={url} target="_blank" rel="noreferrer">
-              {new URL(url).hostname} <ArrowUpRight size={14} />
+              {new URL(url).hostname} <ArrowUpRight size={14} aria-hidden="true" />
             </a>
           ))}
         </details>

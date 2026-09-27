@@ -43,7 +43,7 @@ See [architecture](docs/architecture.md), [design system](docs/design-system.md)
 
 The imported prototype has **100 schematic regions** across Chest, Back, Shoulders, Arms, Core and Legs. It is a community draft awaiting expert review, not a claim of exhaustive anatomical coverage. Small muscles and deep layers are shown schematically. References and review status belong to each entry.
 
-Interface and contribution flows support all three languages. Workout entries explicitly fall back to English until translated. Arabic and Japanese example entries demonstrate the complete translation format. Translation and expert review remain community work.
+The interface, contribution flows, and all 100 muscle guides are available in English, Arabic, and Japanese. Translations include names, descriptions, exercises, instructions, cues, equipment, volume, and other muscles involved. Tests require complete coverage and reject unchanged English text in translated fields. Content remains a community draft open to fluent-speaker and expert review.
 
 ## Branches and future hosting
 
