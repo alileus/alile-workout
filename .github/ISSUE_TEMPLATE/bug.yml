@@ -1,0 +1,12 @@
+name: Bug report
+description: Report a problem with the app.
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include steps, expected behavior, browser, screen size, and language.
+    validations:
+      required: true

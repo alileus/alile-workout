@@ -1,0 +1,121 @@
+{
+  "id": "chest",
+  "name": "Chest",
+  "view": "front",
+  "sections": [
+    {
+      "name": "Chest",
+      "regions": [
+        {
+          "id": "chest-clavicular-head",
+          "name": "Clavicular head",
+          "description": "The upper portion of the pectoralis major assists shoulder flexion. An incline press changes the angle of load and emphasizes this region.",
+          "note": "Incline pressing emphasizes the upper chest; both chest regions contribute.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Incline dumbbell press",
+              "equipment": "Compound · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Set a low incline, around 15–30°. Start with dumbbells beside your upper chest. Press upward and slightly inward, then lower with control.",
+              "cue": "Keep your shoulders supported; avoid shrugging at the top.",
+              "alsoWorks": "Sternocostal pectorals, anterior deltoids, triceps"
+            },
+            {
+              "name": "Barbell bench press",
+              "equipment": "Compound · Barbell",
+              "volume": "3–4 sets × 5–8 reps",
+              "instructions": "Plant your feet, keep your shoulder blades supported on the bench, and grip just wider than shoulder width. Lower the bar under control to your mid-chest, then press up.",
+              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms.",
+              "alsoWorks": "Sternocostal pectorals, anterior deltoids, triceps"
+            }
+          ]
+        },
+        {
+          "id": "chest-sternocostal-head",
+          "name": "Sternocostal head",
+          "description": "The broad middle and lower portion draws your arm across your chest. Flat presses and fly variations load this region alongside the rest of the chest.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Barbell bench press",
+              "equipment": "Compound · Barbell",
+              "volume": "3–4 sets × 5–8 reps",
+              "instructions": "Plant your feet, keep your shoulder blades supported on the bench, and grip just wider than shoulder width. Lower the bar under control to your mid-chest, then press up.",
+              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms.",
+              "alsoWorks": "Clavicular pectorals, anterior deltoids, triceps"
+            },
+            {
+              "name": "Cable chest fly",
+              "equipment": "Isolation · Cable",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Stand in a split stance between two pulleys. With a soft bend in your elbows, bring your hands together in front of your chest. Return slowly.",
+              "cue": "Move through the shoulder and keep the elbow angle steady.",
+              "alsoWorks": "Clavicular pectorals, anterior deltoids"
+            }
+          ]
+        },
+        {
+          "id": "chest-pectoralis-minor",
+          "name": "Pectoralis minor",
+          "description": "A deeper muscle beneath the pectoralis major that moves and stabilizes the shoulder blade.",
+          "note": "Trains scapular protraction with serratus anterior; does not isolate pectoralis minor.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Incline push-up plus",
+              "equipment": "Scapular control · Bench",
+              "volume": "2–3 sets × 8–12 reps",
+              "instructions": "Place your hands on a stable bench. Perform a controlled push-up. At the top, keep your elbows straight and push the bench away so your shoulder blades move around your ribs.",
+              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging.",
+              "alsoWorks": "Serratus anterior; pectoralis major and triceps during the push-up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Serratus anterior",
+      "regions": [
+        {
+          "id": "serratus-serratus-anterior",
+          "name": "Serratus anterior",
+          "description": "Attaches along the side of the ribs and holds the shoulder blade against the thorax.",
+          "note": "",
+          "references": [
+            "https://www.acefitness.org/certifiednewsarticle/2660/a-commonsense-approach-to-addressing-shoulder-instability/"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Incline push-up plus",
+              "equipment": "Scapular control · Bench",
+              "volume": "2–3 sets × 8–12 reps",
+              "instructions": "Place your hands on a stable bench. Perform a controlled push-up. At the top, keep your elbows straight and push the bench away so your shoulder blades move around your ribs.",
+              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging.",
+              "alsoWorks": "Pectoralis minor; chest and triceps during the push-up"
+            },
+            {
+              "name": "Forearm wall slide",
+              "equipment": "Scapular control · Wall",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Place your forearms against a wall. Slide them upward as you gently reach into the wall, then return.",
+              "cue": "Allow the shoulder blades to rotate; keep your ribs controlled.",
+              "alsoWorks": "Upper and lower trapezius, deltoids"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,846 @@
+{
+  "silhouette": "M183 98 L181 83 Q168 70 173 48 Q173 22 198 20 Q226 20 227 48 Q232 70 218 83 L217 98 L245 110 Q278 104 290 129 L309 186 L314 214 L332 265 L338 288 L348 305 L348 329 Q344 341 339 326 L334 315 L328 339 Q323 347 321 337 L322 309 L319 287 L298 259 L284 224 L267 194 L256 214 L249 257 L261 285 Q271 313 263 357 L257 420 L253 441 Q271 479 259 520 L247 576 L247 608 L263 627 Q273 640 248 642 L227 637 L224 614 L224 577 L224 526 L218 478 L225 441 L216 410 L211 366 L200 337 L189 366 L184 410 L175 441 L182 478 L176 526 L176 577 L176 614 L173 637 L152 642 Q127 640 137 627 L153 608 L153 576 L141 520 Q129 479 147 441 L143 420 L137 357 Q129 313 139 285 L151 257 L144 214 L133 194 L116 224 L102 259 L81 287 L78 309 L79 337 Q77 347 72 339 L66 315 L61 326 Q56 341 52 329 L52 305 L62 288 L68 265 L86 214 L91 186 L110 129 Q122 104 155 110 Z",
+  "paths": {
+    "forearms": ["M97 217 Q108 215 114 227 L102 255 L79 286 L72 281 L86 248 Z"],
+    "traps": ["M182 94 L198 96 L198 213 L178 187 L162 149 L146 140 L154 109 Z"],
+    "shoulders": ["M153 112 Q133 103 116 120 Q102 131 106 161 Q126 154 141 139 Z"],
+    "chest": ["M151 115 Q166 107 196 115 L195 168 Q171 182 142 154 L130 143 Z"],
+    "biceps": ["M109 162 Q127 153 133 163 Q134 187 116 215 L99 211 Q98 188 109 162 Z"],
+    "core": [
+      "M178 177 Q188 179 197 175 L197 201 L179 202 Z",
+      "M179 206 L197 207 L197 230 L178 229 Z",
+      "M179 234 L197 235 L197 259 L182 258 Z",
+      "M183 263 L197 264 L197 290 Q185 286 183 263 Z",
+      "M143 167 L174 182 L173 250 L158 270 Q151 243 149 217 Z"
+    ],
+    "quads": [
+      "M154 290 Q139 315 142 351 L151 414 Q160 437 170 416 L175 337 L173 301 Z",
+      "M178 303 L194 321 L185 407 Q179 437 172 415 L178 356 Z",
+      "M140 321 Q127 364 144 416 L150 400 Z"
+    ],
+    "back": [
+      "M143 147 L193 177 L179 254 L157 273 Q155 237 142 208 Z",
+      "M190 183 L197 182 L197 282 L181 273 Z"
+    ],
+    "triceps": ["M109 157 Q127 150 138 166 Q133 196 116 218 L98 212 Q98 184 109 157 Z"],
+    "glutes": ["M158 273 Q174 270 197 287 L197 329 Q172 350 145 324 Q144 296 158 273 Z"],
+    "hamstrings": [
+      "M145 332 Q167 348 179 338 L173 414 Q162 449 151 416 Z",
+      "M182 337 L195 334 L184 413 L174 425 Z"
+    ],
+    "calves": [
+      "M151 451 Q140 475 144 508 Q149 535 158 537 L167 490 L162 449 Z",
+      "M165 453 Q185 468 174 509 L162 540 L160 517 Z"
+    ],
+    "cuff": [
+      "M154 114 L187 111 L180 126 L148 134 Z",
+      "M153 132 L184 130 L178 153 L143 143 Z",
+      "M147 147 L179 154 L174 164 L140 154 Z"
+    ],
+    "serratus": [
+      "M141 155 L159 170 L151 176 L139 164 Z",
+      "M142 170 L164 184 L155 190 L141 179 Z",
+      "M143 185 L166 198 L156 207 L142 194 Z"
+    ],
+    "neck": [
+      "M180 77 L185 83 L197 106 L190 110 L179 90 Z",
+      "M190 77 L198 78 L198 108 L192 105 Z",
+      "M177 87 L184 97 L188 110 L173 105 Z"
+    ],
+    "hands": [
+      "M71 295 Q79 297 77 306 L70 315 L67 308 Z",
+      "M69 302 L76 301 L73 311 L68 315 Z",
+      "M70 293 L77 296 L73 313 L68 307 Z",
+      "M59 301 L68 298 L74 311 L68 314 Z",
+      "M54 300 L59 297 L63 316 L57 321 L53 314 Z",
+      "M61 301 L65 301 L67 317 L63 319 Z",
+      "M60 300 L63 301 L67 317 L63 319 Z"
+    ],
+    "hipflexors": [
+      "M188 239 L197 237 L193 294 L174 322 L169 312 L183 282 Z",
+      "M151 275 Q173 262 185 284 L173 315 L165 317 Z",
+      "M141 280 L150 277 L157 310 L149 330 L141 316 Z",
+      "M148 287 L155 289 L185 377 L187 418 L181 422 L178 378 Z"
+    ],
+    "adductors": [
+      "M190 306 L198 329 L180 377 L174 356 Z",
+      "M189 302 L197 316 L180 345 L173 331 Z",
+      "M190 310 L198 337 L184 408 L173 398 L178 352 Z",
+      "M194 313 L199 335 L187 423 L182 425 L188 369 Z",
+      "M179 294 L193 299 L183 324 L172 315 Z"
+    ],
+    "hiprotators": [
+      "M193 281 L198 290 L153 306 L148 298 Z",
+      "M190 298 L197 308 L154 318 L149 309 Z",
+      "M185 313 L196 319 L153 326 L149 320 Z",
+      "M189 293 L195 297 L151 310 L149 305 Z",
+      "M188 310 L195 314 L153 323 L150 318 Z",
+      "M186 322 L195 329 L154 338 L151 329 Z"
+    ],
+    "lowerleg": [
+      "M164 450 L175 457 L167 528 L158 571 L153 568 L158 511 Z",
+      "M145 451 L153 453 L149 518 L152 565 L146 560 L140 506 Z",
+      "M154 453 L163 458 L157 533 L152 575 L148 574 L150 516 Z",
+      "M162 465 L167 466 L163 534 L160 576 L156 575 Z"
+    ],
+    "feet": [
+      "M166 592 L171 596 L172 633 L165 635 L159 620 Z",
+      "M160 614 L168 615 L171 634 L162 635 Z",
+      "M144 619 L154 613 L168 630 L163 635 Z",
+      "M148 599 L161 603 L163 632 L144 634 L142 620 Z",
+      "M150 589 L162 591 L166 614 L145 615 Z",
+      "M146 621 L150 620 L153 635 L148 637 Z",
+      "M155 621 L159 620 L162 635 L157 637 Z",
+      "M143 595 L148 599 L144 625 L139 635 L134 633 L138 618 Z",
+      "M151 590 L164 593 L161 617 L148 624 L144 614 Z"
+    ],
+    "deepcore": ["M190 180 L197 181 L197 286 L187 275 Z", "M172 224 L187 221 L190 273 L165 278 Z"]
+  },
+  "componentGroup": {
+    "chest": "chest",
+    "serratus": "chest",
+    "back": "back",
+    "traps": "back",
+    "shoulders": "shoulders",
+    "cuff": "shoulders",
+    "neck": "shoulders",
+    "biceps": "arms",
+    "triceps": "arms",
+    "forearms": "arms",
+    "hands": "arms",
+    "core": "core",
+    "deepcore": "core",
+    "quads": "legs",
+    "hamstrings": "legs",
+    "glutes": "legs",
+    "adductors": "legs",
+    "hipflexors": "legs",
+    "hiprotators": "legs",
+    "calves": "legs",
+    "lowerleg": "legs",
+    "feet": "legs"
+  },
+  "regions": {
+    "chest-clavicular-head": {
+      "d": ["M151 115 Q168 108 196 115 L195 130 Q164 132 136 143 L130 143 Z"],
+      "component": "chest",
+      "view": "front",
+      "group": "chest"
+    },
+    "chest-sternocostal-head": {
+      "d": ["M136 145 Q165 135 195 134 L195 168 Q171 182 142 154 Z"],
+      "component": "chest",
+      "view": "front",
+      "group": "chest"
+    },
+    "chest-pectoralis-minor": {
+      "deep": true,
+      "d": ["M146 128 L181 155 L178 162 L151 144 L175 168 L171 175 L143 147 Z"],
+      "component": "chest",
+      "view": "front",
+      "group": "chest"
+    },
+    "serratus-serratus-anterior": {
+      "d": [
+        "M141 155 L159 170 L151 176 L139 164 Z",
+        "M142 170 L164 184 L155 190 L141 179 Z",
+        "M143 185 L166 198 L156 207 L142 194 Z"
+      ],
+      "deep": false,
+      "view": "front",
+      "component": "serratus",
+      "group": "chest"
+    },
+    "back-latissimus-dorsi": {
+      "d": ["M143 147 L186 178 L178 254 L157 273 Q155 237 142 208 Z"],
+      "component": "back",
+      "view": "back",
+      "group": "back"
+    },
+    "back-rhomboids": {
+      "deep": true,
+      "d": ["M196 121 L174 132 L178 164 L197 150 Z", "M196 110 L172 122 L174 128 L197 117 Z"],
+      "component": "back",
+      "view": "back",
+      "group": "back"
+    },
+    "back-erector-spinae": {
+      "deep": true,
+      "d": ["M190 172 L197 172 L197 283 L182 275 L186 230 Z"],
+      "component": "back",
+      "view": "back",
+      "group": "back"
+    },
+    "traps-upper-trapezius": {
+      "d": ["M182 94 L198 96 L198 126 L172 123 L148 138 L154 109 Z"],
+      "component": "traps",
+      "view": "back",
+      "group": "back"
+    },
+    "traps-middle-trapezius": {
+      "d": ["M172 126 L198 129 L198 154 L163 151 L149 140 Z"],
+      "component": "traps",
+      "view": "back",
+      "group": "back"
+    },
+    "traps-lower-trapezius": {
+      "d": ["M166 155 L198 158 L198 213 L178 187 Z"],
+      "component": "traps",
+      "view": "back",
+      "group": "back"
+    },
+    "shoulders-anterior-deltoid": {
+      "view": "front",
+      "d": ["M145 112 L153 114 L141 139 L128 151 Q130 128 145 112 Z"],
+      "component": "shoulders",
+      "group": "shoulders"
+    },
+    "shoulders-middle-deltoid": {
+      "view": "front",
+      "d": ["M139 111 Q122 108 112 126 Q102 143 106 161 L125 152 Q128 128 139 111 Z"],
+      "component": "shoulders",
+      "group": "shoulders"
+    },
+    "shoulders-posterior-deltoid": {
+      "view": "back",
+      "d": ["M151 113 L145 140 L123 153 Q126 128 139 112 Z"],
+      "component": "shoulders",
+      "group": "shoulders"
+    },
+    "cuff-supraspinatus": {
+      "d": ["M154 114 L187 111 L180 126 L148 134 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "cuff",
+      "group": "shoulders"
+    },
+    "cuff-infraspinatus": {
+      "d": ["M153 132 L184 130 L178 153 L143 143 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "cuff",
+      "group": "shoulders"
+    },
+    "cuff-teres-minor": {
+      "d": ["M147 147 L179 154 L174 164 L140 154 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "cuff",
+      "group": "shoulders"
+    },
+    "cuff-subscapularis": {
+      "d": ["M150 129 L183 137 L180 166 L145 148 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "cuff",
+      "group": "shoulders"
+    },
+    "neck-sternocleidomastoid": {
+      "d": ["M180 77 L185 83 L197 106 L190 110 L179 90 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "neck-longus-colli-longus-capitis": {
+      "d": ["M190 77 L198 78 L198 108 L192 105 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "neck-scalenes": {
+      "d": ["M177 87 L184 97 L188 110 L173 105 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "neck-splenius-capitis-cervicis": {
+      "d": ["M179 77 L191 79 L194 111 L177 102 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "neck-levator-scapulae": {
+      "d": ["M182 82 L187 85 L174 129 L164 124 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "neck-suboccipital-muscles": {
+      "d": ["M180 76 L196 80 L194 89 L181 85 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "neck",
+      "group": "shoulders"
+    },
+    "biceps-long-head": {
+      "d": ["M108 163 Q117 157 120 162 Q118 194 104 212 L99 211 Q98 188 108 163 Z"],
+      "component": "biceps",
+      "view": "front",
+      "group": "arms"
+    },
+    "biceps-short-head": {
+      "d": ["M122 161 Q130 158 133 163 Q135 185 116 215 L107 214 Q121 188 122 161 Z"],
+      "component": "biceps",
+      "view": "front",
+      "group": "arms"
+    },
+    "biceps-brachialis-supporting-muscle": {
+      "deep": true,
+      "d": ["M110 183 Q119 173 128 177 L120 211 L111 219 L103 210 Z"],
+      "component": "biceps",
+      "view": "front",
+      "group": "arms"
+    },
+    "triceps-long-head": {
+      "d": ["M125 159 L138 166 Q134 197 116 218 L111 210 Q121 186 125 159 Z"],
+      "component": "triceps",
+      "view": "back",
+      "group": "arms"
+    },
+    "triceps-lateral-head": {
+      "d": ["M109 157 Q118 154 123 158 Q119 190 109 205 L99 207 Q98 182 109 157 Z"],
+      "component": "triceps",
+      "view": "back",
+      "group": "arms"
+    },
+    "triceps-medial-head": {
+      "deep": true,
+      "d": ["M112 186 Q124 180 129 188 L118 215 L108 219 L101 211 Z"],
+      "component": "triceps",
+      "view": "back",
+      "group": "arms"
+    },
+    "forearms-brachioradialis": {
+      "d": ["M97 215 L104 219 L99 241 L80 279 L73 282 L86 248 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-flexor-carpi-radialis": {
+      "d": ["M99 224 L104 226 L94 251 L78 281 L75 278 L88 249 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-flexor-carpi-ulnaris": {
+      "d": ["M110 226 L115 230 L104 256 L84 284 L80 282 L96 253 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-flexor-digitorum-superficialis": {
+      "d": ["M103 227 L111 229 L99 257 L80 284 L77 279 L93 253 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-flexor-digitorum-profundus": {
+      "d": ["M101 232 L109 233 L98 260 L79 285 L76 281 L91 253 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-flexor-pollicis-longus": {
+      "d": ["M99 229 L104 232 L92 258 L78 279 L74 276 L88 250 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-extensor-carpi-radialis-longus-brevis": {
+      "d": ["M97 219 L104 222 L94 252 L79 281 L74 280 L88 248 Z"],
+      "deep": false,
+      "view": "back",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-extensor-carpi-ulnaris": {
+      "d": ["M110 226 L115 230 L104 256 L84 284 L80 282 L97 253 Z"],
+      "deep": false,
+      "view": "back",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-extensor-digitorum": {
+      "d": ["M103 224 L110 228 L98 258 L80 284 L77 280 L91 251 Z"],
+      "deep": false,
+      "view": "back",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-extensor-pollicis-longus-brevis": {
+      "d": ["M100 237 L105 240 L94 262 L78 282 L74 278 L88 252 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-abductor-pollicis-longus": {
+      "d": ["M98 235 L103 237 L91 259 L75 280 L72 275 L86 250 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-pronator-teres": {
+      "d": ["M108 215 L114 220 L99 242 L94 237 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-pronator-quadratus": {
+      "d": ["M83 260 L91 266 L81 279 L74 276 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "forearms-supinator": {
+      "d": ["M100 213 L114 218 L111 231 L98 230 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "forearms",
+      "group": "arms"
+    },
+    "hands-abductor-pollicis-brevis": {
+      "d": ["M71 295 Q79 297 77 306 L70 315 L67 308 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-flexor-pollicis-brevis": {
+      "d": ["M69 302 L76 301 L73 311 L68 315 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-opponens-pollicis": {
+      "d": ["M70 293 L77 296 L73 313 L68 307 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-adductor-pollicis": {
+      "d": ["M59 301 L68 298 L74 311 L68 314 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-hypothenar-muscles": {
+      "d": ["M54 300 L59 297 L63 316 L57 321 L53 314 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-lumbricals": {
+      "d": ["M61 301 L65 301 L67 317 L63 319 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-dorsal-interossei": {
+      "d": ["M57 299 L61 302 L59 317 L56 315 Z", "M64 300 L67 302 L66 317 L63 317 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "hands-palmar-interossei": {
+      "d": ["M60 300 L63 301 L67 317 L63 319 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hands",
+      "zoom": "42 273 48 72",
+      "zoomLabel": "Hand detail · schematic",
+      "group": "arms"
+    },
+    "core-rectus-abdominis": {
+      "d": [
+        "M178 177 Q188 179 197 175 L197 201 L179 202 Z",
+        "M179 206 L197 207 L197 230 L178 229 Z",
+        "M179 234 L197 235 L197 259 L182 258 Z",
+        "M183 263 L197 264 L197 290 Q185 286 183 263 Z"
+      ],
+      "component": "core",
+      "view": "front",
+      "group": "core"
+    },
+    "core-internal-external-obliques": {
+      "d": ["M143 167 L174 182 L173 250 L158 270 Q151 243 149 217 Z"],
+      "component": "core",
+      "view": "front",
+      "group": "core"
+    },
+    "core-transversus-abdominis": {
+      "deep": true,
+      "d": ["M153 191 Q169 197 197 191 L197 283 L168 273 Q153 243 153 191 Z"],
+      "component": "core",
+      "view": "front",
+      "group": "core"
+    },
+    "deepcore-multifidus": {
+      "d": ["M190 180 L197 181 L197 286 L187 275 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "deepcore",
+      "group": "core"
+    },
+    "deepcore-quadratus-lumborum": {
+      "d": ["M172 224 L187 221 L190 273 L165 278 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "deepcore",
+      "group": "core"
+    },
+    "deepcore-diaphragm": {
+      "d": ["M148 195 Q170 168 198 183 L198 197 Q174 186 150 208 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "deepcore",
+      "group": "core"
+    },
+    "deepcore-pelvic-floor": {
+      "d": ["M158 283 Q177 300 198 286 L198 311 L181 321 L164 308 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "deepcore",
+      "group": "core"
+    },
+    "quads-rectus-femoris": {
+      "d": ["M158 293 L171 302 L174 337 L168 399 L160 408 L153 376 L151 334 Z"],
+      "component": "quads",
+      "view": "front",
+      "group": "legs"
+    },
+    "quads-vastus-lateralis": {
+      "d": ["M151 297 Q138 315 138 351 L144 403 L153 416 L155 393 L148 350 Z"],
+      "component": "quads",
+      "view": "front",
+      "group": "legs"
+    },
+    "quads-vastus-medialis": {
+      "d": ["M177 322 L192 328 L185 397 Q180 430 171 419 L170 404 L176 374 Z"],
+      "component": "quads",
+      "view": "front",
+      "group": "legs"
+    },
+    "quads-vastus-intermedius": {
+      "deep": true,
+      "d": ["M156 310 L174 312 L181 357 L172 409 L158 413 L149 359 Z"],
+      "component": "quads",
+      "view": "front",
+      "group": "legs"
+    },
+    "hamstrings-biceps-femoris": {
+      "d": ["M146 332 L159 339 L160 386 L155 423 L149 410 L142 360 Z"],
+      "component": "hamstrings",
+      "view": "back",
+      "group": "legs"
+    },
+    "hamstrings-semitendinosus": {
+      "d": ["M165 340 L178 338 L175 383 L169 421 L163 432 L159 415 L164 382 Z"],
+      "component": "hamstrings",
+      "view": "back",
+      "group": "legs"
+    },
+    "hamstrings-semimembranosus": {
+      "deep": true,
+      "d": ["M176 336 L193 335 L186 383 L176 419 L168 414 L174 375 Z"],
+      "component": "hamstrings",
+      "view": "back",
+      "group": "legs"
+    },
+    "glutes-gluteus-maximus": {
+      "d": ["M153 289 Q175 284 197 292 L197 329 Q172 350 145 324 Q144 304 153 289 Z"],
+      "component": "glutes",
+      "view": "back",
+      "group": "legs"
+    },
+    "glutes-gluteus-medius": {
+      "d": ["M155 271 Q173 265 189 278 L160 303 L146 295 Z"],
+      "component": "glutes",
+      "view": "back",
+      "group": "legs"
+    },
+    "glutes-gluteus-minimus": {
+      "deep": true,
+      "d": ["M152 278 Q166 269 181 280 L155 307 L146 298 Z"],
+      "component": "glutes",
+      "view": "back",
+      "group": "legs"
+    },
+    "adductors-adductor-longus": {
+      "d": ["M190 306 L198 329 L180 377 L174 356 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "adductors",
+      "group": "legs"
+    },
+    "adductors-adductor-brevis": {
+      "d": ["M189 302 L197 316 L180 345 L173 331 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "adductors",
+      "group": "legs"
+    },
+    "adductors-adductor-magnus": {
+      "d": ["M190 310 L198 337 L184 408 L173 398 L178 352 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "adductors",
+      "group": "legs"
+    },
+    "adductors-gracilis": {
+      "d": ["M194 313 L199 335 L187 423 L182 425 L188 369 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "adductors",
+      "group": "legs"
+    },
+    "adductors-pectineus": {
+      "d": ["M179 294 L193 299 L183 324 L172 315 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "adductors",
+      "group": "legs"
+    },
+    "hipflexors-psoas-major": {
+      "d": ["M188 239 L197 237 L193 294 L174 322 L169 312 L183 282 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hipflexors",
+      "group": "legs"
+    },
+    "hipflexors-iliacus": {
+      "d": ["M151 275 Q173 262 185 284 L173 315 L165 317 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "hipflexors",
+      "group": "legs"
+    },
+    "hipflexors-tensor-fasciae-latae": {
+      "d": ["M141 280 L150 277 L157 310 L149 330 L141 316 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "hipflexors",
+      "group": "legs"
+    },
+    "hipflexors-sartorius": {
+      "d": ["M148 287 L155 289 L185 377 L187 418 L181 422 L178 378 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "hipflexors",
+      "group": "legs"
+    },
+    "hiprotators-piriformis": {
+      "d": ["M193 281 L198 290 L153 306 L148 298 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "hiprotators-obturator-internus": {
+      "d": ["M190 298 L197 308 L154 318 L149 309 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "hiprotators-obturator-externus": {
+      "d": ["M185 313 L196 319 L153 326 L149 320 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "hiprotators-superior-gemellus": {
+      "d": ["M189 293 L195 297 L151 310 L149 305 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "hiprotators-inferior-gemellus": {
+      "d": ["M188 310 L195 314 L153 323 L150 318 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "hiprotators-quadratus-femoris": {
+      "d": ["M186 322 L195 329 L154 338 L151 329 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "hiprotators",
+      "group": "legs"
+    },
+    "calves-gastrocnemius": {
+      "d": [
+        "M151 451 Q140 475 144 508 Q149 535 158 537 L167 490 L162 449 Z",
+        "M165 453 Q185 468 174 509 L162 540 L160 517 Z"
+      ],
+      "component": "calves",
+      "view": "back",
+      "group": "legs"
+    },
+    "calves-soleus": {
+      "deep": true,
+      "d": ["M147 477 Q159 470 176 481 L173 524 L161 564 L153 564 L143 519 Z"],
+      "component": "calves",
+      "view": "back",
+      "group": "legs"
+    },
+    "lowerleg-tibialis-anterior": {
+      "d": ["M164 450 L175 457 L167 528 L158 571 L153 568 L158 511 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-tibialis-posterior": {
+      "d": ["M157 458 L168 457 L169 508 L158 572 L151 574 L155 516 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-fibularis-longus-brevis": {
+      "d": ["M145 451 L153 453 L149 518 L152 565 L146 560 L140 506 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-extensor-digitorum-longus": {
+      "d": ["M154 453 L163 458 L157 533 L152 575 L148 574 L150 516 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-extensor-hallucis-longus": {
+      "d": ["M162 465 L167 466 L163 534 L160 576 L156 575 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-flexor-digitorum-longus": {
+      "d": ["M169 464 L177 471 L172 520 L162 575 L158 575 L164 519 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "lowerleg-flexor-hallucis-longus": {
+      "d": ["M146 467 L157 463 L161 507 L154 575 L149 575 L151 516 Z"],
+      "deep": true,
+      "view": "back",
+      "component": "lowerleg",
+      "group": "legs"
+    },
+    "feet-abductor-hallucis": {
+      "d": ["M166 592 L171 596 L172 633 L165 635 L159 620 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-flexor-hallucis-brevis": {
+      "d": ["M160 614 L168 615 L171 634 L162 635 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-adductor-hallucis": {
+      "d": ["M144 619 L154 613 L168 630 L163 635 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-flexor-digitorum-brevis": {
+      "d": ["M148 599 L161 603 L163 632 L144 634 L142 620 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-quadratus-plantae": {
+      "d": ["M150 589 L162 591 L166 614 L145 615 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-foot-interossei-lumbricals": {
+      "d": ["M146 621 L150 620 L153 635 L148 637 Z", "M155 621 L159 620 L162 635 L157 637 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-abductor-digiti-minimi": {
+      "d": ["M143 595 L148 599 L144 625 L139 635 L134 633 L138 618 Z"],
+      "deep": true,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    },
+    "feet-extensor-digitorum-hallucis-brevis": {
+      "d": ["M151 590 L164 593 L161 617 L148 624 L144 614 Z"],
+      "deep": false,
+      "view": "front",
+      "component": "feet",
+      "zoom": "122 570 66 85",
+      "zoomLabel": "Foot detail · schematic cutaway",
+      "group": "legs"
+    }
+  }
+}

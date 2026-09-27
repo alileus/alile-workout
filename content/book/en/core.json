@@ -1,0 +1,189 @@
+{
+  "id": "core",
+  "name": "Core",
+  "view": "front",
+  "sections": [
+    {
+      "name": "Core",
+      "regions": [
+        {
+          "id": "core-rectus-abdominis",
+          "name": "Rectus abdominis",
+          "description": "Runs vertically along the front of the abdomen and flexes the trunk.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Reverse crunch",
+              "equipment": "Trunk flexion · Bodyweight",
+              "volume": "3 sets × 8–15 reps",
+              "instructions": "Lie on your back with bent knees. Curl your pelvis toward your ribs to lift the tailbone slightly, then lower with control.",
+              "cue": "Use a small pelvic curl rather than swinging your legs.",
+              "alsoWorks": "Obliques; hip flexors help position the legs"
+            },
+            {
+              "name": "Dead bug",
+              "equipment": "Control · Bodyweight",
+              "volume": "3 sets × 6–10 / side",
+              "instructions": "Lie on your back with hips and knees bent. Slowly extend the opposite arm and leg, then return and alternate.",
+              "cue": "Keep your ribs down and lower back position steady.",
+              "alsoWorks": "Transversus abdominis, obliques; hip flexors control the legs"
+            }
+          ]
+        },
+        {
+          "id": "core-internal-external-obliques",
+          "name": "Internal & external obliques",
+          "description": "Control trunk rotation and side bending, and help resist those motions under load.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Pallof press",
+              "equipment": "Anti-rotation · Cable",
+              "volume": "3 sets × 8–12 / side",
+              "instructions": "Stand side-on to a cable with the handle at your chest. Press forward, pause, and return without turning.",
+              "cue": "Keep your hips and shoulders facing forward.",
+              "alsoWorks": "Transversus abdominis, rectus abdominis; glutes stabilize"
+            },
+            {
+              "name": "Side plank",
+              "equipment": "Isometric · Bodyweight",
+              "volume": "3 sets × 20–40 sec / side",
+              "instructions": "Support yourself on one forearm and the side of your foot. Lift your hips to form a straight line. Use bent knees to reduce difficulty.",
+              "cue": "Stack the shoulder above the elbow and breathe steadily.",
+              "alsoWorks": "Quadratus lumborum, gluteus medius; shoulder stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "core-transversus-abdominis",
+          "name": "Transversus abdominis",
+          "description": "A deep layer that contributes to abdominal pressure and trunk stability.",
+          "note": "The deep abdominal wall works as part of a coordinated brace.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Dead bug",
+              "equipment": "Control · Bodyweight",
+              "volume": "3 sets × 6–10 / side",
+              "instructions": "Lie on your back with hips and knees bent. Slowly extend the opposite arm and leg, then return and alternate.",
+              "cue": "Keep your ribs down and lower back position steady.",
+              "alsoWorks": "Rectus abdominis, obliques; hip flexors control the legs"
+            },
+            {
+              "name": "Pallof press",
+              "equipment": "Anti-rotation · Cable",
+              "volume": "3 sets × 8–12 / side",
+              "instructions": "Stand side-on to a cable with the handle at your chest. Press forward, pause, and return without turning.",
+              "cue": "Keep your hips and shoulders facing forward.",
+              "alsoWorks": "Obliques, rectus abdominis; glutes stabilize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deep trunk",
+      "regions": [
+        {
+          "id": "deepcore-multifidus",
+          "name": "Multifidus",
+          "description": "Short deep spinal muscles help control individual vertebral segments.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Bird dog",
+              "equipment": "Stability · Bodyweight",
+              "volume": "2–3 sets × 6–10 / side",
+              "instructions": "Start on hands and knees. Extend the opposite arm and leg without rotating your trunk, pause, then return and switch sides.",
+              "cue": "Reach long rather than lifting high.",
+              "alsoWorks": "Erector spinae, gluteus maximus, abdominal wall"
+            }
+          ]
+        },
+        {
+          "id": "deepcore-quadratus-lumborum",
+          "name": "Quadratus lumborum",
+          "description": "Connects the pelvis, lumbar spine, and lowest rib; resists side bending.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Suitcase carry",
+              "equipment": "Lateral trunk stability · Dumbbell",
+              "volume": "2–3 carries × 15–30 metres / side",
+              "instructions": "Carry one moderate dumbbell at your side and walk steadily without leaning. Switch hands.",
+              "cue": "Keep the pelvis level and breathe throughout.",
+              "alsoWorks": "Obliques, spinal extensors; forearm and shoulder muscles carry the load"
+            },
+            {
+              "name": "Side plank",
+              "equipment": "Isometric · Bodyweight",
+              "volume": "3 sets × 20–40 sec / side",
+              "instructions": "Support yourself on one forearm and the side of your foot. Lift your hips to form a straight line. Use bent knees to reduce difficulty.",
+              "cue": "Stack the shoulder above the elbow and breathe steadily.",
+              "alsoWorks": "Obliques, gluteus medius; shoulder stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "deepcore-diaphragm",
+          "name": "Diaphragm",
+          "description": "Primary breathing muscle that also contributes to coordinated trunk pressure.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Controlled diaphragmatic breathing",
+              "equipment": "Breathing control · Bodyweight",
+              "volume": "5–8 slow breaths",
+              "instructions": "Sit or lie comfortably. Inhale gently, allowing the lower ribs to expand, then exhale without forcing the air out.",
+              "cue": "Keep your shoulders relaxed. This trains breathing control, not isolated maximal strength.",
+              "alsoWorks": "Intercostals; abdominal wall and pelvic floor coordinate pressure"
+            }
+          ]
+        },
+        {
+          "id": "deepcore-pelvic-floor",
+          "name": "Pelvic floor",
+          "description": "Levator ani and coccygeus support the pelvic organs and coordinate pressure and continence.",
+          "note": "Use a gentle lift followed by full relaxation. Persistent pelvic symptoms need individualized assessment.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle pelvic-floor contraction and release",
+              "equipment": "Pelvic control · Bodyweight",
+              "volume": "5 gentle contractions with full relaxation",
+              "instructions": "While breathing normally, gently lift the muscles you would use to hold back gas. Release completely before repeating.",
+              "cue": "Avoid bearing down or squeezing the glutes. Do not practise by interrupting urination.",
+              "alsoWorks": "Deep abdominal wall and diaphragm coordinate pressure"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

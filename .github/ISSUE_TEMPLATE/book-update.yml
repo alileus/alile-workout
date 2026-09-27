@@ -1,0 +1,43 @@
+name: Workout book update
+description: Suggest a correction, exercise, or translation. No coding needed.
+title: '[Book] '
+labels: ['content']
+body:
+  - type: markdown
+    attributes:
+      value: 'Write in English, Arabic, or Japanese. Suggestions are reviewed before publication.'
+  - type: input
+    id: entry
+    attributes:
+      label: Muscle or page
+      description: Paste the page URL or muscle name.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What would you like to change?
+      options: [Correction, New exercise, Translation, Anatomy illustration, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options: [English, العربية, 日本語]
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed update
+      description: Explain what is missing or incorrect and suggest replacement text.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: References and context
+      description: Link a reliable reference for anatomy or exercise claims. For translations, write “translation”. Do not copy copyrighted guides.
+    validations:
+      required: true

@@ -1,0 +1,302 @@
+{
+  "id": "shoulders",
+  "name": "Shoulders",
+  "view": "front",
+  "sections": [
+    {
+      "name": "Shoulders",
+      "regions": [
+        {
+          "id": "shoulders-anterior-deltoid",
+          "name": "Anterior deltoid",
+          "description": "The front fibers help lift the arm forward and contribute to pressing movements.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Dumbbell overhead press",
+              "equipment": "Compound · Dumbbells",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "Start with dumbbells at shoulder height. Brace your trunk and press overhead through a comfortable range. Lower smoothly.",
+              "cue": "Keep your ribs stacked over your pelvis.",
+              "alsoWorks": "Middle deltoids, triceps; trapezius and serratus anterior stabilize the shoulder blades"
+            },
+            {
+              "name": "Incline dumbbell press",
+              "equipment": "Compound · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Set a low incline, around 15–30°. Start with dumbbells beside your upper chest. Press upward and slightly inward, then lower with control.",
+              "cue": "Keep your shoulders supported; avoid shrugging at the top.",
+              "alsoWorks": "Pectoralis major, triceps"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-middle-deltoid",
+          "name": "Middle deltoid",
+          "description": "The side fibers primarily lift the arm away from the body, as in lateral raises.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Dumbbell lateral raise",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "With elbows softly bent, lift the arms out and slightly forward to around shoulder height. Lower slowly.",
+              "cue": "Lead with your elbows; avoid swinging your torso.",
+              "alsoWorks": "Supraspinatus, upper trapezius, serratus anterior"
+            },
+            {
+              "name": "Dumbbell overhead press",
+              "equipment": "Compound · Dumbbells",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "Start with dumbbells at shoulder height. Brace your trunk and press overhead through a comfortable range. Lower smoothly.",
+              "cue": "Keep your ribs stacked over your pelvis.",
+              "alsoWorks": "Anterior deltoids, triceps; rotator cuff stabilizes"
+            }
+          ]
+        },
+        {
+          "id": "shoulders-posterior-deltoid",
+          "name": "Posterior deltoid",
+          "description": "The rear fibers move the arm backward and outward. Rows and reverse fly variations train this region.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Reverse fly",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "2–3 sets × 12–15 reps",
+              "instructions": "Hinge at the hips or support your chest on a bench. Open the arms outward with a slight elbow bend. Return slowly.",
+              "cue": "Keep your neck relaxed and the load light enough to control.",
+              "alsoWorks": "Middle trapezius, rhomboids"
+            },
+            {
+              "name": "Chest-supported row",
+              "equipment": "Compound · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Lie face down on an incline bench. Pull the dumbbells toward your ribs, then lower to a comfortable stretch.",
+              "cue": "Let your shoulder blades move without lifting your chest.",
+              "alsoWorks": "Latissimus dorsi, rhomboids, middle trapezius, biceps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rotator cuff",
+      "regions": [
+        {
+          "id": "cuff-supraspinatus",
+          "name": "Supraspinatus",
+          "description": "Initiates and assists arm elevation while helping stabilize the shoulder joint.",
+          "note": "",
+          "references": [
+            "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb-up scaption",
+              "equipment": "Arm elevation · Light dumbbells",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With thumbs up, lift your arms slightly forward of your sides to a comfortable height, then lower slowly.",
+              "cue": "Keep the weights light and avoid shrugging.",
+              "alsoWorks": "Deltoids; trapezius and serratus anterior rotate the shoulder blade"
+            }
+          ]
+        },
+        {
+          "id": "cuff-infraspinatus",
+          "name": "Infraspinatus",
+          "description": "Externally rotates the upper arm and helps stabilize the shoulder.",
+          "note": "",
+          "references": [
+            "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band external rotation",
+              "equipment": "Shoulder rotation · Light band",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "Keep your elbow bent at your side. Rotate your forearm outward against a light band, then return slowly.",
+              "cue": "Keep the upper arm still and avoid turning your torso.",
+              "alsoWorks": "Teres minor, posterior deltoid"
+            }
+          ]
+        },
+        {
+          "id": "cuff-teres-minor",
+          "name": "Teres minor",
+          "description": "Assists external rotation and shoulder-joint stability.",
+          "note": "",
+          "references": [
+            "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band external rotation",
+              "equipment": "Shoulder rotation · Light band",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "Keep your elbow bent at your side. Rotate your forearm outward against a light band, then return slowly.",
+              "cue": "Keep the upper arm still and avoid turning your torso.",
+              "alsoWorks": "Infraspinatus, posterior deltoid"
+            }
+          ]
+        },
+        {
+          "id": "cuff-subscapularis",
+          "name": "Subscapularis",
+          "description": "Lies on the rib-facing surface of the shoulder blade and internally rotates the upper arm.",
+          "note": "",
+          "references": [
+            "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band internal rotation",
+              "equipment": "Shoulder rotation · Light band",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "Stand beside an anchored band, elbow bent at your side. Bring your forearm toward your abdomen against the band. Return slowly.",
+              "cue": "Use a comfortable range without letting your shoulder roll forward.",
+              "alsoWorks": "Pectoralis major, latissimus dorsi, anterior deltoid"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Neck",
+      "regions": [
+        {
+          "id": "neck-sternocleidomastoid",
+          "name": "Sternocleidomastoid",
+          "description": "Bends the neck and contributes to turning the head toward the opposite side.",
+          "note": "",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle neck-flexion isometric",
+              "equipment": "Neck control · Hand resistance",
+              "volume": "1–2 sets × 5 holds of 3 sec",
+              "instructions": "Sit tall and place your palm against your forehead. Press lightly without moving your head, then relax.",
+              "cue": "Breathe normally; do not use maximum effort or push into pain.",
+              "alsoWorks": "Deep neck flexors, scalenes"
+            },
+            {
+              "name": "Gentle side-neck isometric",
+              "equipment": "Neck control · Hand resistance",
+              "volume": "1–2 sets × 5 holds of 3 sec / side",
+              "instructions": "Place a palm above your ear. Press your head gently sideways into it without moving, then relax.",
+              "cue": "Keep your head level and shoulders relaxed.",
+              "alsoWorks": "Scalenes, other cervical stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "neck-longus-colli-longus-capitis",
+          "name": "Longus colli & longus capitis",
+          "description": "Deep anterior neck muscles support gentle nodding and cervical control.",
+          "note": "",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Supported chin nod",
+              "equipment": "Deep neck control · Bodyweight",
+              "volume": "1–2 sets × 5–8 holds of 3 sec",
+              "instructions": "Lie with your head comfortably supported. Make a small nod as if saying yes, then relax.",
+              "cue": "Keep the head on the support and use gentle effort.",
+              "alsoWorks": "Other deep neck flexors; superficial muscles contribute if effort increases"
+            }
+          ]
+        },
+        {
+          "id": "neck-scalenes",
+          "name": "Scalenes",
+          "description": "Assist neck side bending and stabilize or elevate the upper ribs.",
+          "note": "",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle side-neck isometric",
+              "equipment": "Neck control · Hand resistance",
+              "volume": "1–2 sets × 5 holds of 3 sec / side",
+              "instructions": "Place a palm above your ear. Press your head gently sideways into it without moving, then relax.",
+              "cue": "Keep your head level and shoulders relaxed.",
+              "alsoWorks": "Sternocleidomastoid, cervical stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "neck-splenius-capitis-cervicis",
+          "name": "Splenius capitis & cervicis",
+          "description": "Posterior neck muscles that extend the head and help turn it to the same side.",
+          "note": "",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle neck-extension isometric",
+              "equipment": "Neck control · Hand resistance",
+              "volume": "1–2 sets × 5 holds of 3 sec",
+              "instructions": "With head neutral, press lightly into a hand behind your head without moving. Relax between efforts.",
+              "cue": "Avoid tipping the chin up or straining.",
+              "alsoWorks": "Semispinalis, upper trapezius, other neck extensors"
+            }
+          ]
+        },
+        {
+          "id": "neck-levator-scapulae",
+          "name": "Levator scapulae",
+          "description": "Connects the neck to the upper inner shoulder blade and elevates the scapula.",
+          "note": "",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Dumbbell shrug",
+              "equipment": "Upper emphasis · Dumbbells",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Stand with dumbbells at your sides. Raise your shoulders toward your ears, pause briefly, and lower with control.",
+              "cue": "Keep your head neutral; avoid rolling your shoulders.",
+              "alsoWorks": "Upper trapezius; forearms hold the weights"
+            }
+          ]
+        },
+        {
+          "id": "neck-suboccipital-muscles",
+          "name": "Suboccipital muscles",
+          "description": "Small muscles below the skull fine-tune upper-neck extension and rotation.",
+          "note": "Use gentle shared loading; these small muscles are not isolated by the movement.",
+          "references": ["https://www.cuh.nhs.uk/patient-information/neck-exercises-and-advice/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle neck-extension isometric",
+              "equipment": "Neck control · Hand resistance",
+              "volume": "1–2 sets × 5 holds of 3 sec",
+              "instructions": "With head neutral, press lightly into a hand behind your head without moving. Relax between efforts.",
+              "cue": "Avoid tipping the chin up or straining.",
+              "alsoWorks": "Other cervical extensors and stabilizers"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

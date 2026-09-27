@@ -1,0 +1,643 @@
+{
+  "id": "arms",
+  "name": "Arms",
+  "view": "front",
+  "sections": [
+    {
+      "name": "Biceps",
+      "regions": [
+        {
+          "id": "biceps-long-head",
+          "name": "Long head",
+          "description": "The outer head crosses the shoulder and contributes to elbow flexion and forearm supination.",
+          "note": "Both biceps heads contribute; shoulder position changes their loading.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Incline dumbbell curl",
+              "equipment": "Elbow flexion · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Sit against an incline bench with your arms hanging naturally. Curl the dumbbells without moving your upper arms, then lower slowly.",
+              "cue": "Keep your shoulders comfortable; avoid forcing the arms behind you.",
+              "alsoWorks": "Short head of biceps, brachialis, brachioradialis"
+            },
+            {
+              "name": "Dumbbell curl",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Begin with arms at your sides. Curl the weights while turning palms upward. Lower to a comfortable straight-arm position.",
+              "cue": "Keep elbows near your ribs and your torso still.",
+              "alsoWorks": "Short head of biceps, brachialis, brachioradialis"
+            }
+          ]
+        },
+        {
+          "id": "biceps-short-head",
+          "name": "Short head",
+          "description": "The inner head works alongside the long head during curls and pulling movements.",
+          "note": "These curls train both heads rather than isolating the short head.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Preacher curl",
+              "equipment": "Isolation · Curl bench",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Support your upper arms on the pad and curl through a comfortable range. Lower gradually.",
+              "cue": "Avoid bouncing at the bottom or forcing elbow extension.",
+              "alsoWorks": "Long head of biceps, brachialis, brachioradialis"
+            },
+            {
+              "name": "Dumbbell curl",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Begin with arms at your sides. Curl the weights while turning palms upward. Lower to a comfortable straight-arm position.",
+              "cue": "Keep elbows near your ribs and your torso still.",
+              "alsoWorks": "Long head of biceps, brachialis, brachioradialis"
+            }
+          ]
+        },
+        {
+          "id": "biceps-brachialis-supporting-muscle",
+          "name": "Brachialis · supporting muscle",
+          "description": "Located beneath the biceps, the brachialis bends the elbow regardless of forearm position.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Hammer curl",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "3 sets × 10–12 reps",
+              "instructions": "Hold dumbbells with palms facing each other. Bend the elbows and lift, then lower slowly.",
+              "cue": "Maintain the neutral wrist position throughout.",
+              "alsoWorks": "Biceps brachii, brachioradialis"
+            },
+            {
+              "name": "Reverse curl",
+              "equipment": "Elbow flexion · Dumbbells",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Hold light dumbbells with palms facing down. Bend the elbows to lift, keeping your wrists neutral, then lower slowly.",
+              "cue": "Keep elbows near your sides and avoid lifting with wrist extension.",
+              "alsoWorks": "Brachioradialis, biceps brachii; wrist extensors stabilize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Triceps",
+      "regions": [
+        {
+          "id": "triceps-long-head",
+          "name": "Long head",
+          "description": "Crosses the shoulder as well as the elbow. Overhead extensions train it at a longer muscle length.",
+          "note": "The overhead position lengthens the long head. All three heads extend the elbow.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Overhead cable extension",
+              "equipment": "Isolation · Cable",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Face away from a low cable with hands overhead. Extend your elbows, then return slowly.",
+              "cue": "Keep your trunk braced and use a comfortable shoulder position.",
+              "alsoWorks": "Lateral and medial triceps heads"
+            },
+            {
+              "name": "Cable pressdown",
+              "equipment": "Isolation · Cable",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
+              "cue": "Keep the upper arms still and wrists neutral.",
+              "alsoWorks": "Lateral and medial triceps heads"
+            }
+          ]
+        },
+        {
+          "id": "triceps-lateral-head",
+          "name": "Lateral head",
+          "description": "The outer head contributes to forceful elbow extension.",
+          "note": "These movements load all three triceps heads.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Cable pressdown",
+              "equipment": "Isolation · Cable",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
+              "cue": "Keep the upper arms still and wrists neutral.",
+              "alsoWorks": "Long and medial triceps heads"
+            },
+            {
+              "name": "Close-grip push-up",
+              "equipment": "Compound · Bodyweight",
+              "volume": "3 sets × 6–12 reps",
+              "instructions": "Place your hands slightly narrower than shoulder width. Lower your chest while keeping a straight body line, then press up.",
+              "cue": "Keep elbows angled back. Elevate your hands to reduce difficulty.",
+              "alsoWorks": "Other triceps heads, pectoralis major, anterior deltoids"
+            }
+          ]
+        },
+        {
+          "id": "triceps-medial-head",
+          "name": "Medial head",
+          "description": "The deeper head supports elbow extension across a wide range of movements.",
+          "note": "The medial head works alongside the other heads during elbow extension.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Cable pressdown",
+              "equipment": "Isolation · Cable",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
+              "cue": "Keep the upper arms still and wrists neutral.",
+              "alsoWorks": "Long and lateral triceps heads"
+            },
+            {
+              "name": "Overhead cable extension",
+              "equipment": "Isolation · Cable",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Face away from a low cable with hands overhead. Extend your elbows, then return slowly.",
+              "cue": "Keep your trunk braced and use a comfortable shoulder position.",
+              "alsoWorks": "Long and lateral triceps heads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forearms",
+      "regions": [
+        {
+          "id": "forearms-brachioradialis",
+          "name": "Brachioradialis",
+          "description": "Bends the elbow most effectively around a neutral, thumb-up forearm position.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Hammer curl",
+              "equipment": "Elbow flexion · Dumbbells",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Hold dumbbells with palms facing inward. Bend the elbows without swinging, then lower slowly.",
+              "cue": "Keep your wrists neutral. The biceps and brachialis also contribute.",
+              "alsoWorks": "Brachialis, biceps brachii"
+            },
+            {
+              "name": "Reverse curl",
+              "equipment": "Elbow flexion · Dumbbells",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Hold light dumbbells with palms facing down. Bend the elbows to lift, keeping your wrists neutral, then lower slowly.",
+              "cue": "Keep elbows near your sides and avoid lifting with wrist extension.",
+              "alsoWorks": "Brachialis, biceps brachii; wrist extensors stabilize"
+            }
+          ]
+        },
+        {
+          "id": "forearms-flexor-carpi-radialis",
+          "name": "Flexor carpi radialis",
+          "description": "Flexes the wrist and moves it toward the thumb side.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Wrist flexion with radial bias",
+              "equipment": "Wrist control · Light dumbbell",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "Support your forearm palm-up. Curl the wrist slightly toward the thumb side, then lower slowly.",
+              "cue": "Keep the forearm supported; do not force sideways movement.",
+              "alsoWorks": "Other wrist flexors; radial wrist extensors stabilize"
+            }
+          ]
+        },
+        {
+          "id": "forearms-flexor-carpi-ulnaris",
+          "name": "Flexor carpi ulnaris",
+          "description": "Flexes the wrist and moves it toward the little-finger side.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Wrist flexion with ulnar bias",
+              "equipment": "Wrist control · Light dumbbell",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "Support your forearm palm-up. Gently curl the wrist toward the little-finger side, then lower slowly.",
+              "cue": "Use a small range and light resistance. Other wrist flexors still contribute.",
+              "alsoWorks": "Other wrist flexors; extensor carpi ulnaris assists ulnar deviation"
+            }
+          ]
+        },
+        {
+          "id": "forearms-flexor-digitorum-superficialis",
+          "name": "Flexor digitorum superficialis",
+          "description": "Bends the middle finger joints and contributes to grip.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Soft putty squeeze",
+              "equipment": "Finger flexion · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Wrap your fingers around soft putty, squeeze smoothly, then release completely.",
+              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing.",
+              "alsoWorks": "Flexor digitorum profundus, thumb flexors, intrinsic hand muscles"
+            }
+          ]
+        },
+        {
+          "id": "forearms-flexor-digitorum-profundus",
+          "name": "Flexor digitorum profundus",
+          "description": "Deep muscle that bends the fingertips and supports grip.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Soft putty squeeze",
+              "equipment": "Finger flexion · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Wrap your fingers around soft putty, squeeze smoothly, then release completely.",
+              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing.",
+              "alsoWorks": "Flexor digitorum superficialis, thumb flexors, intrinsic hand muscles"
+            }
+          ]
+        },
+        {
+          "id": "forearms-flexor-pollicis-longus",
+          "name": "Flexor pollicis longus",
+          "description": "Bends the thumb tip and contributes to pinch.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb putty press",
+              "equipment": "Thumb flexion · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Press your thumb into soft putty toward the palm, then release.",
+              "cue": "Keep the thumb joints aligned; do not force the end position.",
+              "alsoWorks": "Flexor pollicis brevis, other thenar muscles"
+            }
+          ]
+        },
+        {
+          "id": "forearms-extensor-carpi-radialis-longus-brevis",
+          "name": "Extensor carpi radialis longus & brevis",
+          "description": "Extend the wrist and assist movement toward the thumb side.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Reverse wrist curl",
+              "equipment": "Isolation · Dumbbells",
+              "volume": "2–3 sets × 12–20 reps",
+              "instructions": "Support your forearms with palms down. Lift the backs of your hands by extending the wrists, then lower with control.",
+              "cue": "Keep the forearms supported and use a small, controlled range.",
+              "alsoWorks": "Extensor carpi ulnaris, finger extensors"
+            }
+          ]
+        },
+        {
+          "id": "forearms-extensor-carpi-ulnaris",
+          "name": "Extensor carpi ulnaris",
+          "description": "Extends the wrist and moves it toward the little-finger side.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Wrist extension with ulnar bias",
+              "equipment": "Wrist control · Light dumbbell",
+              "volume": "2 sets × 10–15 reps",
+              "instructions": "With forearm supported palm-down, lift the wrist slightly toward the little-finger side. Return with control.",
+              "cue": "Use a small motion without swinging the elbow.",
+              "alsoWorks": "Other wrist extensors; flexor carpi ulnaris assists ulnar deviation"
+            }
+          ]
+        },
+        {
+          "id": "forearms-extensor-digitorum",
+          "name": "Extensor digitorum",
+          "description": "Straightens the fingers and helps extend the wrist.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band finger opening",
+              "equipment": "Finger extension · Light band",
+              "volume": "1–2 sets × 10–15 reps",
+              "instructions": "Place a light band around the fingers. Open them slowly against resistance, then return.",
+              "cue": "Keep the movement controlled and the wrist steady.",
+              "alsoWorks": "Other finger extensors, dorsal interossei"
+            }
+          ]
+        },
+        {
+          "id": "forearms-extensor-pollicis-longus-brevis",
+          "name": "Extensor pollicis longus & brevis",
+          "description": "Straighten the thumb at its joints.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Resisted thumb extension",
+              "equipment": "Thumb extension · Light band",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "Place a light band around your thumb and hand. Straighten and lift your thumb away from the palm, then return.",
+              "cue": "Use light tension and keep the wrist still.",
+              "alsoWorks": "Abductor pollicis longus; wrist extensors stabilize"
+            }
+          ]
+        },
+        {
+          "id": "forearms-abductor-pollicis-longus",
+          "name": "Abductor pollicis longus",
+          "description": "Moves the thumb away from the hand at its base.",
+          "note": "Thumb abduction loads several muscles; the exact contribution depends on the direction of movement.",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb lift",
+              "equipment": "Thumb abduction · Light band",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "With your palm facing up, lift your thumb away from the plane of the palm against light resistance.",
+              "cue": "Keep the thumb gently curved and the wrist supported.",
+              "alsoWorks": "Abductor pollicis brevis and other thumb stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "forearms-pronator-teres",
+          "name": "Pronator teres",
+          "description": "Turns the palm downward and assists elbow flexion.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Resisted forearm pronation",
+              "equipment": "Forearm rotation · Light lever",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Support your elbow and forearm. Holding a light lever near its weighted end, turn your palm downward and return slowly.",
+              "cue": "Start with a short lever and keep your elbow still.",
+              "alsoWorks": "Pronator quadratus; wrist stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "forearms-pronator-quadratus",
+          "name": "Pronator quadratus",
+          "description": "Deep distal forearm muscle that turns the palm downward.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Resisted forearm pronation",
+              "equipment": "Forearm rotation · Light lever",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Support your elbow and forearm. Holding a light lever near its weighted end, turn your palm downward and return slowly.",
+              "cue": "Start with a short lever and keep your elbow still.",
+              "alsoWorks": "Pronator teres; wrist stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "forearms-supinator",
+          "name": "Supinator",
+          "description": "Deep proximal forearm muscle that turns the palm upward.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Resisted forearm supination",
+              "equipment": "Forearm rotation · Light lever",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Support your elbow and forearm. Use a light lever to resist turning the palm upward. Return slowly.",
+              "cue": "Keep the movement at the forearm rather than rotating your shoulder.",
+              "alsoWorks": "Biceps brachii; wrist stabilizers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hands",
+      "regions": [
+        {
+          "id": "hands-abductor-pollicis-brevis",
+          "name": "Abductor pollicis brevis",
+          "description": "Lifts the thumb away from the plane of the palm.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb lift",
+              "equipment": "Thumb abduction · Light band",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "With your palm facing up, lift your thumb away from the plane of the palm against light resistance.",
+              "cue": "Keep the thumb gently curved and the wrist supported.",
+              "alsoWorks": "Other thenar muscles stabilize the thumb"
+            }
+          ]
+        },
+        {
+          "id": "hands-flexor-pollicis-brevis",
+          "name": "Flexor pollicis brevis",
+          "description": "Bends the thumb at its large knuckle.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb putty press",
+              "equipment": "Thumb flexion · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Press your thumb into soft putty toward the palm, then release.",
+              "cue": "Keep the thumb joints aligned; do not force the end position.",
+              "alsoWorks": "Flexor pollicis longus, other thenar muscles"
+            }
+          ]
+        },
+        {
+          "id": "hands-opponens-pollicis",
+          "name": "Opponens pollicis",
+          "description": "Rotates and draws the thumb across the palm for opposition.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Thumb opposition with putty",
+              "equipment": "Thumb control · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Place soft putty near the base of your little finger. Bring the thumb across the palm to press into it.",
+              "cue": "Move the thumb base rather than only bending the tip.",
+              "alsoWorks": "Abductor pollicis brevis, flexor pollicis brevis"
+            }
+          ]
+        },
+        {
+          "id": "hands-adductor-pollicis",
+          "name": "Adductor pollicis",
+          "description": "Draws the thumb toward the hand, supporting key pinch.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Gentle key pinch",
+              "equipment": "Thumb adduction · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Hold soft putty between the thumb pad and the side of your index finger. Squeeze gently, then release.",
+              "cue": "Keep the thumb aligned and avoid locking its joints.",
+              "alsoWorks": "First dorsal interosseous, thumb flexors"
+            }
+          ]
+        },
+        {
+          "id": "hands-hypothenar-muscles",
+          "name": "Hypothenar muscles",
+          "description": "Abductor digiti minimi, flexor digiti minimi brevis, and opponens digiti minimi control the little-finger side of the hand.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Little-finger opposition",
+              "equipment": "Hand control · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Cup the little-finger side of your palm toward the thumb, gently compressing soft putty.",
+              "cue": "Use a small controlled motion without bending the wrist.",
+              "alsoWorks": "Thenar muscles, finger flexors"
+            }
+          ]
+        },
+        {
+          "id": "hands-lumbricals",
+          "name": "Lumbricals",
+          "description": "Bend the large finger knuckles while helping straighten the middle and end joints.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Knuckle press into putty",
+              "equipment": "Intrinsic hand control · Soft putty",
+              "volume": "1–2 sets × 8–12 gentle reps",
+              "instructions": "Keep the finger tips relatively straight and bend at the large knuckles to press into soft putty. Release slowly.",
+              "cue": "Avoid collapsing the middle finger joints.",
+              "alsoWorks": "Interossei; finger extensors coordinate joint position"
+            }
+          ]
+        },
+        {
+          "id": "hands-dorsal-interossei",
+          "name": "Dorsal interossei",
+          "description": "Spread the fingers apart and assist knuckle control.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Resisted finger spread",
+              "equipment": "Finger abduction · Light band",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "Spread your fingers apart against a light loop, then bring them back under control.",
+              "cue": "Keep the wrist still and fingers comfortably extended.",
+              "alsoWorks": "Abductor digiti minimi; finger extensors stabilize"
+            }
+          ]
+        },
+        {
+          "id": "hands-palmar-interossei",
+          "name": "Palmar interossei",
+          "description": "Draw the fingers together and help coordinate knuckle movement.",
+          "note": "",
+          "references": [
+            "https://www.guysandstthomas.nhs.uk/health-information/therapeutic-putty-exercises-hand-and-finger-strength"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Finger adduction press",
+              "equipment": "Finger adduction · Soft putty",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "Place a small piece of soft putty between adjacent fingers. Bring the fingers together to compress it.",
+              "cue": "Use gentle pressure without twisting the fingers.",
+              "alsoWorks": "Lumbricals; finger flexors and extensors stabilize"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

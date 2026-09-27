@@ -1,0 +1,1038 @@
+{
+  "id": "legs",
+  "name": "Legs",
+  "view": "front",
+  "sections": [
+    {
+      "name": "Quadriceps",
+      "regions": [
+        {
+          "id": "quads-rectus-femoris",
+          "name": "Rectus femoris",
+          "description": "Crosses both hip and knee, contributing to hip flexion as well as knee extension.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Leg extension",
+              "equipment": "Isolation · Machine",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Align the machine axis with your knee. Extend your legs through a comfortable range and lower gradually.",
+              "cue": "Use controlled movement without kicking or bouncing.",
+              "alsoWorks": "Vastus lateralis, vastus medialis, vastus intermedius"
+            },
+            {
+              "name": "Front squat",
+              "equipment": "Compound · Barbell",
+              "volume": "3–4 sets × 4–8 reps",
+              "instructions": "Hold the bar in a secure front rack. Sit down between your hips while keeping the torso braced. Drive through the feet to stand.",
+              "cue": "Keep your elbows lifted and knees tracking with your toes.",
+              "alsoWorks": "Other quadriceps, gluteus maximus, adductors; trunk stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "quads-vastus-lateralis",
+          "name": "Vastus lateralis",
+          "description": "The large outer-thigh muscle contributes to knee extension.",
+          "note": "These movements train the quadriceps together.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Front squat",
+              "equipment": "Compound · Barbell",
+              "volume": "3–4 sets × 4–8 reps",
+              "instructions": "Hold the bar in a secure front rack. Sit down between your hips while keeping the torso braced. Drive through the feet to stand.",
+              "cue": "Keep your elbows lifted and knees tracking with your toes.",
+              "alsoWorks": "Other quadriceps, gluteus maximus, adductors; trunk stabilizers"
+            },
+            {
+              "name": "Leg extension",
+              "equipment": "Isolation · Machine",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Align the machine axis with your knee. Extend your legs through a comfortable range and lower gradually.",
+              "cue": "Use controlled movement without kicking or bouncing.",
+              "alsoWorks": "Rectus femoris, vastus medialis, vastus intermedius"
+            }
+          ]
+        },
+        {
+          "id": "quads-vastus-medialis",
+          "name": "Vastus medialis",
+          "description": "The inner portion contributes to knee extension and patellar control.",
+          "note": "No special foot position isolates this region.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Bulgarian split squat",
+              "equipment": "Unilateral · Dumbbells",
+              "volume": "3 sets × 8–10 / side",
+              "instructions": "Rest your rear foot on a low bench. Lower through the front leg, then press back up.",
+              "cue": "Choose a stance that lets the front foot stay planted.",
+              "alsoWorks": "Other quadriceps, gluteus maximus, adductors; gluteus medius stabilizes"
+            },
+            {
+              "name": "Leg extension",
+              "equipment": "Isolation · Machine",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Align the machine axis with your knee. Extend your legs through a comfortable range and lower gradually.",
+              "cue": "Use controlled movement without kicking or bouncing.",
+              "alsoWorks": "Rectus femoris, vastus lateralis, vastus intermedius"
+            }
+          ]
+        },
+        {
+          "id": "quads-vastus-intermedius",
+          "name": "Vastus intermedius",
+          "description": "A deeper knee extensor beneath rectus femoris.",
+          "note": "This deep muscle works with the other knee extensors.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Leg extension",
+              "equipment": "Isolation · Machine",
+              "volume": "2–3 sets × 10–15 reps",
+              "instructions": "Align the machine axis with your knee. Extend your legs through a comfortable range and lower gradually.",
+              "cue": "Use controlled movement without kicking or bouncing.",
+              "alsoWorks": "Rectus femoris, vastus lateralis, vastus medialis"
+            },
+            {
+              "name": "Front squat",
+              "equipment": "Compound · Barbell",
+              "volume": "3–4 sets × 4–8 reps",
+              "instructions": "Hold the bar in a secure front rack. Sit down between your hips while keeping the torso braced. Drive through the feet to stand.",
+              "cue": "Keep your elbows lifted and knees tracking with your toes.",
+              "alsoWorks": "Other quadriceps, gluteus maximus, adductors; trunk stabilizers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hamstrings",
+      "regions": [
+        {
+          "id": "hamstrings-biceps-femoris",
+          "name": "Biceps femoris",
+          "description": "The lateral hamstring has a long and short head. Both flex the knee; the long head also extends the hip.",
+          "note": "Hip hinges load the long head; leg curls also involve the short head.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Romanian deadlift",
+              "equipment": "Compound · Barbell",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.",
+              "cue": "Move at the hips while maintaining a steady back position.",
+              "alsoWorks": "Semitendinosus, semimembranosus, gluteus maximus; spinal extensors stabilize"
+            },
+            {
+              "name": "Seated leg curl",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Adjust the pads to secure your thighs. Bend your knees to pull the pad down and back. Return slowly.",
+              "cue": "Keep your hips on the seat through the entire rep.",
+              "alsoWorks": "Semitendinosus, semimembranosus, gastrocnemius"
+            }
+          ]
+        },
+        {
+          "id": "hamstrings-semitendinosus",
+          "name": "Semitendinosus",
+          "description": "A medial hamstring that extends the hip and bends the knee.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Romanian deadlift",
+              "equipment": "Compound · Barbell",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.",
+              "cue": "Move at the hips while maintaining a steady back position.",
+              "alsoWorks": "Biceps femoris long head, semimembranosus, gluteus maximus; spinal extensors stabilize"
+            },
+            {
+              "name": "Seated leg curl",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Adjust the pads to secure your thighs. Bend your knees to pull the pad down and back. Return slowly.",
+              "cue": "Keep your hips on the seat through the entire rep.",
+              "alsoWorks": "Biceps femoris, semimembranosus, gastrocnemius"
+            }
+          ]
+        },
+        {
+          "id": "hamstrings-semimembranosus",
+          "name": "Semimembranosus",
+          "description": "A deeper medial hamstring with similar hip and knee functions.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated leg curl",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 10–15 reps",
+              "instructions": "Adjust the pads to secure your thighs. Bend your knees to pull the pad down and back. Return slowly.",
+              "cue": "Keep your hips on the seat through the entire rep.",
+              "alsoWorks": "Biceps femoris, semitendinosus, gastrocnemius"
+            },
+            {
+              "name": "Romanian deadlift",
+              "equipment": "Compound · Barbell",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.",
+              "cue": "Move at the hips while maintaining a steady back position.",
+              "alsoWorks": "Biceps femoris long head, semitendinosus, gluteus maximus; spinal extensors stabilize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Glutes",
+      "regions": [
+        {
+          "id": "glutes-gluteus-maximus",
+          "name": "Gluteus maximus",
+          "description": "The largest gluteal muscle produces strong hip extension and contributes to external rotation.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Barbell hip thrust",
+              "equipment": "Compound · Barbell",
+              "volume": "3 sets × 8–12 reps",
+              "instructions": "Support your upper back on a stable bench with the padded bar across your hips. Drive through your feet to extend your hips.",
+              "cue": "Finish with your ribs down rather than arching the lower back.",
+              "alsoWorks": "Hamstrings, adductor magnus; abdominal wall stabilizes"
+            },
+            {
+              "name": "Step-up",
+              "equipment": "Unilateral · Dumbbells",
+              "volume": "3 sets × 8–10 / side",
+              "instructions": "Place one foot fully on a stable step. Drive through that leg to stand tall, then lower slowly.",
+              "cue": "Keep your pelvis level and limit push-off from the trailing foot.",
+              "alsoWorks": "Quadriceps, adductors; gluteus medius stabilizes"
+            }
+          ]
+        },
+        {
+          "id": "glutes-gluteus-medius",
+          "name": "Gluteus medius",
+          "description": "Helps move the leg outward and stabilize the pelvis while standing on one leg.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Side-lying hip abduction",
+              "equipment": "Isolation · Bodyweight",
+              "volume": "2–3 sets × 12–15 / side",
+              "instructions": "Lie on your side with the upper leg straight. Lift it slightly, then lower without rolling your hips.",
+              "cue": "Keep your toes facing forward and the pelvis stacked.",
+              "alsoWorks": "Gluteus minimus, tensor fasciae latae"
+            },
+            {
+              "name": "Banded lateral walk",
+              "equipment": "Hip abduction · Resistance band",
+              "volume": "2–3 sets × 8–12 steps / direction",
+              "instructions": "Place a light band above your knees. With a shallow knee bend, step sideways while maintaining tension and keeping the pelvis level.",
+              "cue": "Keep knees tracking with your feet; avoid swaying your torso.",
+              "alsoWorks": "Gluteus minimus, tensor fasciae latae; quadriceps support the stance"
+            }
+          ]
+        },
+        {
+          "id": "glutes-gluteus-minimus",
+          "name": "Gluteus minimus",
+          "description": "A deeper muscle beneath the medius that assists hip abduction and pelvic control.",
+          "note": "Hip abduction loads the minimus together with the other hip abductors.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Side-lying hip abduction",
+              "equipment": "Isolation · Bodyweight",
+              "volume": "2–3 sets × 12–15 / side",
+              "instructions": "Lie on your side with the upper leg straight. Lift it slightly, then lower without rolling your hips.",
+              "cue": "Keep your toes facing forward and the pelvis stacked.",
+              "alsoWorks": "Gluteus medius, tensor fasciae latae"
+            },
+            {
+              "name": "Banded lateral walk",
+              "equipment": "Hip abduction · Resistance band",
+              "volume": "2–3 sets × 8–12 steps / direction",
+              "instructions": "Place a light band above your knees. With a shallow knee bend, step sideways while maintaining tension and keeping the pelvis level.",
+              "cue": "Keep knees tracking with your feet; avoid swaying your torso.",
+              "alsoWorks": "Gluteus medius, tensor fasciae latae; quadriceps support the stance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adductors",
+      "regions": [
+        {
+          "id": "adductors-adductor-longus",
+          "name": "Adductor longus",
+          "description": "Superficial inner-thigh muscle that adducts the hip.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Side-lying hip adduction",
+              "equipment": "Hip adduction · Bodyweight",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Lie on your side with the top leg crossed in front for support. Lift the straight lower leg a short distance, then lower.",
+              "cue": "Keep the pelvis steady and the lower knee facing forward.",
+              "alsoWorks": "Other adductors, gracilis, pectineus"
+            }
+          ]
+        },
+        {
+          "id": "adductors-adductor-brevis",
+          "name": "Adductor brevis",
+          "description": "A shorter, deeper adductor beneath adductor longus.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Ball adductor squeeze",
+              "equipment": "Hip adduction · Soft ball",
+              "volume": "2 sets × 6–10 holds of 3–5 sec",
+              "instructions": "Lie with knees bent and a soft ball between them. Squeeze gently, then release fully.",
+              "cue": "Keep breathing; avoid forceful squeezing or holding your breath.",
+              "alsoWorks": "Adductor longus and magnus, gracilis, pectineus"
+            }
+          ]
+        },
+        {
+          "id": "adductors-adductor-magnus",
+          "name": "Adductor magnus",
+          "description": "Large medial-thigh muscle with adductor fibers and a hip-extending hamstring portion.",
+          "note": "Hip hinges involve the hip-extending portion; adduction exercises load the adductor portion.",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Side-lying hip adduction",
+              "equipment": "Hip adduction · Bodyweight",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Lie on your side with the top leg crossed in front for support. Lift the straight lower leg a short distance, then lower.",
+              "cue": "Keep the pelvis steady and the lower knee facing forward.",
+              "alsoWorks": "Other adductors, gracilis"
+            },
+            {
+              "name": "Romanian deadlift",
+              "equipment": "Compound · Barbell",
+              "volume": "3 sets × 6–10 reps",
+              "instructions": "With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.",
+              "cue": "Move at the hips while maintaining a steady back position.",
+              "alsoWorks": "Hamstrings, gluteus maximus; spinal extensors stabilize"
+            }
+          ]
+        },
+        {
+          "id": "adductors-gracilis",
+          "name": "Gracilis",
+          "description": "Crosses the hip and knee, contributing to hip adduction and knee flexion.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Side-lying hip adduction",
+              "equipment": "Hip adduction · Bodyweight",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Lie on your side with the top leg crossed in front for support. Lift the straight lower leg a short distance, then lower.",
+              "cue": "Keep the pelvis steady and the lower knee facing forward.",
+              "alsoWorks": "Other adductors, pectineus"
+            }
+          ]
+        },
+        {
+          "id": "adductors-pectineus",
+          "name": "Pectineus",
+          "description": "A short upper-inner-thigh muscle assisting hip adduction and flexion.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Ball adductor squeeze",
+              "equipment": "Hip adduction · Soft ball",
+              "volume": "2 sets × 6–10 holds of 3–5 sec",
+              "instructions": "Lie with knees bent and a soft ball between them. Squeeze gently, then release fully.",
+              "cue": "Keep breathing; avoid forceful squeezing or holding your breath.",
+              "alsoWorks": "Other adductors, gracilis"
+            },
+            {
+              "name": "Standing resisted march",
+              "equipment": "Hip flexion · Light band",
+              "volume": "2–3 sets × 8–12 / side",
+              "instructions": "With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.",
+              "cue": "Keep your pelvis level and avoid leaning backward.",
+              "alsoWorks": "Iliopsoas, rectus femoris, sartorius"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hip flexors",
+      "regions": [
+        {
+          "id": "hipflexors-psoas-major",
+          "name": "Psoas major",
+          "description": "Runs from the lumbar spine to the upper femur and contributes to hip flexion.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Standing resisted march",
+              "equipment": "Hip flexion · Light band",
+              "volume": "2–3 sets × 8–12 / side",
+              "instructions": "With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.",
+              "cue": "Keep your pelvis level and avoid leaning backward.",
+              "alsoWorks": "Iliacus, rectus femoris, sartorius, tensor fasciae latae"
+            }
+          ]
+        },
+        {
+          "id": "hipflexors-iliacus",
+          "name": "Iliacus",
+          "description": "Fills the inner pelvis and joins psoas major to form the iliopsoas.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Standing resisted march",
+              "equipment": "Hip flexion · Light band",
+              "volume": "2–3 sets × 8–12 / side",
+              "instructions": "With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.",
+              "cue": "Keep your pelvis level and avoid leaning backward.",
+              "alsoWorks": "Psoas major, rectus femoris, sartorius"
+            }
+          ]
+        },
+        {
+          "id": "hipflexors-tensor-fasciae-latae",
+          "name": "Tensor fasciae latae",
+          "description": "Assists hip flexion, abduction, and internal rotation.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Standing resisted march",
+              "equipment": "Hip flexion · Light band",
+              "volume": "2–3 sets × 8–12 / side",
+              "instructions": "With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.",
+              "cue": "Keep your pelvis level and avoid leaning backward.",
+              "alsoWorks": "Iliopsoas, rectus femoris, sartorius"
+            },
+            {
+              "name": "Banded lateral walk",
+              "equipment": "Hip abduction · Resistance band",
+              "volume": "2–3 sets × 8–12 steps / direction",
+              "instructions": "Place a light band above your knees. With a shallow knee bend, step sideways while maintaining tension and keeping the pelvis level.",
+              "cue": "Keep knees tracking with your feet; avoid swaying your torso.",
+              "alsoWorks": "Gluteus medius, gluteus minimus; quadriceps support the stance"
+            }
+          ]
+        },
+        {
+          "id": "hipflexors-sartorius",
+          "name": "Sartorius",
+          "description": "A long strap muscle that assists hip flexion, abduction, and external rotation, and bends the knee.",
+          "note": "The march loads hip flexion; it does not isolate all of sartorius’s actions.",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Standing resisted march",
+              "equipment": "Hip flexion · Light band",
+              "volume": "2–3 sets × 8–12 / side",
+              "instructions": "With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.",
+              "cue": "Keep your pelvis level and avoid leaning backward.",
+              "alsoWorks": "Iliopsoas, rectus femoris, tensor fasciae latae"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hip rotators",
+      "regions": [
+        {
+          "id": "hiprotators-piriformis",
+          "name": "Piriformis",
+          "description": "Runs from the sacrum to the upper femur. Its contribution changes with hip angle.",
+          "note": "Use a comfortable range; this is shared rotational loading rather than isolation.",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Other deep hip rotators, gluteus maximus"
+            }
+          ]
+        },
+        {
+          "id": "hiprotators-obturator-internus",
+          "name": "Obturator internus",
+          "description": "Deep pelvic muscle that joins the short external rotators at the femur.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Gemelli, obturator externus, quadratus femoris, gluteus maximus"
+            }
+          ]
+        },
+        {
+          "id": "hiprotators-obturator-externus",
+          "name": "Obturator externus",
+          "description": "Deep external rotator on the outside of the obturator membrane.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Other deep rotators, gluteus maximus"
+            }
+          ]
+        },
+        {
+          "id": "hiprotators-superior-gemellus",
+          "name": "Superior gemellus",
+          "description": "Small muscle above the obturator internus tendon, assisting external rotation.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Obturator internus, inferior gemellus, other external rotators"
+            }
+          ]
+        },
+        {
+          "id": "hiprotators-inferior-gemellus",
+          "name": "Inferior gemellus",
+          "description": "Small muscle below the obturator internus tendon, assisting external rotation.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Obturator internus, superior gemellus, other external rotators"
+            }
+          ]
+        },
+        {
+          "id": "hiprotators-quadratus-femoris",
+          "name": "Quadratus femoris",
+          "description": "A short, flat external rotator that also assists hip adduction.",
+          "note": "",
+          "references": ["https://www.orthoinfo.org/recovery/hip-conditioning-program/"],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated band hip external rotation",
+              "equipment": "Hip rotation · Light band",
+              "volume": "2 sets × 8–12 / side",
+              "instructions": "Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.",
+              "cue": "Keep the pelvis still. Hip position changes which rotators contribute.",
+              "alsoWorks": "Other deep rotators, gluteus maximus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calves",
+      "regions": [
+        {
+          "id": "calves-gastrocnemius",
+          "name": "Gastrocnemius",
+          "description": "The prominent two-headed calf muscle crosses the knee and ankle. Straight-knee calf raises load it alongside the soleus.",
+          "note": "",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Standing calf raise",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 8–15 reps",
+              "instructions": "Rise onto the balls of your feet with knees softly extended. Pause, then lower the heels slowly.",
+              "cue": "Use a full comfortable range without bouncing.",
+              "alsoWorks": "Soleus; foot and ankle stabilizers"
+            },
+            {
+              "name": "Single-leg calf raise",
+              "equipment": "Unilateral · Bodyweight",
+              "volume": "3 sets × 10–15 / side",
+              "instructions": "Hold a support for balance. Lift and lower the heel of one leg with control.",
+              "cue": "Keep the ankle aligned rather than rolling outward.",
+              "alsoWorks": "Soleus; foot and ankle stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "calves-soleus",
+          "name": "Soleus",
+          "description": "Lies beneath the gastrocnemius and acts at the ankle. Bent-knee raises reduce the gastrocnemius contribution.",
+          "note": "A bent knee reduces the gastrocnemius contribution, emphasizing the soleus.",
+          "references": [
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Seated calf raise",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 12–20 reps",
+              "instructions": "With knees bent around 90°, lift your heels against the resistance. Lower slowly.",
+              "cue": "Keep pressure through the forefoot and control the bottom position.",
+              "alsoWorks": "Gastrocnemius contributes less with the knee bent; foot stabilizers"
+            },
+            {
+              "name": "Standing calf raise",
+              "equipment": "Isolation · Machine",
+              "volume": "3 sets × 8–15 reps",
+              "instructions": "Rise onto the balls of your feet with knees softly extended. Pause, then lower the heels slowly.",
+              "cue": "Use a full comfortable range without bouncing.",
+              "alsoWorks": "Gastrocnemius; foot and ankle stabilizers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shins & ankles",
+      "regions": [
+        {
+          "id": "lowerleg-tibialis-anterior",
+          "name": "Tibialis anterior",
+          "description": "Lifts the front of the foot and turns the sole inward.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Supported toe raise",
+              "equipment": "Ankle dorsiflexion · Bodyweight",
+              "volume": "2–3 sets × 12–20 reps",
+              "instructions": "Stand with your back supported and heels on the floor. Lift the fronts of your feet, pause briefly, then lower.",
+              "cue": "Lift through the ankle without rocking your body.",
+              "alsoWorks": "Toe extensors"
+            },
+            {
+              "name": "Band ankle inversion",
+              "equipment": "Ankle control · Light band",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Sit with your leg supported. Against a light band, turn the sole inward through a small range, then return.",
+              "cue": "Move at the ankle; keep the knee and hip still.",
+              "alsoWorks": "Tibialis posterior"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-tibialis-posterior",
+          "name": "Tibialis posterior",
+          "description": "Deep calf muscle that inverts the foot, assists plantar flexion, and supports the arch.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band ankle inversion",
+              "equipment": "Ankle control · Light band",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Sit with your leg supported. Against a light band, turn the sole inward through a small range, then return.",
+              "cue": "Move at the ankle; keep the knee and hip still.",
+              "alsoWorks": "Tibialis anterior"
+            },
+            {
+              "name": "Single-leg calf raise",
+              "equipment": "Unilateral · Bodyweight",
+              "volume": "3 sets × 10–15 / side",
+              "instructions": "Hold a support for balance. Lift and lower the heel of one leg with control.",
+              "cue": "Keep the ankle aligned rather than rolling outward.",
+              "alsoWorks": "Gastrocnemius, soleus; foot muscles stabilize"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-fibularis-longus-brevis",
+          "name": "Fibularis longus & brevis",
+          "description": "Lateral-leg muscles that turn the sole outward and assist plantar flexion.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Band ankle eversion",
+              "equipment": "Ankle control · Light band",
+              "volume": "2 sets × 10–15 / side",
+              "instructions": "Sit with your leg supported. Turn the sole outward against a light band, then return slowly.",
+              "cue": "Avoid rotating your whole leg.",
+              "alsoWorks": "Fibularis tertius; foot stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-extensor-digitorum-longus",
+          "name": "Extensor digitorum longus",
+          "description": "Extends the smaller toes and assists ankle dorsiflexion.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe extension against light resistance",
+              "equipment": "Toe extension · Light band",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot supported, lift the toes against a very light band, then lower slowly.",
+              "cue": "Keep the ankle still to emphasize the toe movement.",
+              "alsoWorks": "Extensor hallucis longus and short toe extensors"
+            },
+            {
+              "name": "Supported toe raise",
+              "equipment": "Ankle dorsiflexion · Bodyweight",
+              "volume": "2–3 sets × 12–20 reps",
+              "instructions": "Stand with your back supported and heels on the floor. Lift the fronts of your feet, pause briefly, then lower.",
+              "cue": "Lift through the ankle without rocking your body.",
+              "alsoWorks": "Tibialis anterior, extensor hallucis longus"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-extensor-hallucis-longus",
+          "name": "Extensor hallucis longus",
+          "description": "Extends the big toe and assists ankle dorsiflexion.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe extension against light resistance",
+              "equipment": "Toe extension · Light band",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot supported, lift the toes against a very light band, then lower slowly.",
+              "cue": "Keep the ankle still to emphasize the toe movement.",
+              "alsoWorks": "Other toe extensors; tibialis anterior stabilizes"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-flexor-digitorum-longus",
+          "name": "Flexor digitorum longus",
+          "description": "Deep posterior-leg muscle that bends the smaller toes and helps support the foot.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Towel toe curl",
+              "equipment": "Toe flexion · Towel",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Sit with your heel on the floor and toes on a towel. Draw the towel toward you with the toes, then release.",
+              "cue": "Keep the ankle relaxed and use smooth, small movements.",
+              "alsoWorks": "Flexor digitorum brevis, quadratus plantae, intrinsic foot muscles"
+            }
+          ]
+        },
+        {
+          "id": "lowerleg-flexor-hallucis-longus",
+          "name": "Flexor hallucis longus",
+          "description": "Deep posterior-leg muscle that bends the big toe and contributes to push-off.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Big-toe press",
+              "equipment": "Toe flexion · Floor",
+              "volume": "2 sets × 8–12 holds of 3 sec",
+              "instructions": "Keep the heel and ball of the foot grounded. Gently press the big toe into the floor, then relax.",
+              "cue": "Keep the arch steady without gripping with the other toes.",
+              "alsoWorks": "Flexor hallucis brevis, other intrinsic foot muscles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feet",
+      "regions": [
+        {
+          "id": "feet-abductor-hallucis",
+          "name": "Abductor hallucis",
+          "description": "Runs along the inner foot and moves the big toe away from the second toe.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Short-foot hold",
+              "equipment": "Foot arch control · Floor",
+              "volume": "2 sets × 6–10 holds of 3–5 sec",
+              "instructions": "Keep your toes long and gently draw the ball of the foot toward the heel to raise the arch. Relax fully.",
+              "cue": "Avoid curling the toes or rolling to the outside edge.",
+              "alsoWorks": "Other intrinsic foot muscles, tibialis posterior"
+            },
+            {
+              "name": "Toe spread",
+              "equipment": "Intrinsic foot control · Bodyweight",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot resting on the floor, spread the toes gently, pause, then relax.",
+              "cue": "Keep the heel grounded and avoid forcing individual toes.",
+              "alsoWorks": "Interossei, abductor digiti minimi"
+            }
+          ]
+        },
+        {
+          "id": "feet-flexor-hallucis-brevis",
+          "name": "Flexor hallucis brevis",
+          "description": "Short plantar muscle that bends the big toe at its base.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Big-toe press",
+              "equipment": "Toe flexion · Floor",
+              "volume": "2 sets × 8–12 holds of 3 sec",
+              "instructions": "Keep the heel and ball of the foot grounded. Gently press the big toe into the floor, then relax.",
+              "cue": "Keep the arch steady without gripping with the other toes.",
+              "alsoWorks": "Flexor hallucis longus; arch stabilizers"
+            }
+          ]
+        },
+        {
+          "id": "feet-adductor-hallucis",
+          "name": "Adductor hallucis",
+          "description": "Draws the big toe toward the other toes and contributes to forefoot stability.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe adduction squeeze",
+              "equipment": "Toe control · Soft foam",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "Place a small piece of soft foam between adjacent toes. Bring the toes together gently and release.",
+              "cue": "Keep the rest of the foot relaxed.",
+              "alsoWorks": "Interossei and toe flexors"
+            },
+            {
+              "name": "Short-foot hold",
+              "equipment": "Foot arch control · Floor",
+              "volume": "2 sets × 6–10 holds of 3–5 sec",
+              "instructions": "Keep your toes long and gently draw the ball of the foot toward the heel to raise the arch. Relax fully.",
+              "cue": "Avoid curling the toes or rolling to the outside edge.",
+              "alsoWorks": "Other intrinsic foot muscles, tibialis posterior"
+            }
+          ]
+        },
+        {
+          "id": "feet-flexor-digitorum-brevis",
+          "name": "Flexor digitorum brevis",
+          "description": "Short sole muscle that bends the smaller toes.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Towel toe curl",
+              "equipment": "Toe flexion · Towel",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Sit with your heel on the floor and toes on a towel. Draw the towel toward you with the toes, then release.",
+              "cue": "Keep the ankle relaxed and use smooth, small movements.",
+              "alsoWorks": "Flexor digitorum longus, quadratus plantae, lumbricals"
+            }
+          ]
+        },
+        {
+          "id": "feet-quadratus-plantae",
+          "name": "Quadratus plantae",
+          "description": "Assists the long toe flexor in bending the smaller toes.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Towel toe curl",
+              "equipment": "Toe flexion · Towel",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "Sit with your heel on the floor and toes on a towel. Draw the towel toward you with the toes, then release.",
+              "cue": "Keep the ankle relaxed and use smooth, small movements.",
+              "alsoWorks": "Flexor digitorum longus and brevis"
+            }
+          ]
+        },
+        {
+          "id": "feet-foot-interossei-lumbricals",
+          "name": "Foot interossei & lumbricals",
+          "description": "Coordinate toe spacing and the balance of toe-joint flexion and extension.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe spread",
+              "equipment": "Intrinsic foot control · Bodyweight",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot resting on the floor, spread the toes gently, pause, then relax.",
+              "cue": "Keep the heel grounded and avoid forcing individual toes.",
+              "alsoWorks": "Abductor hallucis, abductor digiti minimi"
+            },
+            {
+              "name": "Toe adduction squeeze",
+              "equipment": "Toe control · Soft foam",
+              "volume": "1–2 sets × 8–12 reps",
+              "instructions": "Place a small piece of soft foam between adjacent toes. Bring the toes together gently and release.",
+              "cue": "Keep the rest of the foot relaxed.",
+              "alsoWorks": "Other intrinsic foot muscles"
+            }
+          ]
+        },
+        {
+          "id": "feet-abductor-digiti-minimi",
+          "name": "Abductor digiti minimi",
+          "description": "Runs along the outer foot and helps move the little toe outward.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe spread",
+              "equipment": "Intrinsic foot control · Bodyweight",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot resting on the floor, spread the toes gently, pause, then relax.",
+              "cue": "Keep the heel grounded and avoid forcing individual toes.",
+              "alsoWorks": "Interossei, abductor hallucis"
+            },
+            {
+              "name": "Short-foot hold",
+              "equipment": "Foot arch control · Floor",
+              "volume": "2 sets × 6–10 holds of 3–5 sec",
+              "instructions": "Keep your toes long and gently draw the ball of the foot toward the heel to raise the arch. Relax fully.",
+              "cue": "Avoid curling the toes or rolling to the outside edge.",
+              "alsoWorks": "Other intrinsic foot muscles"
+            }
+          ]
+        },
+        {
+          "id": "feet-extensor-digitorum-hallucis-brevis",
+          "name": "Extensor digitorum & hallucis brevis",
+          "description": "Short muscles on the top of the foot that assist toe extension.",
+          "note": "",
+          "references": [
+            "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rehab_foot-and-ankle_final.pdf"
+          ],
+          "reviewStatus": "draft",
+          "exercises": [
+            {
+              "name": "Toe extension against light resistance",
+              "equipment": "Toe extension · Light band",
+              "volume": "2 sets × 8–12 reps",
+              "instructions": "With the foot supported, lift the toes against a very light band, then lower slowly.",
+              "cue": "Keep the ankle still to emphasize the toe movement.",
+              "alsoWorks": "Long toe extensors"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
