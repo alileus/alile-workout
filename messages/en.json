@@ -88,7 +88,7 @@
   "DesignSystem": {
     "reference": "Contributor reference",
     "title": "Design system",
-    "intro": "Neutral surfaces, teal interactions, logical spacing. Shared shadcn/ui primitives.",
+    "intro": "Warm graphite, paper-toned type, pencil anatomy, and warm gold interactions. Shared shadcn/ui primitives.",
     "colors": "Color tokens",
     "tokens": {
       "background": "Background",
@@ -97,7 +97,9 @@
       "muted": "Muted",
       "accent": "Accent",
       "border": "Border",
-      "destructive": "Destructive"
+      "destructive": "Destructive",
+      "paper": "Paper",
+      "graphite": "Graphite"
     },
     "buttons": "Buttons",
     "primary": "Primary",
@@ -114,7 +116,13 @@
     "bodySample": "Body copy / 15 px / comfortable line height",
     "sample": "Select a muscle region to explore its exercises.",
     "interactionTitle": "Interaction rules",
-    "interactionBody": "Hover previews anatomy. Click toggles the pinned region. Focus uses the same color cues. Keep anatomy unmirrored in right-to-left layouts."
+    "interactionBody": "Hover previews anatomy. Click toggles the pinned region. Focus uses the same color cues. Keep anatomy unmirrored in right-to-left layouts.",
+    "artworkTitle": "Pencil anatomy",
+    "artworkBody": "Use the traced front and back SVG artwork. Keep the pencil linework visible beneath translucent muscle highlights.",
+    "front": "Front study",
+    "back": "Back study",
+    "textureTitle": "Surface & texture",
+    "textureBody": "A light paper grain adds warmth to dark surfaces. Keep controls and text crisp; reserve hand-drawn detail for the anatomy."
   },
   "NotFound": {
     "title": "Page not found",

@@ -62,7 +62,6 @@ export function Atlas({
       <h1 className="sr-only">{region?.name || (group ? label(group.id) : t('title'))}</h1>
       <section className="anatomy-panel" aria-label={t('atlas')}>
         <span className="anatomy-caption eyebrow">{t('schematic')}</span>
-        <div className="anatomy-circles" aria-hidden="true" />
         <BodyMap
           group={groupId}
           regionId={activeId}

@@ -11,3 +11,5 @@ next-intl manages prefixed routes and interface strings. The locale root sets HT
 Metadata images use language-neutral SVG anatomy rendered to PNG by Next ImageResponse. The region or group query parameter changes the highlight and front/back view. No Arabic shaping or external font download is needed.
 
 GitHub Issue Forms provide no-code intake. Maintainers review evidence and create versioned JSON PRs. Issues never auto-publish.
+
+Anatomy rendering separates static pencil artwork (`public/anatomy/*.svg`) from semantic muscle geometry (`src/features/anatomy/data/geometry.json`). The artwork is traced vector linework; interactive paths remain small, accessible React elements with stable IDs. `groupPaths` filters by view, preventing front/back regions from mixing. Deep layers are schematic overlays. The Open Graph endpoint reads the same SVG files at runtime; Next output tracing includes them for deployment.

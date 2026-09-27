@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip';
-import { anatomy, visibleComponents, visibleRegions, type View } from '../model';
+import { anatomy, groupPaths, visibleRegions, type View } from '../model';
 export function BodyMap({
   group,
   regionId,
@@ -31,49 +31,27 @@ export function BodyMap({
     </>
   );
   return (
-    <TooltipProvider>
+    <TooltipProvider disableHoverableContent>
       <svg
         className={`body-map ${region ? 'has-region' : ''}`}
         viewBox={region?.zoom || '0 0 400 670'}
         aria-label={t('schematic')}
       >
-        <defs>
-          <linearGradient id="body" x2="1">
-            <stop stopColor="#252525" />
-            <stop offset=".5" stopColor="#444" />
-            <stop offset="1" stopColor="#252525" />
-          </linearGradient>
-          <linearGradient id="muscle" x2="1" y2=".7">
-            <stop stopColor="#626262" />
-            <stop offset=".5" stopColor="#777" />
-            <stop offset="1" stopColor="#494949" />
-          </linearGradient>
-          <linearGradient id="selected" x2="1" y2="1">
-            <stop stopColor="#a3e6df" />
-            <stop offset="1" stopColor="#329e9f" />
-          </linearGradient>
-        </defs>
-        <path d={anatomy.silhouette} fill="url(#body)" stroke="#595959" />
-        {view === 'front' && (
-          <path
-            d="M180 49 Q186 42 192 49 M207 49 Q216 42 221 49 M193 73 Q200 76 207 73 M200 53L197 64 203 64 M185 83L200 91 215 83"
-            fill="none"
-            stroke="#666"
-          />
+        <image
+          className="anatomy-art"
+          href={anatomy.artwork[view]}
+          x="0"
+          y="0"
+          width="400"
+          height="670"
+          aria-hidden="true"
+          pointerEvents="none"
+        />
+        {group && !region && (
+          <g className="group-overlay" aria-hidden="true" pointerEvents="none">
+            {paths(groupPaths(group, view))}
+          </g>
         )}
-        {visibleComponents(view, region).map((component) => {
-          const id = anatomy.componentGroup[component];
-          return (
-            <g
-              key={component}
-              className={`body-muscle ${id === group && !region ? 'active' : ''}`}
-              fill="url(#muscle)"
-              aria-hidden="true"
-            >
-              {paths(anatomy.paths[component])}
-            </g>
-          );
-        })}
         {visibleRegions(view, regionId).map((id) => (
           <Tooltip key={id}>
             <TooltipTrigger asChild>
@@ -95,13 +73,11 @@ export function BodyMap({
                 {paths(anatomy.regions[id].d)}
               </g>
             </TooltipTrigger>
-            <TooltipContent>{regionNames[id]}</TooltipContent>
+            <TooltipContent className="pointer-events-none">{regionNames[id]}</TooltipContent>
           </Tooltip>
         ))}
         {region && (
-          <g className={`region-overlay ${region.deep ? 'deep' : ''}`} fill="url(#selected)">
-            {paths(region.d)}
-          </g>
+          <g className={`region-overlay ${region.deep ? 'deep' : ''}`}>{paths(region.d)}</g>
         )}
       </svg>
     </TooltipProvider>
