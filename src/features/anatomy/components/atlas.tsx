@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowLeft, ArrowUpRight, Search, Layers, Minimize2, Maximize2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,14 +26,22 @@ export function Atlas({
   const groupButtons = useRef<HTMLDivElement>(null);
   const t = useTranslations('App'),
     locale = useLocale();
+  const routeKey = musclePath(groupId, selected);
+  const [previousRoute, setPreviousRoute] = useState(routeKey);
   const [hovered, setHovered] = useState<string | null>(null),
-    [viewChoice, setViewChoice] = useState<{ selected: string | null; view: View }>(() => ({
-      selected,
+    [viewChoice, setViewChoice] = useState<{ route: string; view: View }>(() => ({
+      route: routeKey,
       view: (anatomy.regions[selected || '']?.view ||
         book.find((entry) => entry.id === groupId)?.view ||
         'front') as View,
     })),
     [search, setSearch] = useState('');
+  // Clear route-specific interactions without remounting the shared anatomy.
+  if (previousRoute !== routeKey) {
+    setPreviousRoute(routeKey);
+    setHovered(null);
+    setSearch('');
+  }
   const group = book.find((g) => g.id === groupId),
     activeId = hovered || selected,
     active = activeId ? anatomy.regions[activeId] : undefined;
@@ -41,16 +49,14 @@ export function Atlas({
   const activeRegion = group?.sections.flatMap((s) => s.regions).find((r) => r.id === activeId);
   // A manual rotation belongs to the current selection. New routes use their muscle's side.
   const view =
-    viewChoice.selected === selected
+    viewChoice.route === routeKey
       ? viewChoice.view
       : ((anatomy.regions[selected || '']?.view || group?.view || 'front') as View);
   const displayView = (hovered ? active?.view || view : view) as View;
   const visibleActiveId = active?.view === displayView ? activeId : null;
-  const chooseGroup = (id: string) => {
+  const chooseGroup = () => {
     setHovered(null);
     setSearch('');
-    const next = book.find((g) => g.id === id);
-    if (next) setViewChoice({ selected: null, view: next.view });
   };
   const chooseRegion = (id: string) => {
     const next = selectRegion(selected, id);
@@ -58,12 +64,15 @@ export function Atlas({
     router.push(musclePath(next.group, next.selected), { scroll: false });
     setHovered(null);
     setSearch('');
-    setViewChoice({ selected: next.selected, view: next.view });
   };
   const regionNames = Object.fromEntries(
     book.flatMap((g) => g.sections.flatMap((s) => s.regions.map((r) => [r.id, r.name]))),
   );
   const label = (id: string) => t(id === 'back' ? 'backGroup' : id);
+  useLayoutEffect(() => {
+    // Mobile uses document scrolling so Safari can display content behind its toolbar.
+    if (window.matchMedia('(max-width: 1000px)').matches) window.scrollTo(0, 0);
+  }, [routeKey]);
   useEffect(() => {
     groupButtons.current
       ?.querySelector('[aria-current="page"]')
@@ -74,65 +83,67 @@ export function Atlas({
       className={`atlas ${compact ? 'anatomy-compact' : ''} ${region ? 'guide-open' : ''} ${!group ? 'atlas-home' : ''}`}
     >
       <h1 className="sr-only">{region?.name || (group ? label(group.id) : t('title'))}</h1>
-      <nav className="group-bar" aria-label={t('groups')}>
-        <div className="group-buttons" ref={groupButtons}>
-          {book.map((g) => (
-            <Button variant={g.id === groupId ? 'default' : 'outline'} key={g.id} asChild>
-              <Link
-                href={musclePath(g.id === groupId ? null : g.id)}
-                scroll={false}
-                aria-current={g.id === groupId ? 'page' : undefined}
-                onClick={() => chooseGroup(g.id)}
-              >
-                {label(g.id)}
-              </Link>
-            </Button>
-          ))}
-        </div>
-      </nav>
-      <section id={anatomyId} className="anatomy-panel" aria-label={t('atlas')}>
-        <span className="anatomy-caption eyebrow">{t('schematic')}</span>
-        <Button
-          className="anatomy-size-toggle"
-          variant="outline"
-          size="icon"
-          aria-label={t(compact ? 'expandAnatomy' : 'collapseAnatomy')}
-          aria-expanded={!compact}
-          aria-controls={anatomyId}
-          onClick={toggleCompact}
-        >
-          {compact ? <Maximize2 aria-hidden="true" /> : <Minimize2 aria-hidden="true" />}
-        </Button>
-        <BodyMap
-          group={activeId ? null : groupId}
-          regionId={visibleActiveId}
-          selectedRegionId={selected}
-          regionNames={regionNames}
-          view={displayView}
-          onRegion={chooseRegion}
-        />
-        <div className="anatomy-bottom">
-          <div className="region-label" aria-live="polite">
-            {visibleActiveId && active?.deep && <span className="eyebrow">{t('deep')}</span>}
-            {visibleActiveId && activeRegion?.name}
-          </div>
-          <div className="view-switch" role="group" aria-label={t('atlas')}>
-            {(['front', 'back'] as const).map((side) => (
-              <Button
-                key={side}
-                variant={displayView === side ? 'default' : 'ghost'}
-                aria-pressed={displayView === side}
-                onClick={() => {
-                  setViewChoice({ selected, view: side });
-                  setHovered(null);
-                }}
-              >
-                {t(side)}
+      <div className="atlas-preview">
+        <nav className="group-bar" aria-label={t('groups')}>
+          <div className="group-buttons" ref={groupButtons}>
+            {book.map((g) => (
+              <Button variant={g.id === groupId ? 'default' : 'outline'} key={g.id} asChild>
+                <Link
+                  href={musclePath(g.id === groupId ? null : g.id)}
+                  scroll={false}
+                  aria-current={g.id === groupId ? 'page' : undefined}
+                  onClick={chooseGroup}
+                >
+                  {label(g.id)}
+                </Link>
               </Button>
             ))}
           </div>
-        </div>
-      </section>
+        </nav>
+        <section id={anatomyId} className="anatomy-panel" aria-label={t('atlas')}>
+          <span className="anatomy-caption eyebrow">{t('schematic')}</span>
+          <Button
+            className="anatomy-size-toggle"
+            variant="outline"
+            size="icon"
+            aria-label={t(compact ? 'expandAnatomy' : 'collapseAnatomy')}
+            aria-expanded={!compact}
+            aria-controls={anatomyId}
+            onClick={toggleCompact}
+          >
+            {compact ? <Maximize2 aria-hidden="true" /> : <Minimize2 aria-hidden="true" />}
+          </Button>
+          <BodyMap
+            group={activeId ? null : groupId}
+            regionId={visibleActiveId}
+            selectedRegionId={selected}
+            regionNames={regionNames}
+            view={displayView}
+            onRegion={chooseRegion}
+          />
+          <div className="anatomy-bottom">
+            <div className="region-label" aria-live="polite">
+              {visibleActiveId && active?.deep && <span className="eyebrow">{t('deep')}</span>}
+              {visibleActiveId && activeRegion?.name}
+            </div>
+            <div className="view-switch" role="group" aria-label={t('atlas')}>
+              {(['front', 'back'] as const).map((side) => (
+                <Button
+                  key={side}
+                  variant={displayView === side ? 'default' : 'ghost'}
+                  aria-pressed={displayView === side}
+                  onClick={() => {
+                    setViewChoice({ route: routeKey, view: side });
+                    setHovered(null);
+                  }}
+                >
+                  {t(side)}
+                </Button>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
       <section className="regions-panel" aria-label={t('regions')}>
         {!group ? (
           <div className="atlas-intro">
@@ -215,10 +226,6 @@ export function Atlas({
                             onClick={() => {
                               setHovered(null);
                               setSearch('');
-                              setViewChoice({
-                                selected: r.id === selected ? null : r.id,
-                                view: anatomy.regions[r.id].view as View,
-                              });
                             }}
                             onKeyDown={(e) => {
                               if (e.key === 'Escape') {

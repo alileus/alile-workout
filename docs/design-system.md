@@ -6,7 +6,7 @@ Semantic tokens live in src/app/globals.css, mapped to Tailwind via @theme inlin
 
 Shared primitives live in src/components/ui and are shadcn/ui source components. components.json enables the new-york style, CSS variables and RTL. Add components using `npx shadcn@latest add <component>`; inspect generated code before committing.
 
-Desktop uses 33% anatomy / 32% regions / 35% guide. The selector spans the latter columns while anatomy spans the full height. Mobile uses fixed grid rows for anatomy, selector and independently scrolling content. Selecting a region replaces the bottom pane with the guide.
+Desktop uses 33% anatomy / 32% regions / 35% guide. The selector spans the latter columns while anatomy spans the full height. Mobile uses document scrolling so content can continue behind Safari's translucent browser toolbar. The selector and anatomy form a sticky top preview, with a compact default and a stored expand/collapse preference. Selecting a region replaces the muscle list with the guide. The menu button remains fixed above the browser controls; safe-area insets keep controls clear of notches and the home indicator.
 
 Use native buttons with accessible names and aria-pressed for toggles. SVG focus uses contrasting fill/stroke; keyboard controls elsewhere retain focus indicators. Respect reduced motion. Rotate directional icons in RTL, never anatomy.
 

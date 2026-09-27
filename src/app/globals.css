@@ -66,6 +66,8 @@
 html {
   --app-font: Arial, sans-serif;
   scrollbar-gutter: stable;
+  color-scheme: dark;
+  background-color: var(--background);
 }
 @supports (scrollbar-gutter: stable) {
   /* The root already reserves the gutter; Radix's scroll lock must not add it twice. */
@@ -81,6 +83,7 @@ html[lang='ja'] {
 }
 body {
   margin: 0;
+  min-height: 100dvh;
   background: var(--background);
   background-image: var(--sketch-grain);
   color: var(--foreground);
@@ -138,6 +141,9 @@ summary:focus-visible {
   grid-template-columns: 33% 32% 35%;
   grid-template-rows: auto minmax(0, 1fr);
   overflow: hidden;
+}
+.atlas-preview {
+  display: contents;
 }
 .anatomy-panel {
   grid-column: 1;
@@ -629,12 +635,23 @@ summary:focus-visible {
 }
 @media (max-width: 1000px) {
   .atlas {
-    height: 100dvh;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto clamp(280px, 52svh, 560px) minmax(0, 1fr);
+    display: block;
+    height: auto;
+    min-height: 100svh;
+    overflow: visible;
+    padding-inline: env(safe-area-inset-left) env(safe-area-inset-right);
   }
-  .atlas.anatomy-compact {
-    grid-template-rows: auto 140px minmax(0, 1fr);
+  .atlas-preview {
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: env(safe-area-inset-top);
+    background: var(--background) var(--sketch-grain);
+    grid-template-rows: auto clamp(280px, 52svh, 560px);
+  }
+  .atlas.anatomy-compact .atlas-preview {
+    grid-template-rows: auto 140px;
   }
   .anatomy-size-toggle {
     display: inline-flex;
@@ -694,9 +711,10 @@ summary:focus-visible {
     grid-column: 1;
     grid-row: 3;
     padding: 24px;
+    padding-bottom: calc(100px + env(safe-area-inset-bottom));
     min-height: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: visible;
+    scrollbar-gutter: auto;
     border: 0;
   }
   .atlas-home .regions-panel {
