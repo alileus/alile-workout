@@ -5,7 +5,6 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { routing } from '@/i18n/routing';
 import { NavigationDrawer } from '@/components/navigation-drawer';
-import { BodyVariantProvider } from '@/features/anatomy/components/body-variant-provider';
 import '../globals.css';
 import fonts from '@/generated/fonts.json';
 export function generateStaticParams() {
@@ -38,7 +37,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider>
-          <BodyVariantProvider>{children}</BodyVariantProvider>
+          {children}
           <NavigationDrawer />
         </NextIntlClientProvider>
         <Analytics />

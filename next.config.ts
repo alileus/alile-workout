@@ -4,6 +4,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
   devIndicators: false,
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    '/api/og': ['./public/anatomy/*.svg'],
+  },
   async headers() {
     return process.env.VERCEL_ENV === 'production'
       ? []
