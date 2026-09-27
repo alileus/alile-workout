@@ -25,8 +25,9 @@ async function entryFor(params: Props['params']) {
   const entry = resolveMuscleRoute(book, slug);
   if (!entry) notFound();
   const t = await getTranslations({ locale, namespace: 'App' });
-  const title = entry.region?.name || t(entry.group.id === 'back' ? 'backGroup' : entry.group.id);
-  const description = entry.region?.description || t('groupDescription', { muscle: title });
+  const groupTitle = t(entry.group.id === 'back' ? 'backGroup' : entry.group.id);
+  const title = entry.region ? `${groupTitle} | ${entry.region.name}` : groupTitle;
+  const description = entry.region?.description || t('groupDescription', { muscle: groupTitle });
   const path = musclePath(entry.group.id, entry.region?.id);
   return { locale, book, ...entry, title, description, path };
 }

@@ -48,7 +48,7 @@ export function MovementGuide({ region }: { region: Region }) {
               </span>
               <p>{exercise.alsoWorks}</p>
             </div>
-            <details open>
+            <details>
               <summary lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
                 {t('how')} <DisclosureIndicator />
               </summary>

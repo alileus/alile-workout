@@ -15,6 +15,8 @@ The script extracts each silhouette, quantizes small tonal differences, and trac
 
 ## Editing interactive regions
 
+`alignment.json` registers the front and back at the same head center and crown-to-sole height. Apply its transform to the artwork and interactive paths together; detail view boxes and social images use the same registration. The artwork audit checks these alignment anchors within one SVG unit as well as muscle containment.
+
 `src/features/anatomy/data/geometry.json` contains all 100 stable muscle IDs and their overlay paths. The 43 superficial regions were traced against the new artwork; deep layers are illustrative cutaways adapted to its proportions. The renderer mirrors left-side paths around x=200. Front and back have their own geometry, and hand/foot detail bounds match the new illustrations. Change the visible region, hit target and selection shape together by editing `d`; do not add a separate invisible approximation. Use translucent gold highlights to preserve pencil detail beneath them.
 
 This is a schematic educational atlas, not clinically validated anatomy. Content and deep-layer illustrations remain open to expert corrections through the existing contribution workflow.

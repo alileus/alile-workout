@@ -24,21 +24,30 @@ export function Atlas({
   const t = useTranslations('App'),
     locale = useLocale();
   const [hovered, setHovered] = useState<string | null>(null),
-    [view, setView] = useState<View>(
-      () => book.find((entry) => entry.id === groupId)?.view || 'front',
-    ),
+    [viewChoice, setViewChoice] = useState<{ selected: string | null; view: View }>(() => ({
+      selected,
+      view: (anatomy.regions[selected || '']?.view ||
+        book.find((entry) => entry.id === groupId)?.view ||
+        'front') as View,
+    })),
     [search, setSearch] = useState('');
   const group = book.find((g) => g.id === groupId),
     activeId = hovered || selected,
     active = activeId ? anatomy.regions[activeId] : undefined;
   const region = group?.sections.flatMap((s) => s.regions).find((r) => r.id === selected);
   const activeRegion = group?.sections.flatMap((s) => s.regions).find((r) => r.id === activeId);
-  const displayView = (active?.view || view) as View;
+  // A manual rotation belongs to the current selection. New routes use their muscle's side.
+  const view =
+    viewChoice.selected === selected
+      ? viewChoice.view
+      : ((anatomy.regions[selected || '']?.view || group?.view || 'front') as View);
+  const displayView = (hovered ? active?.view || view : view) as View;
+  const visibleActiveId = active?.view === displayView ? activeId : null;
   const chooseGroup = (id: string) => {
     setHovered(null);
     setSearch('');
     const next = book.find((g) => g.id === id);
-    if (next) setView(next.view);
+    if (next) setViewChoice({ selected: null, view: next.view });
   };
   const chooseRegion = (id: string) => {
     const next = selectRegion(selected, id);
@@ -46,7 +55,7 @@ export function Atlas({
     router.push(musclePath(next.group, next.selected), { scroll: false });
     setHovered(null);
     setSearch('');
-    setView(next.view);
+    setViewChoice({ selected: next.selected, view: next.view });
   };
   const regionNames = Object.fromEntries(
     book.flatMap((g) => g.sections.flatMap((s) => s.regions.map((r) => [r.id, r.name]))),
@@ -63,8 +72,8 @@ export function Atlas({
       <section className="anatomy-panel" aria-label={t('atlas')}>
         <span className="anatomy-caption eyebrow">{t('schematic')}</span>
         <BodyMap
-          group={groupId}
-          regionId={activeId}
+          group={activeId ? null : groupId}
+          regionId={visibleActiveId}
           selectedRegionId={selected}
           regionNames={regionNames}
           view={displayView}
@@ -72,8 +81,8 @@ export function Atlas({
         />
         <div className="anatomy-bottom">
           <div className="region-label" aria-live="polite">
-            {active?.deep && <span className="eyebrow">{t('deep')}</span>}
-            {activeRegion?.name}
+            {visibleActiveId && active?.deep && <span className="eyebrow">{t('deep')}</span>}
+            {visibleActiveId && activeRegion?.name}
           </div>
           <div className="view-switch" role="group" aria-label={t('atlas')}>
             {(['front', 'back'] as const).map((side) => (
@@ -82,8 +91,7 @@ export function Atlas({
                 variant={displayView === side ? 'default' : 'ghost'}
                 aria-pressed={displayView === side}
                 onClick={() => {
-                  setView(side);
-                  if (selected) router.push(musclePath(groupId), { scroll: false });
+                  setViewChoice({ selected, view: side });
                   setHovered(null);
                 }}
               >
@@ -191,7 +199,10 @@ export function Atlas({
                             onClick={() => {
                               setHovered(null);
                               setSearch('');
-                              setView(anatomy.regions[r.id].view as View);
+                              setViewChoice({
+                                selected: r.id === selected ? null : r.id,
+                                view: anatomy.regions[r.id].view as View,
+                              });
                             }}
                             onKeyDown={(e) => {
                               if (e.key === 'Escape') {
