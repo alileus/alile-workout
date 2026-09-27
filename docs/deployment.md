@@ -1,6 +1,6 @@
-# Vercel setup (later)
+# Deployment
 
-Repository setup does not create a Vercel project, deploy, or change DNS.
+Vercel is connected to this repository. `main` deploys to the protected preview at `workout.alile.dev`; `production` deploys to `workout.alile.us`. The steps below document how to reproduce that configuration. Repository files alone do not create a Vercel project or change DNS.
 
 1. Import alileus/alile-workout with the GitHub integration. Select Next.js and repository root, Node 24.x, install command npm ci and build command npm run build.
 2. **Before the first deployment**, set Project Settings → Environments → Production → Branch Tracking to **production**. Vercel defaults to main. If import cannot set it initially, cancel the initial deployment, change the setting, then deploy the correct branch.

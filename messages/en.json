@@ -9,6 +9,8 @@
     "front": "Front",
     "back": "Back",
     "schematic": "Schematic anatomy",
+    "collapseAnatomy": "Collapse anatomy",
+    "expandAnatomy": "Expand anatomy",
     "deep": "Deep layer",
     "alsoWorks": "Also works",
     "how": "How to perform",

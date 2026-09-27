@@ -9,6 +9,8 @@
     "front": "前面",
     "back": "背面",
     "schematic": "解剖模式図",
+    "collapseAnatomy": "解剖図を縮小",
+    "expandAnatomy": "解剖図を拡大",
     "deep": "深層",
     "alsoWorks": "同時に働く筋肉",
     "how": "動作の手順",
