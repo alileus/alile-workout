@@ -5,3 +5,5 @@ next-env.d.ts
 coverage
 public/fonts
 src/generated/fonts.json
+public/workouts
+docs/artwork/workouts

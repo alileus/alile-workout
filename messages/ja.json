@@ -12,9 +12,9 @@
     "collapseAnatomy": "解剖図を縮小",
     "expandAnatomy": "解剖図を拡大",
     "deep": "深層",
-    "alsoWorks": "同時に働く筋肉",
+    "exerciseMuscles": "使う筋肉",
+    "exerciseIllustration": "{exercise}：開始姿勢と終了姿勢",
     "how": "動作の手順",
-    "volume": "トレーニング量の例",
     "reference": "参考資料",
     "suggest": "修正を提案",
     "book": "ワークアウトブック",
@@ -85,6 +85,37 @@
         "description": "エクササイズの種類、行い方、他に働く筋肉を確認できます。各筋肉の専用リンクを保存・共有できます。"
       },
       "community": "みんなで育てるオープンなトレーニングガイドです。内容の修正、翻訳の改善、エクササイズの提案に参加できます。"
+    },
+    "workouts": "ワークアウト",
+    "involvement": {
+      "pectorals": "胸筋",
+      "deltoids": "三角筋",
+      "triceps": "上腕三頭筋",
+      "biceps": "上腕二頭筋",
+      "trapezius": "僧帽筋",
+      "glutes": "臀筋群",
+      "hamstrings": "ハムストリングス",
+      "quadriceps": "大腿四頭筋",
+      "adductors": "内転筋群",
+      "hip-flexors": "股関節屈筋群",
+      "hip-rotators": "股関節回旋筋群",
+      "rotator-cuff": "ローテーターカフ",
+      "neck": "頸部の筋肉",
+      "forearms": "前腕筋群",
+      "forearm-flexors": "前腕屈筋群",
+      "wrist-flexors": "手関節屈筋群",
+      "wrist-extensors": "手関節伸筋群",
+      "thumb-flexors": "母指屈筋群",
+      "finger-flexors": "指屈筋群",
+      "hand-intrinsics": "手内在筋",
+      "abdominals": "腹筋群",
+      "toe-extensors": "足趾伸筋群",
+      "toe-flexors": "足趾屈筋群",
+      "foot-intrinsics": "足内在筋",
+      "teres-major": "大円筋",
+      "semispinalis": "半棘筋",
+      "intercostals": "肋間筋",
+      "fibularis-tertius": "第三腓骨筋"
     }
   },
   "DesignSystem": {
@@ -130,5 +161,14 @@
     "title": "ページが見つかりません",
     "description": "このページは存在しません。筋肉アトラスに戻ってガイドを探してください。",
     "back": "筋肉アトラスに戻る"
+  },
+  "Workouts": {
+    "title": "ワークアウト",
+    "description": "ブックに登録されたすべての種目。動作を探し、姿勢と使う筋肉を確認できます。",
+    "search": "種目や筋肉を検索…",
+    "filter": "トレーニング部位で絞り込む",
+    "all": "すべて",
+    "count": "{count}種目",
+    "empty": "検索に一致する種目はありません。"
   }
 }

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { CodeXml, Layers, Minus, Menu, Users, ArrowUpRight } from 'lucide-react';
+import { CodeXml, Layers, Minus, Menu, Users, ArrowUpRight, Dumbbell } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/language-switcher';
@@ -21,6 +21,7 @@ export function NavigationDrawer() {
     pathname = usePathname();
   const routes = [
     { href: '/', label: t('atlas'), icon: Layers },
+    { href: '/workouts', label: t('workouts'), icon: Dumbbell },
     { href: '/contribute', label: t('contribute'), icon: Users },
   ];
   return (

@@ -46,14 +46,14 @@ for (const [id, group] of Object.entries(raw.data)) {
                 'https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction',
             ],
             reviewStatus: 'draft',
-            exercises: guide.items.map(([key, i, alsoWorks]) => {
+            exercises: guide.items.map(([key, i]) => {
               const exercise =
                 key === 'extra'
                   ? raw.additionalExercises[i]
                   : raw.atlasComponents[key].exercises[i];
               if (!exercise) throw new Error('Missing exercise ' + regionId);
-              const [name, equipment, volume, instructions, cue] = exercise;
-              return { name, equipment, volume, instructions, cue, alsoWorks };
+              const [name, equipment, , instructions, cue] = exercise;
+              return { id: slug(name), name, equipment, instructions, cue };
             }),
           };
         }),

@@ -1,0 +1,749 @@
+{
+  "tool": "Built-in GPT Image",
+  "transparentBackground": true,
+  "styleReference": "workouts/dumbbell-overhead-press.png",
+  "detailStyleReference": "workouts/thumb-opposition-with-putty.png",
+  "poseOrder": "Start on left, finish on right. Isometric drawings show setup and hold.",
+  "workouts": {
+    "ball-adductor-squeeze": {
+      "name": "Ball adductor squeeze",
+      "source": "workouts/ball-adductor-squeeze.png",
+      "vector": "public/workouts/ball-adductor-squeeze.svg",
+      "generatedSource": "exec-8375f0f5-025a-4d69-88a8-4c9b93051b15.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Ball adductor squeeze. Instructions: Lie with knees bent and a soft ball between them. Squeeze gently, then release fully.. Full body seated front three-quarter view on chair. Both hips and knees bent, feet grounded, small soft exercise ball between knees. LEFT ball round with knees just contacting. RIGHT knees gently squeeze ball slightly compressed, no collapsing knees far inward, torso unchanged. Keep 8% transparent margins, studies separate."
+    },
+    "band-ankle-eversion": {
+      "name": "Band ankle eversion",
+      "source": "workouts/band-ankle-eversion.png",
+      "vector": "public/workouts/band-ankle-eversion.svg",
+      "generatedSource": "exec-556af849-659b-498b-a3c3-677ef1e08dcf.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Band ankle eversion. Instructions: Sit with your leg supported. Turn the sole outward against a light band, then return slowly.. Two CLOSE-UP studies of one RIGHT lower leg and bare foot, seated supported calf resting horizontally with foot free. Three-quarter view showing heel and sole. LEFT: ankle neutral, light band loop around forefoot anchored toward MEDIAL/inside side. RIGHT: foot rolls sole OUTWARD, lateral border rises appropriately as eversion, band stretches resisting it. Leg/knee and heel height unchanged, only small ankle/subtalar movement. Natural five toes."
+    },
+    "band-ankle-inversion": {
+      "name": "Band ankle inversion",
+      "source": "workouts/band-ankle-inversion.png",
+      "vector": "public/workouts/band-ankle-inversion.svg",
+      "generatedSource": "exec-d8c93d19-d28e-4f13-bff7-0653f73dc454.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Band ankle inversion. Instructions: Sit with your leg supported. Against a light band, turn the sole inward through a small range, then return.. Two CLOSE-UP studies of one RIGHT lower leg and bare foot, calf supported on a small block, foot free. Three-quarter view showing sole. LEFT: ankle neutral, light band around forefoot anchored on LATERAL/outside. RIGHT: sole turns INWARD toward body's midline, inversion, band stretched resisting inward roll. Lower leg remains fixed, no whole hip rotation. Natural five toes."
+    },
+    "band-external-rotation": {
+      "name": "Band external rotation",
+      "source": "workouts/band-external-rotation.png",
+      "vector": "public/workouts/band-external-rotation.svg",
+      "generatedSource": "exec-05e142ed-e7da-4ee2-9160-23e5d593c1fe.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Band external rotation. Instructions: Keep your elbow bent at your side. Rotate your forearm outward against a light band, then return slowly.. Waist-up front three-quarter view, one elbow bent 90 degrees held beside ribs over small towel, resistance band anchored to opposite side at elbow height. LEFT working forearm angled inward across abdomen. RIGHT forearm rotates outward laterally, upper arm and elbow do not leave ribs. Same wrist neutral, shoulder not abducted. Keep 8% transparent margins, studies separate.",
+      "correctionPrompt": "Correct the RIGHT study only. It currently duplicates the left arm position. Keep LEFT study exactly unchanged. In RIGHT study, his working elbow stays against the same side ribs over the towel, bent at 90 degrees. Rotate that forearm outward so the working fist is well OUTSIDE the body silhouette on the viewer's LEFT, rather than crossing in front of his abdomen. The band must run from that outward hand across to the SAME anchor on the viewer's right. This is shoulder external rotation, not abduction: upper arm stays vertical against side, wrist neutral. Preserve camera, grayscale graphite medium, face, character, shorts, 2studies and transparency. No text."
+    },
+    "band-finger-opening": {
+      "name": "Band finger opening",
+      "source": "workouts/band-finger-opening.png",
+      "vector": "public/workouts/band-finger-opening.svg",
+      "generatedSource": "exec-ab2cadab-7cec-4abe-b0bd-c2fe6ad06580.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: BAND FINGER OPENING / finger extension against an elastic band. CLOSE-UP ONLY, two identical RIGHT hands shown palm-forward from the same slight side angle, forearm and wrist supported on a simple small cushion. Do not draw body/head. LEFT: all four fingers and thumb gently flexed, fingertips gathered loosely like holding a small ball, elastic loop around the distal finger segments including thumb; clear curved finger joints, not a tight fist. RIGHT: fingers straighten and hand opens against the very same loop, thumb opens too. The band is one complete unbroken thin flat loop resting against the OUTSIDE of the distal fingers and thumb in both studies, stretched in the finish. Draw actual joint extension, not just a sideways finger fan. Natural unexaggerated hand proportions, consistent palm creases in both images. No additional loose dangling band or impossible diagonal straps.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Redrawn extension through finger joints with the same palm view and a single continuous loop around fingers and thumb.",
+      "references": ["https://www.plymouthhospitals.nhs.uk/display-pil/pil-hand-exercises-6145"],
+      "revisions": [
+        {
+          "generatedSource": "exec-0ac385bd-ea25-45be-998e-08322deb2d4e.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Band finger opening. Instructions: Place a light band around the fingers. Open them slowly against resistance, then return.. CLOSE-UP one RIGHT hand dorsal three-quarter view, wrist supported. A light elastic loop encircles four fingers and thumb near distal segments. LEFT: fingers bent loosely, thumb beside hand, loop slack. RIGHT: all finger joints extend to straighten the fingers and open the hand, loop stretched. Clear extension motion, natural five fingers. Keep 8% transparent margins, studies separate.",
+          "correctionPrompt": "Edit this graphite two-pose hand drawing. LEFT pose shows palm, RIGHT shows back of hand, which is inconsistent. Redraw BOTH studies as SAME RIGHT HAND with PALM facing viewer throughout, thumb on viewer LEFT, same forearm, camera and support. LEFT fingers loosely curled under a light elastic loop, RIGHT fingers extend and hand opens againstloop. Palm crease lines visible BOTH studies; no dorsal extensor tendons on rightstudy. Five naturalfingers, same pen shading, transparentbackground. No labels."
+        }
+      ]
+    },
+    "band-internal-rotation": {
+      "name": "Band internal rotation",
+      "source": "workouts/band-internal-rotation.png",
+      "vector": "public/workouts/band-internal-rotation.svg",
+      "generatedSource": "exec-4932c55d-a76b-4b25-8251-a9a3a0dc23ee.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Band internal rotation. Instructions: Stand beside an anchored band, elbow bent at your side. Bring your forearm toward your abdomen against the band. Return slowly.. Waist-up front three-quarter view, working elbow bent 90 degrees tucked to ribs over small towel. Band anchored outside working side at elbow height. LEFT forearm points outward toward anchor. RIGHT forearm rotates inward across abdomen, elbow fixed to ribs. Distinguish this from external rotation. Keep 8% transparent margins, studies separate."
+    },
+    "banded-lateral-walk": {
+      "name": "Banded lateral walk",
+      "source": "workouts/banded-lateral-walk.png",
+      "vector": "public/workouts/banded-lateral-walk.svg",
+      "generatedSource": "exec-04136fc5-78a9-4c76-ad73-52411eedcb2b.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Banded lateral walk. Instructions: Place a light band above your knees. With a shallow knee bend, step sideways while maintaining tension and keeping the pelvis level.. Full body front three-quarter view, loop band just above both knees, small athletic half squat. LEFT feet hip width. RIGHT steps one foot laterally outward, band stretched, both knees slightly bent and aligned with feet, torso stays level. Keep 8% transparent margins, studies separate."
+    },
+    "barbell-bench-press": {
+      "name": "Barbell bench press",
+      "source": "workouts/barbell-bench-press.png",
+      "vector": "public/workouts/barbell-bench-press.svg",
+      "generatedSource": "exec-8c85cb9f-dc7a-458a-a2bd-985971401a40.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: flat barbell bench press. REDRAW in strict SIDE PROFILE facing viewer's right, head to LEFT and feet to RIGHT within EACH study, horizontal flat bench. LEFT lower position: bar just above MIDDLE STERNUM, at least a hand-width BELOW base of neck toward feet, forearms vertical, elbows bent. RIGHT finish: bar vertically above MID-CHEST at arm extension, not above eyes. Show near weight plate circle at chest level and near hand gripping bar, distant arm partly visible. Hips and head on bench, knees bent, feet grounded. Rack optional, simple short uprights behind HEAD must not cross body or bar at bottom. Both complete separate studies, head neck chest clearly visible, bar never crosses face. Keep8%margin."
+    },
+    "barbell-hip-thrust": {
+      "name": "Barbell hip thrust",
+      "source": "workouts/barbell-hip-thrust.png",
+      "vector": "public/workouts/barbell-hip-thrust.svg",
+      "generatedSource": "exec-9c4fe902-4452-401c-b273-bc84c59d03c7.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Barbell hip thrust. Instructions: Support your upper back on a stable bench with the padded bar across your hips. Drive through your feet to extend your hips.. Full body strict side view, shoulders supported on bench, padded barbell over hip crease, feet planted and knees bent. Left hips lowered toward floor with torso angled; right hips extended until shoulders hips knees align, shins near vertical, head neutral, no lumbar overextension. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "big-toe-press": {
+      "name": "Big-toe press",
+      "source": "workouts/big-toe-press.png",
+      "vector": "public/workouts/big-toe-press.svg",
+      "generatedSource": "exec-91df6691-de10-413d-99bb-8762bef9385b.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Big-toe press. Instructions: Keep the heel and ball of the foot grounded. Gently press the big toe into the floor, then relax.. Two CLOSE-UP studies of one bare RIGHT foot grounded, side-medial three-quarter camera, lower shin only. LEFT: heel and metatarsal ball grounded, big toe relaxed just resting. RIGHT: BIG TOE presses down into a small soft flat foam pad, subtly compresses it; heel and ball still grounded, four lesser toes relaxed long. No towel or band, no curling entire foot."
+    },
+    "bird-dog": {
+      "name": "Bird dog",
+      "source": "workouts/bird-dog.png",
+      "vector": "public/workouts/bird-dog.svg",
+      "generatedSource": "exec-349365c1-17a9-4fff-90ab-8f64213feffe.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Bird dog. Instructions: Start on hands and knees. Extend the opposite arm and leg without rotating your trunk, pause, then return and switch sides.. Full body strict side view on hands and knees. LEFT all four limbs supported in tabletop, spine neutral. RIGHT one arm reaches straight forward and opposite leg extends straight back at torso height; other hand and knee remain grounded. No twisting or raised leg above back. Keep 8% transparent margins, studies separate."
+    },
+    "bulgarian-split-squat": {
+      "name": "Bulgarian split squat",
+      "source": "workouts/bulgarian-split-squat.png",
+      "vector": "public/workouts/bulgarian-split-squat.svg",
+      "generatedSource": "exec-55035513-012f-4a45-870c-f23064535a3b.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Bulgarian split squat. Instructions: Rest your rear foot on a low bench. Lower through the front leg, then press back up.. Full body side three-quarter view with rear foot resting on low bench, front foot far enough forward, holding two dumbbells at sides. Left front knee almost extended; right lowers by bending front knee to about 90 degrees, back knee near floor, torso balanced with slight forward lean. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "cable-chest-fly": {
+      "name": "Cable chest fly",
+      "source": "workouts/cable-chest-fly.png",
+      "vector": "public/workouts/cable-chest-fly.svg",
+      "generatedSource": "exec-01e84e3f-5d05-4199-b145-ea0f7767882a.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Cable chest fly. Instructions: Stand in a split stance between two pulleys. With a soft bend in your elbows, bring your hands together in front of your chest. Return slowly.. Full body front three-quarter view between two cable pulleys at chest height. Left arms open to sides with elbows slightly bent. Right hands meet in front of chest, elbows still soft, no shrug. Clear cable attachment handles. Keep 8% transparent margins, no body or equipment cropping."
+    },
+    "cable-pressdown": {
+      "name": "Cable pressdown",
+      "source": "workouts/cable-pressdown.png",
+      "vector": "public/workouts/cable-pressdown.svg",
+      "generatedSource": "exec-dc4e76b2-24eb-44ac-b22e-b208c0f2727d.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Cable pressdown. Instructions: Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.. Full body side three-quarter view on high cable stack. Elbows anchored beside ribs. Left elbows bent roughly 90 degrees bar near lower chest; right elbows straighten pressing bar down to upper thighs. Rope or short straight handle, no movement at shoulders. Keep 8% transparent margins, no body or equipment cropping."
+    },
+    "chest-supported-row": {
+      "name": "Chest-supported row",
+      "source": "workouts/chest-supported-row.png",
+      "vector": "public/workouts/chest-supported-row.svg",
+      "generatedSource": "exec-3eb9688f-6e63-44d5-a6d0-de60a2776bd8.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Chest-supported row. Instructions: Lie face down on an incline bench. Pull the dumbbells toward your ribs, then lower to a comfortable stretch.. Full body side three-quarter view, chest supported face down on shallow incline bench, feet grounded. Left dumbbells hang beneath shoulders elbows extended; right elbows draw back with dumbbells toward lower ribs, chest stays on bench. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "close-grip-push-up": {
+      "name": "Close-grip push-up",
+      "source": "workouts/close-grip-push-up.png",
+      "vector": "public/workouts/close-grip-push-up.svg",
+      "generatedSource": "exec-82d2bd82-e1d2-43b3-8b9f-fae056e28035.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Close-grip push-up. Instructions: Place your hands slightly narrower than shoulder width. Lower your chest while keeping a straight body line, then press up.. Full body side three-quarter view on floor, hands slightly narrower than shoulders. LEFT straight body plank with elbows bent chest near floor, elbows tucked. RIGHT elbows extended at top, body straight shoulders to heels, no exaggerated diamond hand position. Keep 8% transparent margins, studies separate."
+    },
+    "controlled-diaphragmatic-breathing": {
+      "name": "Controlled diaphragmatic breathing",
+      "source": "workouts/controlled-diaphragmatic-breathing.png",
+      "vector": "public/workouts/controlled-diaphragmatic-breathing.svg",
+      "generatedSource": "exec-efd4cb7e-7d6f-4271-b2bc-19e363c89c32.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Controlled diaphragmatic breathing. Instructions: Sit or lie comfortably. Inhale gently, allowing the lower ribs to expand, then exhale without forcing the air out.. Waist-up seated bald adult athletic male, side three-quarter view, hands resting on lower ribs. LEFT: gently inhaled LOWER RIB cage subtly expanded sideways, shoulders relaxed. RIGHT: exhaled lower ribs return gently toward neutral, shoulders in EXACT same relaxed position. Natural small volume difference, no giant abdomen, no forceful belly protrusion, no neck strain. No cutaways/organs, no text, subtle brows/nose no mouth, shorts lower edge. Keep both studies separate, all important body parts inside 8% transparent margin."
+    },
+    "dead-bug": {
+      "name": "Dead bug",
+      "source": "workouts/dead-bug.png",
+      "vector": "public/workouts/dead-bug.svg",
+      "generatedSource": "exec-ad851931-38c3-4b4f-9313-77381ada0b37.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Dead bug. Instructions: Lie on your back with hips and knees bent. Slowly extend the opposite arm and leg, then return and alternate.. Full body side view lying on back. LEFT hips and knees bent 90 degrees, arms pointing toward ceiling. RIGHT one arm reaches overhead and opposite leg extends close to floor; low back stays against floor and other arm and bent leg remain raised. Keep 8% transparent margins, studies separate."
+    },
+    "dumbbell-curl": {
+      "name": "Dumbbell curl",
+      "source": "workouts/dumbbell-curl.png",
+      "vector": "public/workouts/dumbbell-curl.svg",
+      "generatedSource": "exec-064d0335-7e27-440e-b88a-a9f8618f71c3.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Dumbbell curl. Instructions: Begin with arms at your sides. Curl the weights while turning palms upward. Lower to a comfortable straight-arm position.. Pose details: Standing front three-quarter view, full body. LEFT arms at sides with dumbbells and palms facing forward. RIGHT elbows bent, dumbbells near shoulders, upper arms remain at sides; body upright without swinging."
+    },
+    "dumbbell-lateral-raise": {
+      "name": "Dumbbell lateral raise",
+      "source": "workouts/dumbbell-lateral-raise.png",
+      "vector": "public/workouts/dumbbell-lateral-raise.svg",
+      "generatedSource": "exec-5e4f83e7-0253-46e0-a028-0e4dbeceef71.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Dumbbell lateral raise. Instructions: With elbows softly bent, lift the arms out and slightly forward to around shoulder height. Lower slowly.. Pose details: Standing front three-quarter view, full body. LEFT dumbbells by hips with arms almost straight. RIGHT arms raised out to sides to shoulder level, slight elbow bend, palms facing down, shoulders not shrugged. Feet stay grounded in same position."
+    },
+    "dumbbell-overhead-press": {
+      "name": "Dumbbell overhead press",
+      "source": "workouts/dumbbell-overhead-press.png",
+      "vector": "public/workouts/dumbbell-overhead-press.svg",
+      "generatedSource": "exec-9d3bac19-6397-46f0-bc66-4cedb10eb6bd.png",
+      "promptKind": "reproduction",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Dumbbell overhead press. Instructions: Start with dumbbells at shoulder height. Brace your trunk and press overhead through a comfortable range. Lower smoothly.. "
+    },
+    "dumbbell-shrug": {
+      "name": "Dumbbell shrug",
+      "source": "workouts/dumbbell-shrug.png",
+      "vector": "public/workouts/dumbbell-shrug.svg",
+      "generatedSource": "exec-57a0a536-7f91-4d75-a39f-a8114ea78b60.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Dumbbell shrug. Instructions: Stand with dumbbells at your sides. Raise your shoulders toward your ears, pause briefly, and lower with control.. Full body front view. Dumbbells beside hips, elbows straight throughout. Left shoulders relaxed; right shoulders lifted vertically toward ears, neck neutral, no shoulder rolling. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "farmer-carry": {
+      "name": "Farmer carry",
+      "source": "workouts/farmer-carry.png",
+      "vector": "public/workouts/farmer-carry.svg",
+      "generatedSource": "exec-5b990b09-768b-436b-88a9-a191b2b77fe6.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Farmer carry. Instructions: Hold a dumbbell in each hand and walk with short, controlled steps. Keep your torso upright and the weights steady.. Full body front three-quarter view, one heavy dumbbell in EACH hand, straight arms at sides and shoulders level. LEFT stands tall ready to walk. RIGHT takes a short controlled forward step while maintaining upright torso and same grip, no shrug. Same scale and feet baseline. Keep 8% transparent margins, studies separate."
+    },
+    "finger-adduction-press": {
+      "name": "Finger adduction press",
+      "source": "workouts/finger-adduction-press.png",
+      "vector": "public/workouts/finger-adduction-press.svg",
+      "generatedSource": "exec-eaaaf08a-e4c0-4353-8e61-03c6420f8f46.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Finger adduction press. Instructions: Place a small piece of soft putty between adjacent fingers. Bring the fingers together to compress it.. CLOSE-UP one RIGHT hand dorsal view with long fingers straight. Soft small putty between INDEX and MIDDLE fingers at middle phalanges. LEFT: those fingers slightly separated, putty round. RIGHT: index and middle draw together to gently flatten putty laterally. Ring and little fingers relaxed. No wrist bend, no finger curl. Keep 8% transparent margins, studies separate."
+    },
+    "forearm-wall-slide": {
+      "name": "Forearm wall slide",
+      "source": "workouts/forearm-wall-slide.png",
+      "vector": "public/workouts/forearm-wall-slide.svg",
+      "generatedSource": "exec-7ecd9b5c-af57-4bdb-98f5-4b1af43ca9f6.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Forearm wall slide. Instructions: Place your forearms against a wall. Slide them upward as you gently reach into the wall, then return.. Full body side view facing upright wall. LEFT forearms against wall at shoulder height, elbows bent, palms inward. RIGHT forearms slide upward on wall into raised position, ribs stay stacked over pelvis, neck relaxed. Light contact throughout, no arching. Keep 8% transparent margins, studies separate."
+    },
+    "front-squat": {
+      "name": "Front squat",
+      "source": "workouts/front-squat.png",
+      "vector": "public/workouts/front-squat.svg",
+      "generatedSource": "exec-ba56c5b6-77ef-40ae-9682-43295adf66f3.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Front squat. Instructions: Hold the bar in a secure front rack. Sit down between your hips while keeping the torso braced. Drive through the feet to stand.. Full body side three-quarter view. Bar resting across front shoulders with clean front rack, elbows high. Left standing tall; right squat with hips near knee height, heels grounded, chest lifted, bar stays above midfoot. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "gentle-key-pinch": {
+      "name": "Gentle key pinch",
+      "source": "workouts/gentle-key-pinch.png",
+      "vector": "public/workouts/gentle-key-pinch.svg",
+      "generatedSource": "exec-436e7972-8e68-468d-b2bd-b69acf83558d.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Gentle key pinch. Instructions: Hold soft putty between the thumb pad and the side of your index finger. Squeeze gently, then release.. CLOSE-UP of one RIGHT hand in three-quarter view, forearm supported. LEFT: soft putty held loosely between thumb pad and SIDE of index finger like holding a key, remaining fingers relaxed. RIGHT: same lateral key pinch lightly compresses the putty. Thumb is not touching index fingertip. Both poses five natural fingers. Keep 8% transparent margins, studies separate."
+    },
+    "gentle-neck-extension-isometric": {
+      "name": "Gentle neck-extension isometric",
+      "source": "workouts/gentle-neck-extension-isometric.png",
+      "vector": "public/workouts/gentle-neck-extension-isometric.svg",
+      "generatedSource": "exec-e0c38f1b-c7e0-468b-af0d-429541b8db5a.png",
+      "promptKind": "generation",
+      "prompt": "A medical exercise handout illustration in delicate gray graphite pencil and crosshatching. Exactly TWO side-by-side studies, same adult person, neck and head close-up ending at shoulders, wearing a plain opaque CREW-NECK LONG-SLEEVE SHIRT that completely covers chest and arms. Bald head, natural subtle face, neutral nonsexual instructional presentation. Entire head and working hands visible with margins, identical camera and scale. Transparent background. No text, arrows, symbols or halo. Gentle NECK EXTENSION ISOMETRIC. SIDE profile seated tall, gaze straight ahead. LEFT palm placed behind head at occiput, relaxed setup. RIGHT same palm and head position as gentle backward pressure is applied into palm without moving head. Head remains upright NEUTRAL in both, no tilt or turning. Show hand contact behind skull, elbow casually bent. No full body."
+    },
+    "gentle-neck-flexion-isometric": {
+      "name": "Gentle neck-flexion isometric",
+      "source": "workouts/gentle-neck-flexion-isometric.png",
+      "vector": "public/workouts/gentle-neck-flexion-isometric.svg",
+      "generatedSource": "exec-e23996fc-e99f-4999-b555-89d31cd402ce.png",
+      "promptKind": "generation",
+      "prompt": "A medical exercise handout illustration in delicate gray graphite pencil and crosshatching. Exactly TWO side-by-side studies, same adult person, neck and head close-up ending at shoulders, wearing a plain opaque CREW-NECK LONG-SLEEVE SHIRT that completely covers chest and arms. Bald head, natural subtle face, neutral nonsexual instructional presentation. Entire head and working hands visible with margins, identical camera and scale. Transparent background. No text, arrows, symbols or halo. Gentle NECK FLEXION ISOMETRIC. SIDE profile seated tall gaze straightahead. LEFT palm resting flat on forehead in relaxedsetup. RIGHT same position with gentle forward pressure into palm, no head motion. Both heads stay upright NEUTRAL, not bending, no chin tuck. Show forehead palm contact, relaxed shoulder. No full body."
+    },
+    "gentle-pelvic-floor-contraction-and-release": {
+      "name": "Gentle pelvic-floor contraction and release",
+      "source": "workouts/gentle-pelvic-floor-contraction-and-release.png",
+      "vector": "public/workouts/gentle-pelvic-floor-contraction-and-release.svg",
+      "generatedSource": "exec-634675f4-4105-4f65-ab05-0eecda96e0ad.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Gentle pelvic-floor contraction and release. Instructions: While breathing normally, gently lift the muscles you would use to hold back gas. Release completely before repeating.. Scientific schematic, same graphite style. Two identical side-view seated clothed adult male studies with loose plain shorts, relaxed torso, normal breathing. External posture stays IDENTICAL in both poses, no hip thrust or glute squeeze. In each study beside figure include a small minimal sagittal PELVIS-ONLY schematic: curved pelvic bones, sacrum and pubis, a simple muscle sling joining pubis to tailbone, no genitalia or organs. LEFT: relaxed neutral sling slight concave sag. RIGHT: gentle pelvic floor activation sling subtly lifts cranially inside the same pelvis. Small schematic accurately separates internal muscle lift from visible body posture, no arrows, no labels, no exaggeration or bearing down. Keep both studies separate, all important body parts inside 8% transparent margin."
+    },
+    "gentle-side-neck-isometric": {
+      "name": "Gentle side-neck isometric",
+      "source": "workouts/gentle-side-neck-isometric.png",
+      "vector": "public/workouts/gentle-side-neck-isometric.svg",
+      "generatedSource": "exec-6fd1b14e-c7f3-4701-ae8c-fa6b5c01eee0.png",
+      "promptKind": "generation",
+      "prompt": "A medical exercise handout illustration in delicate gray graphite pencil and crosshatching. Exactly TWO side-by-side studies, same adult person, neck and head close-up ending at shoulders, wearing a plain opaque CREW-NECK LONG-SLEEVE SHIRT that completely covers chest and arms. Bald head, natural subtle face, neutral nonsexual instructional presentation. Entire head and working hands visible with margins, identical camera and scale. Transparent background. No text, arrows, symbols or halo. Gentle SIDE NECK ISOMETRIC. FRONT three-quarter view seatedtall. LEFT rightpalm contacting skull just ABOVE RIGHT EAR, elbow out comfortably, neutral uprighthead. RIGHT gentle sideways pressure against samepalm without movinghead. Neck remains straightupright in both, no tilt, no shrug. No fullbody."
+    },
+    "hammer-curl": {
+      "name": "Hammer curl",
+      "source": "workouts/hammer-curl.png",
+      "vector": "public/workouts/hammer-curl.svg",
+      "generatedSource": "exec-216c1b53-9b32-4309-8140-f73d055c4c1d.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Hammer curl. Instructions: Hold dumbbells with palms facing each other. Bend the elbows and lift, then lower slowly.. Full body standing three-quarter view. Neutral grip throughout, thumbs point up, upper arms stay by ribs. Left elbows extended; right dumbbells raised toward shoulders with elbows bent. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "incline-dumbbell-curl": {
+      "name": "Incline dumbbell curl",
+      "source": "workouts/incline-dumbbell-curl.png",
+      "vector": "public/workouts/incline-dumbbell-curl.svg",
+      "generatedSource": "exec-3888abe3-fffc-4c40-a12c-e656f6369ae8.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Incline dumbbell curl. Instructions: Sit against an incline bench with your arms hanging naturally. Curl the dumbbells without moving your upper arms, then lower slowly.. Full body side three-quarter view seated on a bench inclined 50 degrees. Upper arms hang vertical slightly behind torso. Left dumbbells low elbows extended palms forward; right elbows flex dumbbells toward shoulders without moving upper arms. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "incline-dumbbell-press": {
+      "name": "Incline dumbbell press",
+      "source": "workouts/incline-dumbbell-press.png",
+      "vector": "public/workouts/incline-dumbbell-press.svg",
+      "generatedSource": "exec-8685fa0f-120c-4bf8-a12c-65a1952e6b7a.png",
+      "promptKind": "reproduction",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Incline dumbbell press. Instructions: Set a low incline, around 15–30°. Start with dumbbells beside your upper chest. Press upward and slightly inward, then lower with control.. Use a shallow 20-degree incline bench, dumbbells beside upper chest then pressed overhead, feet grounded."
+    },
+    "incline-push-up-plus": {
+      "name": "Incline push-up plus",
+      "source": "workouts/incline-push-up-plus.png",
+      "vector": "public/workouts/incline-push-up-plus.svg",
+      "generatedSource": "exec-8f4be5ee-b7e8-4561-aa2e-2c88351d100f.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Incline push-up plus. Instructions: Place your hands on a stable bench. Perform a controlled push-up. At the top, keep your elbows straight and push the bench away so your shoulder blades move around your ribs.. Full body strict side view with hands on waist-height solid bench, feet on floor behind, body straight inclined plank. LEFT elbows bent chest near bench. RIGHT elbows fully extended and shoulders gently protracted pushing bench away, upper back subtly rounded while spine and pelvis stay stable. Keep 8% transparent margins, studies separate."
+    },
+    "knuckle-press-into-putty": {
+      "name": "Knuckle press into putty",
+      "source": "workouts/knuckle-press-into-putty.png",
+      "vector": "public/workouts/knuckle-press-into-putty.svg",
+      "generatedSource": "exec-ed2ccc35-13e1-4aa0-b884-bf0ff49f8366.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: KNUCKLE PRESS INTO SOFT PUTTY. CLOSE-UP SIDE PROFILE of one RIGHT hand and supported forearm only, fingers pointing viewer-right. Forearm horizontal, wrist neutral and palm down. Low table beneath the hand has a soft putty mound. LEFT: hand and FOUR long fingers extend forward in a straight line, hovering just above the putty. RIGHT: bend ONLY the MCP joints where the FOUR fingers meet the palm to roughly 80-90 degrees, so the four fingers point almost vertically down and their fingertip pads press into the putty. All PIP and DIP joints remain EXTENDED: each finger is a straight segment from base knuckle to fingertip, not a curved claw, not a fist. This is the tabletop / intrinsic-plus hand shape. Palm and wrist remain horizontal in same position. Thumb rests naturally to side, not pressed. Arrange the putty at a height reachable by the straight finger pads. The key difference is the RIGHT ANGLE at the BIG BASE KNUCKLES with straight long fingers, with putty compressed under their pads. Natural side profile with some overlap of the four fingers rather than distorting them to expose all.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Close-up now emphasizes large-knuckle flexion while the middle and end finger joints remain extended.",
+      "references": ["https://www.dbth.nhs.uk/finger-mobilising-exercises/"],
+      "revisions": [
+        {
+          "generatedSource": "exec-70a9c8d9-aae1-4e68-b5a6-b7904a7ac7f6.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Knuckle press into putty. Instructions: Keep the finger tips relatively straight and bend at the large knuckles to press into soft putty. Release slowly.. CLOSE-UP one hand in SIDE three-quarter view above soft putty resting on table block. LEFT: wrist neutral and fingers relatively straight, hovering over putty. RIGHT: fingers bend ONLY at large MCP knuckles approximately 70 degrees, PIP and DIP finger joints remain straight to form an intrinsic-plus/tabletop hand, finger pads press putty. NOT a closed fist. Show two supported forearms at same level. Keep 8% transparent margins, studies separate."
+        }
+      ]
+    },
+    "lat-pulldown": {
+      "name": "Lat pulldown",
+      "source": "workouts/lat-pulldown.png",
+      "vector": "public/workouts/lat-pulldown.svg",
+      "generatedSource": "exec-52839078-4f0d-4f45-a7d2-b41169a9206e.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Lat pulldown. Instructions: Sit securely and pull the bar toward your upper chest. Return overhead with control.. Full body side three-quarter view seated with thigh pads and high overhead cable. Left arms fully extended overhead holding wide bar; right bar drawn down in front to upper chest with elbows toward sides, torso only slightly leaned back. Keep 8% transparent margins, no body or equipment cropping."
+    },
+    "leg-extension": {
+      "name": "Leg extension",
+      "source": "workouts/leg-extension.png",
+      "vector": "public/workouts/leg-extension.svg",
+      "generatedSource": "exec-ce7074f3-8ac5-4933-bacd-afaca7d6c5e1.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Leg extension. Instructions: Align the machine axis with your knee. Extend your legs through a comfortable range and lower gradually.. Full body strict side view seated on leg extension machine. Left knees bent roughly 90 degrees roller on lower shins above ankle. Right both knees straighten extending legs forward, thighs remain supported and hips remain seated. Keep 8% transparent margins, no body or equipment cropping."
+    },
+    "little-finger-opposition": {
+      "name": "Little-finger opposition",
+      "source": "workouts/little-finger-opposition.png",
+      "vector": "public/workouts/little-finger-opposition.svg",
+      "generatedSource": "exec-85a258d4-d04b-4f9f-98c6-6c01ad895b4d.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Little-finger opposition. Instructions: Cup the little-finger side of your palm toward the thumb, gently compressing soft putty.. CLOSE-UP one RIGHT palm in three-quarter view, wrist supported. Soft putty held in palm. LEFT: little-finger side of palm flat and relaxed. RIGHT: hypothenar little-finger border CUPS inward toward thumb, little-finger base moves across and small putty compressed between little-finger border and thumb base, fingers relaxed not tightly closed. Focus on cupping the palm. Keep 8% transparent margins, studies separate."
+    },
+    "overhead-cable-extension": {
+      "name": "Overhead cable extension",
+      "source": "workouts/overhead-cable-extension.png",
+      "vector": "public/workouts/overhead-cable-extension.svg",
+      "generatedSource": "exec-24e11cdb-e9c0-4113-88e0-6b7d5e952de8.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Overhead cable extension. Instructions: Face away from a low cable with hands overhead. Extend your elbows, then return slowly.. Full body side view facing away from low cable stack with rope held behind head. Upper arms stay beside ears. Left elbows bent and rope behind head; right elbows straight overhead, body upright. Keep 8% transparent margins, no body or equipment cropping."
+    },
+    "pallof-press": {
+      "name": "Pallof press",
+      "source": "workouts/pallof-press.png",
+      "vector": "public/workouts/pallof-press.svg",
+      "generatedSource": "exec-65cd014c-f51e-4b65-87d7-9651d10fbcd5.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Pallof press. Instructions: Stand side-on to a cable with the handle at your chest. Press forward, pause, and return without turning.. Full body front three-quarter view standing sideways to cable anchor at chest height, knees soft. LEFT both hands hold handle near sternum. RIGHT presses hands straight forward from sternum, arms extended; torso does not rotate, cable pulls from side. Keep 8% transparent margins, studies separate."
+    },
+    "preacher-curl": {
+      "name": "Preacher curl",
+      "source": "workouts/preacher-curl.png",
+      "vector": "public/workouts/preacher-curl.svg",
+      "generatedSource": "exec-615121fe-0e45-40ac-a578-7b235d722ee0.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Preacher curl. Instructions: Support your upper arms on the pad and curl through a comfortable range. Lower gradually.. Full body side three-quarter view seated at preacher bench, upper arms supported on sloped pad. Left short EZ bar lowered with elbows nearly extended; right elbows bend curling bar upward, upper arms remain on pad. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "prone-y-raise": {
+      "name": "Prone Y raise",
+      "source": "workouts/prone-y-raise.png",
+      "vector": "public/workouts/prone-y-raise.svg",
+      "generatedSource": "exec-ef071d24-0727-4cd7-81a3-1486801bf946.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Prone Y raise. Instructions: Lie face down on an incline bench. With thumbs upward, lift your arms into a Y through a comfortable range. Lower slowly.. Full body rear three-quarter view face down on a shallow incline bench with feet grounded. LEFT arms hanging to floor holding tiny dumbbells thumbs up. RIGHT arms rise diagonally forward into Y shape at ear level, no shrug, chest stays supported. Keep 8% transparent margins, studies separate."
+    },
+    "pull-up": {
+      "name": "Pull-up",
+      "source": "workouts/pull-up.png",
+      "vector": "public/workouts/pull-up.svg",
+      "generatedSource": "exec-7de8a17d-85ed-459a-884d-b074840672a5.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Pull-up. Instructions: Begin in a controlled hang. Draw your elbows down and pull your chest toward the bar. Lower without dropping. Use assistance if needed.. Full body rear three-quarter view on a freestanding horizontal bar. Left hanging with straight arms, feet clear of floor. Right elbows bent pulling chest toward bar, chin at bar height; same overhand shoulder width grip and no swinging. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "resisted-finger-spread": {
+      "name": "Resisted finger spread",
+      "source": "workouts/resisted-finger-spread.png",
+      "vector": "public/workouts/resisted-finger-spread.svg",
+      "generatedSource": "exec-38f3e56c-70de-4fa7-a682-33d985faa8e2.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: RESISTED FINGER SPREAD / finger abduction. CLOSE-UP ONLY of the SAME LEFT hand from above, back-of-hand view, fingertips pointing up the canvas, thumb on viewer right in BOTH studies. LEFT: all FOUR long fingers comfortably STRAIGHT and almost together; thumb relaxed away from hand. A SINGLE thin elastic loop surrounds the FOUR long fingers just above their base knuckles, and does NOT include thumb. RIGHT: FOUR long fingers remain straight and fan apart sideways, index toward thumb and little finger toward outside, stretching the same band. Thumb stays in exactly the same relaxed position. Depict one continuous horizontal band front/back loop touching outer edges of index and little finger, not individual rings. Keep wrist at same angle, no knuckle flexion, no palm facing viewer, no new fingers.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Four long fingers fan apart without bending; thumb stays outside the band. Missing ring finger in a generated draft was corrected.",
+      "references": ["https://www.plymouthhospitals.nhs.uk/display-pil/pil-hand-exercises-6145"],
+      "revisions": [
+        {
+          "generatedSource": "exec-3d0e0f07-5426-4799-8591-3e43fc259d4e.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Resisted finger spread. Instructions: Spread your fingers apart against a light loop, then bring them back under control.. CLOSE-UP one RIGHT hand viewed from dorsal above, forearm supported. Elastic loop around the four long fingers at their middle phalanges. LEFT: four fingers are straight and close together. RIGHT: fingers remain straight but SPREAD APART like a fan, band stretches horizontally. Thumb relaxed beside hand in both. Focus on finger abduction not bending knuckles. Keep 8% transparent margins, studies separate."
+        }
+      ],
+      "correctionPrompt": "Edit this two-study graphite hand drawing. LEFT hand is correct and must remain exactly unchanged. RIGHT hand is missing the RING FINGER: it currently has only THREE long fingers plus thumb. Add the fourth long finger BETWEEN the leftmost little finger and central middle finger. Finish should have FIVE digits total: from viewer left LITTLE, RING, MIDDLE, INDEX, THUMB. The four LONG fingers fan gently apart with the same continuous elastic loop surrounding ONLY these four near base knuckles. Thumb remains relaxed outside band. Keep back-of-hand camera, same proportions and shading, identical wrist placement, transparent background and layout. No other changes, no extra or overlapping impossible fingers."
+    },
+    "resisted-forearm-pronation": {
+      "name": "Resisted forearm pronation",
+      "source": "workouts/resisted-forearm-pronation.png",
+      "vector": "public/workouts/resisted-forearm-pronation.svg",
+      "generatedSource": "exec-3f6b7421-df1d-44e5-874f-92c8006d3378.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: RESISTED FOREARM PRONATION. CLOSE-UP ONLY from the elbow to ONE RIGHT hand, no torso/head. Forearm supported horizontally on a small rectangular padded table, elbow stationary, hand projects slightly beyond table edge. Camera looks from above at 35-degree three-quarter angle so it clearly distinguishes palm from back of hand. Hand grips the shaft of a small lightweight hammer/weighted lever with short lever distance. Wrist aligned STRAIGHT with the forearm in both. LEFT: NEUTRAL FOREARM ROTATION, thumb toward ceiling, hammer shaft upright, metal head above fist. RIGHT: forearm ROTATES along its longitudinal axis until PALM FACES DOWN, back of the hand faces up, knuckles/nails visible, hammer rotates with fist to nearly horizontal sideways. Do not bend wrist up or down. Do not relocate elbow or table, do not grip a dumbbell, do not show the same hammer orientation in both. One unmistakable vertical-to-sideways lever rotation, hand physically gripping identical shaft. The thumb may curve naturally around shaft; it is NOT an isolated thumbs-up gesture.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Close-up shows neutral forearm to palm-down rotation, straight wrist and lever moving with the grip.",
+      "references": [
+        "https://www.kentcht.nhs.uk/leaflet/wrist-strength/",
+        "https://www.uhsussex.nhs.uk/resources/distal-radius-fractures-virtual-hand-fracture-clinic/"
+      ],
+      "revisions": [
+        {
+          "generatedSource": "exec-4d9ed17b-8fcb-4efd-af51-ca2c45884208.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Resisted forearm pronation. Instructions: Support your elbow and forearm. Holding a light lever near its weighted end, turn your palm downward and return slowly.. CLOSE-UP one forearm supported horizontally on a small padded table, elbow bent90. Hand grips a short hammer-like light lever near its weight, wrist stays STRAIGHT. LEFT: forearm palm-UP/supinated, lever angled laterally. RIGHT: same forearm rolls at radius/ulna to palm-DOWN/pronated, lever rotates together with hand. No wrist curling, same forearm/elbow positions, side three-quarter view clearly reveals palm vs back of hand. Keep 8% transparent margins, studies separate."
+        }
+      ]
+    },
+    "resisted-forearm-supination": {
+      "name": "Resisted forearm supination",
+      "source": "workouts/resisted-forearm-supination.png",
+      "vector": "public/workouts/resisted-forearm-supination.svg",
+      "generatedSource": "exec-22f5bbcd-f049-44b6-9ce0-0e38554ba912.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: RESISTED FOREARM SUPINATION. CLOSE-UP ONLY from the elbow to ONE RIGHT hand, no torso/head. Forearm supported horizontally on a small rectangular padded table, elbow stationary, hand projects beyond table edge. Camera looks from above at 35-degree three-quarter angle. Hand grips a small lightweight HAMMER / weighted lever by shaft at short distance from its head. Wrist stays STRAIGHT with the forearm. LEFT: neutral rotation, thumb toward ceiling, hammer shaft VERTICAL with metal head above fist. RIGHT: forearm rotates along its long axis until PALM FACES UP, the palm creases and inner curled finger pads face the camera above; hammer rotates with the hand until shaft is nearly horizontal to the OUTSIDE. This is the opposite motion of turning palm downward. Do not wrist-curl, do not move elbow/support, do not replace hammer with dumbbell or change grip. Clearly different palm views and vertical-to-sideways lever orientation.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Close-up shows neutral forearm to palm-up rotation, straight wrist and lever moving with the grip.",
+      "references": [
+        "https://www.kentcht.nhs.uk/leaflet/wrist-strength/",
+        "https://www.uhsussex.nhs.uk/resources/distal-radius-fractures-virtual-hand-fracture-clinic/"
+      ],
+      "revisions": [
+        {
+          "generatedSource": "exec-027f3a03-dae6-4068-be17-09c0740dbcae.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Resisted forearm supination. Instructions: Support your elbow and forearm. Use a light lever to resist turning the palm upward. Return slowly.. CLOSE-UP one supported forearm horizontal on small padded table with elbow bent90, hand grips a short LIGHT hammer-like lever, wrist STRAIGHT. LEFT: palm DOWN/pronated, back of hand visible. RIGHT: forearm rotates palm UP/supinated, palm crease visible, lever rotates with hand. Camera same dorsal three-quarter angle, not lifting elbow, not bending wrist. Keep 8% transparent margins, studies separate."
+        }
+      ]
+    },
+    "resisted-thumb-extension": {
+      "name": "Resisted thumb extension",
+      "source": "workouts/resisted-thumb-extension.png",
+      "vector": "public/workouts/resisted-thumb-extension.svg",
+      "generatedSource": "exec-e0dda8df-8760-4766-8be4-6e37954acc24.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Resisted thumb extension. Instructions: Place a light band around your thumb and hand. Straighten and lift your thumb away from the palm, then return.. CLOSE-UP RIGHT hand from dorsal three-quarter view with all fingers visible. Light elastic loop around thumb and index/hand. LEFT: thumb slightly flexed beside hand. RIGHT: thumb straightens and lifts OUTWARD away from index, band stretches between thumb and hand. Same wrist neutral, other fingers relaxed, exactly five fingers. Keep 8% transparent margins, studies separate."
+    },
+    "reverse-crunch": {
+      "name": "Reverse crunch",
+      "source": "workouts/reverse-crunch.png",
+      "vector": "public/workouts/reverse-crunch.svg",
+      "generatedSource": "exec-5726c621-f66b-41c9-9224-4b583c4df21a.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Reverse crunch. Instructions: Lie on your back with bent knees. Curl your pelvis toward your ribs to lift the tailbone slightly, then lower with control.. Full body side view lying on back with arms by sides. LEFT thighs vertical knees bent 90 degrees, pelvis grounded. RIGHT gently curls pelvis off floor bringing knees toward ribs; shoulders and head stay grounded, no huge roll or leg swing. Keep 8% transparent margins, studies separate."
+    },
+    "reverse-curl": {
+      "name": "Reverse curl",
+      "source": "workouts/reverse-curl.png",
+      "vector": "public/workouts/reverse-curl.svg",
+      "generatedSource": "exec-bfb20122-cde4-45c3-8f6b-293139ead9ae.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Reverse curl. Instructions: Hold light dumbbells with palms facing down. Bend the elbows to lift, keeping your wrists neutral, then lower slowly.. Standing front three-quarter view. Use short straight bar, palms down overhand grip. Left arms extended with bar in front of thighs; right elbows flexed, bar lifted toward chest, elbows stay beside ribs. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "reverse-fly": {
+      "name": "Reverse fly",
+      "source": "workouts/reverse-fly.png",
+      "vector": "public/workouts/reverse-fly.svg",
+      "generatedSource": "exec-f546a8f9-c905-4338-96a0-a4ae34442b3e.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Reverse fly. Instructions: Hinge at the hips or support your chest on a bench. Open the arms outward with a slight elbow bend. Return slowly.. Full body rear three-quarter view bent at hips with neutral spine. Left dumbbells below chest and arms hanging; right arms open sideways approximately level with torso, slight elbow bend, palms face inward, no shrug. Keep 8% transparent margins, show entire figure and equipment."
+    },
+    "reverse-wrist-curl": {
+      "name": "Reverse wrist curl",
+      "source": "workouts/reverse-wrist-curl.png",
+      "vector": "public/workouts/reverse-wrist-curl.svg",
+      "generatedSource": "exec-7e627435-6bb1-4a3e-8bdf-b0512f55f8f0.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Reverse wrist curl. Instructions: Support your forearms with palms down. Lift the backs of your hands by extending the wrists, then lower with control.. CLOSE-UP both forearms palm-DOWN supported on a low bench edge, each hand holds a LIGHT dumbbell. Same side three-quarter camera. LEFT: wrists relaxed slightly flexed downward off edge. RIGHT: wrists extend gently lifting BACKS of hands and dumbbells upward, forearms remain flat. Elbows and shoulders out of frame, all hands/equipment inside frame. Keep 8% transparent margins, studies separate."
+    },
+    "romanian-deadlift": {
+      "name": "Romanian deadlift",
+      "source": "workouts/romanian-deadlift.png",
+      "vector": "public/workouts/romanian-deadlift.svg",
+      "generatedSource": "exec-e256f368-6c44-495c-b0d7-6b7739543c99.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Romanian deadlift. Instructions: With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.. Pose details: Full body side three-quarter view, barbell. LEFT standing tall, bar held against upper thighs, knees slightly soft. RIGHT hips hinged backward, torso inclined forward, spine neutral, knees slightly bent, bar close to shins below knees. Not a deep squat; same feet and grip."
+    },
+    "seated-band-hip-external-rotation": {
+      "name": "Seated band hip external rotation",
+      "source": "workouts/seated-band-hip-external-rotation.png",
+      "vector": "public/workouts/seated-band-hip-external-rotation.svg",
+      "generatedSource": "exec-77ace233-b76b-413d-b7ac-02f9ceffddfb.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Seated band hip external rotation. Instructions: Sit with a bent knee supported. Against light resistance, rotate the thigh outward so the foot moves inward. Return slowly.. Full body seated front view, knee of working leg at 90 degrees, thigh kept fixed facing forward, band tied at ankle and anchored outward. LEFT working foot directly below knee. RIGHT working foot rotates INWARD toward midline against band while knee stays in same position; leg rotates at hip, not moving thigh sideways. Do NOT draw a knee-opening clamshell. Keep 8% transparent margins, studies separate.",
+      "correctionPrompt": "Edit this two-pose graphite workout drawing. Preserve LEFT study exactly, preserve heads, torsos, hands, benches, camera and pencil style. Correct ONLY working anatomical RIGHT lower leg in RIGHT study (leg on VIEWER LEFT). Its KNEE remains fixed at same x-position. Move ankle and foot toward BODY MIDLINE / VIEWER RIGHT, so ankle is closer to the other leg than the knee. Rotate hip outward with shin angled from knee DOWN AND TO VIEWER RIGHT. Foot does NOT move outward/viewer left. Band still anchored viewer left, stretches farther across to cuff on ankle. Other leg staysstill. Hip external rotation in seated knee-bent position brings foot INWARD. Keep transparentbackground."
+    },
+    "seated-calf-raise": {
+      "name": "Seated calf raise",
+      "source": "workouts/seated-calf-raise.png",
+      "vector": "public/workouts/seated-calf-raise.svg",
+      "generatedSource": "exec-7e21898c-17cf-47b4-b039-3997b3457ce6.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: SEATED CALF RAISE ON A PLATE-LOADED MACHINE. Same bald lean adult male anatomical athlete in plain fitted shorts as reference, complete body strict side profile facing right. Seated upright on the SAME compact realistic calf-raise machine: small seat, forefoot platform in front, padded lever lying over lower thighs just ABOVE knees, plate load at front end of lever, pivot attached to machine base. Hands lightly hold machine handles. LEFT: knees bent roughly 90 degrees, balls of feet on front edge of platform, HEELS HANG BELOW platform level. RIGHT: balls of feet remain at EXACT SAME PLACE on platform, heels lift clearly ABOVE platform, ankles plantarflex, padded lever and knees rise slightly with heel lift. Seat/hips/torso and fixed machine frame unchanged. Keep knees bent, no knee extension. Natural foot rests on BALLS of feet, toes not curled under body. NO dumbbells. Show full platform and mechanical support, no floating disconnected pads.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Replaced dumbbell setup with a plate-loaded machine to match listed equipment; forefoot remains supported as heels rise.",
+      "references": [
+        "https://www.uhcw.nhs.uk/download/clientfiles/files/Patient%20Information%20Leaflets/Trauma%20and%20Neuro%20services/Trauma%20and%20Orthopaedics/Achilles%20tendinopathy.pdf"
+      ],
+      "revisions": [
+        {
+          "generatedSource": "exec-60c53959-5cf3-4b0b-94d2-db7803c4a780.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Seated calf raise. Instructions: With knees bent around 90°, lift your heels against the resistance. Lower slowly.. Full body strict side view seated with knees bent90degrees, balls of feet on raised block, small dumbbells held securely on lower thighs just above knees. LEFT heels lowered toward floor. RIGHT heels raised high while toes and forefoot stay on block; knees remain bent, thighs horizontal. Keep 8% transparent margins, studies separate."
+        }
+      ]
+    },
+    "seated-leg-curl": {
+      "name": "Seated leg curl",
+      "source": "workouts/seated-leg-curl.png",
+      "vector": "public/workouts/seated-leg-curl.svg",
+      "generatedSource": "exec-104f24bc-4d95-4b0c-a959-85d817714db9.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: SEATED LEG CURL, NOT leg extension. Same bald lean adult male anatomical athlete in fitted shorts, full body STRICT SIDE PROFILE facing RIGHT in identical realistic selectorized seated HAMSTRING-CURL machine. Back upright against backrest, hips stay on seat, thighs horizontal. A thigh restraint lies across TOP of thighs just above knees. Machine rotation pivot aligned with lateral KNEE JOINT in both studies. The working roller contacts the BACK of lower calf just ABOVE HEEL in both studies, never front of shin. LEFT: legs almost straight pointing FORWARD/right, roller immediately UNDER the posterior lower calves. RIGHT: knees flex around 100 degrees, heels travel DOWN AND BACK under chair, feet now point right while lower shins angle a little back toward viewer-left; roller touching BACK/LEFT of lower calf follows same arc and connects to SAME knee-level pivot through one rigid lever. Maintain same lever length, same roller diameter, same seat/backrest/thigh restraint/weight stack. No roller at front shin, no knee support changing, no roller floating away from calf, no lower-leg length changes. Entire machine and figure inside margins.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Revisited knee-flexion pose and working roller position; simplified invented lever geometry and moved roller to posterior calf.",
+      "references": [
+        "https://www.lifefitness.com/en-us/catalog/strength-training/selectorized/axiom-series-seated-leg-curl-extension"
+      ],
+      "revisions": [
+        {
+          "generatedSource": "exec-86f23e77-0bfd-4f87-8f78-91406e773a09.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Seated leg curl. Instructions: Adjust the pads to secure your thighs. Bend your knees to pull the pad down and back. Return slowly.. Full body strict side view in seated leg curl machine. Left knees almost straight and lower legs forward, thigh pad above knees, roller under ankles. Right knees flex curling lower legs down and back beneath chair, hips fixed. Clearly show hamstring curl unlike extension. Keep 8% transparent margins, no body or equipment cropping.",
+          "correctionPrompt": "Edit the supplied exercise drawing, preserve both figures, pencil style and all equipment except the RIGHT study lower roller and its lever. The RIGHT scene incorrectly has a roller at FRONT OF SHIN. Move that cylinder to BACK OF LOWER CALF, behind Achilles just above heel, on VIEWER LEFT side of lower leg. In the1536x1024image, move right roller center from roughly(1445,645) to(1345,665). The lower leg faces right, so its BACK is LEFT. Delete former front-shinroller entirely, leave frontshin uncovered. Short lever should connect knee pivot to new posterior roller and slope backward/left toward lower calf. Pad touches posterior calf while heels curl toward seat. LEFT scene unchanged. Keep trulytransparentbackground."
+        }
+      ],
+      "correctionPrompt": "Correct this two-pose pencil SEATED HAMSTRING LEG CURL drawing. Preserve graphite style, same two seated figures' heads/torso/hips/thighs, seat/backrest/weight stack, camera and scale. Fix lower legs and leg mechanism, because finish currently has heels in front of knees like a leg extension. RIGHT study: keep knee joint near image (1270,560). Lower legs MUST bend BACKWARD UNDER SEAT: ankles/heels near (1180,790), foot points right. Knee-to-ankle segment has the SAME length as left study, but tilts DOWN-LEFT, giving roughly 110-degree knee flexion. Roller MUST touch POSTERIOR/BACK lower calf just above heel, so cylinder center near (1160,735), to viewer LEFT of lower leg. Front/right shin is completely uncovered. Remove wrong roller and diagonal lever currently at (1360,730). LEFT: retain almost-extended legs; working roller directly below Achilles/posterior calf, not over front shin. Correct mechanical pivot to be aligned with HUMAN KNEE JOINT in EACH study, around (470,570) LEFT and (1270,560) RIGHT. One slim workarm connects each knee-level pivot to posterior calf roller, with the same rigid length and an unobstructed knee-flexion arc. Thigh hold-down pad remains over thigh just above knee, connected to seatframe independently. Do NOT draw another roller at knee, do NOT change fixed machine frame between poses, do NOT lift hips. Complete transparent background, no gray halo, no labels. Prioritize unmistakable curled heel UNDER CHAIR, posterior roller contact and neutral seated posture.\n\nFinal roller correction:\nEdit the provided pencil workout image with ONE focused mechanical correction. Both figures and their poses are correct and MUST stay unchanged. On the RIGHT study, the round roller presently centered around (1280,724) is WRONG because it presses FRONT of shin. DELETE that roller entirely including its short mounting bracket, leaving FRONT/right side of shin uncovered. REDRAW the SAME round padded cylinder BEHIND lower calf at (1165,722), viewer LEFT of calf, directly ABOVE and BEHIND heel at (1200,783). The new cylinder's right edge should touch posterior calf/Achilles, not float. Move its mount behind the lower leg. Remove the diagonal metal bars that currently cross front of lower legs in BOTH studies and remove their small round intermediary pivots; these bars are invented and incorrect. Instead use simple thin side workarms: each rotates around the human KNEE joint, concealed on far side of knee, reaching the posterior calf roller without obscuring shin. Left roller should sit directly UNDER Achilles, its center approximately (667,694), touching underside of calf. Keep original figures, all limb shapes, foam thigh restraint, seat, torso, stack, graphite texture, composition and transparent background. The visible working roller is exclusively BEHIND the lower calf in both views. Do not add any extra front-shin pads or large metal diagonals. This must read hamstring CURL rather than leg extension."
+    },
+    "short-foot-hold": {
+      "name": "Short-foot hold",
+      "source": "workouts/short-foot-hold.png",
+      "vector": "public/workouts/short-foot-hold.svg",
+      "generatedSource": "exec-d2dad66f-2b45-413f-9128-cb26b964c92c.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Short-foot hold. Instructions: Keep your toes long and gently draw the ball of the foot toward the heel to raise the arch. Relax fully.. Two CLOSE-UP studies of same bare RIGHT foot, SIDE MEDIAL view heel on LEFT and toes on RIGHT, lower shin only. LEFT: relaxed arch, all toes long flat, heel and ball grounded. RIGHT: subtle medial ARCH LIFT and slight shortening from ball toward heel, toes stay STRAIGHT and long, no toe curling, heel/ball grounded, no ankle lift. Small controlled difference."
+    },
+    "side-lying-hip-abduction": {
+      "name": "Side-lying hip abduction",
+      "source": "workouts/side-lying-hip-abduction.png",
+      "vector": "public/workouts/side-lying-hip-abduction.svg",
+      "generatedSource": "exec-fcd1e6c4-5b89-4dbf-8767-09c06ae7f460.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Side-lying hip abduction. Instructions: Lie on your side with the upper leg straight. Lift it slightly, then lower without rolling your hips.. Full body front three-quarter view lying on side, supporting head with lower arm, bottom knee bent for balance, top leg straight. LEFT top leg resting parallel with torso. RIGHT top leg lifted sideways upward about 30 degrees, knee and toes pointing forward, pelvis stacked not rolled back. Keep 8% transparent margins, studies separate."
+    },
+    "side-lying-hip-adduction": {
+      "name": "Side-lying hip adduction",
+      "source": "workouts/side-lying-hip-adduction.png",
+      "vector": "public/workouts/side-lying-hip-adduction.svg",
+      "generatedSource": "exec-d39da14e-9ec5-490f-8d54-3a6a2bf2bc35.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Side-lying hip adduction. Instructions: Lie on your side with the top leg crossed in front for support. Lift the straight lower leg a short distance, then lower.. Full body front three-quarter view lying on side. TOP leg bent with top foot planted in front of lower knee. BOTTOM leg straight. LEFT straight bottom leg on floor. RIGHT lifts straight bottom leg upward a little, top planted leg stationary, pelvis stacked. This is BOTTOM leg raise, not top leg abduction. Keep 8% transparent margins, studies separate."
+    },
+    "side-plank": {
+      "name": "Side plank",
+      "source": "workouts/side-plank.png",
+      "vector": "public/workouts/side-plank.svg",
+      "generatedSource": "exec-d995b74d-1846-4d33-b2d5-7358bd4ea28d.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Side plank. Instructions: Support yourself on one forearm and the side of your foot. Lift your hips to form a straight line. Use bent knees to reduce difficulty.. Full body straight side view of adult athlete wearing shorts, lying on side on forearm and outer side of lower foot, legs straight and stacked. LEFT hip grounded ready to lift. RIGHT hip elevated until shoulders hips ankles make a straight line; lower elbow under shoulder, free hand rests on upper hip. No twisting, no feet cropping. Keep 8% transparent margins, studies separate."
+    },
+    "single-leg-calf-raise": {
+      "name": "Single-leg calf raise",
+      "source": "workouts/single-leg-calf-raise.png",
+      "vector": "public/workouts/single-leg-calf-raise.svg",
+      "generatedSource": "exec-aa19a4c8-58b8-4a9b-9d78-41f0ab3401af.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Single-leg calf raise. Instructions: Hold a support for balance. Lift and lower the heel of one leg with control.. Full body strict side view with one hand lightly touching support. Working forefoot on small step with straight knee; other knee bent with foot behind, never touching floor. LEFT working heel lowered below step. RIGHT working heel raised onto ball of same foot. Same supporting posture and exact step, no double-leg stance. Keep 8% transparent margins, studies separate."
+    },
+    "soft-putty-squeeze": {
+      "name": "Soft putty squeeze",
+      "source": "workouts/soft-putty-squeeze.png",
+      "vector": "public/workouts/soft-putty-squeeze.svg",
+      "generatedSource": "exec-9216ea02-3ff2-4b20-9976-5d6814659047.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Soft putty squeeze. Instructions: Wrap your fingers around soft putty, squeeze smoothly, then release completely.. CLOSE-UP of one RIGHT hand and supported forearm only, natural five fingers. LEFT: open fingers loosely wrap a rounded lump of soft putty, wrist neutral. RIGHT: same fingers smoothly flex into a gentle fist compressing the putty, thumb resting outside fingers. Show putty contact clearly. Keep 8% transparent margins, studies separate."
+    },
+    "standing-calf-raise": {
+      "name": "Standing calf raise",
+      "source": "workouts/standing-calf-raise.png",
+      "vector": "public/workouts/standing-calf-raise.svg",
+      "generatedSource": "exec-927acb7b-1d23-4e85-99d8-b23b01a461d1.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Standing calf raise. Instructions: Rise onto the balls of your feet with knees softly extended. Pause, then lower the heels slowly.. Full body side view, hand lightly resting on upright support, knees nearly straight. Left heels lowered on a small step; right rises onto balls of feet with heels lifted. Clearly show ankles and feet, no heavy machine. Keep a clear 8% transparent margin around every object and separate the two studies."
+    },
+    "standing-resisted-march": {
+      "name": "Standing resisted march",
+      "source": "workouts/standing-resisted-march.png",
+      "vector": "public/workouts/standing-resisted-march.svg",
+      "generatedSource": "exec-b09c4f83-9d33-4030-aee1-8e822688c4a1.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Standing resisted march. Instructions: With support for balance and a light band at your foot, lift one knee toward hip height. Lower slowly.. Full body side three-quarter view, a resistance band looped around both feet, light hand support on stable rail. LEFT standing tall both feet grounded. RIGHT one knee rises to hip height with hip flexed and knee bent, standing foot anchors band; pelvis and spine stable, no back lean. Keep 8% transparent margins, studies separate."
+    },
+    "step-up": {
+      "name": "Step-up",
+      "source": "workouts/step-up.png",
+      "vector": "public/workouts/step-up.svg",
+      "generatedSource": "exec-d615747b-159e-44eb-a2f9-e67957f84934.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Step-up. Instructions: Place one foot fully on a stable step. Drive through that leg to stand tall, then lower slowly.. Full body side three-quarter view at knee-height solid step. LEFT leading foot on step, other foot on floor. RIGHT stands on top by pressing through leading leg, trailing foot lifts to level without pushing off it. Keep full feet, step and entire body visible. Keep 8% transparent margins, studies separate."
+    },
+    "suitcase-carry": {
+      "name": "Suitcase carry",
+      "source": "workouts/suitcase-carry.png",
+      "vector": "public/workouts/suitcase-carry.svg",
+      "generatedSource": "exec-1c2d4ed4-c77b-48d6-93e2-44325aab910c.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Suitcase carry. Instructions: Carry one moderate dumbbell at your side and walk steadily without leaning. Switch hands.. Full body front view holding one heavy dumbbell on ONE side only, opposite hand free. LEFT stands tall level pelvis and shoulders. RIGHT takes a short forward walking step, trunk remains vertical without leaning to or away from weight. Same dumbbell side in both poses. Keep 8% transparent margins, studies separate."
+    },
+    "supported-chin-nod": {
+      "name": "Supported chin nod",
+      "source": "workouts/supported-chin-nod.png",
+      "vector": "public/workouts/supported-chin-nod.svg",
+      "generatedSource": "exec-3f92d486-1d20-4fd4-9184-62a3fe2e00bc.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Supported chin nod. Instructions: Lie with your head comfortably supported. Make a small nod as if saying yes, then relax.. CLOSE-UP head neck shoulders of same bald adult male LYING SUPINE, STRICT SIDE view head on left torso toward right. Small folded towel supports head comfortably in both poses. LEFT: neck neutral gaze upward. RIGHT: tiny 5-degree chin nod inward toward throat like quiet yes, head stays resting on towel, no lifting head or flexing entire neck. Subtle brow/nose, no mouth or hair, minimal movement. Keep both studies separate, all important body parts inside 8% transparent margin."
+    },
+    "supported-toe-raise": {
+      "name": "Supported toe raise",
+      "source": "workouts/supported-toe-raise.png",
+      "vector": "public/workouts/supported-toe-raise.svg",
+      "generatedSource": "exec-a942273b-0058-42db-b1b7-6f26aa41441b.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Supported toe raise. Instructions: Stand with your back supported and heels on the floor. Lift the fronts of your feet, pause briefly, then lower.. Full body strict side view standing with back against wall, feet a short step forward. LEFT feet flat on floor. RIGHT forefeet and toes lifted upward toward shins while HEELS stay planted on floor. Knees remain nearly straight; not a heel raise. Keep 8% transparent margins, studies separate."
+    },
+    "thumb-lift": {
+      "name": "Thumb lift",
+      "source": "workouts/thumb-lift.png",
+      "vector": "public/workouts/thumb-lift.svg",
+      "generatedSource": "exec-461be20f-a54c-45ce-b1df-6b37717846ba.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Thumb lift. Instructions: With your palm facing up, lift your thumb away from the plane of the palm against light resistance.. CLOSE-UP RIGHT hand PALM-UP on a small support in side three-quarter view. LEFT: thumb rests in plane of palm, light resistance loop near thumb base. RIGHT: thumb lifts PERPENDICULAR to palm plane toward ceiling (palmar abduction), thumb tip above palm surface, not sliding sideways toward index. Keep all four fingers relaxed and same wrist. Show depth so upward thumb motion is clear. Keep 8% transparent margins, studies separate."
+    },
+    "thumb-opposition-with-putty": {
+      "name": "Thumb opposition with putty",
+      "source": "workouts/thumb-opposition-with-putty.png",
+      "vector": "public/workouts/thumb-opposition-with-putty.svg",
+      "generatedSource": "exec-3145fe79-6982-486a-974a-c060d1a6e412.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Thumb opposition with putty. Instructions: Place soft putty near the base of your little finger. Bring the thumb across the palm to press into it.. CLOSE-UP RIGHT hand palm facing viewer, wrist straight. LEFT: thumb open, putty at BASE OF LITTLE FINGER on palm. RIGHT: thumb crosses diagonally across palm and thumb pad touches/compresses that putty near little-finger base. Other four fingers long and relaxed, not closed in fist. Keep 8% transparent margins, studies separate."
+    },
+    "thumb-putty-press": {
+      "name": "Thumb putty press",
+      "source": "workouts/thumb-putty-press.png",
+      "vector": "public/workouts/thumb-putty-press.svg",
+      "generatedSource": "exec-b1d89544-38d3-4a97-85f0-798599915b0c.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Thumb putty press. Instructions: Press your thumb into soft putty toward the palm, then release.. CLOSE-UP RIGHT hand, palm facing viewer with a soft lump of putty cradled in four gently curved fingers. LEFT: thumb tip resting on putty, thumb interphalangeal joint straight. RIGHT: thumb tip presses down into putty toward palm, clearly flexing its small tip joint, no wrist movement. Natural five fingers. Keep 8% transparent margins, studies separate."
+    },
+    "thumb-up-scaption": {
+      "name": "Thumb-up scaption",
+      "source": "workouts/thumb-up-scaption.png",
+      "vector": "public/workouts/thumb-up-scaption.svg",
+      "generatedSource": "exec-f78abb91-832f-4628-bcb2-90531f0fcb57.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: THUMB-UP SCAPTION with two LIGHT dumbbells. Same bald lean adult male anatomical athlete in fitted shorts, full body FRONT THREE-QUARTER view angled about 25 degrees, same view in both. LEFT: relaxed arms hang beside thighs, one small dumbbell held in EACH closed hand, neutral grip. RIGHT: arms are lifted to SHOULDER HEIGHT in scapular plane, roughly 30 degrees FORWARD from straight sideways, creating a wide forward V when seen from above. Keep elbows nearly straight but soft; shoulders level and away from ears. Hands in neutral grip with THUMB SIDES uppermost, dumbbell shafts near VERTICAL and weights above/below fist; all fingers INCLUDING thumb wrap around handles. Do NOT draw an empty hand doing a thumbs-up gesture or an extended thumb perched atop weights. NOT front raise, NOT straight side lateral raise, NOT overhead press. Use visible three-quarter foreshortening to show arms in front of body. Same wrists and equipment, no head/torso changes.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Neutral closed grip replaces literal thumbs-up gesture; light dumbbells and forward scapular-plane elevation.",
+      "references": [
+        "https://www.merckmanuals.com/professional/multimedia/video/standing-shoulder-scaption"
+      ],
+      "revisions": [
+        {
+          "generatedSource": "exec-e6526d70-67f8-4924-92e9-dccfa26c7b38.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Thumb-up scaption. Instructions: With thumbs up, lift your arms slightly forward of your sides to a comfortable height, then lower slowly.. Full body front three-quarter view holding very light dumbbells with THUMBS pointing up throughout. LEFT arms hanging by sides. RIGHT arms raised to shoulder height in plane30degrees in front of body, like a narrow V, soft elbows, no shrug. Not straight lateral raise and not a full overhead press. Keep 8% transparent margins, studies separate."
+        }
+      ]
+    },
+    "toe-adduction-squeeze": {
+      "name": "Toe adduction squeeze",
+      "source": "workouts/toe-adduction-squeeze.png",
+      "vector": "public/workouts/toe-adduction-squeeze.svg",
+      "generatedSource": "exec-d8a118d6-4e2b-463d-9e3c-62ce0e64a732.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE exercise illustration with exactly TWO studies: starting position on the LEFT and finishing position on the RIGHT. Match the reference's fine graphite pencil contours, restrained anatomical shading, delicate hand-drawn hatching and muted grayscale. Reference is STYLE only, not its exercise. Same camera, same scale, same anatomy, same equipment in both studies. Every hand has five natural digits; no anatomy distortions. True transparent background; no paper rectangle, gray halo, shadows, text, labels, arrows, highlights, borders or watermark. Composition is a wide 3:2 canvas with both studies completely visible and 8% transparent margins. Exercise: TOE ADDUCTION SQUEEZE WITH SOFT FOAM. CLOSE-UP ONLY of ONE RIGHT foot viewed from directly above, toes toward top of image, big toe on viewer LEFT in both. Same exact foot scale and alignment, five natural toes, heel and ankle partially visible, foot supported flat on a simple narrow surface. A SMALL soft foam oval is placed BETWEEN big toe and second toe, touching both toe sides; it is smaller than a toenail, not a giant spacer. LEFT: those two toes gently separated by the uncompressed foam. RIGHT: big toe and second toe move gently TOWARD EACH OTHER and visibly compress the SAME foam into a thinner narrow oval. Other three toes stay relaxed in exactly their same positions. All toes remain long/flat, no clawing, no foot inversion, no nail shape changes, no six toes. Clear change in gap and compression, show natural soft foam indentation where both toes contact it.",
+      "revisionDate": "2026-10-09",
+      "revisionNote": "Foam placed between big and second toes, with visible compression in the finish and other toes relaxed.",
+      "references": ["https://www.esht.nhs.uk/wp-content/uploads/2020/05/0797.pdf"],
+      "revisions": [
+        {
+          "generatedSource": "exec-f55be97b-fba1-4225-a80d-29752c5d14df.png",
+          "promptKind": "generation",
+          "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Toe adduction squeeze. Instructions: Place a small piece of soft foam between adjacent toes. Bring the toes together gently and release.. Two CLOSE-UP studies of one bare RIGHT foot from TOP three-quarter view, five toes. LEFT: soft small foam between SECOND and THIRD toes, toes slightly spread. RIGHT: second/third toes gently squeeze together flattening foam laterally. Big toe relaxed, heel/foot resting throughout, no foot rotation or curling."
+        }
+      ]
+    },
+    "toe-extension-against-light-resistance": {
+      "name": "Toe extension against light resistance",
+      "source": "workouts/toe-extension-against-light-resistance.png",
+      "vector": "public/workouts/toe-extension-against-light-resistance.svg",
+      "generatedSource": "exec-907009fe-7812-44d1-ad88-875d9d98cde1.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Toe extension against light resistance. Instructions: With the foot supported, lift the toes against a very light band, then lower slowly.. Two CLOSE-UP studies of bare foot SIDE three-quarter view, lower shin only. Light elastic band over tops of toes secured gently under foot/support. LEFT: toes neutral resting, heel and forefoot supported. RIGHT: toes extend UP at toe joints against elastic resistance while ankle stays neutral, heel and ball unchanged, no ankle dorsiflexion. Clear small toe lift, natural five toes."
+    },
+    "toe-spread": {
+      "name": "Toe spread",
+      "source": "workouts/toe-spread.png",
+      "vector": "public/workouts/toe-spread.svg",
+      "generatedSource": "exec-db1b7fa7-343f-4864-9d1f-1d703ba79ec8.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Toe spread. Instructions: With the foot resting on the floor, spread the toes gently, pause, then relax.. Two CLOSE-UP studies of one bare foot viewed from TOP three-quarter, lower shin only. LEFT: five toes relaxed close together, sole grounded. RIGHT: five toes gently spread side to side like a fan with visible gaps, all still resting on floor, not lifting whole foot, no twisting ankle. No extra equipment."
+    },
+    "towel-toe-curl": {
+      "name": "Towel toe curl",
+      "source": "workouts/towel-toe-curl.png",
+      "vector": "public/workouts/towel-toe-curl.svg",
+      "generatedSource": "exec-b219e28a-8bdf-4a0f-88fc-e163513de68b.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Create ONE transparent pencil illustration containing exactly TWO side-by-side studies: START on LEFT, FINISH on RIGHT. STYLE reference only: preserve its fine graphite contours, muted grayscale shading and delicate anatomical hatching, do not copy its subject or exercise. CLOSE-UP composition of specified body part only; omit head, torso and full figure. Identical camera, scale, proportions, support and equipment in both studies, natural anatomy. No text, labels, arrows, icons, watermarks, colored highlights, floor shadow, backdrop or gray halo. Leave clear transparent margins around both separate studies. Exercise: Towel toe curl. Instructions: Sit with your heel on the floor and toes on a towel. Draw the towel toward you with the toes, then release.. Two CLOSE-UP studies of one bare foot SIDE three-quarter, lower shin only. A small towel rests under toes. LEFT: toes long on smooth towel, heel firmly grounded. RIGHT: toes curl at their joints to gather towel toward heel, towel visibly bunched under toe pads, heel stays grounded. Five natural toes, no whole ankle lift."
+    },
+    "wrist-extension-with-ulnar-bias": {
+      "name": "Wrist extension with ulnar bias",
+      "source": "workouts/wrist-extension-with-ulnar-bias.png",
+      "vector": "public/workouts/wrist-extension-with-ulnar-bias.svg",
+      "generatedSource": "exec-28db9559-bfa3-4555-9178-e3dcaf4c9f41.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Wrist extension with ulnar bias. Instructions: With forearm supported palm-down, lift the wrist slightly toward the little-finger side. Return with control.. CLOSE-UP one RIGHT forearm PALM-DOWN supported at small bench edge, light dumbbell in hand. LEFT: wrist neutral straight. RIGHT: lift BACK of hand via wrist extension with subtle tilt toward LITTLE-FINGER side (ulnar deviation), not thumb side. Forearm stays palm down flat, same three-quarter dorsal camera. Keep 8% transparent margins, studies separate."
+    },
+    "wrist-flexion-with-radial-bias": {
+      "name": "Wrist flexion with radial bias",
+      "source": "workouts/wrist-flexion-with-radial-bias.png",
+      "vector": "public/workouts/wrist-flexion-with-radial-bias.svg",
+      "generatedSource": "exec-f8ce0a9a-be65-407b-b503-492f44267f08.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Wrist flexion with radial bias. Instructions: Support your forearm palm-up. Curl the wrist slightly toward the thumb side, then lower slowly.. CLOSE-UP one RIGHT forearm PALM-UP supported on small bench with wrist just beyond edge holding light dumbbell. LEFT: neutral straight wrist, palm facing up. RIGHT: wrist flexes gently upward toward palm AND deviates toward THUMB side (radial deviation). Show thumb side clearly. Only wrist moves, forearm fixed. Same three-quarter overhead camera. Keep 8% transparent margins, studies separate."
+    },
+    "wrist-flexion-with-ulnar-bias": {
+      "name": "Wrist flexion with ulnar bias",
+      "source": "workouts/wrist-flexion-with-ulnar-bias.png",
+      "vector": "public/workouts/wrist-flexion-with-ulnar-bias.svg",
+      "generatedSource": "exec-778364be-2dbe-4fae-aa8b-49349c1d4567.png",
+      "promptKind": "generation",
+      "prompt": "Use case: scientific-educational. Asset: one workout illustration, exactly TWO poses side by side, START on LEFT, FINISH on RIGHT. Reference image is STYLE AND CHARACTER ONLY, do not copy its exercise. Draw the same bald adult male anatomical athlete in plain fitted shorts with fine graphite pencil contours, restrained muscle shading and light hand drawn hatching. Muted grayscale, crisp readable anatomy, no skin color or muscle highlight. Identical camera, equipment, body proportions, scale and ground line in both poses. Wide composition, generous margins, completely show all necessary body parts and equipment. Truly transparent background, no gray rectangle, no halo, no floor shadow, no scenery. No text, labels, arrows, watermarks or decorative elements. Exercise: Wrist flexion with ulnar bias. Instructions: Support your forearm palm-up. Gently curl the wrist toward the little-finger side, then lower slowly.. CLOSE-UP one RIGHT forearm PALM-UP on small bench edge holding a light dumbbell. LEFT: straight neutral wrist. RIGHT: wrist gently flexes upward toward PALM and tilts toward LITTLE-FINGER side (ulnar deviation). Thumb relaxed and visible, not thumb-side deviation. Supported forearm fixed, same three-quarter overhead camera. Keep 8% transparent margins, studies separate."
+    }
+  }
+}

@@ -270,7 +270,7 @@ export function Atlas({
               <ArrowLeft className="back-icon" aria-hidden="true" />
               {t('backRegions')}
             </Button>
-            <MovementGuide region={region} />
+            <MovementGuide region={region} book={book} />
           </>
         ) : (
           <div className="guide-empty">
