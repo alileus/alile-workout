@@ -17,20 +17,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "incline-dumbbell-curl",
               "name": "Incline dumbbell curl",
               "equipment": "Elbow flexion · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Sit against an incline bench with your arms hanging naturally. Curl the dumbbells without moving your upper arms, then lower slowly.",
-              "cue": "Keep your shoulders comfortable; avoid forcing the arms behind you.",
-              "alsoWorks": "Short head of biceps, brachialis, brachioradialis"
+              "cue": "Keep your shoulders comfortable; avoid forcing the arms behind you."
             },
             {
+              "id": "dumbbell-curl",
               "name": "Dumbbell curl",
               "equipment": "Isolation · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Begin with arms at your sides. Curl the weights while turning palms upward. Lower to a comfortable straight-arm position.",
-              "cue": "Keep elbows near your ribs and your torso still.",
-              "alsoWorks": "Short head of biceps, brachialis, brachioradialis"
+              "cue": "Keep elbows near your ribs and your torso still."
             }
           ]
         },
@@ -45,20 +43,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "preacher-curl",
               "name": "Preacher curl",
               "equipment": "Isolation · Curl bench",
-              "volume": "2–3 sets × 10–15 reps",
               "instructions": "Support your upper arms on the pad and curl through a comfortable range. Lower gradually.",
-              "cue": "Avoid bouncing at the bottom or forcing elbow extension.",
-              "alsoWorks": "Long head of biceps, brachialis, brachioradialis"
+              "cue": "Avoid bouncing at the bottom or forcing elbow extension."
             },
             {
+              "id": "dumbbell-curl",
               "name": "Dumbbell curl",
               "equipment": "Isolation · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Begin with arms at your sides. Curl the weights while turning palms upward. Lower to a comfortable straight-arm position.",
-              "cue": "Keep elbows near your ribs and your torso still.",
-              "alsoWorks": "Long head of biceps, brachialis, brachioradialis"
+              "cue": "Keep elbows near your ribs and your torso still."
             }
           ]
         },
@@ -73,20 +69,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "hammer-curl",
               "name": "Hammer curl",
               "equipment": "Isolation · Dumbbells",
-              "volume": "3 sets × 10–12 reps",
               "instructions": "Hold dumbbells with palms facing each other. Bend the elbows and lift, then lower slowly.",
-              "cue": "Maintain the neutral wrist position throughout.",
-              "alsoWorks": "Biceps brachii, brachioradialis"
+              "cue": "Maintain the neutral wrist position throughout."
             },
             {
+              "id": "reverse-curl",
               "name": "Reverse curl",
               "equipment": "Elbow flexion · Dumbbells",
-              "volume": "2–3 sets × 10–15 reps",
               "instructions": "Hold light dumbbells with palms facing down. Bend the elbows to lift, keeping your wrists neutral, then lower slowly.",
-              "cue": "Keep elbows near your sides and avoid lifting with wrist extension.",
-              "alsoWorks": "Brachioradialis, biceps brachii; wrist extensors stabilize"
+              "cue": "Keep elbows near your sides and avoid lifting with wrist extension."
             }
           ]
         }
@@ -106,20 +100,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "overhead-cable-extension",
               "name": "Overhead cable extension",
               "equipment": "Isolation · Cable",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Face away from a low cable with hands overhead. Extend your elbows, then return slowly.",
-              "cue": "Keep your trunk braced and use a comfortable shoulder position.",
-              "alsoWorks": "Lateral and medial triceps heads"
+              "cue": "Keep your trunk braced and use a comfortable shoulder position."
             },
             {
+              "id": "cable-pressdown",
               "name": "Cable pressdown",
               "equipment": "Isolation · Cable",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
-              "cue": "Keep the upper arms still and wrists neutral.",
-              "alsoWorks": "Lateral and medial triceps heads"
+              "cue": "Keep the upper arms still and wrists neutral."
             }
           ]
         },
@@ -134,20 +126,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "cable-pressdown",
               "name": "Cable pressdown",
               "equipment": "Isolation · Cable",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
-              "cue": "Keep the upper arms still and wrists neutral.",
-              "alsoWorks": "Long and medial triceps heads"
+              "cue": "Keep the upper arms still and wrists neutral."
             },
             {
+              "id": "close-grip-push-up",
               "name": "Close-grip push-up",
               "equipment": "Compound · Bodyweight",
-              "volume": "3 sets × 6–12 reps",
               "instructions": "Place your hands slightly narrower than shoulder width. Lower your chest while keeping a straight body line, then press up.",
-              "cue": "Keep elbows angled back. Elevate your hands to reduce difficulty.",
-              "alsoWorks": "Other triceps heads, pectoralis major, anterior deltoids"
+              "cue": "Keep elbows angled back. Elevate your hands to reduce difficulty."
             }
           ]
         },
@@ -162,20 +152,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "cable-pressdown",
               "name": "Cable pressdown",
               "equipment": "Isolation · Cable",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Stand tall with elbows at your sides. Extend the elbows to move the handle down, then return under control.",
-              "cue": "Keep the upper arms still and wrists neutral.",
-              "alsoWorks": "Long and lateral triceps heads"
+              "cue": "Keep the upper arms still and wrists neutral."
             },
             {
+              "id": "overhead-cable-extension",
               "name": "Overhead cable extension",
               "equipment": "Isolation · Cable",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Face away from a low cable with hands overhead. Extend your elbows, then return slowly.",
-              "cue": "Keep your trunk braced and use a comfortable shoulder position.",
-              "alsoWorks": "Long and lateral triceps heads"
+              "cue": "Keep your trunk braced and use a comfortable shoulder position."
             }
           ]
         }
@@ -195,20 +183,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "hammer-curl",
               "name": "Hammer curl",
               "equipment": "Elbow flexion · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Hold dumbbells with palms facing inward. Bend the elbows without swinging, then lower slowly.",
-              "cue": "Keep your wrists neutral. The biceps and brachialis also contribute.",
-              "alsoWorks": "Brachialis, biceps brachii"
+              "cue": "Keep your wrists neutral. The biceps and brachialis also contribute."
             },
             {
+              "id": "reverse-curl",
               "name": "Reverse curl",
               "equipment": "Elbow flexion · Dumbbells",
-              "volume": "2–3 sets × 10–15 reps",
               "instructions": "Hold light dumbbells with palms facing down. Bend the elbows to lift, keeping your wrists neutral, then lower slowly.",
-              "cue": "Keep elbows near your sides and avoid lifting with wrist extension.",
-              "alsoWorks": "Brachialis, biceps brachii; wrist extensors stabilize"
+              "cue": "Keep elbows near your sides and avoid lifting with wrist extension."
             }
           ]
         },
@@ -223,12 +209,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "wrist-flexion-with-radial-bias",
               "name": "Wrist flexion with radial bias",
               "equipment": "Wrist control · Light dumbbell",
-              "volume": "2 sets × 10–15 reps",
               "instructions": "Support your forearm palm-up. Curl the wrist slightly toward the thumb side, then lower slowly.",
-              "cue": "Keep the forearm supported; do not force sideways movement.",
-              "alsoWorks": "Other wrist flexors; radial wrist extensors stabilize"
+              "cue": "Keep the forearm supported; do not force sideways movement."
             }
           ]
         },
@@ -243,12 +228,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "wrist-flexion-with-ulnar-bias",
               "name": "Wrist flexion with ulnar bias",
               "equipment": "Wrist control · Light dumbbell",
-              "volume": "2 sets × 10–15 reps",
               "instructions": "Support your forearm palm-up. Gently curl the wrist toward the little-finger side, then lower slowly.",
-              "cue": "Use a small range and light resistance. Other wrist flexors still contribute.",
-              "alsoWorks": "Other wrist flexors; extensor carpi ulnaris assists ulnar deviation"
+              "cue": "Use a small range and light resistance. Other wrist flexors still contribute."
             }
           ]
         },
@@ -263,12 +247,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "soft-putty-squeeze",
               "name": "Soft putty squeeze",
               "equipment": "Finger flexion · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Wrap your fingers around soft putty, squeeze smoothly, then release completely.",
-              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing.",
-              "alsoWorks": "Flexor digitorum profundus, thumb flexors, intrinsic hand muscles"
+              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing."
             }
           ]
         },
@@ -283,12 +266,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "soft-putty-squeeze",
               "name": "Soft putty squeeze",
               "equipment": "Finger flexion · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Wrap your fingers around soft putty, squeeze smoothly, then release completely.",
-              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing.",
-              "alsoWorks": "Flexor digitorum superficialis, thumb flexors, intrinsic hand muscles"
+              "cue": "Keep the wrist neutral and avoid maximum-effort squeezing."
             }
           ]
         },
@@ -303,12 +285,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "thumb-putty-press",
               "name": "Thumb putty press",
               "equipment": "Thumb flexion · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Press your thumb into soft putty toward the palm, then release.",
-              "cue": "Keep the thumb joints aligned; do not force the end position.",
-              "alsoWorks": "Flexor pollicis brevis, other thenar muscles"
+              "cue": "Keep the thumb joints aligned; do not force the end position."
             }
           ]
         },
@@ -323,12 +304,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "reverse-wrist-curl",
               "name": "Reverse wrist curl",
               "equipment": "Isolation · Dumbbells",
-              "volume": "2–3 sets × 12–20 reps",
               "instructions": "Support your forearms with palms down. Lift the backs of your hands by extending the wrists, then lower with control.",
-              "cue": "Keep the forearms supported and use a small, controlled range.",
-              "alsoWorks": "Extensor carpi ulnaris, finger extensors"
+              "cue": "Keep the forearms supported and use a small, controlled range."
             }
           ]
         },
@@ -343,12 +323,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "wrist-extension-with-ulnar-bias",
               "name": "Wrist extension with ulnar bias",
               "equipment": "Wrist control · Light dumbbell",
-              "volume": "2 sets × 10–15 reps",
               "instructions": "With forearm supported palm-down, lift the wrist slightly toward the little-finger side. Return with control.",
-              "cue": "Use a small motion without swinging the elbow.",
-              "alsoWorks": "Other wrist extensors; flexor carpi ulnaris assists ulnar deviation"
+              "cue": "Use a small motion without swinging the elbow."
             }
           ]
         },
@@ -363,12 +342,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "band-finger-opening",
               "name": "Band finger opening",
               "equipment": "Finger extension · Light band",
-              "volume": "1–2 sets × 10–15 reps",
               "instructions": "Place a light band around the fingers. Open them slowly against resistance, then return.",
-              "cue": "Keep the movement controlled and the wrist steady.",
-              "alsoWorks": "Other finger extensors, dorsal interossei"
+              "cue": "Keep the movement controlled and the wrist steady."
             }
           ]
         },
@@ -383,12 +361,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "resisted-thumb-extension",
               "name": "Resisted thumb extension",
               "equipment": "Thumb extension · Light band",
-              "volume": "1–2 sets × 8–12 reps",
               "instructions": "Place a light band around your thumb and hand. Straighten and lift your thumb away from the palm, then return.",
-              "cue": "Use light tension and keep the wrist still.",
-              "alsoWorks": "Abductor pollicis longus; wrist extensors stabilize"
+              "cue": "Use light tension and keep the wrist still."
             }
           ]
         },
@@ -403,12 +380,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "thumb-lift",
               "name": "Thumb lift",
               "equipment": "Thumb abduction · Light band",
-              "volume": "1–2 sets × 8–12 reps",
               "instructions": "With your palm facing up, lift your thumb away from the plane of the palm against light resistance.",
-              "cue": "Keep the thumb gently curved and the wrist supported.",
-              "alsoWorks": "Abductor pollicis brevis and other thumb stabilizers"
+              "cue": "Keep the thumb gently curved and the wrist supported."
             }
           ]
         },
@@ -423,12 +399,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "resisted-forearm-pronation",
               "name": "Resisted forearm pronation",
               "equipment": "Forearm rotation · Light lever",
-              "volume": "2 sets × 8–12 reps",
               "instructions": "Support your elbow and forearm. Holding a light lever near its weighted end, turn your palm downward and return slowly.",
-              "cue": "Start with a short lever and keep your elbow still.",
-              "alsoWorks": "Pronator quadratus; wrist stabilizers"
+              "cue": "Start with a short lever and keep your elbow still."
             }
           ]
         },
@@ -443,12 +418,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "resisted-forearm-pronation",
               "name": "Resisted forearm pronation",
               "equipment": "Forearm rotation · Light lever",
-              "volume": "2 sets × 8–12 reps",
               "instructions": "Support your elbow and forearm. Holding a light lever near its weighted end, turn your palm downward and return slowly.",
-              "cue": "Start with a short lever and keep your elbow still.",
-              "alsoWorks": "Pronator teres; wrist stabilizers"
+              "cue": "Start with a short lever and keep your elbow still."
             }
           ]
         },
@@ -463,12 +437,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "resisted-forearm-supination",
               "name": "Resisted forearm supination",
               "equipment": "Forearm rotation · Light lever",
-              "volume": "2 sets × 8–12 reps",
               "instructions": "Support your elbow and forearm. Use a light lever to resist turning the palm upward. Return slowly.",
-              "cue": "Keep the movement at the forearm rather than rotating your shoulder.",
-              "alsoWorks": "Biceps brachii; wrist stabilizers"
+              "cue": "Keep the movement at the forearm rather than rotating your shoulder."
             }
           ]
         }
@@ -488,12 +461,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "thumb-lift",
               "name": "Thumb lift",
               "equipment": "Thumb abduction · Light band",
-              "volume": "1–2 sets × 8–12 reps",
               "instructions": "With your palm facing up, lift your thumb away from the plane of the palm against light resistance.",
-              "cue": "Keep the thumb gently curved and the wrist supported.",
-              "alsoWorks": "Other thenar muscles stabilize the thumb"
+              "cue": "Keep the thumb gently curved and the wrist supported."
             }
           ]
         },
@@ -508,12 +480,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "thumb-putty-press",
               "name": "Thumb putty press",
               "equipment": "Thumb flexion · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Press your thumb into soft putty toward the palm, then release.",
-              "cue": "Keep the thumb joints aligned; do not force the end position.",
-              "alsoWorks": "Flexor pollicis longus, other thenar muscles"
+              "cue": "Keep the thumb joints aligned; do not force the end position."
             }
           ]
         },
@@ -528,12 +499,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "thumb-opposition-with-putty",
               "name": "Thumb opposition with putty",
               "equipment": "Thumb control · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Place soft putty near the base of your little finger. Bring the thumb across the palm to press into it.",
-              "cue": "Move the thumb base rather than only bending the tip.",
-              "alsoWorks": "Abductor pollicis brevis, flexor pollicis brevis"
+              "cue": "Move the thumb base rather than only bending the tip."
             }
           ]
         },
@@ -548,12 +518,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "gentle-key-pinch",
               "name": "Gentle key pinch",
               "equipment": "Thumb adduction · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Hold soft putty between the thumb pad and the side of your index finger. Squeeze gently, then release.",
-              "cue": "Keep the thumb aligned and avoid locking its joints.",
-              "alsoWorks": "First dorsal interosseous, thumb flexors"
+              "cue": "Keep the thumb aligned and avoid locking its joints."
             }
           ]
         },
@@ -568,12 +537,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "little-finger-opposition",
               "name": "Little-finger opposition",
               "equipment": "Hand control · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Cup the little-finger side of your palm toward the thumb, gently compressing soft putty.",
-              "cue": "Use a small controlled motion without bending the wrist.",
-              "alsoWorks": "Thenar muscles, finger flexors"
+              "cue": "Use a small controlled motion without bending the wrist."
             }
           ]
         },
@@ -588,12 +556,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "knuckle-press-into-putty",
               "name": "Knuckle press into putty",
               "equipment": "Intrinsic hand control · Soft putty",
-              "volume": "1–2 sets × 8–12 gentle reps",
               "instructions": "Keep the finger tips relatively straight and bend at the large knuckles to press into soft putty. Release slowly.",
-              "cue": "Avoid collapsing the middle finger joints.",
-              "alsoWorks": "Interossei; finger extensors coordinate joint position"
+              "cue": "Avoid collapsing the middle finger joints."
             }
           ]
         },
@@ -608,12 +575,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "resisted-finger-spread",
               "name": "Resisted finger spread",
               "equipment": "Finger abduction · Light band",
-              "volume": "1–2 sets × 8–12 reps",
               "instructions": "Spread your fingers apart against a light loop, then bring them back under control.",
-              "cue": "Keep the wrist still and fingers comfortably extended.",
-              "alsoWorks": "Abductor digiti minimi; finger extensors stabilize"
+              "cue": "Keep the wrist still and fingers comfortably extended."
             }
           ]
         },
@@ -628,12 +594,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "finger-adduction-press",
               "name": "Finger adduction press",
               "equipment": "Finger adduction · Soft putty",
-              "volume": "1–2 sets × 8–12 reps",
               "instructions": "Place a small piece of soft putty between adjacent fingers. Bring the fingers together to compress it.",
-              "cue": "Use gentle pressure without twisting the fingers.",
-              "alsoWorks": "Lumbricals; finger flexors and extensors stabilize"
+              "cue": "Use gentle pressure without twisting the fingers."
             }
           ]
         }

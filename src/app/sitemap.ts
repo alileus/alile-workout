@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     '',
     '/contribute',
+    '/workouts',
     ...englishBook.flatMap((g) => [
       musclePath(g.id),
       ...g.sections.flatMap((s) => s.regions.map((r) => musclePath(g.id, r.id))),

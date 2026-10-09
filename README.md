@@ -29,7 +29,8 @@
 Training advice is easier to understand when you can see what it involves. This project connects an interactive anatomy drawing to practical exercise guides, with the source, content, and translations open to contribution.
 
 - **Explore 100 muscle regions.** Browse Chest, Back, Shoulders, Arms, Core, and Legs, or select a region on the front/back anatomy.
-- **Understand each exercise.** Find instructions, technique cues, suggested volume, and the other muscles involved.
+- **Understand each exercise.** Find instructions, technique cues, and the other muscles involved.
+- **Browse all 79 workouts.** Search the exercise catalog, filter by muscle group, and follow linked muscles. Each workout has a shared start/finish pencil illustration.
 - **Share the exact muscle.** Every group and region has its own URL, localized metadata, and an anatomy-based social preview.
 - **Read in three languages.** English, Arabic with RTL support, and Japanese cover the interface and all muscle guides.
 - **Use it on any screen.** Responsive layouts, keyboard-accessible region selection, and a shared sketchbook-inspired design system.
@@ -91,6 +92,7 @@ Features own their behavior and data; shared components and design tokens keep c
 | `src/app`                   | Pages, metadata, social images, sitemap, and robots                 |
 | `src/i18n` · `messages`     | Locale routing and interface translations                           |
 | `public/anatomy`            | Pencil-style front/back SVG artwork                                 |
+| `public/workouts`           | Shared two-pose workout SVGs                                        |
 | `tests`                     | Content integrity, translation coverage, routes, and artwork checks |
 
 [Architecture](docs/architecture.md) · [Design system](docs/design-system.md) · [Content guide](docs/content-guide.md) · [Artwork provenance & tooling](docs/artwork/README.md)

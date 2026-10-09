@@ -17,20 +17,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "incline-dumbbell-press",
               "name": "Incline dumbbell press",
               "equipment": "Compound · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Set a low incline, around 15–30°. Start with dumbbells beside your upper chest. Press upward and slightly inward, then lower with control.",
-              "cue": "Keep your shoulders supported; avoid shrugging at the top.",
-              "alsoWorks": "Sternocostal pectorals, anterior deltoids, triceps"
+              "cue": "Keep your shoulders supported; avoid shrugging at the top."
             },
             {
+              "id": "barbell-bench-press",
               "name": "Barbell bench press",
               "equipment": "Compound · Barbell",
-              "volume": "3–4 sets × 5–8 reps",
               "instructions": "Plant your feet, keep your shoulder blades supported on the bench, and grip just wider than shoulder width. Lower the bar under control to your mid-chest, then press up.",
-              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms.",
-              "alsoWorks": "Sternocostal pectorals, anterior deltoids, triceps"
+              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms."
             }
           ]
         },
@@ -45,20 +43,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "barbell-bench-press",
               "name": "Barbell bench press",
               "equipment": "Compound · Barbell",
-              "volume": "3–4 sets × 5–8 reps",
               "instructions": "Plant your feet, keep your shoulder blades supported on the bench, and grip just wider than shoulder width. Lower the bar under control to your mid-chest, then press up.",
-              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms.",
-              "alsoWorks": "Clavicular pectorals, anterior deltoids, triceps"
+              "cue": "Keep wrists stacked over elbows. Use a spotter or safety arms."
             },
             {
+              "id": "cable-chest-fly",
               "name": "Cable chest fly",
               "equipment": "Isolation · Cable",
-              "volume": "2–3 sets × 10–15 reps",
               "instructions": "Stand in a split stance between two pulleys. With a soft bend in your elbows, bring your hands together in front of your chest. Return slowly.",
-              "cue": "Move through the shoulder and keep the elbow angle steady.",
-              "alsoWorks": "Clavicular pectorals, anterior deltoids"
+              "cue": "Move through the shoulder and keep the elbow angle steady."
             }
           ]
         },
@@ -73,12 +69,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "incline-push-up-plus",
               "name": "Incline push-up plus",
               "equipment": "Scapular control · Bench",
-              "volume": "2–3 sets × 8–12 reps",
               "instructions": "Place your hands on a stable bench. Perform a controlled push-up. At the top, keep your elbows straight and push the bench away so your shoulder blades move around your ribs.",
-              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging.",
-              "alsoWorks": "Serratus anterior; pectoralis major and triceps during the push-up"
+              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging."
             }
           ]
         }
@@ -98,20 +93,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "incline-push-up-plus",
               "name": "Incline push-up plus",
               "equipment": "Scapular control · Bench",
-              "volume": "2–3 sets × 8–12 reps",
               "instructions": "Place your hands on a stable bench. Perform a controlled push-up. At the top, keep your elbows straight and push the bench away so your shoulder blades move around your ribs.",
-              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging.",
-              "alsoWorks": "Pectoralis minor; chest and triceps during the push-up"
+              "cue": "Keep your trunk steady; let the shoulder blades move without shrugging."
             },
             {
+              "id": "forearm-wall-slide",
               "name": "Forearm wall slide",
               "equipment": "Scapular control · Wall",
-              "volume": "2 sets × 8–12 reps",
               "instructions": "Place your forearms against a wall. Slide them upward as you gently reach into the wall, then return.",
-              "cue": "Allow the shoulder blades to rotate; keep your ribs controlled.",
-              "alsoWorks": "Upper and lower trapezius, deltoids"
+              "cue": "Allow the shoulder blades to rotate; keep your ribs controlled."
             }
           ]
         }

@@ -17,20 +17,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "pull-up",
               "name": "Pull-up",
               "equipment": "Compound · Pull-up bar",
-              "volume": "3 sets × 4–8 reps",
               "instructions": "Begin in a controlled hang. Draw your elbows down and pull your chest toward the bar. Lower without dropping. Use assistance if needed.",
-              "cue": "Keep the movement controlled instead of kicking for momentum.",
-              "alsoWorks": "Biceps, brachialis, forearm flexors; rhomboids and trapezius assist"
+              "cue": "Keep the movement controlled instead of kicking for momentum."
             },
             {
+              "id": "lat-pulldown",
               "name": "Lat pulldown",
               "equipment": "Compound · Cable",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Sit securely and pull the bar toward your upper chest. Return overhead with control.",
-              "cue": "Keep the bar in front of your head and avoid excessive backward lean.",
-              "alsoWorks": "Biceps, brachialis, teres major"
+              "cue": "Keep the bar in front of your head and avoid excessive backward lean."
             }
           ]
         },
@@ -45,20 +43,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "chest-supported-row",
               "name": "Chest-supported row",
               "equipment": "Compound · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Lie face down on an incline bench. Pull the dumbbells toward your ribs, then lower to a comfortable stretch.",
-              "cue": "Let your shoulder blades move without lifting your chest.",
-              "alsoWorks": "Middle trapezius, latissimus dorsi, posterior deltoids, biceps"
+              "cue": "Let your shoulder blades move without lifting your chest."
             },
             {
+              "id": "reverse-fly",
               "name": "Reverse fly",
               "equipment": "Isolation · Dumbbells",
-              "volume": "2–3 sets × 12–15 reps",
               "instructions": "Hinge at the hips or support your chest on a bench. Open the arms outward with a slight elbow bend. Return slowly.",
-              "cue": "Keep your neck relaxed and the load light enough to control.",
-              "alsoWorks": "Posterior deltoids, middle trapezius"
+              "cue": "Keep your neck relaxed and the load light enough to control."
             }
           ]
         },
@@ -73,20 +69,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "romanian-deadlift",
               "name": "Romanian deadlift",
               "equipment": "Compound · Barbell",
-              "volume": "3 sets × 6–10 reps",
               "instructions": "With soft knees, push your hips back and keep the bar near your legs. Stop when you reach your controlled hinge depth, then stand.",
-              "cue": "Move at the hips while maintaining a steady back position.",
-              "alsoWorks": "Hamstrings, gluteus maximus; forearms maintain grip"
+              "cue": "Move at the hips while maintaining a steady back position."
             },
             {
+              "id": "bird-dog",
               "name": "Bird dog",
               "equipment": "Stability · Bodyweight",
-              "volume": "2–3 sets × 6–10 / side",
               "instructions": "Start on hands and knees. Extend the opposite arm and leg without rotating your trunk, pause, then return and switch sides.",
-              "cue": "Reach long rather than lifting high.",
-              "alsoWorks": "Multifidus, gluteus maximus, abdominal wall"
+              "cue": "Reach long rather than lifting high."
             }
           ]
         }
@@ -106,20 +100,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "dumbbell-shrug",
               "name": "Dumbbell shrug",
               "equipment": "Upper emphasis · Dumbbells",
-              "volume": "3 sets × 10–15 reps",
               "instructions": "Stand with dumbbells at your sides. Raise your shoulders toward your ears, pause briefly, and lower with control.",
-              "cue": "Keep your head neutral; avoid rolling your shoulders.",
-              "alsoWorks": "Levator scapulae; forearms maintain grip"
+              "cue": "Keep your head neutral; avoid rolling your shoulders."
             },
             {
+              "id": "farmer-carry",
               "name": "Farmer carry",
               "equipment": "Grip & stability · Dumbbells",
-              "volume": "3 carries × 20–40 metres",
               "instructions": "Hold a dumbbell in each hand and walk with short, controlled steps. Keep your torso upright and the weights steady.",
-              "cue": "Use a load that allows a neutral wrist and steady posture.",
-              "alsoWorks": "Forearm flexors, abdominal wall; lower body supports the carry"
+              "cue": "Use a load that allows a neutral wrist and steady posture."
             }
           ]
         },
@@ -134,20 +126,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "chest-supported-row",
               "name": "Chest-supported row",
               "equipment": "Middle emphasis · Dumbbells",
-              "volume": "3 sets × 8–12 reps",
               "instructions": "Support your chest on an incline bench and row toward your ribs. Allow controlled shoulder-blade movement as you lower.",
-              "cue": "Keep your chest supported. The lats and other back muscles also work.",
-              "alsoWorks": "Rhomboids, posterior deltoids, latissimus dorsi, biceps"
+              "cue": "Keep your chest supported. The lats and other back muscles also work."
             },
             {
+              "id": "reverse-fly",
               "name": "Reverse fly",
               "equipment": "Isolation · Dumbbells",
-              "volume": "2–3 sets × 12–15 reps",
               "instructions": "Hinge at the hips or support your chest on a bench. Open the arms outward with a slight elbow bend. Return slowly.",
-              "cue": "Keep your neck relaxed and the load light enough to control.",
-              "alsoWorks": "Posterior deltoids, rhomboids"
+              "cue": "Keep your neck relaxed and the load light enough to control."
             }
           ]
         },
@@ -162,12 +152,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "prone-y-raise",
               "name": "Prone Y raise",
               "equipment": "Lower emphasis · Light dumbbells",
-              "volume": "2–3 sets × 10–15 reps",
               "instructions": "Lie face down on an incline bench. With thumbs upward, lift your arms into a Y through a comfortable range. Lower slowly.",
-              "cue": "Start with bodyweight or very light weights and avoid arching your back.",
-              "alsoWorks": "Middle and upper trapezius, serratus anterior; rotator cuff stabilizes"
+              "cue": "Start with bodyweight or very light weights and avoid arching your back."
             }
           ]
         }
