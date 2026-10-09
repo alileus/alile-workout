@@ -1,0 +1,287 @@
+{
+  "ball-adductor-squeeze": [
+    "adductors-adductor-longus",
+    "adductors-adductor-magnus",
+    "adductors-gracilis",
+    "adductors-pectineus",
+    "category:adductors"
+  ],
+  "band-ankle-eversion": ["category:foot-intrinsics", "extra:fibularis-tertius"],
+  "band-ankle-inversion": ["lowerleg-tibialis-anterior", "lowerleg-tibialis-posterior"],
+  "band-external-rotation": [
+    "cuff-infraspinatus",
+    "cuff-teres-minor",
+    "shoulders-posterior-deltoid"
+  ],
+  "band-finger-opening": ["forearms-extensor-digitorum", "hands-dorsal-interossei"],
+  "band-internal-rotation": [
+    "back-latissimus-dorsi",
+    "category:pectorals",
+    "shoulders-anterior-deltoid"
+  ],
+  "banded-lateral-walk": [
+    "category:quadriceps",
+    "glutes-gluteus-medius",
+    "glutes-gluteus-minimus",
+    "hipflexors-tensor-fasciae-latae"
+  ],
+  "barbell-bench-press": [
+    "category:triceps",
+    "chest-clavicular-head",
+    "chest-sternocostal-head",
+    "shoulders-anterior-deltoid"
+  ],
+  "barbell-hip-thrust": ["adductors-adductor-magnus", "category:abdominals", "category:hamstrings"],
+  "big-toe-press": [
+    "category:foot-intrinsics",
+    "feet-flexor-hallucis-brevis",
+    "lowerleg-flexor-hallucis-longus"
+  ],
+  "bird-dog": [
+    "back-erector-spinae",
+    "category:abdominals",
+    "deepcore-multifidus",
+    "glutes-gluteus-maximus"
+  ],
+  "bulgarian-split-squat": [
+    "category:adductors",
+    "category:quadriceps",
+    "glutes-gluteus-maximus",
+    "glutes-gluteus-medius"
+  ],
+  "cable-chest-fly": ["chest-clavicular-head", "shoulders-anterior-deltoid"],
+  "cable-pressdown": ["category:triceps"],
+  "chest-supported-row": [
+    "back-latissimus-dorsi",
+    "back-rhomboids",
+    "category:biceps",
+    "shoulders-posterior-deltoid",
+    "traps-middle-trapezius"
+  ],
+  "close-grip-push-up": ["category:pectorals", "category:triceps", "shoulders-anterior-deltoid"],
+  "controlled-diaphragmatic-breathing": [
+    "category:abdominals",
+    "deepcore-pelvic-floor",
+    "extra:intercostals"
+  ],
+  "dead-bug": [
+    "category:hip-flexors",
+    "core-internal-external-obliques",
+    "core-rectus-abdominis",
+    "core-transversus-abdominis"
+  ],
+  "dumbbell-curl": [
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "forearms-brachioradialis"
+  ],
+  "dumbbell-lateral-raise": [
+    "cuff-supraspinatus",
+    "serratus-serratus-anterior",
+    "traps-upper-trapezius"
+  ],
+  "dumbbell-overhead-press": [
+    "category:rotator-cuff",
+    "category:trapezius",
+    "category:triceps",
+    "serratus-serratus-anterior",
+    "shoulders-anterior-deltoid",
+    "shoulders-middle-deltoid"
+  ],
+  "dumbbell-shrug": ["category:forearms", "neck-levator-scapulae", "traps-upper-trapezius"],
+  "farmer-carry": ["category:abdominals", "category:forearm-flexors"],
+  "finger-adduction-press": ["category:finger-flexors", "category:hand-intrinsics"],
+  "forearm-wall-slide": ["category:deltoids", "traps-lower-trapezius", "traps-upper-trapezius"],
+  "front-squat": [
+    "category:abdominals",
+    "category:adductors",
+    "category:quadriceps",
+    "glutes-gluteus-maximus"
+  ],
+  "gentle-key-pinch": ["category:thumb-flexors", "hands-dorsal-interossei"],
+  "gentle-neck-extension-isometric": [
+    "category:neck",
+    "extra:semispinalis",
+    "traps-upper-trapezius"
+  ],
+  "gentle-neck-flexion-isometric": ["neck-longus-colli-longus-capitis", "neck-scalenes"],
+  "gentle-pelvic-floor-contraction-and-release": [
+    "category:abdominals",
+    "core-transversus-abdominis",
+    "deepcore-diaphragm"
+  ],
+  "gentle-side-neck-isometric": ["category:neck", "neck-scalenes", "neck-sternocleidomastoid"],
+  "hammer-curl": [
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "forearms-brachioradialis"
+  ],
+  "incline-dumbbell-curl": [
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "forearms-brachioradialis"
+  ],
+  "incline-dumbbell-press": [
+    "category:pectorals",
+    "category:triceps",
+    "chest-sternocostal-head",
+    "shoulders-anterior-deltoid"
+  ],
+  "incline-push-up-plus": [
+    "category:pectorals",
+    "category:triceps",
+    "chest-pectoralis-minor",
+    "serratus-serratus-anterior"
+  ],
+  "knuckle-press-into-putty": ["category:hand-intrinsics", "forearms-extensor-digitorum"],
+  "lat-pulldown": ["biceps-brachialis-supporting-muscle", "category:biceps", "extra:teres-major"],
+  "leg-extension": [
+    "quads-rectus-femoris",
+    "quads-vastus-intermedius",
+    "quads-vastus-lateralis",
+    "quads-vastus-medialis"
+  ],
+  "little-finger-opposition": ["category:finger-flexors", "category:hand-intrinsics"],
+  "overhead-cable-extension": ["category:triceps"],
+  "pallof-press": [
+    "category:glutes",
+    "core-internal-external-obliques",
+    "core-rectus-abdominis",
+    "core-transversus-abdominis"
+  ],
+  "preacher-curl": [
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "forearms-brachioradialis"
+  ],
+  "prone-y-raise": [
+    "category:rotator-cuff",
+    "serratus-serratus-anterior",
+    "traps-middle-trapezius",
+    "traps-upper-trapezius"
+  ],
+  "pull-up": [
+    "back-rhomboids",
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "category:forearm-flexors",
+    "category:trapezius"
+  ],
+  "resisted-finger-spread": ["forearms-extensor-digitorum", "hands-hypothenar-muscles"],
+  "resisted-forearm-pronation": [
+    "category:forearms",
+    "forearms-pronator-quadratus",
+    "forearms-pronator-teres"
+  ],
+  "resisted-forearm-supination": ["category:biceps", "category:forearms"],
+  "resisted-thumb-extension": ["category:wrist-extensors", "forearms-abductor-pollicis-longus"],
+  "reverse-crunch": ["category:hip-flexors", "core-internal-external-obliques"],
+  "reverse-curl": [
+    "biceps-brachialis-supporting-muscle",
+    "category:biceps",
+    "category:wrist-extensors",
+    "forearms-brachioradialis"
+  ],
+  "reverse-fly": ["back-rhomboids", "shoulders-posterior-deltoid", "traps-middle-trapezius"],
+  "reverse-wrist-curl": ["forearms-extensor-carpi-ulnaris", "forearms-extensor-digitorum"],
+  "romanian-deadlift": [
+    "back-erector-spinae",
+    "category:forearms",
+    "category:hamstrings",
+    "glutes-gluteus-maximus",
+    "hamstrings-biceps-femoris",
+    "hamstrings-semimembranosus",
+    "hamstrings-semitendinosus"
+  ],
+  "seated-band-hip-external-rotation": [
+    "category:hip-rotators",
+    "glutes-gluteus-maximus",
+    "hiprotators-inferior-gemellus",
+    "hiprotators-obturator-externus",
+    "hiprotators-obturator-internus",
+    "hiprotators-quadratus-femoris",
+    "hiprotators-superior-gemellus"
+  ],
+  "seated-calf-raise": ["calves-gastrocnemius", "category:foot-intrinsics"],
+  "seated-leg-curl": [
+    "calves-gastrocnemius",
+    "hamstrings-biceps-femoris",
+    "hamstrings-semimembranosus",
+    "hamstrings-semitendinosus"
+  ],
+  "short-foot-hold": ["category:foot-intrinsics", "lowerleg-tibialis-posterior"],
+  "side-lying-hip-abduction": [
+    "glutes-gluteus-medius",
+    "glutes-gluteus-minimus",
+    "hipflexors-tensor-fasciae-latae"
+  ],
+  "side-lying-hip-adduction": ["adductors-gracilis", "adductors-pectineus", "category:adductors"],
+  "side-plank": [
+    "category:deltoids",
+    "core-internal-external-obliques",
+    "deepcore-quadratus-lumborum",
+    "glutes-gluteus-medius"
+  ],
+  "single-leg-calf-raise": ["calves-gastrocnemius", "calves-soleus", "category:foot-intrinsics"],
+  "soft-putty-squeeze": [
+    "category:hand-intrinsics",
+    "category:thumb-flexors",
+    "forearms-flexor-digitorum-profundus",
+    "forearms-flexor-digitorum-superficialis"
+  ],
+  "standing-calf-raise": ["calves-gastrocnemius", "calves-soleus", "category:foot-intrinsics"],
+  "standing-resisted-march": [
+    "hipflexors-iliacus",
+    "hipflexors-psoas-major",
+    "hipflexors-sartorius",
+    "hipflexors-tensor-fasciae-latae",
+    "quads-rectus-femoris"
+  ],
+  "step-up": ["category:adductors", "category:quadriceps", "glutes-gluteus-medius"],
+  "suitcase-carry": [
+    "back-erector-spinae",
+    "category:deltoids",
+    "category:forearms",
+    "core-internal-external-obliques"
+  ],
+  "supported-chin-nod": ["neck-longus-colli-longus-capitis"],
+  "supported-toe-raise": [
+    "category:toe-extensors",
+    "lowerleg-extensor-hallucis-longus",
+    "lowerleg-tibialis-anterior"
+  ],
+  "thumb-lift": ["category:hand-intrinsics", "hands-abductor-pollicis-brevis"],
+  "thumb-opposition-with-putty": ["hands-abductor-pollicis-brevis", "hands-flexor-pollicis-brevis"],
+  "thumb-putty-press": [
+    "category:hand-intrinsics",
+    "forearms-flexor-pollicis-longus",
+    "hands-flexor-pollicis-brevis"
+  ],
+  "thumb-up-scaption": ["category:deltoids", "category:trapezius", "serratus-serratus-anterior"],
+  "toe-adduction-squeeze": [
+    "category:foot-intrinsics",
+    "category:toe-flexors",
+    "feet-foot-interossei-lumbricals"
+  ],
+  "toe-extension-against-light-resistance": [
+    "category:toe-extensors",
+    "feet-extensor-digitorum-hallucis-brevis",
+    "lowerleg-extensor-hallucis-longus",
+    "lowerleg-tibialis-anterior"
+  ],
+  "toe-spread": [
+    "feet-abductor-digiti-minimi",
+    "feet-abductor-hallucis",
+    "feet-foot-interossei-lumbricals"
+  ],
+  "towel-toe-curl": [
+    "category:foot-intrinsics",
+    "feet-flexor-digitorum-brevis",
+    "feet-foot-interossei-lumbricals",
+    "feet-quadratus-plantae",
+    "lowerleg-flexor-digitorum-longus"
+  ],
+  "wrist-extension-with-ulnar-bias": ["category:wrist-extensors", "forearms-flexor-carpi-ulnaris"],
+  "wrist-flexion-with-radial-bias": ["category:wrist-extensors", "category:wrist-flexors"],
+  "wrist-flexion-with-ulnar-bias": ["category:wrist-flexors", "forearms-extensor-carpi-ulnaris"]
+}

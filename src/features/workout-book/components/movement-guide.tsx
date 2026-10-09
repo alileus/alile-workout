@@ -1,14 +1,17 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { ArrowUpRight } from 'lucide-react';
 import type { Locale } from '@/i18n/routing';
-import type { Region } from '../schema';
+import type { Book, Region } from '../schema';
 import { hasTranslation, suggestionUrl } from '../data';
+import { exerciseRelations } from '../relations';
+import { ExerciseContent, ExerciseMuscles } from './exercise-content';
 import { Button } from '@/components/ui/button';
 import { DisclosureIndicator } from '@/components/disclosure-indicator';
-export function MovementGuide({ region }: { region: Region }) {
+export function MovementGuide({ region, book }: { region: Region; book: Book }) {
   const t = useTranslations('App'),
     locale = useLocale() as Locale,
     translated = hasTranslation(locale, region.id);
+  const relations = exerciseRelations(book);
   return (
     <article>
       <div className="eyebrow">{t('guide')}</div>
@@ -36,30 +39,15 @@ export function MovementGuide({ region }: { region: Region }) {
         <p className="description">{region.description}</p>
         {region.note && <p className="muted context-note">{region.note}</p>}
         {region.exercises.map((exercise, index) => (
-          <section key={exercise.name} className="exercise">
+          <section key={exercise.id} className="exercise">
             <div className="exercise-heading">
               <span className="exercise-number">{String(index + 1).padStart(2, '0')}</span>
               <h3>{exercise.name}</h3>
             </div>
-            <p className="muted equipment">{exercise.equipment}</p>
-            <div className="also-works">
-              <span className="eyebrow" lang={locale}>
-                {t('alsoWorks')}
-              </span>
-              <p>{exercise.alsoWorks}</p>
+            <div lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+              <ExerciseMuscles muscles={relations.get(exercise.id) ?? []} current={region.id} />
+              <ExerciseContent exercise={exercise} />
             </div>
-            <details>
-              <summary lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-                {t('how')} <DisclosureIndicator />
-              </summary>
-              <div className="instructions">
-                <p>{exercise.instructions}</p>
-                <p className="cue">{exercise.cue}</p>
-                <p>
-                  <span lang={locale}>{t('volume')}</span> · {exercise.volume}
-                </p>
-              </div>
-            </details>
           </section>
         ))}
       </div>

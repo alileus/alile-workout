@@ -17,20 +17,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "reverse-crunch",
               "name": "Reverse crunch",
               "equipment": "Trunk flexion · Bodyweight",
-              "volume": "3 sets × 8–15 reps",
               "instructions": "Lie on your back with bent knees. Curl your pelvis toward your ribs to lift the tailbone slightly, then lower with control.",
-              "cue": "Use a small pelvic curl rather than swinging your legs.",
-              "alsoWorks": "Obliques; hip flexors help position the legs"
+              "cue": "Use a small pelvic curl rather than swinging your legs."
             },
             {
+              "id": "dead-bug",
               "name": "Dead bug",
               "equipment": "Control · Bodyweight",
-              "volume": "3 sets × 6–10 / side",
               "instructions": "Lie on your back with hips and knees bent. Slowly extend the opposite arm and leg, then return and alternate.",
-              "cue": "Keep your ribs down and lower back position steady.",
-              "alsoWorks": "Transversus abdominis, obliques; hip flexors control the legs"
+              "cue": "Keep your ribs down and lower back position steady."
             }
           ]
         },
@@ -45,20 +43,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "pallof-press",
               "name": "Pallof press",
               "equipment": "Anti-rotation · Cable",
-              "volume": "3 sets × 8–12 / side",
               "instructions": "Stand side-on to a cable with the handle at your chest. Press forward, pause, and return without turning.",
-              "cue": "Keep your hips and shoulders facing forward.",
-              "alsoWorks": "Transversus abdominis, rectus abdominis; glutes stabilize"
+              "cue": "Keep your hips and shoulders facing forward."
             },
             {
+              "id": "side-plank",
               "name": "Side plank",
               "equipment": "Isometric · Bodyweight",
-              "volume": "3 sets × 20–40 sec / side",
               "instructions": "Support yourself on one forearm and the side of your foot. Lift your hips to form a straight line. Use bent knees to reduce difficulty.",
-              "cue": "Stack the shoulder above the elbow and breathe steadily.",
-              "alsoWorks": "Quadratus lumborum, gluteus medius; shoulder stabilizers"
+              "cue": "Stack the shoulder above the elbow and breathe steadily."
             }
           ]
         },
@@ -73,20 +69,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "dead-bug",
               "name": "Dead bug",
               "equipment": "Control · Bodyweight",
-              "volume": "3 sets × 6–10 / side",
               "instructions": "Lie on your back with hips and knees bent. Slowly extend the opposite arm and leg, then return and alternate.",
-              "cue": "Keep your ribs down and lower back position steady.",
-              "alsoWorks": "Rectus abdominis, obliques; hip flexors control the legs"
+              "cue": "Keep your ribs down and lower back position steady."
             },
             {
+              "id": "pallof-press",
               "name": "Pallof press",
               "equipment": "Anti-rotation · Cable",
-              "volume": "3 sets × 8–12 / side",
               "instructions": "Stand side-on to a cable with the handle at your chest. Press forward, pause, and return without turning.",
-              "cue": "Keep your hips and shoulders facing forward.",
-              "alsoWorks": "Obliques, rectus abdominis; glutes stabilize"
+              "cue": "Keep your hips and shoulders facing forward."
             }
           ]
         }
@@ -106,12 +100,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "bird-dog",
               "name": "Bird dog",
               "equipment": "Stability · Bodyweight",
-              "volume": "2–3 sets × 6–10 / side",
               "instructions": "Start on hands and knees. Extend the opposite arm and leg without rotating your trunk, pause, then return and switch sides.",
-              "cue": "Reach long rather than lifting high.",
-              "alsoWorks": "Erector spinae, gluteus maximus, abdominal wall"
+              "cue": "Reach long rather than lifting high."
             }
           ]
         },
@@ -126,20 +119,18 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "suitcase-carry",
               "name": "Suitcase carry",
               "equipment": "Lateral trunk stability · Dumbbell",
-              "volume": "2–3 carries × 15–30 metres / side",
               "instructions": "Carry one moderate dumbbell at your side and walk steadily without leaning. Switch hands.",
-              "cue": "Keep the pelvis level and breathe throughout.",
-              "alsoWorks": "Obliques, spinal extensors; forearm and shoulder muscles carry the load"
+              "cue": "Keep the pelvis level and breathe throughout."
             },
             {
+              "id": "side-plank",
               "name": "Side plank",
               "equipment": "Isometric · Bodyweight",
-              "volume": "3 sets × 20–40 sec / side",
               "instructions": "Support yourself on one forearm and the side of your foot. Lift your hips to form a straight line. Use bent knees to reduce difficulty.",
-              "cue": "Stack the shoulder above the elbow and breathe steadily.",
-              "alsoWorks": "Obliques, gluteus medius; shoulder stabilizers"
+              "cue": "Stack the shoulder above the elbow and breathe steadily."
             }
           ]
         },
@@ -154,12 +145,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "controlled-diaphragmatic-breathing",
               "name": "Controlled diaphragmatic breathing",
               "equipment": "Breathing control · Bodyweight",
-              "volume": "5–8 slow breaths",
               "instructions": "Sit or lie comfortably. Inhale gently, allowing the lower ribs to expand, then exhale without forcing the air out.",
-              "cue": "Keep your shoulders relaxed. This trains breathing control, not isolated maximal strength.",
-              "alsoWorks": "Intercostals; abdominal wall and pelvic floor coordinate pressure"
+              "cue": "Keep your shoulders relaxed. This trains breathing control, not isolated maximal strength."
             }
           ]
         },
@@ -174,12 +164,11 @@
           "reviewStatus": "draft",
           "exercises": [
             {
+              "id": "gentle-pelvic-floor-contraction-and-release",
               "name": "Gentle pelvic-floor contraction and release",
               "equipment": "Pelvic control · Bodyweight",
-              "volume": "5 gentle contractions with full relaxation",
               "instructions": "While breathing normally, gently lift the muscles you would use to hold back gas. Release completely before repeating.",
-              "cue": "Avoid bearing down or squeezing the glutes. Do not practise by interrupting urination.",
-              "alsoWorks": "Deep abdominal wall and diaphragm coordinate pressure"
+              "cue": "Avoid bearing down or squeezing the glutes. Do not practise by interrupting urination."
             }
           ]
         }

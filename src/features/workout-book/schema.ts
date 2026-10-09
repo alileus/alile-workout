@@ -1,18 +1,18 @@
 import { z } from 'zod';
 const text = z.string().trim().min(1);
+const stableId = text.regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 export const exerciseSchema = z
   .object({
+    id: stableId,
     name: text,
     equipment: text,
-    volume: text,
     instructions: text,
     cue: text,
-    alsoWorks: text,
   })
   .strict();
 export const regionSchema = z
   .object({
-    id: text.regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    id: stableId,
     name: text,
     description: text,
     note: z.string(),
@@ -32,5 +32,6 @@ export const groupSchema = z
   })
   .strict();
 export type Region = z.infer<typeof regionSchema>;
+export type Exercise = z.infer<typeof exerciseSchema>;
 export type Group = z.infer<typeof groupSchema>;
 export type Book = Group[];

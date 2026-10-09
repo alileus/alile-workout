@@ -12,9 +12,9 @@
     "collapseAnatomy": "Collapse anatomy",
     "expandAnatomy": "Expand anatomy",
     "deep": "Deep layer",
-    "alsoWorks": "Also works",
+    "exerciseMuscles": "Muscles involved",
+    "exerciseIllustration": "{exercise}: start and finish positions",
     "how": "How to perform",
-    "volume": "Example volume",
     "reference": "References",
     "suggest": "Suggest an edit",
     "book": "Workout book",
@@ -85,6 +85,37 @@
         "description": "See exercise options, how to perform them, and which other muscles are involved. Each muscle has its own link to save or share."
       },
       "community": "An open workout book, built together. Suggest corrections, improve translations, or contribute an exercise."
+    },
+    "workouts": "Workouts",
+    "involvement": {
+      "pectorals": "Pectorals",
+      "deltoids": "Deltoids",
+      "triceps": "Triceps",
+      "biceps": "Biceps",
+      "trapezius": "Trapezius",
+      "glutes": "Glutes",
+      "hamstrings": "Hamstrings",
+      "quadriceps": "Quadriceps",
+      "adductors": "Adductors",
+      "hip-flexors": "Hip flexors",
+      "hip-rotators": "Hip rotators",
+      "rotator-cuff": "Rotator cuff",
+      "neck": "Neck muscles",
+      "forearms": "Forearms",
+      "forearm-flexors": "Forearm flexors",
+      "wrist-flexors": "Wrist flexors",
+      "wrist-extensors": "Wrist extensors",
+      "thumb-flexors": "Thumb flexors",
+      "finger-flexors": "Finger flexors",
+      "hand-intrinsics": "Intrinsic hand muscles",
+      "abdominals": "Abdominal muscles",
+      "toe-extensors": "Toe extensors",
+      "toe-flexors": "Toe flexors",
+      "foot-intrinsics": "Intrinsic foot muscles",
+      "teres-major": "Teres major",
+      "semispinalis": "Semispinalis",
+      "intercostals": "Intercostals",
+      "fibularis-tertius": "Fibularis tertius"
     }
   },
   "DesignSystem": {
@@ -130,5 +161,14 @@
     "title": "Page not found",
     "description": "This page does not exist. Return to the atlas to find a muscle guide.",
     "back": "Back to the atlas"
+  },
+  "Workouts": {
+    "title": "Workouts",
+    "description": "All exercises in the book. Find a movement, see its poses, and explore the muscles involved.",
+    "search": "Find a workout or muscle…",
+    "filter": "Filter by training group",
+    "all": "All",
+    "count": "{count, plural, one {# workout} other {# workouts}}",
+    "empty": "No workouts match your search."
   }
 }

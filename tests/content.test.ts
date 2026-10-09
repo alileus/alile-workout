@@ -11,6 +11,10 @@ import {
 import { anatomy, toggleRegion, selectRegion, visibleRegions } from '../src/features/anatomy/model';
 import { musclePath, resolveMuscleRoute } from '../src/features/anatomy/routes';
 import { pageMetadata } from '../src/lib/seo';
+import { exerciseRelations, guideRelations } from '../src/features/workout-book/relations';
+import { workoutCatalog } from '../src/features/workout-book/catalog';
+import { muscleCategories, extraMuscles } from '../src/features/workout-book/muscle-categories';
+import involvement from '../content/workout-muscles.json';
 const regions = englishBook.flatMap((g) => g.sections.flatMap((s) => s.regions));
 test('every stable content ID has valid geometry and references', () => {
   assert.equal(new Set(regions.map((r) => r.id)).size, regions.length);
@@ -54,14 +58,8 @@ test('translations preserve identities, references, and exercise counts', () => 
           for (const field of ['name', 'description', 'note'] as const)
             assertTranslated(region[field], original[field], `${region.id}.${field}`);
           region.exercises.forEach((exercise, index) => {
-            for (const field of [
-              'name',
-              'equipment',
-              'volume',
-              'instructions',
-              'cue',
-              'alsoWorks',
-            ] as const)
+            assert.equal(exercise.id, original.exercises[index].id);
+            for (const field of ['name', 'equipment', 'instructions', 'cue'] as const)
               assertTranslated(
                 exercise[field],
                 original.exercises[index][field],
@@ -80,6 +78,74 @@ const keys = (value: Record<string, unknown>, prefix = ''): string[] =>
       ? keys(v as Record<string, unknown>, `${prefix}${key}.`)
       : [prefix + key],
   );
+
+test('workout relations link participating guides using stable localized identities', () => {
+  const englishRelations = guideRelations(englishBook);
+  for (const region of regions) {
+    const ids = region.exercises.map((exercise) => exercise.id);
+    assert.equal(new Set(ids).size, ids.length, `Duplicate workout in ${region.id}`);
+    for (const exercise of region.exercises)
+      assert.ok(englishRelations.get(exercise.id)?.some((muscle) => muscle.id === region.id));
+  }
+  assert.deepEqual(
+    englishRelations.get('barbell-bench-press')?.map((muscle) => muscle.id),
+    ['chest-clavicular-head', 'chest-sternocostal-head'],
+  );
+  assert.deepEqual(
+    englishRelations.get('incline-dumbbell-press')?.map((muscle) => muscle.group),
+    ['chest', 'shoulders'],
+  );
+  assert.equal(englishRelations.get('leg-extension')?.length, 4);
+  assert.equal(englishRelations.get('seated-band-hip-external-rotation')?.length, 6);
+  assert.equal(englishRelations.get('lat-pulldown')?.length, 1);
+  for (const locale of ['en', 'ar', 'ja'] as const) {
+    const book = getBook(locale);
+    for (const [id, muscles] of guideRelations(book)) {
+      assert.deepEqual(
+        muscles.map((muscle) => muscle.id),
+        englishRelations.get(id)?.map((muscle) => muscle.id),
+      );
+      assert.equal(new Set(muscles.map((muscle) => muscle.id)).size, muscles.length);
+      for (const muscle of muscles) {
+        const entry = resolveMuscleRoute(book, [muscle.group, muscle.id]);
+        assert.equal(entry?.region?.name, muscle.name);
+        assert.ok(entry?.region?.exercises.some((exercise) => exercise.id === id));
+      }
+    }
+  }
+});
+
+test('secondary muscles resolve to exact guides, translated families or named muscles', () => {
+  const ids = new Set(regions.map((r) => r.id));
+  const workouts = workoutCatalog(englishBook, 'en');
+  assert.equal(workouts.length, 79);
+  assert.deepEqual(Object.keys(involvement).sort(), workouts.map((w) => w.id).sort());
+  for (const targets of Object.values(involvement))
+    for (const target of targets) {
+      const [kind, key] = target.split(':');
+      if (kind === 'category') assert.ok(muscleCategories[key], target);
+      else if (kind === 'extra') assert.ok(extraMuscles[key], target);
+      else assert.ok(ids.has(target), target);
+    }
+  for (const locale of ['en', 'ar', 'ja'] as const) {
+    const catalog = workoutCatalog(getBook(locale), locale);
+    assert.equal(catalog.length, workouts.length);
+    assert.equal(new Set(catalog.map((w) => w.id)).size, catalog.length);
+    assert.deepEqual(catalog.map((w) => w.id).sort(), workouts.map((w) => w.id).sort());
+    const messages = JSON.parse(fs.readFileSync(`messages/${locale}.json`, 'utf8'));
+    for (const workout of catalog) {
+      assert.equal(new Set(workout.muscles.map((m) => m.id)).size, workout.muscles.length);
+      for (const muscle of workout.muscles) {
+        if (muscle.labelKey) assert.ok(messages.App.involvement[muscle.labelKey]);
+        if (muscle.href?.split('/').length === 4)
+          assert.ok(resolveMuscleRoute(getBook(locale), muscle.href.split('/').slice(2)));
+      }
+    }
+  }
+  const bench = exerciseRelations(englishBook).get('barbell-bench-press')!;
+  assert.ok(bench.some((m) => m.id === 'shoulders-anterior-deltoid'));
+  assert.ok(bench.some((m) => m.id === 'category:triceps'));
+});
 test('all interface locales have matching message keys and section labels', () => {
   const en = JSON.parse(fs.readFileSync('messages/en.json', 'utf8'));
   for (const locale of ['en', 'ar', 'ja']) {
