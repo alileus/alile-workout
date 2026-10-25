@@ -1,0 +1,4 @@
+Contact: mailto:hala@alile.us
+Expires: 2027-07-01T00:00:00Z
+Preferred-Languages: ar, en
+Canonical: https://workout.alile.us/.well-known/security.txt

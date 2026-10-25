@@ -1,6 +1,7 @@
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import { routing } from '@/i18n/routing';
 import { englishBook, getBook } from '@/features/workout-book/data';
 import { musclePath, resolveMuscleRoute } from '@/features/anatomy/routes';
@@ -70,6 +71,7 @@ export default async function MusclePage({ params }: Props) {
   return (
     <>
       <script
+        nonce={(await headers()).get('x-nonce') ?? undefined}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }}
       />
